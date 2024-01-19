@@ -8,7 +8,14 @@
 .container{
     min-height: 100vh;
     width: 100%;
-    background-color: #191a2b;
+    /* background-color: #191a2b; */
+}
+.back-video{
+    height: 300px;
+    /* border: 3px solid red; */
+    background: url(pic.jpg);
+    /* height: 200px; */
+    z-index: -1;
 }
 .service-wrapper{
     padding: 5% 8%;
@@ -19,13 +26,17 @@
     align-items: center;
 }
 h1{
+    top: 5%;
     color: #fff;
     font-size: 5rem;
+    /* padding: 5% 8%; */
+    text-align: center;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: transparent;
     letter-spacing: 4px;
-    background-color: rgb(4, 52, 83);
-    background: linear-gradient(8deg,rgba(8,52,83,1) 0%,rgba(0,230,173,1), 41%,rgba(41,17,45,1) 100%) ;
+    background-color: #fff;
+    /* background-color: rgb(4, 52, 83); */
+    /* background: linear-gradient(8deg,rgba(8,52,83,1) 0%,rgba(0,230,173,1), 41%,rgba(41,17,45,1) 100%) ; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -34,21 +45,22 @@ h1{
 h1:after{
     content: "";
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 35%;
-    height: 8px;
+    height: 5px;
     width: 30%;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.05);
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    background-color: #fff;
 }
 .con{
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 35%;
-    height: 8px;
+    height: 5px;
     width: 0.5%;
     border-radius: 8px;
-    background-color: #72e2ae;
+    background-color: #00ff37;
     animation: anim 5s linear infinite;
 }
 
@@ -126,16 +138,21 @@ h1:after{
     color: rgba(255, 255, 255, 0.6);
 }
 .card:hover{
-    background-color: transparent;
+    background-color: #191a2b;
+    ;
     transform: traslateY(-8px);
     border-color: #00ff37;
 }
 .card:hover i{
-    color: #00ff37;
+    color: #0dd138;
 }
 @media screen and (max-width: 1200px){
     .cards{
         grid-template-columns: repeat(2,1fr);
+    }
+    .back-video{
+        width: 100%;
+        height: auto;
     }
 }
 @media screen and (max-width: 900px){
@@ -144,5 +161,9 @@ h1:after{
     }
     h1{
         font-size: 3.5rem;
+    }
+    .back-video{
+        width: auto;
+        height: 100%;
     }
 }
