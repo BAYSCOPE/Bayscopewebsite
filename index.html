@@ -16,7 +16,9 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
     rel="stylesheet">
-
+<!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0
+  /css/font-awesome.min.css">
 
   <!-- Bootstrap CSS File -->
   <link href="files/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +39,16 @@
 
   <!-- Responsive Stylesheet File -->
   <link href="files/css/responsive.css" rel="stylesheet">
-
+  <style>
+    @media screen and (max-width: 600px) {
+      video{
+        width: 400px;
+      }
+    }
+    video:hover{
+transform: scale(1.2);
+    }
+  </style>
 
 </head>
 
@@ -84,6 +95,7 @@
                       <li><a href=#>Mobile development</a></li>
                       <li><a href=#>App development</a></li>
                       <li><a href=#>QA Testing</a></li>
+                      
                       <li><a href=#>Product Design</a></li>
                     </ul>
                   </li>
@@ -98,8 +110,17 @@
                       <li><a href=#>FAQ</a></li>
                     </ul>
                   </li>
-                  <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
+      class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href=#>Bayscope Business</a></li>
+        <li><a href=#>Bayscope Schools</a></li>
+        <li><a href=#>Bayscope Healths</a></li>
+        <li><a href=#>BQuery</a></li>
+        <li><a href=#>ContriFund</a></li>
+        <li><a href=#>Portfolio 6</a></li>
+        <li><a href=#>Portfolio 7</a></li>
+        </ul>
                   </li>
 
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<span
@@ -114,8 +135,14 @@
                   </li>
 
                   <li class="yo">
-                    <a class="page-scroll" href="#portfolio">CART</a>
+                    <a class="page-scroll" href="#portfolio"> </a>
                   </li>
+                 <li class="">
+                     <a href="/client/signup"> <i class="fa fa-user-o" aria-hidden="true"></i></a>    
+                 </li>
+                 <li class="pl-2">
+                  <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>    
+              </li>
                 </ul>
               </div>
               <!-- navbar-collapse -->
@@ -136,6 +163,7 @@
         <img src="files/img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
         <img src="files/img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
         <img src="files/img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
+        <img src="files/img/slider/slider4.jpg" alt="" title="#slider-direction-4" />
       </div>
 
       <!-- direction 1 -->
@@ -146,7 +174,7 @@
               <div class="slider-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1"># EASY NO CODING REQUIRES UNLIMITED POSSIBILITIES</h2>
+                  <h2 class="title1">#  WHERE INNOVATION MEETS RELIABILITY</h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
@@ -154,7 +182,7 @@
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn page-scroll" href="#about">Purchase Now</a>
+                  <a class="ready-btn page-scroll" href="client/signup/">Get started</a>
                 </div>
               </div>
             </div>
@@ -170,15 +198,15 @@
               <div class="slider-content text-center">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1"># EASY NO CODING REQUIRES UNLIMITED POSSIBILITIES</h2>
+                  <h2 class="title1"># OWN REAL ESTATE WITH EASE, TRANSFROM YOUR PROPERTIES INTO PERFORMANCE </h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">BayScope - IT Solutions & Services</h1>
+                  <h1 class="title2">BayScope - IT Real estate Solutions</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn page-scroll" href="#about">Purchase Now</a>
+                  <a class="ready-btn page-scroll" href="/realestate">Explore Now</a>
                 </div>
               </div>
             </div>
@@ -194,15 +222,16 @@
               <div class="slider-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1"># EASY NO CODING REQUIRES UNLIMITED POSSIBILITIES</h2>
+                  <h2 class="title1"># IN EVERY SUCCESSFUL BUSINESS SOMEONE MADE A RIGHT CHOICE, MAKE YOURS TODAY!
+                  </h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">BayScope - IT Solutions & Services</h1>
+                  <h1 class="title2">BayScope - IT Business Solutions </h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn page-scroll" href="#about">Purchase Now</a>
+                  <a class="ready-btn page-scroll" href="forbusiness/">Explore Now</a>
                 </div>
               </div>
             </div>
@@ -211,6 +240,32 @@
       </div>
     </div>
   </div>
+   <!-- direction 4 -->
+   <div id="slider-direction-4" class="slider-direction slider-two">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="slider-content">
+            <!-- layer 1 -->
+            <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              <h2 class="title1"># FROM CLASSROOM TO CLOUD, REDEFINING EDUCATION IN EVERY BYTE
+              </h2>
+            </div>
+            <!-- layer 2 -->
+            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
+              <h1 class="title2">BayScope - School suite </h1>
+            </div>
+            <!-- layer 3 -->
+            <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
+              <a class="ready-btn page-scroll" href="/forschools/">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
   <!-- End Slider Area -->
 
   <!-- Start About area -->
@@ -228,9 +283,9 @@
         <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="well-left">
             <div class="single-well">
-              <a href="#">
-                <img src="files/img/about/1.jpg" alt="">
-              </a>
+            
+               <video src="/assets/videos/BayscopeIT intro.mp4" autoplay   controls  width="500px"></video>
+          
             </div>
           </div>
         </div>
@@ -239,14 +294,15 @@
           <div class="well-middle">
             <div class="single-well">
               <a href="#">
-                <h4 class="sec-head">Software Development</h4>
+                <h4 class="sec-head">IT SOLUTIONS</h4>
               </a>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aspernatur enim tempora atque ipsa
-                nisi sed voluptas possimus qui, iusto assumenda quidem, culpa odio minus! Quasi doloremque voluptas
-                voluptate exercitationem?
+              <p class="about">
+         At BayScopes IT, our journey is fueled by a deep passion for innovation and a commitment to excellence. We are not just a tech company; we are a team of experts dedicated to pushing boundaries and delivering cutting-edge solutions. With a client-centric approach, we collaborate closely with our partners, ensuring that each project is a unique reflection of their vision and goals. Our commitment to integrity, inclusivity, and sustainability sets us apart, guiding us as we navigate the dynamic landscape of technology. At the heart of our mission is the empowerment of businesses through transformative technology, where results-driven strategies and a human-centric focus converge.
               </p>
               <ul>
+                <li>
+                  <i class="fa fa-check"></i> IT - Products
+                </li>
                 <li>
                   <i class="fa fa-check"></i> Software development
                 </li>
@@ -261,6 +317,12 @@
                 </li>
                 <li>
                   <i class="fa fa-check"></i> QA Testing
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Digital marketing
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> IT Consultancy
                 </li>
                 <li>
                   <i class="fa fa-check"></i> Product Design
