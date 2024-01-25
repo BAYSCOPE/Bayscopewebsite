@@ -242,3 +242,24 @@ h3 span {
     font-size: 14px;
     margin-left: 10px;
 }
+
+/* SLIDER */
+.hero-image {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.slide.active {
+    opacity: 1;
+    transition: opacity 1s;
+}
