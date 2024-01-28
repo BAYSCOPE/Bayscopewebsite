@@ -43,12 +43,13 @@
 
   <!-- Responsive Stylesheet File -->
   <link href="/files/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
-    video:hover {
+    .video1:hover {
       transform: scale(1.9);
     }
 
-    video {
+    .video1 {
       position: absolute;
       margin-right: 400px;
       left: 100px;
@@ -65,7 +66,7 @@
     }
 
     @media screen and (max-width: 600px) {
-      video {
+      .video1 {
         width: 370px;
         position: relative;
         opacity: 1;
@@ -76,7 +77,7 @@
 
       }
 
-      video:hover {
+      .video1:hover {
         transform: scale(1.2);
       }
 
@@ -178,7 +179,7 @@
       width: 100%;
       position: absolute;
       background-color:#3EC1D5;
-      padding-top: ;
+     
       padding-left: 20px;
 
     }
@@ -203,6 +204,10 @@
 
       margin-left: 60px;
     }
+    /* MARKETING CONTENT
+-------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
     .marketing .col-lg-4 {
       margin-bottom: 1.5rem;
       text-align: center;
@@ -216,8 +221,6 @@
       margin-right: .75rem;
       margin-left: .75rem;
     }
-
-
     
     .featurette-divider {
       margin: 5rem 0;
@@ -373,8 +376,7 @@
       <div id="ensign-nivoslider" class="slides">
         <img src="/files/img/slider/slider1.jpg" alt="" title="#slider-direction-1" />
         <img src="/files/img/slider/slider2.jpg" alt="" title="#slider-direction-2" />
-        <img src="/files/img/slider/slider3.jpg" alt="" title="#slider-direction-3" />
-        <img src="/files/img/slider/slider4.jpg" alt="" title="#slider-direction-4" />
+      
       </div>
 
       <!-- direction 1 -->
@@ -385,11 +387,11 @@
               <div class="slider-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1"># Business Class  Where every tool meets every need</h2>
+                  <h2 class="title1"># Business  Suite  </h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Introducing BayScope PrØSuite<br>
+                  <h1 class="title2">Introducing BayScope ProSuite Where every tool meets every need<br>
                   </h1>
                 </div>
                 <!-- layer 3 -->
@@ -410,15 +412,15 @@
               <div class="slider-content text-center">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1"># Business Class </h2>
+                  <h2 class="title1"># Business Suite </h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Introducing BayScope PrØSuite</h1>
+                  <h1 class="title2">Explore Remarkable  Solutions Tailored For Your Business Needs</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn page-scroll" href="/realestate">Purchase Now</a>
+                  <a class="ready-btn page-scroll" href="/client/signup/">Create an Account</a>
                 </div>
               </div>
             </div>
@@ -452,32 +454,8 @@
       </div>
     </div>
   </div>
-  <!-- direction 4 -->
-  <div id="slider-direction-4" class="slider-direction slider-two">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="slider-content">
-            <!-- layer 1 -->
-            <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-              <h2 class="title1"># FROM CLASSROOM TO CLOUD, REDEFINING EDUCATION IN EVERY BYTE
-              </h2>
-            </div>
-            <!-- layer 2 -->
-            <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-              <h1 class="title2">BayScope - School suite </h1>
-            </div>
-            <!-- layer 3 -->
-            <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-              <a class="ready-btn page-scroll" href="/forschools/">Purchase Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
+  
+  
   <!-- End Slider Area -->
 
 
@@ -516,7 +494,7 @@
           <div class="well-left">
             <div class="single-well">
               <img class="img" src="/assets/images/MacBook Mockup.png" alt="" srcset="">
-              <video src="/assets/videos/AdvertBAYSCOPE.mp4" autoplay loop width="530px"></video>
+              <video class="video1" src="/assets/videos/AdvertBAYSCOPE.mp4" autoplay loop width="530px"></video>
 
             </div>
           </div>
@@ -625,7 +603,8 @@
                     <img src="/assets/images/flow.jpg" width="80px" alt="">
                   </a>
                   <h4>B FLOW</h4>
-                  <p>
+                  <p class="lead">
+                    <b>
                     B Flow is an innovative Human Resource and Payroll Management software designed to streamline your
                     business operations. From talent acquisition to payroll processing, our comprehensive solution
                     simplifies complex HR tasks, ensuring efficiency and accuracy. Empower your team with seamless
@@ -634,8 +613,9 @@
                     management by fostering employee engagement and development. Our integrated solution supports
                     performance tracking, training initiatives, and talent retention strategies, providing a holistic
                     approach to workforce optimization.
+                    </b>
                   </p>
-                  <a class="trial-btn page-scroll" href="#">Start free trial</a>
+                  <a class="trial-btn page-scroll" href="#"><b>get B-FLOW</b></a>
                 </div>
               </div>
               <!-- end about-details -->
@@ -649,7 +629,8 @@
                     <img src="/assets/images/query.png" width="80px" alt="">
                   </a>
                   <h4> B Query </h4>
-                  <p>
+                  <p class="lead">
+                    <b>
                     BQuery is your go-to Business Data Analytics software, providing powerful insights at your
                     fingertips. Unleash the potential of your data with user-friendly tools, dynamic visualizations, and
                     advanced analytics. From real-time performance tracking to predictive modeling, BQuery empowers
@@ -658,9 +639,10 @@
                     speaks, and businesses thrive Whether you're a small startup or a large enterprise, BQuery scales
                     with your business, providing a robust foundation for data-driven decision-making. Elevate your
                     analytical capabilities and unlock the full potential of your business with BQuery.
+                    </b>
 
                   </p>
-                  <a class="trial-btn page-scroll" href="#">Start free trial</a>
+                  <a class="trial-btn page-scroll" href="#"><b>get BQuery</b></a>
                 </div>
               </div>
               <!-- end about-details -->
@@ -675,7 +657,8 @@
                     <img src="/assets/images/Docs.png" width="80px" alt="">
                   </a>
                   <h4>B Docs</h4>
-                  <p>
+                  <p  class="lead">
+                    <b>
                     B-Docs is a cutting-edge business document management software designed to streamline your office
                     workflows. With powerful file organization, seamless collaboration tools, and secure document
                     storage, B-Docs simplifies the way you manage and access your business files and office
@@ -684,8 +667,9 @@
                     the clutter of physical documents and welcome a digital era of efficiency. With B-Docs, seamlessly
                     transition to a paperless environment, eliminating the need for manual document handling, storage,
                     and retrieval.
+                    </b>
                   </p>
-                  <a class="trial-btn page-scroll" href="#">Start free trial</a>
+                  <a class="trial-btn page-scroll" href="#"><b>get B-Docs</b></a>
                 </div>
               </div>
               <!-- end about-details -->
@@ -706,6 +690,10 @@
       </div>
     </div>
 
+    
+
+
+
     <!-- End Service area -->
     <div class="container-fluid center">
       <div class="bg">
@@ -713,6 +701,70 @@
       </div>
 
     </div>
+
+
+
+   
+<div style="width: 960px; margin: 0 auto; padding-top: 80px; padding-bottom: 80px;"> 
+
+    <h1> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star " aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>  <i class="fa fa-star" aria-hidden="true"></i></h1>
+    <div class="testimonial-quote group">
+        <img src="/assets/images/confident-business-woman-portrait-smiling-face.jpg">
+        <div class="quote-container">
+            <blockquote>
+                <p>Bayscope ProSuite has been a game-changer for our small business. Having all the essential tools in one package simplified our daily tasks, and the included business website is a standout feature. The continuous support we receive is exceptional – it goes beyond mere assistance; it's a commitment to our success. Bayscope ProSuite is the backbone of our growth strategy.”</p>
+            </blockquote>  
+            <cite><span>Alice M.</span><br>
+              Founder <br>
+              CreativeCraft Studios
+            </cite>
+        </div>
+    </div>    
+        
+    <hr style="margin: 60px auto; opacity: .5;">
+  
+    <h1 class="text-warning"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star " aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>  <i class="fa fa-star" aria-hidden="true"></i></h1>        
+    <div class="testimonial-quote group right">
+        <img src="/assets/images/business-man-banner-concept-with-copy-space.jpg">
+        <div class="quote-container">
+            <div>
+                <blockquote>
+                    <p>Bayscope ProSuite has truly transformed the way we operate. The all-in-one business solution not only streamlined our analytics, document management, and HR processes but also provided us with a tailored website that perfectly reflects our brand. The 24/7 support is unparalleled – it's like having a dedicated team by our side. Bayscope ProSuite is not just a suite; it's a growth partner.”</p>
+                </blockquote>  
+                <cite><span>Micheal H.</span><br>
+                  HR Manager<br>
+                  InnovateTech Corp
+                </cite>
+            </div>
+        </div>
+    </div>     
+
+    <hr style="margin: 60px auto; opacity: .5;">
+
+    <h1 class="text-success"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star " aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>  <i class="fa fa-star" aria-hidden="true"></i></h1>        
+    <div class="testimonial-quote group left">
+        <img src="/assets/images/portrait-confident-successful-young-african-american-businessman-wearing-stylish-glasses.jpg">
+        <div class="quote-container">
+            <div>
+              <blockquote><p>B-Flow has revolutionized how we handle HR tasks in our business. The simplicity and efficiency it brings to talent management and payroll processing are outstanding. The user-friendly interface and insightful analytics make it a must-have tool for any business looking to streamline HR operations. Highly recommend!”</p>
+                </blockquote>  
+                <cite><span>Adebayo T.</span><br>
+                  CEO<br>
+                  TechInnovate 
+                </cite>
+            </div>
+        </div>
+    </div>   
+      
+    <hr style="margin: 60px auto; opacity: .5;">
+    
+   
+
+</div>
+
+
+<hr>
+
     <div class="container">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class=" services-head text-center">
@@ -748,7 +800,8 @@
         </div>
 
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">An advanced business website that speaks for you.  <span class="text-muted"> quite intersting</span></h2>
+          <h2 class="featurette-heading">An advanced business website that speaks for you.  <span class="text-muted"> Be visible
+          </span></h2>
           <p class="lead">ProSuite – the all-in-one solution that not only provides access to powerful tools but also includes a tailored business website designed to suit your unique nature. Make your mark online and streamline operations seamlessly with our comprehensive Business Suite.</p>
         </div>
       </div>
@@ -768,14 +821,15 @@
       </div>
       <div class="container-fluid">
         <div class="bg">
-      <a class="ready-btn  m-2 page-scroll" href="client/signup/">Get proSuite</a>
+      <a class="ready-btn  m-2 page-scroll" href="/prosuite">Get proSuite</a>
     </div>
     </div>
       <hr class="featurette-divider">
-     
+      <h3>Talk to us <a href="tel:+2348145931080"><i class="fa fa-phone" aria-hidden="true"></i> +2348145931080,</a>  <a href="mailto:business@bayscope.com"><i class="fa fa-mail-forward" aria-hidden="true"></i> business@bayscope.com</a>  </h3>
         </div>
-      <h3>make enquiries now! +2348145931080,</h3>
      
+     
+      
 
          <!-- Start Footer bottom Area -->
   <footer>
