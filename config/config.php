@@ -24,7 +24,7 @@
         'default_locale'=>'en_US',
         'date_format'=>'Y-m-d',
         'time_format'=>'H:i:s',
-        error_log_path=>'../storage/logs/error.log',
+       ' error_log_path'=>'../storage/logs/error.log',
         
   ],
 
@@ -38,7 +38,7 @@
 
      'db'=> [
 
-        'driver' =>'mysql',
+        'driver' =>'mysqli',
         'host' => 'localhost',
         'database' => 'customers',
         'username' => 'root',

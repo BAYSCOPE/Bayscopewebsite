@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,8 +71,27 @@ Overall, these pages need more secure handling of credentials, server-side valid
 
     <div class="container mt-3">
             <div class="row" style="box-shadow: 0px 0px 5px black; background-color: white;">
+          
               <div class="col-md-6 p-5" style="display: flex; justify-content: space-between; align-items: center; justify-content: center;" >
-                <form action="/action_page.php" style="width: 100%;"  >
+            
+                <form action="login.php" method="post" style="width: 100%;"  >
+                <?php  if(isset($_SESSION['msg'])){
+            
+            ?>
+            <div
+             class="alert alert-info alert-dismissible fade show"
+             role="alert"
+            >
+             <button
+               type="button"
+               class="btn-close"
+               data-bs-dismiss="alert"
+               aria-label="Close"
+             ></button>
+            
+             <strong> <?php echo $_SESSION['msg'] ?></strong>
+            </div>
+            <?php }   unset($_SESSION['msg'])?>
                     <div class="mb-3 mt-3">
                       <label for="email" class="form-label" >Email:</label>
                       <input type="email" class="form-control " id="pwd" placeholder="Enter email" name="email" required>
@@ -76,7 +99,7 @@ Overall, these pages need more secure handling of credentials, server-side valid
                     </div>
                     <div class="mb-3 wrapper" >
                       <div class="pass-field new">
-                        <input type="password" style="height: 40px;"  class="pwd form-control mt-3 " placeholder="password">
+                        <input type="password" style="height: 40px;" name="password"  class="pwd form-control mt-3 " placeholder="password">
                         <i class="fa-solid fa-eye " id="eye"></i>
                         </div>
                       <i class="fa-solid fa-lock icon"></i>
@@ -86,7 +109,7 @@ Overall, these pages need more secure handling of credentials, server-side valid
                      
                     <div class="form-check mb-3">
                       <label class="form-check-label">
-                        <input class="form-check-input text-start" type="checkbox" name="remember" required> Remember me
+                        <input class="form-check-input text-start" type="checkbox" name="remember" > Remember me
                       </label>
                       <span style="float: right ;"><a href="" class=" forgot" >Forgot password?</a> </span>
                     </div> 
@@ -100,7 +123,7 @@ Overall, these pages need more secure handling of credentials, server-side valid
                   <h1 style="font-weight: bold; color: aqua;">LOGIN </h1>
                     <p>Login to access your Product(s)</p>
                     <ul>
-                        <li style="list-style: none; ">Don't have an account? <a class="h4 btn  btn-light" href="../signup/index.html" style="text-decoration: none; color: rgb(0, 0, 0);">Sign up </a></li>
+                        <li style="list-style: none; ">Don't have an account? <a class="h4 btn  btn-light" href="../signup/" style="text-decoration: none; color: rgb(0, 0, 0);">Sign up </a></li>
                     </ul>
                    <div class="btn-group gap-3">
                     <a href="../signup/index.html" class="btn btn-outline-dark" > SIGN UP</a> 

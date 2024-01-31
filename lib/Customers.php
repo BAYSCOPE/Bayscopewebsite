@@ -1,6 +1,6 @@
 <?php
 namespace Customers;
- 
+
 class Customer {
 
     /**
@@ -34,10 +34,10 @@ class Customer {
  * 
  */
   
-    public function __construct($email) {
+    public function __construct($email ) {
       
-        $this->email = $email;
-       
+      
+       $this->email = $email;
     }
 
 
@@ -59,11 +59,83 @@ class Customer {
 public static function getDb() {
     $config = require __DIR__. '/../config/config.php';
     $db = $config['db'];
-    return new mysqli($db['host'], $db['username'], $db['password'], $db['database']);
+    return mysqli_connect($db['host'], $db['username'], $db['password'], $db['database']);
+
 }
+   
 
 
-   /**
+
+ /**
+     * 
+     * use this method to get all customer records from the database.
+     * it returns an array of customer records.
+     * 
+     */
+
+     public static function getAll() {
+        $db = static::getDb();
+        $sql = 'SELECT * FROM customers';
+        $stmt = $db->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $customers = [];
+        while($data = $result->fetch_assoc()) {
+            $customers[] = $data;
+        }
+        return $customers;
+    }
+    
+
+    
+    /**
+     * 
+     * use this method to get a single customer record from the database.
+     * 
+     * 
+     * */
+
+
+   
+     public  function getData() {
+        $db = static::getDb();
+        $sql = 'SELECT * FROM customers WHERE email =?';
+        $stmt = $db->prepare($sql);
+        $stmt->bind_param('s', $this->email);
+         $stmt->execute();
+         $result = $stmt->get_result();
+        $rows = $result->num_rows;
+        $data = $result->fetch_assoc();
+        if($rows <= 0) {
+            return [
+                'rows' => $rows,
+                'error' => 'no data found',
+                'email' => $this->email,
+                'data' => $data,
+                'status' => false,
+            ];
+           
+        }
+        $this->name = $data['org_name'];
+        $this->id = $data['id'];
+        $this->phone = $data['phone'];
+        $this->address = $data['address'];
+        $this->city = $data['city'];
+        $this->state = $data['state'];
+        $this->country = $data['country'];
+        $this->customer_type = $data['org_type'];
+        $this->created_at = $data['reg_date'];
+      //  $this->customer_id = $data['customer_id'];
+      
+        return [
+        'data' => $data,
+        'status' => true,
+        ] ;
+    }
+    
+
+
+    /**
     *  CREATE CUSTOMER FOR BAYSCOPES 🙌🙌
     * THE CREATE FUNCTION IS USED TO CREATE A NEW CUSTOMER RECORD IN THE DATABASE.
     * CALL THE FUNCTION FROM YOUR CONTROLLER AND PASS IT AN ARRAY OF DATA.
@@ -74,71 +146,32 @@ public static function getDb() {
     *
     */
 
-    public static function create( array $data) {
+
+    public  function create( array $data) {
     $db = static::getDb();
 
     $columns = array_keys($data);
     $values = array_values($data);
     $sql = 'INSERT INTO customers ('. implode(',', $columns). ') VALUES ('. str_repeat('?,', count($values) - 1). '?);';
     $stmt = $db->prepare($sql);
-    $stmt -> bind_param('ssissss',...$values);
-    $stmt->execute();
-    return $db->lastInsertId();
+    $stmt -> bind_param( str_repeat('s', count($values)),...$values);
+    //check if customer already exists by trying to get the customer data
+     $exist = $this->getData();
+      if(!$exist['status']){
+        $stmt -> execute();
+        return ['status'=> true,'msg'=> 'Account created Sucessfully'];
+      }
+      else{
+        $stmt -> close();
+        return ['status'=> false,'msg'=> 'A BayScope account with  the provided Email already exist'];
+      }
+  
+     
 
 
     }
-    /**
-     * 
-     * use this method to get all customer records from the database.
-     * it returns an array of customer records.
-     * 
-     */
-
-public static function getAll() {
-    $db = static::getDb();
-    $sql = 'SELECT * FROM customers';
-    $stmt = $db->prepare($sql);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $customers = [];
-    while($data = $result->fetch_assoc()) {
-        $customers[] = $data;
-    }
-    return $customers;
-}
-
-
-
-    /**
-     * 
-     * use this method to get a customer record from the database.
-     * 
-     * 
-     * */
-
-
    
-    public function getData() {
-        $db = static::getDb();
-        $sql = 'SELECT * FROM customers WHERE email =?';
-        $stmt = $db->prepare($sql);
-        $stmt->bind_param('i', $this->email);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $data = $result->fetch_assoc();
-        $this->name = $data['name'];
-        $this->id = $data['id'];
-        $this->phone = $data['phone'];
-        $this->address = $data['address'];
-        $this->city = $data['city'];
-        $this->state = $data['state'];
-        $this->country = $data['country'];
-        $this->customer_type = $data['customer_type'];
-        $this->created_at = $data['created_at'];
-        $this->updated_at = $data['updated_at'];
-        $this->customer_id = $data['custumer_id'];
-        return $data;
-    }
+
 
     public function update(array $data) {
         $db = static::getDb();
