@@ -1,3 +1,7 @@
+<?php 
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,21 +19,19 @@
   <link href="files/libs/bootstrap/css/bootstrap.min.css" rel="style  sheet">
 
   <!-- libsraries CSS Files -->
-  <link href="files/libs/nivo-slider/css/nivo-slider.css" rel="stylesheet">
-  <link href="files/libs/owlcarousel/owl.carousel.css" rel="stylesheet">
-  <link href="files/libs/owlcarousel/owl.transitions.css" rel="stylesheet">
-  <link href="files/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="files/libs/animate/animate.min.css" rel="stylesheet">
-  <link href="files/libs/venobox/venobox.css" rel="stylesheet">
+ 
+  <link href="/files/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
 
   <!-- Nivo Slider Theme -->
-  <link href="files/css/nivo-slider-theme.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="files/css/style.css" rel="stylesheet">
-
-  <!-- Responsive Stylesheet File -->
-  <link href="files/css/responsive.css" rel="stylesheet">
+ 
+<style>
+  .hidden{
+    display: none;
+ 
+  }
+</style>
+ 
 </head>
 <body>
   <header>
@@ -135,32 +137,47 @@
     <div class="container my-5 " >
             <div class="row" style="box-shadow: 0px 0px 5px black; background-color: white; ">
               <div class="col-md-6  p-5 "  >
-                <form action="/action_page.php" class="" >
+             <?php  if(isset($_SESSION['msg'])){
+            
+             ?>
+             <div
+              class="alert alert-danger alert-dismissible fade show"
+              role="alert"
+             >
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+             
+              <strong> <?php echo $_SESSION['msg'] ?></strong>
+             </div>
+             <?php } 
+             unset($_SESSION['msg'])?>
+                          
+                <form action="signup.php" method="post" class="" >
                     <div class="mb-3 mt-3">
-                        <label for="username"  id ="signup" class="form-label">Fullname:</label>
-                        <input type="username" class="form-control" id="username" placeholder="Enter Fullname" name="username" required>
-                        <i class="fa-solid fa-person icon"></i>
+                        <label for="org_name"  id ="signup" class="form-label">Organization name:</label>
+                        <input type="username" class="form-control" id="username" placeholder="name of Organization" name="org_name" required>
+                      <i class="fa fa-building icon" aria-hidden="true"></i>
                       </div>
                     <div class="mb-3 mt-3">
                       <label for="email" class="form-label">Email:</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                      <input type="email" class="form-control" id="email" placeholder=" Email" name="email" required>
                       <i class="fa-solid fa-envelope icon"></i>
                     </div> 
                     <div class="mb-3 mt-3">
                       <label for="tel" class="form-label">Phone no:</label>
-                      <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number here" name="phone" required>
+                      <input type="tel" class="form-control" id="phone" placeholder="Contact" name="phone" required>
                       <i class="fa-solid fa-phone-volume icon"></i>
                     </div>
                     <div class="mb-3 mt-3">
                       <label for="address" class="form-label">Address:</label>
-                      <input type="text" class="form-control" id="email" placeholder="Enter your address here" name="address" required>
+                      <input type="text" class="form-control" id="email" placeholder="Full address" name="address" required>
                       <i class="fa fa-address-card-o icon" aria-hidden="true"></i>
                     </div>
-                    <div class="mb-3">
-                      <label for="date" class="form-label">Date of Birth:</label>
-                      <input type="date" class="form-control" id="date" placeholder="Enter password" name="pwd" required>
-                   
-                    </div>
+                  
                     
   
 
@@ -168,29 +185,29 @@
 
       <div class="select_option">
         <label for="country" class="form-label"> Country:</label>
-          <select class="form-select country mb-3" aria-label="Default select example" onchange="loadStates()">
+          <select class="form-select country mb-3" name="country" aria-label="Default select example" onchange="loadStates()">
               <option selected>Select Country</option>
           </select>
           <label for="State" class="form-label"> State:</label>
-          <select class="form-select state mb-3" aria-label="Default select example" onchange="loadCities()">
+          <select class="form-select state mb-3" name="state" aria-label="Default select example" onchange="loadCities()">
               <option selected>Select State</option>
           </select>
           <label for="City" class="form-label"> City:</label>
-          <select class="form-select city mb-3" aria-label="Default select example">
+          <select class="form-select city mb-3" name="city" aria-label="Default select example">
               <option selected>Select City:</option>
           </select>
       </div>
-      <label for="customer" class="form-label"> Customer type:</label>
-      <select id="customer" class="form-select city mb-3" aria-label="Default select example" required>
-          <option selected>Select Customer type:</option>
+      <label for="customer" class="form-label"> Organization type:</label>
+      <select id="customer" name="org_type" class="form-select city mb-3" aria-label="Default select example" required>
+          <option selected>Select Organization type:</option>
           <option value="Individual">Individual</option>
           <option value="Business">Business</option>
           <option value="Company">Company</option>
       </select>
-
+    <input class="hidden" style="dispaly:none" name="customer_id" value=" <?php  echo 'BAY-' . rand(1000,9999) ?> " >
                     <div class="wrapper ">
                       <div class="pass-field">
-                        <input type="password" id="passwordInput" class="form-control" placeholder="Create password">
+                        <input type="password" id="passwordInput" name="password" class="form-control" placeholder="Create password">
                         <i class="fa-solid fa-eye"></i>
                         
                       </div>
@@ -241,11 +258,11 @@
                     <h1 style="font-weight: bold; color: aqua;">SIGN UP </h1>
                     <p>Sign up to have access to Bayscopes  Products and Services in one account.</p>
                     <ul>
-                        <li style="list-style: none; ">Already have an account? <a class="h4 btn  btn-light" href="../login/index.html" style="text-decoration: none; color: rgb(0, 0, 0);">Log in </a></li>
+                        <li style="list-style: none; ">Already have an account? <a class="h4 btn  btn-light" href="../login/" style="text-decoration: none; color: rgb(0, 0, 0);">Log in </a></li>
                     </ul>
                    <div class="btn-group gap-3" id="signup">
                       <a href="#signup" class="btn btn-outline-dark" > SIGN UP</a>
-                      <a href="../login/index.html" class="btn btn-outline-dark"> LOG IN</a>  
+                      <a href="../login/" class="btn btn-outline-dark"> LOG IN</a>  
                    </div>
                    <div class="container pt-5 ">
                     <span style="color: aqua; margin-right: 10px;" class="h6">Follow us On:</span>
