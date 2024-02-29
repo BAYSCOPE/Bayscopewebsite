@@ -1,5 +1,5 @@
 <?php
-namespace Customers;
+namespace Bayscope;
 
 class Customer {
 
@@ -109,14 +109,15 @@ public static function getDb() {
         if($rows <= 0) {
             return [
                 'rows' => $rows,
-                'error' => 'no data found',
+                'msg' => 'no data found',
                 'email' => $this->email,
                 'data' => $data,
                 'status' => false,
             ];
            
         }
-        $this->name = $data['org_name'];
+        $this->email= $data['email'];
+        $this->org_name = $data['org_name'];
         $this->id = $data['id'];
         $this->phone = $data['phone'];
         $this->address = $data['address'];
@@ -125,7 +126,7 @@ public static function getDb() {
         $this->country = $data['country'];
         $this->customer_type = $data['org_type'];
         $this->created_at = $data['reg_date'];
-      //  $this->customer_id = $data['customer_id'];
+        $this->customer_id = $data['customer_id'];
       
         return [
         'data' => $data,
@@ -177,7 +178,7 @@ public static function getDb() {
         $db = static::getDb();
         $columns = array_keys($data);
         $values = array_values($data);
-        $sql = 'UPDATE customers SET '. implode(' =?, ', $columns).'=? WHERE id ='. $this->id . ';';
+        $sql = 'UPDATE customers SET '. implode(' =?, ', $columns).'=? WHERE email ='. $this->email . ';';
         $stmt = $db->prepare($sql);
         $stmt->bind_param(str_repeat('s', count($data) - 1).'s',...$values);
         $stmt->execute();
@@ -186,9 +187,9 @@ public static function getDb() {
 
     public function delete() {
         $db = static::getDb();
-        $sql = 'DELETE FROM customers WHERE id =?';
+        $sql = 'DELETE FROM customers WHERE email =?';
         $stmt = $db->prepare($sql);
-        $stmt->bind_param('i', $this->id);
+        $stmt->bind_param('s', $this->email);
         $stmt->execute();
         return $stmt->affected_rows; 
     }

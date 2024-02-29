@@ -1,5 +1,11 @@
 <?php 
 session_start();
+
+if(isset($_COOKIE['email'])){
+  $_SESSION['email'] = $_COOKIE['email'];
+  header('Location:../dashboard/');
+  exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -13,56 +19,6 @@ session_start();
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
 </head>
 <body>
-<!--
-    I HAD TO RESTRUCTURE THE FILES .. THE STRUCTURING WAS UNPROFESSIONAL 
-    VISITING LOGIN WILL BE LIKE  https://bayscope/login&signup/login.html
-    IT IS NOW RESTRUCTURED AS https://bayscope/cleint/login
-    Login page index.html
-
-Add proper title and meta tags for SEO
-Use HTTPS for form submission instead of HTTP
-Implement proper form validation and error handling
-Send form data to server and validate credentials there rather than client-side
-After successful login, redirect to account page rather than staying on login page
-Allow password reset from login page
-Consider using a login framework like OAuth instead of custom form
-Signup page (index.html)
-
-Add title and meta tags
-Validate password match with confirm password field
-Validate password strength and requirements
-Send form to server and validate input there, send confirmation email
-After signup, log user in automatically instead of making them login
-Use HTTPS for form submission
-Implement better UX like password visibility toggle
-Add more fields like name, phone, etc as you see on the lib/candclass.php
-
- public $name;
-    public $email;
-    public $phone;
-    public $address;
-    public $city;
-    public $state;
-    public $country;
-    public $customer_type;
-    public $created_at;
-    public $updated_at;
-    public $customer_id;
-
-these are the fields you need to add    ---------------
-
-
-
-
-
-
-
-Use a proper responsive layout for forms instead of two columns
-Overall, these pages need more secure handling of credentials, server-side validation, better UX, and more professional design. The developer should implement modern authentication practices and not just use a basic HTML form.
-
-
-
--->
 
 
 
@@ -74,7 +30,7 @@ Overall, these pages need more secure handling of credentials, server-side valid
           
               <div class="col-md-6 p-5" style="display: flex; justify-content: space-between; align-items: center; justify-content: center;" >
             
-                <form action="login.php" method="post" style="width: 100%;"  >
+                <form action="processlogin.php" method="post" style="width: 100%;"  >
                 <?php  if(isset($_SESSION['msg'])){
             
             ?>
@@ -113,13 +69,13 @@ Overall, these pages need more secure handling of credentials, server-side valid
                       </label>
                       <span style="float: right ;"><a href="" class=" forgot" >Forgot password?</a> </span>
                     </div> 
-                    <button type="submit" class="btn submit" >Login</button>
+                    <button type="submit" class="btn submit btn-info col-5" >Login</button>
                   </form>
             </div>
                 <div class="col-md-6 p-2 text-center " style="background-color: #000; color: white;
                 display: flex; justify-content: center; flex-direction: column; align-items: center;">
                  <div class="container" style="margin: 20px; border: 2px solid white; width: 80%; height: auto; padding: 30px;" >
-                  <img src="/assets/images/logo.jpg" alt="">
+                  <img src="/assets/images/bay-logo.png" alt="">
                   <h1 style="font-weight: bold; color: aqua;">LOGIN </h1>
                     <p>Login to access your Product(s)</p>
                     <ul>
