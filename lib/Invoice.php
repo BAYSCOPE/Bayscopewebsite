@@ -46,7 +46,7 @@ $sql = "SELECT * FROM invoice WHERE email =? AND `status` = ? ";
      $stmt->execute();
      $result = $stmt->get_result();
      $rows = $result->num_rows;
-     $this->count = $rows;
+     $this->count = $rows;  
      $data = $result->fetch_assoc();
      if($rows <= 0) {
      return [
