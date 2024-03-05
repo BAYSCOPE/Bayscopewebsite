@@ -943,15 +943,16 @@ div#preloader {
 
 .footer-area {
   padding: 40px 0;
-  background: #f9f9f9;
+  background: black;
+  color: white !important;
 }
 
 .footer-head p {
-  color: #444;
+  color: white;
 }
 
 .footer-head h4 {
-  color: #444;
+  color: white;
   font-size: 16px;
   letter-spacing: 2px;
   padding-bottom: 10px;
@@ -963,7 +964,7 @@ div#preloader {
 }
 
 .footer-logo h2 {
-  color: #222;
+  color: white;
   padding: 0;
   margin: 0;
   font-size: 36px;
@@ -981,7 +982,7 @@ div#preloader {
 
 .footer-icons ul li a {
   border: 1px solid #444;
-  color: #444;
+  color: white;
   display: block;
   font-size: 16px;
   height: 40px;
