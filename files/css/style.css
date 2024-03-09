@@ -870,7 +870,26 @@ div#preloader {
   text-transform: uppercase;
   transition: all 0.4s ease 0s;
 }
+.ready-btn-opp{
+  border: 1px solid black;
+  color: #000;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
 
+}
+.ready-btn-opp:hover{
+  border: 1px solid #3cd6ed;
+  color: #fff;
+  background-color: #3cd6ed;
+}
 .single-blog .ready-btn:hover {
   border: 1px solid #3EC1D5;
   color: #fff;
@@ -943,16 +962,16 @@ div#preloader {
 
 .footer-area {
   padding: 40px 0;
-  background: black;
-  color: white !important;
+  background:whitesmoke;
+  color: black !important;
 }
 
 .footer-head p {
-  color: white;
+  color:black;
 }
 
 .footer-head h4 {
-  color: white;
+  color:black;
   font-size: 16px;
   letter-spacing: 2px;
   padding-bottom: 10px;
@@ -964,7 +983,7 @@ div#preloader {
 }
 
 .footer-logo h2 {
-  color: white;
+  color:black;
   padding: 0;
   margin: 0;
   font-size: 36px;
@@ -982,7 +1001,7 @@ div#preloader {
 
 .footer-icons ul li a {
   border: 1px solid #444;
-  color: white;
+  color: black;
   display: block;
   font-size: 16px;
   height: 40px;
