@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +43,253 @@
   <!-- Responsive Stylesheet File -->
   <link href="../files/css/responsive.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
   <style>
+    .section1 {
+      width: 100%;
+      height: 80vh;
+      background-color: #F8F8F8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section1_wrapper {
+      width: 90%;
+      height: 70vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .section1_right {
+      width: 50%;
+      height: 80%;
+      /* background-color: green; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .list_wrap {
+      display: flex;
+      flex-direction: column;
+      margin: 30px 0 0 0;
+    }
+
+    .linewrap {
+      line-height: 20px;
+      margin: 20px 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+    }
+
+    .linewrap img {
+      margin: 0 10px 0px 0;
+    }
+
+    .section2 {
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: white;
+      margin-top: 20px;
+      padding: 60px 0 80px 0;
+    }
+
+    .section2 p {
+      text-align: center;
+      width: 72%;
+      font-style: oblique;
+      font-weight: lighter;
+      font-size: 15px;
+    }
+
+    .section2 h2 {
+      margin: 30px 0;
+    }
+
+    .section_line {
+      width: 100%;
+      height: 1px;
+      background-color: #000000c5;
+    }
+
+    .section3 {
+      width: 100%;
+      max-height: 1500px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 100px 0;
+    }
+
+    .section3 button {
+      padding: 10px 40px;
+      border-radius: 20px;
+      border: none;
+      background: linear-gradient(90deg, #00ffff, #000000);
+      color: white;
+    }
+
+    .section3 h3 {
+      margin: 20px 0;
+      width: 50%;
+      text-align: center;
+    }
+
+    .section3_navigation {
+      /* background-color: red; */
+      height: 90%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section3_header {
+      width: 100%;
+      background-color: #ededed;
+      height: 15%;
+      border-radius: 8px 8px 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* align-items: center; */
+    }
+
+    .spanwrap {
+      width: 100%;
+      height: 90%;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .section3_header span:hover {
+      cursor: pointer;
+    }
+
+    .section3_header span {
+      display: flex;
+      justify-content: center;
+      width: 18%;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: sans-serif;
+
+    }
+
+    .activee {
+      border-bottom: 2px solid #3EC1D5;
+      padding-top: 17px;
+      width: 17%;
+      padding-bottom: 15px;
+
+
+    }
+
+    .section3_hero {
+      width: 100%;
+      height: 70%;
+      margin: 80px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .section3_herotexts {
+      width: 50%;
+      /* background-color: green; */
+      text-align: center;
+    }
+
+    .section3_herotexts h1 {
+      font-size: 45px
+        /* width: 70% */
+      ;
+      margin: 0 0 30px 0;
+    }
+
+    .teamsection {
+      width: 100%;
+      height: 65vh;
+      /* background-color: #001d21; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 0;
+    }
+
+    .teamsection_wrapper {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* background-color: rgb(1, 1, 79); */
+    }
+
+    .teamsection_wrapper h1 {
+      background: linear-gradient(to right, black, #00ffff, black, #00e0e0, #00e0e0);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    .teamsection_wrapper p {
+      margin: 25px 0 10px 0;
+      width: 40%;
+    }
+
+    .team_card_wrap {
+      width: 100%;
+      height: 80%;
+      /* background-color: tomato; */
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .teamcard {
+      width: 24%;
+      height: 130px;
+      /* background-color: purple; */
+      margin: 10px 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+
+    .teamcard img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 10px 0 0;
+      object-fit: cover;
+    }
+
+    .text_wrap span {
+      font-style: italic;
+      line-height: 25px;
+      margin-left: 11px;
+    }
+
+    .text_wrap h4 {
+      margin-left: 11px;
+    }
+
+
+
+
+
     .video1:hover {
       transform: scale(1.9);
     }
@@ -81,10 +326,7 @@
         transform: scale(1.2);
       }
 
-      .img {
-        display: none;
-        z-index: 2;
-      }
+      .img {}
     }
 
 
@@ -120,13 +362,16 @@
       .mobile {
         display: none;
       }
-      .container-fluid{
+
+      .container-fluid {
         height: 80px;
       }
-      .container-fluid h1{
+
+      .container-fluid h1 {
         font-size: medium;
       }
-      h2{
+
+      h2 {
         font-size: large;
       }
     }
@@ -178,14 +423,16 @@
     .container-fluid .bg {
       width: 100%;
       position: absolute;
-      background-color:#3EC1D5;
-     
+      background-color: #3EC1D5;
+
       padding-left: 20px;
 
     }
-.bg a{
-  margin-bottom: 30px;
-}
+
+    .bg a {
+      margin-bottom: 30px;
+    }
+
     .container-fluid {
       margin-left: 0;
       padding-left: 0;
@@ -204,6 +451,7 @@
 
       margin-left: 60px;
     }
+
     /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -221,7 +469,7 @@
       margin-right: .75rem;
       margin-left: .75rem;
     }
-    
+
     .featurette-divider {
       margin: 5rem 0;
       /* Space out the Bootstrap <hr> more */
@@ -257,13 +505,333 @@
         margin-top: 7rem;
       }
     }
+
+    tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      position: relative;
+
+    }
+
+    /* Style the buttons inside the tab */
+
+
+    /* Create an active/current tablink class */
+
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+
+    }
+
+    .tablinks {
+      padding: 20px;
+    }
+
+    /* Style the close button */
+    .topright {
+      float: right;
+      cursor: pointer;
+      font-size: 28px;
+    }
+
+    .topright:hover {
+      color: red;
+    }
+
+    .pt-4 {
+      padding-top: 40px;
+      margin-top: 50px;
+    }
+
+    p-5 {
+      padding: 50px;
+    }
+
+    .product-container {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    @media screen and (max-width:500px) {
+      .product-container {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+
+    .mt-5 {
+      margin-top: 70px;
+    }
+
+    .hero-content {
+      padding-top: 60px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 20px;
+    }
+
+    .hero-image {
+      width: 580px;
+      height: 550px;
+      border-bottom-left-radius: 100%;
+      border-bottom-right-radius: 100%;
+      margin-bottom: 40px;
+    }
+
+    .well-right {
+      padding-left: 70px;
+      margin-left: 30px;
+
+
+    }
+
+    .buttons {
+      margin-top: 60px;
+    }
+
+    .well-left {
+      padding-left: 50px;
+      padding-top: 30px;
+
+    }
+
+    .highlight {
+      background-color: #3EC1D5;
+      color: white;
+      padding: 5px;
+    }
+
+    .big-text {
+      font-size: 45px;
+      line-height: 1.5;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+    }
+
+    .header-area {
+      background-color: black;
+    }
+
+    .pt-2 {
+      padding-top: 20px;
+    }
+
+    .mt-2 {
+      margin-top: 20px;
+    }
+
+    .pt-5 {
+      padding-top: 50px;
+    }
+
+    .ml-4 {
+      padding-left: 40px;
+    }
+
+    .mb-4 {
+      margin-bottom: 40px;
+
+    }
+
+    .header-button {
+
+      background-color: #3EC1D5;
+      color: white;
+      padding: 10px 30px 10px 30px;
+      border-radius: 10px;
+      font-size: 25px;
+      font-weight: bold;
+
+    }
+
+    .header-button-outline {
+      background-color: white;
+      color: #3EC1D5;
+      padding: 10px 30px 10px 30px;
+      border-radius: 10px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    /** 
+typing and deleting animation
+    **/
+    .text-container {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    th {
+      font-size: 20px;
+    }
+
+    .td-img {
+      text-align: center;
+    }
+
+    @media screen and (max-width:800px) {
+      body {
+        width: 100%;
+        margin: 0px;
+
+      }
+
+      .well-right {
+        text-align: left;
+
+
+      }
+
+      .well-left {
+        padding-left: 5px;
+        padding-top: 1px;
+        z-index: 2;
+
+      }
+
+      .hero-image {
+        position: absolute;
+        width: 80vw;
+        height: 40vh;
+        top: -600px;
+        border-bottom-right-radius: 0px;
+        right: -15px;
+
+        opacity: 0.1;
+      }
+
+      .highlight {
+        background-color: #3EC1D5;
+        color: white;
+        padding: 5px;
+      }
+
+      .big-text {
+        font-size: 27px;
+        line-height: 1.5;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+      }
+
+      .hero-content {
+        height: 40vh;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+      }
+
+      .header-button,
+      .header-button-outline {
+        font-size: 16px;
+      }
+
+      .buttons {
+        margin-bottom: 80px;
+      }
+
+      .section1_right {
+        position: absolute;
+        left: -10px;
+        width: 90vw;
+        height: 90vh;
+      }
+
+      .spanwrap {
+        width: 90vw;
+        font-size: 10px;
+      }
+
+      .section3_header span {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        font-weight: ;
+        font-size: 12px;
+        font-family: sans-serif;
+
+      }
+
+      .plan-image {
+        opacity: .1;
+      }
+
+      th {
+        font-size: 20px;
+
+      }
+
+      .td-img {
+        text-align: right;
+
+      }
+
+      .tabcontent {
+        margin-top: 50px;
+      }
+
+    }
+
+    hr {
+      display: block;
+      height: 3px;
+      color: #000000;
+    }
+
+    .price-btn {
+      background-color: #000000;
+      color: white;
+
+      padding: 12px;
+
+      text-align: center;
+
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .cart-btn {
+      background-color: #3EC1D5;
+      color: #f1f1f1;
+
+      text-align: center;
+      padding: 12px;
+
+      font-weight: bold;
+      font-size: 15px;
+
+      cursor: pointer;
+      box-shadow: 5px 5px 10px black;
+    }
+
+    .big {
+      font-size: 30px;
+    }
+
+    .number {
+      border-radius: 50%;
+      padding: 40px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+
+    }
   </style>
 
 </head>
 
 
 <body>
-  
+
   <header>
     <!-- header-area start -->
     <div id="sticker" class="header-area">
@@ -292,36 +860,34 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
+                  <li class="">
                     <a class="page-scroll" href="/">Home</a>
                   </li>
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
                         class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
 
-                       <li><a href='/services/software-development'>Software development</a></li>
-                      <li><a href='/services/web-development'>Web services</a></li>   
+                      <li><a href='/services/software-development'>Software development</a></li>
+                      <li><a href='/services/web-development'>Web services</a></li>
                       <li><a href='/services/app-development/'>mobile service</a></li>
 
 
                       <li><a href=#>Product Design</a></li>
                     </ul>
                   </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<span
+                  <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BayScope<span
                         class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href='/forbusiness/'>BayScope Business</a></li>
+                      <li class="active"><a href='/forbusiness/'>BayScope Business</a></li>
                       <li><a href='/forschools/'>BayScope Schools</a></li>
                       <li><a href='/forhealths'>Bayscope Healths</a></li>
                       <li><a href='/leadership'> BayScope Real Estate</a></li>
-                      <li><a href=/pricing>Pricing Plan</a></li>
-                      <li><a href='/faqs'>FAQ</a></li>
+
                     </ul>
                   </li>
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
                         class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href=#>BQuery</a></li>
                       <li><a href=#>B Flow</a></li>
                       <li><a href=#>B Docs</a></li>
 
@@ -342,7 +908,8 @@
                     <a class="page-scroll" href="#portfolio"> </a>
                   </li>
                   <li class=" dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i> <span class="caret" ></span> </a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
+                        aria-hidden="true"></i> <span class="caret"></span> </a>
                     <ul class="dropdown-menu" role="menu">
                       <li><a href="/client/login">Sign in</a></li>
                       <li><a href="/client/signup">Sign up </a></li>
@@ -362,96 +929,12 @@
     </div>
     <!-- header-area end -->
   </header>
-  <!-- header end -->
 
   <!-- Start Slider Area -->
-  <div id="home" class="slider-area">
-    <div class="bend niceties preview-2">
-      <div id="ensign-nivoslider" class="slides">
-        <img src="/assets/images/landingbusinespage.jpg" alt="" title="#slider-direction-1" />
-        <img src="/assets/images/prosuitebusinesspage.jpg" alt="" title="#slider-direction-2" />
-      
-      </div>
 
 
-       <!-- direction 1 -->
-       <div id="slider-direction-1" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1"># Business Suite </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Explore Remarkable  Solutions Tailored For Your Business Needs</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn page-scroll" href="/client/signup/">Create an Account</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-one">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1"># Business  Suite  </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Introducing BayScope ProSuite Where every tool meets every need<br>
-                  </h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn page-scroll" href="client/signup/">Purchase Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-     
 
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1"># IN EVERY SUCCESSFUL BUSINESS SOMEONE MADE A RIGHT CHOICE, MAKE YOURS TODAY!
-                  </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">BayScope - IT Business Solutions </h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn page-scroll" href="forbusiness/">Purchase Now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
   <!-- End Slider Area -->
 
 
@@ -461,387 +944,571 @@
 
 
 
-
-
-
-
-  <div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-      <div class=" text-center">
-        <h2> <mark>Stay ahead with BayScope Business Suite</mark></h2>
-      </div>
-    </div>
-  </div>
   <!--Content starts-->
- 
-
-  <div id="about" class="about-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h2>Business Suite</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- single-well start-->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="well-left">
-            <div class="single-well">
-              <img class="img" src="/assets/images/portrait-confident-successful-young-african-american-businessman-wearing-stylish-glasses.jpg" alt="" srcset="">
-              <video class="video1" src="../assets/videos/AdvertBAYSCOPE.mp4" autoplay loop width="530px"></video>
-
-            </div>
-          </div>
-        </div>
-        <!-- single-well end-->
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="well-middle">
-            <div class="single-well">
-              <a href="#">
-                <h4 class="sec-head">Business Suite</h4>
-              </a>
-              <p class="about">
-                Welcome to BayScope Business Solutions - Streamlining Success, Amplifying Growth
-
-                BayScope Business Solutions is your comprehensive toolkit for navigating the dynamic landscape of modern
-                business. We understand the diverse challenges faced by businesses today, and our business module is
-                designed to provide strategic, all-encompassing solutions that drive efficiency, innovation, and
-                sustainable growth.
-
-                What Sets Us Apart:
 
 
-
+  <div id="about" class="top-area mt-5">
+    <div class="container-fluid">
+      <div class="hero-content">
+        <div class="row">
+          <!-- single-well start-->
+          <div class="col-md-6 col-sm-6 col-xs-12 text-left">
+            <div class="well-left">
+              <p class="big-text">
+                Welcome to BayScope <span class="highlight"> Business Suite</span><br> Explore Remarkable Solutions
+                Tailored to grow Your Business.
               </p>
-              <ul>
-                <li>
-                  <i class="fa fa-check"></i> <b> 1. Integrated Business Suite:</b>
-                  BayScope offers a powerful suite of business tools that cover every aspect of your operation. From
-                  project management to customer relationship management, financial analysis, and beyond, our integrated
-                  solutions streamline your workflows for optimal productivity.
-
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> <b>2. Tailored to Your Business:</b>
-                  Recognizing the unique nature of every business, our solutions are fully customizable. Tailor the
-                  BayScope Business Suite to align seamlessly with your industry, goals, and operational requirements.
-
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> <b>3. Seamless Integration:</b>
-                  Integration is at the heart of our business module. BayScope seamlessly integrates with your existing
-                  systems, ensuring a smooth transition and minimizing disruption to your day-to-day operations.
-
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> <b>4. Empowering Your Team:</b>
-                  We empower your team with the tools they need to excel. From collaborative project management to
-                  insightful data analytics, our solutions enable your workforce to operate at their best, fostering a
-                  culture of innovation and excellence.
-                </li>
-
-                <li>
-
-                  <h3> How It Works:</h3>
-
-                  <b>Needs Assessment:</b>
-                  Initiate the process with a thorough needs assessment to understand the unique challenges and goals of
-                  your business. <br>
-
-                  <b> Customization:</b>
-                  Tailor the BayScope Business Suite to match the specific needs and objectives of your industry and
-                  organization. <br>
-
-                  <b>Implementation:</b>
-                  Our expert team guides you through a seamless implementation process, providing training and support
-                  to ensure a successful transition <br>
-
-                  <b> Ongoing Support:</b>
-                  BayScope is more than a business suite; it's a partnership. Benefit from continuous support, updates,
-                  and access to new features as your business grows and evolves. <br>
-
-                  <b> Join the BayScope Business Network:</b>
-                  Discover a new era of business efficiency and growth with BayScope Business Solutions. Join a network
-                  of forward-thinking enterprises that are leveraging technology to drive success. Let's shape the
-                  future of business together.
-                </li>
-              </ul>
+              <p id="typed-text" class="text-md text-secondary pt-2">
+                BayScope Business solutions is your comprehensive toolkit for navigating the dynamic landscape of modern
+                business
+              </p>
+              <div class="buttons">
+                <a href="/forbusiness/" class=" header-button btn-lg">create an account</a>
+                <a href="/forschools/" class="header-button-outline ">reach us</a>
+              </div>
             </div>
           </div>
+          <!-- single-well end-->
+          <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+            <div class="well-right">
+              <img class="hero-image"
+                src="/assets/images/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg"
+                alt="">
+            </div>
+          </div>
+          <!-- End col-->
         </div>
-        <!-- End col-->
       </div>
     </div>
   </div>
   <!-- End About area -->
-
-
-  <!-- Start Service area -->
-  <div id="services" class="services-area area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline services-head text-center">
-            <h2>Business Solutions</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="services-contents">
-          <!-- Start Left services -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-                    <img src="../assets/images/flow.jpg" width="80px" alt="">
-                  </a>
-                  <h4>B FLOW</h4>
-                  <p class="lead">
-                    <b>
-                    B Flow is an innovative Human Resource and Payroll Management software designed to streamline your
-                    business operations. From talent acquisition to payroll processing, our comprehensive solution
-                    simplifies complex HR tasks, ensuring efficiency and accuracy. Empower your team with seamless
-                    workflows, insightful analytics, and intuitive tools, allowing you to focus on what matters most –
-                    your people. Experience a new era of HR and payroll management with B Flow . B Flow goes beyond mere
-                    management by fostering employee engagement and development. Our integrated solution supports
-                    performance tracking, training initiatives, and talent retention strategies, providing a holistic
-                    approach to workforce optimization.
-                    </b>
-                  </p>
-                  <a class="trial-btn page-scroll" href="#"><b>get B-FLOW</b></a>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-                    <img src="../assets/images/query.png" width="80px" alt="">
-                  </a>
-                  <h4> B Query </h4>
-                  <p class="lead">
-                    <b>
-                    BQuery is your go-to Business Data Analytics software, providing powerful insights at your
-                    fingertips. Unleash the potential of your data with user-friendly tools, dynamic visualizations, and
-                    advanced analytics. From real-time performance tracking to predictive modeling, BQuery empowers
-                    businesses to make informed decisions, driving success and growth. Transform raw data into
-                    actionable intelligence effortlessly and elevate your decision-making with BQuery – where data
-                    speaks, and businesses thrive Whether you're a small startup or a large enterprise, BQuery scales
-                    with your business, providing a robust foundation for data-driven decision-making. Elevate your
-                    analytical capabilities and unlock the full potential of your business with BQuery.
-                    </b>
-
-                  </p>
-                  <a class="trial-btn page-scroll" href="#"><b>get BQuery</b></a>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <!-- end col-md-4 -->
-            <div class=" about-move">
-              <div class="services-details">
-                <div class="single-services">
-                  <a class="services-icon" href="#">
-                    <img src="../assets/images/Docs.png" width="80px" alt="">
-                  </a>
-                  <h4>B Docs</h4>
-                  <p  class="lead">
-                    <b>
-                    B-Docs is a cutting-edge business document management software designed to streamline your office
-                    workflows. With powerful file organization, seamless collaboration tools, and secure document
-                    storage, B-Docs simplifies the way you manage and access your business files and office
-                    correspondence. Boost productivity, enhance collaboration, and stay in control of your documents
-                    with B-Docs.B-Docs revolutionizes your business by drastically reducing paperwork. Say goodbye to
-                    the clutter of physical documents and welcome a digital era of efficiency. With B-Docs, seamlessly
-                    transition to a paperless environment, eliminating the need for manual document handling, storage,
-                    and retrieval.
-                    </b>
-                  </p>
-                  <a class="trial-btn page-scroll" href="#"><b>get B-Docs</b></a>
-                </div>
-              </div>
-              <!-- end about-details -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-
-            <!-- End Left services -->
-            <div class="col-md-4 col-sm-4 col-xs-12">
-              <!-- end col-md-4 -->
-              <div class=" about-move">
-
-                <!-- end about-details -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
+  <hr>
 
 
 
-    <!-- End Service area -->
-    <div class="container-fluid center">
-      <div class="bg">
-        <h3 style="color:white;">create your first digital presence  today! get a Business website  <a class="ready-btn m-2 page-scroll" href="/services/web-development/">Purchase Now</a></h3>
-      </div>
-
-    </div>
-
-
-
-   
-<div style="width: 960px; margin: 0 auto; padding-top: 80px; padding-bottom: 80px;"> 
-
-    <h1> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star " aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>  <i class="fa fa-star" aria-hidden="true"></i></h1>
-    <div class="testimonial-quote group">
-        <img src="../assets/images/confident-business-woman-portrait-smiling-face.jpg">
-        <div class="quote-container">
-            <blockquote>
-                <p>Bayscope ProSuite has been a game-changer for our small business. Having all the essential tools in one package simplified our daily tasks, and the included business website is a standout feature. The continuous support we receive is exceptional – it goes beyond mere assistance; it's a commitment to our success. Bayscope ProSuite is the backbone of our growth strategy.”</p>
-            </blockquote>  
-            <cite><span>Alice M.</span><br>
-              Founder <br>
-              CreativeCraft Studios
-            </cite>
-        </div>
-    </div>    
-        
-    <hr style="margin: 60px auto; opacity: .5;">
-  
-    <h1 class="text-warning"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star " aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>  <i class="fa fa-star" aria-hidden="true"></i></h1>        
-    <div class="testimonial-quote group right">
-        <img src="../assets/images/business-man-banner-concept-with-copy-space.jpg">
-        <div class="quote-container">
-            <div>
-                <blockquote>
-                    <p>Bayscope ProSuite has truly transformed the way we operate. The all-in-one business solution not only streamlined our analytics, document management, and HR processes but also provided us with a tailored website that perfectly reflects our brand. The 24/7 support is unparalleled – it's like having a dedicated team by our side. Bayscope ProSuite is not just a suite; it's a growth partner.”</p>
-                </blockquote>  
-                <cite><span>Micheal H.</span><br>
-                  HR Manager<br>
-                  InnovateTech Corp
-                </cite>
-            </div>
-        </div>
-    </div>     
-
-    <hr style="margin: 60px auto; opacity: .5;">
-
-    <h1 class="text-success"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star " aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i>  <i class="fa fa-star" aria-hidden="true"></i></h1>        
-    <div class="testimonial-quote group left">
-        <img src="../assets/images/portrait-confident-successful-young-african-american-businessman-wearing-stylish-glasses.jpg">
-        <div class="quote-container">
-            <div>
-              <blockquote><p>B-Flow has revolutionized how we handle HR tasks in our business. The simplicity and efficiency it brings to talent management and payroll processing are outstanding. The user-friendly interface and insightful analytics make it a must-have tool for any business looking to streamline HR operations. Highly recommend!”</p>
-                </blockquote>  
-                <cite><span>Adebayo T.</span><br>
-                  CEO<br>
-                  TechInnovate 
-                </cite>
-            </div>
-        </div>
-    </div>   
-      
-    <hr style="margin: 60px auto; opacity: .5;">
-    
-   
-
-</div>
-
-
-<hr>
-
-    <div class="container">
+  <div class="container">
+    <div class="row">
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class=" services-head text-center">
-          <h2> <img src="../assets/images/prosuite.png" alt="" width="200px"></h2>
-          <h3>BayScope ProSuite</h3>
-          <div class="row">
-            <div class="" class="col-md-4 col-sm-4 col-xs-12">
-              <h2> Get  <mark>ProSuite</mark> , Get all your <mark>business</mark>  tools in one place</h2>
-            </div>
-        </div>
-
-
-        <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Everything your Business needs. <span class="text-muted">more for less</span>
-          </h2>
-          <p class="lead">Unleash the power of your business with Bayscope ProSuite – your all-in-one solution. Access every tool you need in our Business Suite, streamlining analytics(BQuery), document management(B-Docs), HR (B-Flow), and more. Make a big deal of your business effortlessly, all under one roof.</p>
-        </div>
-        <div class="col-md-5">
-         <img src="../assets/images/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg"  alt="">
+        <div class="section-headline text-center">
+          <h2>Business Suite</h2>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-       
-        <div class="col-md-5 order-md-1">
-        <img src="../assets/images/bweb1.jpg" alt="">
-
-        </div>
-
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">An advanced business website that speaks for you.  <span class="text-muted"> Be visible
-          </span></h2>
-          <p class="lead">ProSuite – the all-in-one solution that not only provides access to powerful tools but also includes a tailored business website designed to suit your unique nature. Make your mark online and streamline operations seamlessly with our comprehensive Business Suite.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">24/7 Business support . <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Experience unparalleled support with Bayscope ProSuite. Beyond providing an all-in-one solution, we offer 24/7 assistance, ensuring that your business needs are attended to at every step. We're not just a service provider; we're your dedicated partner, committed to staying with you throughout your growth journey. With Bayscope ProSuite, it's not just about products; it's about a lasting partnership for success.</p>
-        </div>
-        <div class="col-md-5">
-          <img src="../assets/images/medium-shot-black-woman-running-small-business.jpg" alt="">
-
-        </div>
-      
-      </div>
-      <div class="container-fluid">
-        <div class="bg">
-      <a class="ready-btn  m-2 page-scroll" href="/prosuite">Get proSuite</a>
     </div>
-    </div>
-      <hr class="featurette-divider">
-      <h3>Talk to us <a href="tel:+2348145931080"><i class="fa fa-phone" aria-hidden="true"></i> +2348145931080,</a>  <a href="mailto:business@bayscope.com"><i class="fa fa-mail-forward" aria-hidden="true"></i> business@bayscope.com</a>  </h3>
-        </div>
-     
-     
-      
+    <div class="row">
+      <!-- single-well start-->
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="well-left">
+          <div class="single-well">
+            <img class="img" src="/assets/images/medium-shot-black-woman-running-small-business.jpg" alt="" srcset="">
+            <!-- <video class="video1" src="../assets/videos/AdvertBAYSCOPE.mp4" autoplay loop width="530px"></video> -->
 
-         <!-- Start Footer bottom Area -->
-  <footer>
-    <div class="footer-area">
-      <div class="container">
+          </div>
+        </div>
+      </div>
+      <!-- single-well end-->
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="well-middle">
+          <div class="single-well">
+            <a href="#">
+              <h4 class="sec-head">Business Suite</h4>
+            </a>
+            <p class="about" style="line-height: 1.5;">
+              Whether you're launching a startup or expanding an established venture, our solutions are crafted to fit
+              your needs. From restaurants and hotels to stores, supermarkets, and online services, we customize plans
+              to suit diverse businesses.
+            </p>
+
+            <ul>
+
+              <li>
+
+                <h3> <i class="fa fa-info-circle " aria-hidden="true"></i> How It Works:</h3>
+
+                <b> Create an account:</b> We keep our cleints close to us, create a BayScope account to kickstart your
+                journey with us . <br>
+                <b>Plan Selection: </b> Explore our range of customizable plans below and choose the one that best
+                suits your needs. Unsure? Contact us for personalized advice or to learn more about how a specific
+                plan could benefit you.<br>
+
+
+
+                <b>Service purchase:</b> Add selected plan to your cart and complete secure checkout. Our team will then
+                reach out to initiate onboarding and training.
+                <br>
+
+                <b> Service customization & management : </b> Experience personalized service customization with
+                BayScope. A dedicated specialist will collaborate with you to understand your business needs and
+                preferences. Communicate seamlessly through various channels such as live chat, WhatsApp, or phone
+                calls, all accessible from your dashboard.<br>
+
+                <b>Ongoing Support: </b>We stay with you forever. Enjoy continuous support, updates, and access to new
+                features as your
+                business grows, all accessible from your dashboard.<br>
+
+
+                <b> Join the BayScope Business Network:</b>
+                Discover a new era of business efficiency and growth with BayScope Business Solutions. Join a network
+                of forward-thinking enterprises that are leveraging technology to drive success.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End col-->
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" activee", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " activee";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+
+
+  </script>
+
+
+
+
+
+
+
+  <div class="section3">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h2>Explore Plans</h2>
+        </div>
+      </div>
+    </div>
+    <!--<div class="highlight text-gl text-center">
+    <a href="/forschools/" class="header-button-outline ml-4 mb-4"> Get started with our Plans</a>
+     </div> -->
+
+    <div class="section3_navigation">
+      <div class="section3_header">
+        <div class="spanwrap">
+          <span class="tablinks tab" onclick="openCity(event, 'webstarter')">BusinessStarter </span>
+          <span class="tablinks  tab" onclick="openCity(event, 'webpro')"> BusinessPro</span>
+          <span class="tablinks tab" onclick="openCity(event, 'prosuite')">ProSuite</span>
+
+        </div>
+
+
+      </div>
+
+      <hr>
+      <hr>
+    </div>
+
+
+
+
+
+    <div id="webstarter" class="tabcontent container section1 ">
+      <div class="section1_wrapper container">
+        <img class="plan-image" src="/assets/images/product-design.png" alt="product design">
+        <div class="section1_right">
+          <h2 class="text-center">launch your online presence with Business starter. <b style="color: #3EC1D5"> The
+              Gateway to digital footprint</b></h2>
+          <div class="table-responsive-sm">
+            <table class="table">
+              <thead class="table-light">
+                <caption>
+                  BusinessStarter Plan
+                </caption>
+                <tr>
+                  <th style="width: 70%;">Features</th>
+                  <th style="width: 30%;">BusinessStarter</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <td scope="row"><b> Basic static website</b></td>
+                  <td class="td-img"> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b> A professional Business email</b></td>
+                  <td class="td-img"> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"><b>Business information and contact details</b></td>
+                  <td class="td-img"> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b>High quality web contents</b></td>
+                  <td class="td-img"> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"><b> Continous update & 24/7 support</b> </td>
+                  <td class="td-img"> <img src="/assets/images/vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b> No customer retention features</b></td>
+                  <td class="td-img"> <img src="/assets/images/cancel.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b> No online store/service functionality</b> </td>
+                  <td class="td-img"> <img src="/assets/images/cancel.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"><b> No user registration or login</b> </td>
+                  <td class="td-img"> <img src="/assets/images/cancel.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b> No payment gateway integration</b> </td>
+                  <td class="td-img"> <img src="/assets/images/cancel.png" alt=""></td>
+
+                </tr>
+
+
+                <tr>
+                  <td scope="row" colspan="2">
+                    <div class=" price-btn"> <span class="big"> $9</span>.99 /monthly</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" colspan="2">
+                    <div class="cart-btn ">Add to cart <span class="big"><i class="fa fa-cart-plus"
+                          aria-hidden="true"></i></span>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="webpro" class="tabcontent container section1 ">
+      <div class="section1_wrapper container">
+        <img class="plan-image" src="/assets/images/product-design.png" alt="product design">
+        <div class="section1_right">
+          <h2 class="text-center"> sell while you sleep with Pro solutions. <b style="color: #3EC1D5"> The gateway to an
+              online business empire</b></h2>
+          <div class="table-responsive-sm">
+            <table class="table">
+              <thead class="table-light">
+                <caption>
+                  BusinessPro Plan
+                </caption>
+                <tr>
+                  <th style="width: 70%;">Features</th>
+                  <th style="width: 30%;">BusinessPro</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <td scope="row"><b> static website with online store</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b>Detailed product and service listing</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"><b> Customer registration and login</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b>Receive payments online(payment gateway integration)</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+
+                <tr>
+                  <td scope="row"> <b>Customer support feature</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b>Product management dashboard</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b> Oder management tools</b> </td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"><b> Continous update & 24/7 support</b> </td>
+                  <td> <img src="/assets/images/vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"><b>Fully customizable</b> </td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+
+
+                <tr>
+                  <td scope="row" colspan="2">
+                    <div class=" price-btn"> <span class="big"> $19</span>.99 /monthly</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" colspan="2">
+                    <div class="cart-btn ">Add to cart <span class="big"><i class="fa fa-cart-plus"
+                          aria-hidden="true"></i></span>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="prosuite" class="tabcontent container section1 ">
+      <div class="section1_wrapper container">
+        <img class="plan-image" src="/assets/images/product-design.png" alt="product design">
+        <div class="section1_right">
+          <h2 class="text-center">Everything your business needs, the all in on solution. <b style="color: #3EC1D5"> The
+              plan for forward thinking enterprise</b></h2>
+          <div class="table-responsive-sm">
+            <table class="table">
+              <thead class="table-light">
+                <caption>
+                  BusinessStarter Plan
+                </caption>
+                <tr>
+                  <th style="width: 70%;">Features</th>
+                  <th style="width: 30%;"> ProSuite</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <td scope="row"><b> All features of Business pro</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b> Mobile application integration</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"><b>Seamless website to app experience</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+
+                <tr>
+                  <td scope="row"><b>Enhanced customer engagement tools</b> </td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b>subscription to business products</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"><b>Advanced analitycs and reporting</b> </td>
+                  <td> <img src="/assets/images/vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b> Access to unlimited custom software solutions</b></td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+                <tr>
+                  <td scope="row"> <b>Priority support</b> </td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+
+                <tr>
+                  <td scope="row"> <b> Continous update </b> </td>
+                  <td> <img src="/assets/images/Vector.png" alt=""></td>
+
+                </tr>
+
+
+                <tr>
+                  <td scope="row" colspan="2">
+                    <div class=" price-btn"> <span class="big"> $30</span>.99 /monthly</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td scope="row" colspan="2">
+                    <div class="cart-btn ">Add to cart <span class="big"><i class="fa fa-cart-plus"
+                          aria-hidden="true"></i></span>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+  </div>
+  </div>
+
+
+
+  
+
+
+
+ 
+
+
+  <div class="row products">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="section-headline text-center">
+          <h2> products for Business</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row marketing">
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="/assets/images/flow.jpg" width="100px" alt="" srcset="">
+
+          <h2> Flow</h2>
+
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="/assets/images/cardease.png" width="100px" alt="" srcset="">
+
+          <h2>CardEase</h2>
+
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img src="/assets/images/Docs.png" alt="" width="100px" srcset="">
+
+          <h2>B Docs</h2>
+
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </div>
+  <!-- Start Service area -->
+
+  <footer class="shadow-lg">
+    <div class="footer-area shadow-lg">
+      <div class="container ">
         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
-                  <h2><img src="../files/img/logo.jpg" alt="this is the logo"></h2>
+                  <h2><img src="/assets/images/bay-logo.png" alt="BayScope IT logo"></h2>
                 </div>
+                <p>
+                <ul>
+                  <li>
+                    <h5><a class="text-secondary link-header" href="/forbusiness/"> for business</a></h5>
+                  </li>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis itaque dolores non officiis eligendi
-                  delectus illum adipisci eaque repellendus aspernatur neque ducimus, quae quibusdam rem ipsum repellat
-                  quisquam quos labore.</p>
+                  <li>
+                    <a class="" href="/flow"> B FLOW</a>
+                  </li>
+                  <li>
+                    <a href="/CardEase">CardEase</a>
+                  </li>
+                  <li>
+                    <a href="/ProSuite/">ProSuite</a>
+                  </li>
+
+                  <li class="p-3">
+                    <a href="/ProSuite/">web business</a>
+                  </li>
+
+                </ul>
+                </p>
                 <div class="footer-icons">
                   <ul>
                     <li>
@@ -854,7 +1521,7 @@
                       <a href="#"><i class="fa fa-google"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </li>
                   </ul>
                 </div>
@@ -865,38 +1532,85 @@
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
-                <h4>information</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-                <div class="footer-contacts">
-                  <p><span>Tel:</span> +123 456 789</p>
-                  <p><span>Email:</span> contact@example.com</p>
-                </div>
+                <ul>
+                  <li>
+                    <h5><a class="text-secondary link-header" href="/forschools/"> for Schools</a></h5>
+                  </li>
+
+                  <li>
+                    <a class="" href="/forschools/"> web Edu plans</a>
+                  </li>
+                  <li>
+                    <a href="/CardEase">Edu360</a>
+                  </li>
+                  <li>
+                    <a href="https://exampoint.com.ng">ExamPoint NG</a>
+                  </li>
+
+                </ul>
               </div>
+              <div class="m"></div>
+              <div class="footer-head pt-2 mt-2">
+                <ul>
+                  <li>
+                    <h5><a class="text-secondary link-header" href="/forschools/"> for Real-estate</a></h5>
+                  </li>
+
+                  <li>
+                    <a class="" href="/real-estate/"> Web Property solutions</a>
+                  </li>
+                  <li>
+                    <a href="/real-estate">Property Pro</a>
+                  </li>
+
+                </ul>
+              </div>
+
+
             </div>
           </div>
           <!-- end single footer -->
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="footer-content">
               <div class="footer-head">
-                <h4>Instagram</h4>
-                <div class="flicker-img">
-                  <a href="#"><img src="files/img/portfolio/1.jpg" alt=""></a>
-                  <a href="#"><img src="files/img/portfolio/2.jpg" alt=""></a>
-                  <a href="#"><img src="files/img/portfolio/3.jpg" alt=""></a>
-                  <a href="#"><img src="files/img/portfolio/4.jpg" alt=""></a>
-                  <a href="#"><img src="files/img/portfolio/5.jpg" alt=""></a>
-                  <a href="#"><img src="files/img/portfolio/6.jpg" alt=""></a>
-                </div>
+                <h4>Company</h4>
+                <ul>
+                  <li>
+                    <a class="text-secondary" href="/events/"> Events</a>
+                  </li>
+
+                  <li>
+                    <a class="" href="/company-news/"> Company news</a>
+                  </li>
+                  <li>
+                    <a href="/careers/">Careers</a>
+                  </li>
+                  <li>
+                    <a href="/affliate">About BayScope</a>
+                  </li>
+                  <li>
+                    <a href="/affliate">investors</a>
+                  </li>
+                  <li>
+                    <a href="/affliate">Affliate</a>
+                  </li>
+
+                </ul>
               </div>
             </div>
           </div>
         </div>
+        <div class="row text-right   text-sm">
+          <a class="p-4" href="/privacy"> privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
+            href="/termsandconditions"> Terms of service</a> <a class="p-4" href="trademarks"> Trademarks <i
+              class="fa fa-trademark" aria-hidden="true"></i></a>
+        </div>
       </div>
     </div>
+
     <div class="footer-area-bottom">
       <div class="container">
+
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="copyright text-center">
@@ -910,19 +1624,32 @@
     </div>
   </footer>
 
-        <script src="../files/libs/jquery/jquery.min.js"></script>
-        <script src="../files/libs/bootstrap/js/bootstrap.min.js"></script>
-        <script src="../files/libs/owlcarousel/owl.carousel.min.js"></script>
-        <script src="../files/libs/venobox/venobox.min.js"></script>
-        <script src="../files/libs/knob/jquery.knob.js"></script>
-        <script src="../files/libs/wow/wow.min.js"></script>
-        <script src="../files/libs/parallax/parallax.js"></script>
-        <script src="../files/libs/easing/easing.min.js"></script>
-        <script src="../files/libs/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-        <script src="../files/libs/appear/jquery.appear.js"></script>
-        <script src="../files/libs/isotope/isotope.pkgd.min.js"></script>
-        <script src="../files/busscript.js"></script>
-        <script src="../files/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="../files/libs/jquery/jquery.min.js"></script>
+  <script src="../files/libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../files/libs/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../files/libs/venobox/venobox.min.js"></script>
+  <script src="../files/libs/knob/jquery.knob.js"></script>
+  <script src="../files/libs/wow/wow.min.js"></script>
+  <script src="../files/libs/parallax/parallax.js"></script>
+  <script src="../files/libs/easing/easing.min.js"></script>
+  <script src="../files/libs/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="../files/libs/appear/jquery.appear.js"></script>
+  <script src="../files/libs/isotope/isotope.pkgd.min.js"></script>
+  <script src="../files/busscript.js"></script>
+  <script src="../files/js/main.js"></script>
 
 </body>
 

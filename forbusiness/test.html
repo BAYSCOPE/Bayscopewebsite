@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Step-by-Step Process Guide</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.process {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.circle i {
+    color: #fff; /* Set icon color */
+}
+
+.step span {
+    font-size: 16px;
+}
+
+/* Style connecting lines */
+.step::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 20px;
+    height: 2px;
+    background-color: #ccc;
+    z-index: -1;
+}
+
+/* Style last step's connecting line */
+.step:last-child::before {
+    display: none; /* Hide last step's connecting line */
+}
+
+</style>
+<body>
+
+<div class="process">
+    <div class="step">
+        <div class="circle"><i class="fas fa-check"></i></div>
+        <span>Step 1: Explanation text goes here</span>
+    </div>
+    
+    <div class="step">
+        <div class="circle"><i class="fas fa-cogs"></i></div>
+        <span>Step 2: Explanation text goes here</span>
+    </div>
+    
+    <div class="step">
+        <div class="circle"><i class="fas fa-chart-bar"></i></div>
+        <span>Step 3: Explanation text goes here</span>
+    </div>
+</div>
+
+</body>
+</html>
