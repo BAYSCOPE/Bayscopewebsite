@@ -156,7 +156,8 @@
 
     .section3_header {
       width: 100%;
-      background-color: #ededed;
+      background-color: black;
+      color: white;
       height: 15%;
       border-radius: 8px 8px 0 0;
       display: flex;
@@ -581,6 +582,30 @@
       border-bottom-left-radius: 100%;
       border-bottom-right-radius: 100%;
       margin-bottom: 50px;
+      background: url('/assets/images/business-man-banner-concept-with-copy-space.jpg');
+      background-position: center;
+      background-size: 5%;
+      margin-left: 70px;
+
+
+
+      background-size: cover;
+      animation: change 50s infinite;
+    }
+
+    @keyframes change {
+      40% {
+        background: url('/assets/images/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      80% {
+        background: url('/assets/images/businesshandshake.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
     }
 
     .well-right {
@@ -813,6 +838,9 @@ typing and deleting animation
     .big {
       font-size: 30px;
     }
+    .text-md{
+      font-size: 25px;
+    }
 
     .number {
       border-radius: 50%;
@@ -831,9 +859,25 @@ typing and deleting animation
 
       background: #000000;
       height: 60vh;
-      width: 100vw;
+      width: 100%;
+      color: white;
+      text-align: center;
 
     }
+
+    .second-section .secondbg {
+      background: url('/assets/images/medium-shot-black-woman-running-small-business.jpg');
+      position: absolute;
+      background-size: cover;
+      width: 100%;
+      height: 60vh;
+
+      opacity: .3;
+    }
+    .icons-section{
+      padding: 50px;
+    }
+    
   </style>
 
 </head>
@@ -980,9 +1024,10 @@ typing and deleting animation
           <!-- single-well end-->
           <div class="col-md-6 col-sm-6 col-xs-12 text-center">
             <div class="well-right">
-              <img class="hero-image"
+              <div class="hero-image"
                 src="/assets/images/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg"
                 alt="">
+              </div>
             </div>
           </div>
           <!-- End col-->
@@ -993,44 +1038,62 @@ typing and deleting animation
   <!-- End About area -->
   <hr>
   <div class="row">
-   
+
   </div>
 
 
   <div class="container-fluid second-section">
-    <div class="secondbg"></div>
-   
+    <div class="secondbg">
+
+    </div>
 
 
 
 
-    <div class="row">
+
+
+    <div class="row text-center " style="padding: 50px;">
       <!-- single-well start-->
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <div class="well-left">
-          <div class="single-well">
-            <img class="img" width="600px" src="/assets/images/medium-shot-black-woman-running-small-business.jpg" alt="" srcset="">
-            <!-- <video class="video1" src="../assets/videos/AdvertBAYSCOPE.mp4" autoplay loop width="530px"></video> -->
 
-          </div>
-        </div>
-      </div>
       <!-- single-well end-->
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <div class="well-middle">
-          <div class="single-well">
-            <a href="#">
-              <h4 class="sec-head">Business Suite</h4>
-            </a>
-            <p class="about" style="line-height: 1.5;">
-              Whether you're launching a startup or expanding an established venture, our solutions are crafted to fit
-              your needs. From restaurants and hotels to stores, supermarkets, and online services, we customize plans
-              to suit diverse businesses.
-            </p>
 
-          </div>
+      <h4 class="sec-head">Business Suite</h4>
+      </a>
+      <p class="about text-md text-white" style="line-height: 1.5; color: white; ">
+        Whether you're launching a startup or expanding an established venture, our solutions are crafted to fit
+        your needs. From restaurants and hotels to stores, supermarkets, and online services, we customize plans
+        to suit diverse businesses.
+      </p>
+
+      <p class="big-text text-white" style="color: white;">
+        your business is great, together <span class="highlight"> we can make it greater</span> 
+      </p>
+      
+      <div class="row icons-section">
+        <div class="col-lg-4">
+        <i class="fa fa-building" aria-hidden="true"></i>
+
+          <h6> Flow</h6>
+
+          <p><span class="btn btn-secondary" href="#" role="button">View details &raquo;</span></p>
+        </div>
+        <div class="col-lg-4">
+         
+          <i class="fa fa-hospital-o" aria-hidden="true"></i>
+
+          <h6>CardEase</h6>
+
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+       <i class="fa fa-building-o" aria-hidden="true"></i>
+
+          <h6>B Docs</h6>
+
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
+
       <!-- End col-->
     </div>
 
