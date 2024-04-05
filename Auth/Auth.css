@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.maincontainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.illustration-container{
+    width: 60%;
+    height: 100%;
+    background-image: url("./AuthAssets/register-illustration.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.illustration-container h1{
+    color: #00404A;
+    margin: 50px 0 0 80px;
+}
+.right-texts-container{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 20px;
+}
+.right-texts-container h1{
+    background: linear-gradient(to right,  black, #00ffff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0 0 10px 0;
+}
+
+.auth-input{
+    padding: 20px 0 20px 10px;
+    width: 60%;
+    border-radius: 4px;
+    border: 1px solid grey;
+    outline: none;
+}
+.navs-wrap{
+    width: 62%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 18%;
+}
+.agree-to-terms{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 35px;
+    /* background-color: red; */
+}
+.agree-to-terms span{
+    cursor: pointer;
+}
+.agree-to-terms input{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    /* padding: 10px; */
+}
+
+.navs-wrap button{
+    width: 100%;
+    background-color: #3EC1D5;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.login-maincontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./AuthAssets/login-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-card{
+    width: 45%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
