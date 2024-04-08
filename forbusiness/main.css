@@ -13,7 +13,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: -50px;
+    margin-top: 0px;
   }
 
   .section1_right {
@@ -141,12 +141,15 @@
   }
 
   .section3_plans {
-    margin-top: 2vh;
+    margin-top: 3vh;
     margin-bottom: 170px;
+
   }
 
   .plan-head {
     height: 30vh;
+    margin-top: -50px;
+   
   }
 
   .activee {
@@ -1003,3 +1006,12 @@ text-align: center;
     box-shadow: 7px 7px 15px 2px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease-in;
   }
+
+
+
+
+
+
+
+
+  

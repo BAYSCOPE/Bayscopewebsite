@@ -1060,8 +1060,9 @@ div#preloader {
 }
 
 .footer-area-bottom {
-  background: #f1f1f1 none repeat scroll 0 0;
+  background: black repeat scroll 0 0;
   padding: 15px 0;
+  color: white;
 }
 
 .copyright-text a:hover {
@@ -1608,4 +1609,3 @@ span.email-notes {
 /* Contact Css */
 
 
-/*End Css Here */
