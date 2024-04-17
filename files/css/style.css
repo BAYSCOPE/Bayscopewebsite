@@ -244,26 +244,6 @@ div#preloader {
   padding-bottom: 90px;
 }
 
-.section-headline h2 {
-  display: inline-block;
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 70px;
-  position: relative;
-  text-transform: capitalize;
-}
-
-.section-headline h2::after {
-  border: 1px solid #333;
-  bottom: -20px;
-  content: "";
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  width: 40%;
-}
-
 .sec-head {
   display: inline-block;
   font-size: 17px;
@@ -941,63 +921,187 @@ div#preloader {
 
 /*--------------------------------*/
 
-/*  14.Contact Area
+/* 14.Advert Area */
+
+.advert-section {
+  min-width:100%;
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  background-color: white;
+  border-top: 4px solid black;
+}
+
+.advert-container {
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advert-container> h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.advert-container > p{
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 85px;
+  font-size: 19px;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.8s ease;
+}
+
+.cta-button:hover {
+  background-color: #3EC1D5;
+  color: black;
+} 
+/* ------------------------------- */
+
+/*  15.Contact Area
 /*--------------------------------*/
 
-.contact-area {
-  height: auto;
+.contact-area{
+  min-width: 100%;
+  min-height: 65vh;
+  background-color: #3cd6ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-content-container{
+  display: flex;
+  border: 3px solid black;
+  min-width: 80%;
+  height: 50vh;
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-details{
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+}
+.contact-details  p{
+  line-height: 30px;
+}
+.calling,
+mail-details,
+location-details{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact-details  p {
+  font-size: 17px;
+  font-weight: 500;
+}
+.contact-headline h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.contact-headline h2::after {
+  border: 1px solid #333;
+  bottom: -20px;
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 40%;
+}
+.more-opt > a{
+  font-size: 16px;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.more-opt > a:hover{
+  color: #ffff;
+}
+.cons{
+  font-size: 3.5rem;
+}
+
+
+/*----------------------------------------*/
+
+/*  16. Footer Area
+/*----------------------------------------*/
+footer{
+  min-height: 70vh;
+  background-color: black;
   width: 100%;
 }
-
-.contact-content {
-  padding: 100px;
-  background: #000 none repeat scroll 0 0;
+.footer-main{
+  display: flex;
 }
-
-
-/*----------------------------------------*/
-
-/*  15. Footer Area
-/*----------------------------------------*/
-
-.footer-area {
-  padding: 30px 0;
- background-color: #000;
- color: white;
-
-.footer-head p {
-  color:white;
+.footer-logo h2{
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
 }
-
-.footer-head h4 {
-  color:white;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding-bottom: 10px;
-  text-transform: uppercase;
+.footer-content{
+  display: flex;
+  gap: 30px;
+  margin: 50px 0;
+  margin-left: 50px;
 }
-
-.footer-logo {
-  padding-bottom: 20px;
+.footer-products-child{
+  text-align: start;
+  width: 240px;
+  height: 180px;
+  line-height: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.footer-logo h2 {
-  color:white;
-  padding: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 1;
+.footer-products-child > ul{
+  margin-top: 10px;
 }
+.footer-products-child > ul > li > h5{
 
-.footer-logo h2 span {
-  color: #3ec1d5;
 }
-
+.footer-products{
+  display: flex;
+  gap: 25px;
+}
+.footer-company{
+  text-align: start;
+  width: 230px;
+  height: 180px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-company > h5 {
+  margin-top: 10px;
+}
+.footer-icons {
+  margin-top: 30px;
+}
 .footer-icons ul li {
   display: inline-block;
 }
-
 .footer-icons ul li a {
   border: 1px solid #444;
   color:white;
@@ -1010,88 +1114,34 @@ div#preloader {
   width: 40px;
   border-radius: 50%;
 }
-
-.flicker-img>a {
-  float: left;
-  padding: 1px;
-  width: 33.33%;
-}
-
-.footer-icons {
-  margin-top: 30px;
-}
-
-.footer-contacts p span {
-  color: #3EC1D5;
-  font-weight: 700;
-}
-
-.popular-tag ul li {
-  display: inline-block;
-}
-
-.footer-content {
-  display: block;
-  overflow: hidden;
-}
-
-.popular-tag ul li a:hover,
 .footer-icons ul li a:hover {
   background: #3EC1D5;
   border: 1px solid #3EC1D5;
   color: #fff;
 }
-
-.popular-tag ul li a {
-  border: 1px solid #444;
-  border-radius: 30px;
-  color: #444;
-  display: block;
-  font-size: 13px;
-  font-weight: 600;
-  margin: 5px 3px;
-  padding: 5px 10px;
-  position: relative;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: all 0.4s ease 0s;
-  width: 70px;
-  text-align: center;
+.footer-privacy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
 }
-
-.footer-area-bottom {
-  background: black repeat scroll 0 0;
-  padding: 15px 0;
-  color: white;
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  border-top: 1px solid #444; ;
 }
-
-.copyright-text a:hover {
-  text-decoration: underline;
-  color: #3EC1D5;
-}
-
-.copyright-text a {
+.copyright > p{
+  margin-top: 20px;
   color: #444;
 }
 
-.copyright>p {
-  margin-bottom: 0;
-  color: #444;
-}
 
-.copyright a,
-.credits a {
-  color: #3EC1D5;
-}
-
-.credits {
-  padding-top: 5px;
-  text-align: center;
-}
 
 /*----------------------------------------*/
 
-/*  16.Home Page 2  CSS
+/*  17.Home Page 2  CSS
 /*----------------------------------------*/
 
 .header-bg {
@@ -1122,7 +1172,7 @@ div#preloader {
 
 /*----------------------------------------*/
 
-/*  17.Home Page 3  CSS
+/*  18.Home Page 3  CSS
 /*----------------------------------------*/
 
 .home-video {
@@ -1154,7 +1204,7 @@ div#preloader {
 }
 
 /*----------------------------------------
-  18. Blog page
+  19. Blog page
 ----------------------------------------*/
 
 .page-area {
@@ -1317,7 +1367,7 @@ div#preloader {
 
 /*----------------------------------------*/
 
-/*  19.	Blog Details css
+/*  20.	Blog Details css
 /*----------------------------------------*/
 
 .post-information h2 {
