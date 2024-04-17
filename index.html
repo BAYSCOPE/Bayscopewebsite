@@ -77,18 +77,89 @@
 <body data-spy="scroll" data-target="#navbar-example">
 
   <div id="preloader"></div>
+  <header class="header">
+    <div class="header-logo-container">
+      <a class="page-scroll sticky-logo" href="/">
+        <h1>BayScope</h1>
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+      data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    </div>
+    <nav  class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+      <ul class="mid-nav-list">
+        <li class="active">
+          <a class="page-scroll" href="/">Home</a>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
+          class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
 
-  <header>
-    <!-- header-area start -->
+        <li><a href='/services/software-development'>Software development</a></li>
+        <li><a href='/services/web-development'>Web services</a></li>
+        <li><a href='/services/app-development/'>mobile service</a></li>
+
+
+        <li><a href=#>Product Design</a></li>
+      </ul>
+    </li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BayScope<span
+          class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href='/forbusiness/'>BayScope Business</a></li>
+        <li><a href='/forschools/'>BayScope Schools</a></li>
+        <li><a href='/forhealths'>Bayscope Healths</a></li>
+        <li><a href='/leadership'> BayScope Real Estate</a></li>
+
+      </ul>
+    </li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
+          class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href=#>B Flow</a></li>
+        <li><a href=#>B Docs</a></li>
+
+        <li class="text-secondary">Bundles</li>
+        <hr>
+
+        <li><a href="/ProSuite">ProSuite</a></li>
+        <li><a href="/edu360"> Edu360</a></li>
+
+      </ul>
+    </li>
+  </div>
+      </ul>
+      <ul class="right-nav-list">
+        <li>
+          <a class="page-scroll" href="/contact">Contact</a>
+        </li>
+
+        <li class=" dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
+              aria-hidden="true"></i> <span class="caret"></span> </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/client/login">Sign in</a></li>
+            <li><a href="/client/signup">Sign up </a></li>
+          </ul>
+        </li>
+        <li class="pl-2">
+          <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--   <header id="header">
     <div id="sticker" class="header-area">
-      <div class="container">
+      <div class="">
         <div class="row">
           <div class="col-md-12 col-sm-12">
 
-            <!-- Navigation -->
-            <nav class="navbar navbar-default">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
+            <nav class="navbar navbar-updated navbar-default">
+              <div class="navbar-header navbar-header-updated">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                   data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
@@ -96,85 +167,82 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <!-- Brand -->
                 <a class="navbar-brand page-scroll sticky-logo" href="/">
                   <h1>BayScope</h1>
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
                 </a>
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
-                    <a class="page-scroll" href="/">Home</a>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
+                <ul class="nav navbar-nav navbar-right navbar-updated-class">
+                  <div>
+                    <li class="active">
+                      <a class="page-scroll" href="/">Home</a>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
+                          class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+  
+                        <li><a href='/services/software-development'>Software development</a></li>
+                        <li><a href='/services/web-development'>Web services</a></li>
+                        <li><a href='/services/app-development/'>mobile service</a></li>
+  
+  
+                        <li><a href=#>Product Design</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BayScope<span
+                          class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href='/forbusiness/'>BayScope Business</a></li>
+                        <li><a href='/forschools/'>BayScope Schools</a></li>
+                        <li><a href='/forhealths'>Bayscope Healths</a></li>
+                        <li><a href='/leadership'> BayScope Real Estate</a></li>
+  
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
+                          class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href=#>B Flow</a></li>
+                        <li><a href=#>B Docs</a></li>
+  
+                        <li class="text-secondary">Bundles</li>
+                        <hr>
+  
+                        <li><a href="/ProSuite">ProSuite</a></li>
+                        <li><a href="/edu360"> Edu360</a></li>
+  
+                      </ul>
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a class="page-scroll" href="/contact">Contact</a>
+                    </li>
+  
+                    <li class="yo">
+                      <a class="page-scroll" href="#portfolio"> </a>
+                    </li>
+                    <li class=" dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
+                          aria-hidden="true"></i> <span class="caret"></span> </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/client/login">Sign in</a></li>
+                        <li><a href="/client/signup">Sign up </a></li>
+                      </ul>
+                    </li>
+                    <li class="pl-2">
+                      <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
+                    </li>
+                  </div>
 
-                      <li><a href='/services/software-development'>Software development</a></li>
-                      <li><a href='/services/web-development'>Web services</a></li>
-                      <li><a href='/services/app-development/'>mobile service</a></li>
-
-
-                      <li><a href=#>Product Design</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BayScope<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href='/forbusiness/'>BayScope Business</a></li>
-                      <li><a href='/forschools/'>BayScope Schools</a></li>
-                      <li><a href='/forhealths'>Bayscope Healths</a></li>
-                      <li><a href='/leadership'> BayScope Real Estate</a></li>
-
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=#>B Flow</a></li>
-                      <li><a href=#>B Docs</a></li>
-
-                      <li class="text-secondary">Bundles</li>
-                      <hr>
-
-                      <li><a href="/ProSuite">ProSuite</a></li>
-                      <li><a href="/edu360"> Edu360</a></li>
-
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a class="page-scroll" href="/contact">Contact</a>
-                  </li>
-
-                  <li class="yo">
-                    <a class="page-scroll" href="#portfolio"> </a>
-                  </li>
-                  <li class=" dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
-                        aria-hidden="true"></i> <span class="caret"></span> </a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="/client/login">Sign in</a></li>
-                      <li><a href="/client/signup">Sign up </a></li>
-                    </ul>
-                  </li>
-                  <li class="pl-2">
-                    <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
-                  </li>
                 </ul>
               </div>
-              <!-- navbar-collapse -->
             </nav>
-            <!-- END: Navigation -->
           </div>
         </div>
       </div>
     </div>
-    <!-- header-area end -->
-  </header>
+  </header> -->
   <!-- header end -->
 
   <!-- Start Slider Area -->
@@ -355,7 +423,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-headline text-center">
-              <h2>Top modules</h2>
+              <h2>Find Solutions For Your Industry.</h2>
             </div>
           </div>
         </div>
@@ -489,7 +557,7 @@
           <p class="lead"> Revolutionize HR and accounting integration with streamlined staff management, payroll,
             recruitment, and accounting tasks in one platform. Unlock efficiency and seamless operations for your
             organization's workforce</p>
-          <a href="/flow" class="ready-btn-opp text-dark">start free trial</a>
+          <a href="/flow" class="ready-btn-opp text-dark">Coming Soon...</a>
         </div>
 
       </div>
@@ -503,7 +571,7 @@
             cards, redeemable for products/services. Boost sales and enhance customer satisfaction effortlessly.
 
           </p>
-          <a href="/flow" class="ready-btn-opp text-dark">join Now</a>
+          <a href="/flow" class="ready-btn-opp text-dark">Coming Soon...</a>
         </div>
         <div class="col-md-4 order-md-1">
 
@@ -524,7 +592,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">EDU360 <span class="text-muted">#for schools.</span></h2>
           <p class="lead"> All inclusive School solution Take education to the cloud with BayScope EDU360 on school suite .</p>
-          <a href="/forschools" class="ready-btn-opp text-dark">learn more</a>
+          <a href="/forschools" class="ready-btn-opp text-dark">Coming Soon...</a>
         </div>
       </div>
 
@@ -545,7 +613,6 @@
 
 
   <!-- End Blog -->
-
 
 
 
@@ -627,7 +694,8 @@
             <div class="footer-content">
               <div class="footer-head">
                 <div class="footer-logo">
-                  <h2><img src="/assets/images/bay-logo.png" alt="BayScope IT logo"></h2>
+                  <h1 id="footer-logo-text">BayScope</h1>
+                <!-- <h2><img src="/assets/images/bay-logo.png" alt="BayScope IT logo"></h2>--> 
                 </div>
                 <p>
                 <ul>
