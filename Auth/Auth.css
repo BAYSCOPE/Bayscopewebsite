@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 .maincontainer{
     width: 100%;
@@ -20,6 +21,7 @@
 .illustration-container h1{
     color: #00404A;
     margin: 50px 0 0 80px;
+    padding: 0 10px;
 }
 .right-texts-container{
     width: 40%;
@@ -38,12 +40,58 @@
     margin: 0 0 10px 0;
 }
 
+.form-group{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.group-1{
+    transform: translateX(100%);
+}
+
+.group-3{
+    transform: translateX(-100%);
+}
+
+.group-container{
+    width: 300%;
+    display: flex;
+    overflow: hidden;
+}
+
+/* .groups{
+    overflow: hidden;
+    width: 100%;
+} */
+
+.counter{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: gray;
+    display: grid;
+    place-content: center;
+    margin: 0 12px;
+}
+
+.counter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .auth-input{
     padding: 20px 0 20px 10px;
+    margin: 10px 0;
     width: 60%;
     border-radius: 4px;
     border: 1px solid grey;
     outline: none;
+    text-transform: capitalize;
 }
 .navs-wrap{
     width: 62%;
@@ -105,4 +153,127 @@
     padding: 20px 0;
     border-radius: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media screen and (min-width: 480px) and (max-width : 1024px){
+    .maincontainer{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .illustration-container{
+        width: 100%;
+        height: 100%;
+        background-image: url("./AuthAssets/register-illustration.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .illustration-container h1{
+        color: #00404A;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .right-texts-container{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 10px;
+        line-height: 20px;
+    }
+
+    .auth-input{
+        padding: 20px 0 20px 10px;
+        margin: 10px auto;
+        width: 90%;
+        border-radius: 4px;
+        border: 1px solid grey;
+        outline: none;
+        text-transform: capitalize;
+    }
+
+    .navs-wrap{
+        width: 90%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 18%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .maincontainer{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        background-image: url("./AuthAssets/register-illustration.png");
+        background-color: #00404A;;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 10px 0 20px;
+    }
+
+    .illustration-container{
+        width: 100%;
+        height: 75px;
+        display : grid;
+        place-content: center;
+        margin: 20px 0;
+        /* background-color: transparent; */
+    }
+    .illustration-container h1{
+        color: #00404A;
+        margin: auto;
+        text-align: center;
+    }
+
+    .right-texts-container{
+        width: 90%;
+        background-color: white;
+        /* background-color: rgba(1, 1, 1, 0.1); */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 20px;
+        line-height: 20px;
+    }
+
+    .auth-input{
+        padding: 20px 0 20px 10px;
+        margin: 10px auto;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid grey;
+        outline: none;
+        text-transform: capitalize;
+    }
+
+    .navs-wrap{
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 18%;
+    }
+
+    
 }
