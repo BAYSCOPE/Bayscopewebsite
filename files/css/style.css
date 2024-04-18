@@ -347,32 +347,32 @@ div#preloader {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
 
-.main-menu ul.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
+.main-menu ul .navbar-nav>.active>a,
+ .navbar-nav>.active>a:hover,
+ .navbar-nav>.active>a:focus {
   background: none;
   color: #333;
 }
 
-.navbar-default .navbar-toggle {
+ .navbar-toggle {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
   border-radius: 0;
   padding: 25px 0px;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
   background-color: transparent;
   color: #fff;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar-toggle:hover,
+.navbar-toggle:focus {
   background: none;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-toggle .icon-bar {
   background-color: #fff;
   width: 30px;
   height: 2px;
@@ -395,7 +395,7 @@ div#preloader {
 }
 
 .main-menu .dropdown ul {
-  background: #000;
+  background: #fff;
 }
 
 .main-menu .dropdown ul li {
@@ -429,7 +429,7 @@ div#preloader {
   display: block;
 }
 
-.sticky-logo h1 {
+.sticky-logo h1, .footer-logo h1{
   color: #fff;
   padding: 0;
   margin: 0;
@@ -491,13 +491,13 @@ div#preloader {
   letter-spacing: 1px;
 }
 
-.stick .navbar-default .navbar-toggle .icon-bar {
+.navbar-toggle .icon-bar {
   background-color: #fff;
   width: 30px;
   height: 2px;
 }
 
-.stick .navbar-default .navbar-toggle {
+.navbar-toggle {
   padding: 10px 0px;
 }
 
@@ -964,6 +964,7 @@ div#preloader {
   padding: 30px 0;
  background-color: #000;
  color: white;
+}
 
 .footer-head p {
   color:white;
@@ -1091,7 +1092,7 @@ div#preloader {
 
 /*----------------------------------------*/
 
-/*  16.Home Page 2  CSS
+/*  16.Home Page 2  CSS */
 /*----------------------------------------*/
 
 .header-bg {
@@ -1122,7 +1123,7 @@ div#preloader {
 
 /*----------------------------------------*/
 
-/*  17.Home Page 3  CSS
+/*  17.Home Page 3  CSS */
 /*----------------------------------------*/
 
 .home-video {
@@ -1510,7 +1511,7 @@ li.threaded-comments {
   margin-top: 60px;
 }
 
-h3.comment-reply-title {}
+h3 .comment-reply-title {}
 
 span.email-notes {
   color: #42414f;
@@ -1607,5 +1608,51 @@ span.email-notes {
 
 
 /* Contact Css */
+/* Mistura */ 
+header{
+  box-sizing: border-box;
+  height: 10vh;
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+header nav{
+  width: 70vw;
+  display: flex;
+  align-items: center;
+}
+.navbar-collapse.collapse {
+  display: ;
+  height: auto !important;
+  width: 70vw;
+  padding-bottom: 0;
+  overflow: visible !important;
+  justify-content: space-between;
+}
+header div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+}
+nav ul li a{
+  color: #ffffff;
+}
+.mid-nav-list{
+  width: 35vw;
+  justify-content: space-around;
 
-
+}
+.right-nav-list{
+  width: 15vw;
+  justify-content: space-around;
+}
