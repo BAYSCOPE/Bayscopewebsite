@@ -7,25 +7,8 @@ const counterOne = document.getElementById("counter-1")
 const counterTwo = document.getElementById("counter-2")
 const counterThree = document.getElementById("counter-3")
 
-// const username = document.getElementById("username")
-// const email = document.getElementById("email")
-// const password = document.getElementById("password")
-
-// const businessName = document.getElementById("business-name")
-// const businessEmail = document.getElementById("business-email")
-// const country = document.getElementById("country")
-// const button = document.getElementById("submit")
-// const industry = document.getElementById("industry")
-// const address = document.getElementById("address")
-// const contact = document.getElementById("contact")
-
-
-
 
 let current = 1;
-
-const details = {}
-
 
 function changeForm(){
     
@@ -72,44 +55,18 @@ if(current === 1){
 }
 
 counterOne.addEventListener('click', function(){
-    // details.businessName = businessName.value;
-    // details.businessEmail = businessEmail.value;
-    // details.industry = industry.value;
     current = 1;
     changeForm();
 });
 
 counterTwo.addEventListener('click', function(){
-    // details.username = username.value;
-    // details.password = password.value;
-    // details.email = email.value;
     current = 2;
     changeForm();
 });
 
 counterThree.addEventListener('click', () => {
-    // details.country = country.value;
-    // details.address = address.value;
-    // details.contact = contact.value;
     current = 3;
     changeForm();
 })
-
-// button.addEventListener("click", function(){
-//     details.businessName = businessName.value;
-//     details.businessEmail = businessEmail.value;
-//     details.industry = industry.value;
-
-//     details.username = username.value;
-//     details.password = password.value;
-//     details.email = email.value;
-
-//     details.country = country.value;
-//     details.address = address.value;
-//     details.contact = contact.value;
-
-
-//     console.log(businessEmail.value, country.value, username.value)
-// })
 
 changeForm();

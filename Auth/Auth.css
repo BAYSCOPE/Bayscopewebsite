@@ -144,13 +144,13 @@
 }
 .login-card{
     width: 45%;
-    height: 90%;
+    height: 95%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px 0;
+    justify-content: center;
+    padding: 10px 0;
     border-radius: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -210,6 +210,20 @@
         justify-content: space-between;
         height: 18%;
     }
+
+    .login-card{
+        width: 60%;
+        height: 60%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    
 }
 
 @media screen and (max-width: 480px){
@@ -226,16 +240,15 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 10px 0 20px;
+        padding: 20px 0;
     }
 
     .illustration-container{
         width: 100%;
-        height: 75px;
-        display : grid;
+        height: 35px;
+        display : none;
         place-content: center;
-        margin: 20px 0;
-        /* background-color: transparent; */
+
     }
     .illustration-container h1{
         color: #00404A;
@@ -274,6 +287,20 @@
         justify-content: space-between;
         height: 18%;
     }
+
+    .login-card{
+        width: 90%;
+        height: 90%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    
 
     
 }
