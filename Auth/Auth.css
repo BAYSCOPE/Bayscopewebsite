@@ -86,7 +86,7 @@
 
 .auth-input{
     padding: 20px 0 20px 10px;
-    margin: 10px 0;
+    margin: 13px 0;
     width: 60%;
     border-radius: 4px;
     border: 1px solid grey;
@@ -102,6 +102,19 @@
     justify-content: space-between;
     height: 18%;
 }
+
+.title-wrap{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
 .agree-to-terms{
     width: 100%;
     display: flex;
@@ -193,7 +206,7 @@
 
     .auth-input{
         padding: 20px 0 20px 10px;
-        margin: 10px auto;
+        margin: 27px auto;
         width: 90%;
         border-radius: 4px;
         border: 1px solid grey;
