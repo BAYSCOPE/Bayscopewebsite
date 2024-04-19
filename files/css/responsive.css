@@ -125,13 +125,18 @@
     width: 20vw;
     justify-content: space-around;
   }
+  .dropdown:hover .solutions{
+    width: 60vw;
+    height: 70vh;
+    max-height: 700px;
+  }
 }
 
 /* small mobile :320px. */
 
 @media (max-width: 767px) {
 
-  header{
+  .header-area{
     height: auto !important;
     background: #000;
     flex-direction: column;
@@ -297,6 +302,14 @@
   }
   li.threaded-comments {
     margin-left: 0;
+  }
+  .dropdown:hover .solutions{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 80vw;
+    height: 70vh;
+    max-height: 700px;
   }
 }
 
