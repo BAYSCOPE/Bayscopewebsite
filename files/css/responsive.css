@@ -121,9 +121,31 @@
     margin-left: 5vw;
     margin-right: 5vw;
   }
+<<<<<<< HEAD
   .right-nav-list{
     width: 20vw;
     justify-content: space-around;
+=======
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+    margin: 50px 0;
+    margin-left: 50px;
+  }
+  .footer-products{
+    display: flex;
+    gap: 2px;
+  }
+  .footer-products-child{
+    text-align: start;
+    width: 240px;
+    height: 180px;
+    line-height: 30px;
+    border-radius: 5px;
+    align-items: center;
+>>>>>>> 92ee47d (final update on footer)
   }
   .dropdown:hover .solutions{
     width: 60vw;
