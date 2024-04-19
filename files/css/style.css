@@ -244,6 +244,26 @@ div#preloader {
   padding-bottom: 90px;
 }
 
+.section-headline h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.section-headline h2::after {
+  border: 1px solid #333;
+  bottom: -20px;
+  content: "";
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 40%;
+}
+
 .sec-head {
   display: inline-block;
   font-size: 17px;
@@ -327,32 +347,32 @@ div#preloader {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
 
-.main-menu ul.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
+.main-menu ul .navbar-nav>.active>a,
+ .navbar-nav>.active>a:hover,
+ .navbar-nav>.active>a:focus {
   background: none;
   color: #333;
 }
 
-.navbar-default .navbar-toggle {
+ .navbar-toggle {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
   border-radius: 0;
   padding: 25px 0px;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:focus {
   background-color: transparent;
   color: #fff;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar-toggle:hover,
+.navbar-toggle:focus {
   background: none;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-toggle .icon-bar {
   background-color: #fff;
   width: 30px;
   height: 2px;
@@ -375,11 +395,12 @@ div#preloader {
 }
 
 .main-menu .dropdown ul {
-  background: #000;
+  background: #fff;
 }
 
 .main-menu .dropdown ul li {
   display: block;
+  margin: 20px 15px;
 }
 
 /*--------------------------------*/
@@ -409,7 +430,7 @@ div#preloader {
   display: block;
 }
 
-.sticky-logo h1 {
+.sticky-logo h1, .footer-logo h1{
   color: #fff;
   padding: 0;
   margin: 0;
@@ -471,13 +492,13 @@ div#preloader {
   letter-spacing: 1px;
 }
 
-.stick .navbar-default .navbar-toggle .icon-bar {
+.navbar-toggle .icon-bar {
   background-color: #fff;
   width: 30px;
   height: 2px;
 }
 
-.stick .navbar-default .navbar-toggle {
+.navbar-toggle {
   padding: 10px 0px;
 }
 
@@ -921,6 +942,7 @@ div#preloader {
 
 /*--------------------------------*/
 
+
 /* 14.Advert Area */
 
 .advert-section {
@@ -1084,31 +1106,54 @@ footer{
 }
 .footer-products-child > ul{
   margin-top: 10px;
-}
-.footer-products-child > ul > li > h5{
+  
+/*  14.Contact Area
+/*--------------------------------*/
 
+/*----------------------------------------*/
+
+/*  15. Footer Area
+/*----------------------------------------*/
+
+.footer-area {
+  padding: 30px 0;
+ background-color: #000;
+ color: white;
 }
-.footer-products{
-  display: flex;
-  gap: 25px;
+
+.footer-head p {
+  color:white;
 }
-.footer-company{
-  text-align: start;
-  width: 230px;
-  height: 180px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
+
+.footer-head h4 {
+  color:white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
 }
-.footer-company > h5 {
-  margin-top: 10px;
+
+.footer-logo {
+  padding-bottom: 20px;
 }
-.footer-icons {
-  margin-top: 30px;
+  
+.footer-logo h2 {
+  color:white;
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
 }
+
+.footer-logo h2 span {
+  color: #3ec1d5;
+}
+
 .footer-icons ul li {
   display: inline-block;
 }
+
 .footer-icons ul li a {
   border: 1px solid #444;
   color:white;
@@ -1121,17 +1166,55 @@ footer{
   width: 40px;
   border-radius: 50%;
 }
+
+.flicker-img>a {
+  float: left;
+  padding: 1px;
+  width: 33.33%;
+}
+
+.footer-icons {
+  margin-top: 30px;
+}
+
+.footer-contacts p span {
+  color: #3EC1D5;
+  font-weight: 700;
+}
+
+.popular-tag ul li {
+  display: inline-block;
+}
+
+.footer-content {
+  display: block;
+  overflow: hidden;
+}
+
+.popular-tag ul li a:hover,
 .footer-icons ul li a:hover {
   background: #3EC1D5;
   border: 1px solid #3EC1D5;
   color: #fff;
 }
-.footer-privacy{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 19px;
+
+.popular-tag ul li a {
+  border: 1px solid #444;
+  border-radius: 30px;
+  color: #444;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 5px 3px;
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.4s ease 0s;
+  width: 70px;
+  text-align: center;
 }
+
 .footer-privacy a {
   font-size: 16px;
   color: rgba(215, 215, 215,0.3);
@@ -1146,17 +1229,41 @@ footer{
   justify-content: center;
   margin-top: 90px;
   border-top: 1px solid #444; ;
+
+.footer-area-bottom {
+  background: black repeat scroll 0 0;
+  padding: 15px 0;
+  color: white;
+
 }
-.copyright > p{
-  margin-top: 20px;
+
+.copyright-text a:hover {
+  text-decoration: underline;
+  color: #3EC1D5;
+}
+
+.copyright-text a {
   color: #444;
 }
 
+.copyright>p {
+  margin-bottom: 0;
+  color: #444;
+}
 
+.copyright a,
+.credits a {
+  color: #3EC1D5;
+}
+
+.credits {
+  padding-top: 5px;
+  text-align: center;
+}
 
 /*----------------------------------------*/
 
-/*  17.Home Page 2  CSS
+/*  16.Home Page 2  CSS */
 /*----------------------------------------*/
 
 .header-bg {
@@ -1187,7 +1294,7 @@ footer{
 
 /*----------------------------------------*/
 
-/*  18.Home Page 3  CSS
+/*  17.Home Page 3  CSS */
 /*----------------------------------------*/
 
 .home-video {
@@ -1219,7 +1326,7 @@ footer{
 }
 
 /*----------------------------------------
-  19. Blog page
+  18. Blog page
 ----------------------------------------*/
 
 .page-area {
@@ -1382,7 +1489,7 @@ footer{
 
 /*----------------------------------------*/
 
-/*  20.	Blog Details css
+/*  19.	Blog Details css
 /*----------------------------------------*/
 
 .post-information h2 {
@@ -1575,7 +1682,7 @@ li.threaded-comments {
   margin-top: 60px;
 }
 
-h3.comment-reply-title {}
+h3 .comment-reply-title {}
 
 span.email-notes {
   color: #42414f;
@@ -1672,5 +1779,82 @@ span.email-notes {
 
 
 /* Contact Css */
+/* Mistura */ 
+header{
+  box-sizing: border-box;
+  height: 10vh;
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+header nav{
+  width: 70vw;
+  display: flex;
+  align-items: center;
+}
+.navbar-collapse.collapse {
+  height: auto !important;
+  width: 70vw;
+  padding-bottom: 0;
+  overflow: visible !important;
+  justify-content: space-between;
+}
+header div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+}
+nav ul li a{
+  color: #ffffff;
+}
+.mid-nav-list{
+  width: 35vw;
+  justify-content: space-around;
 
-
+}
+.right-nav-list{
+  width: 15vw;
+  justify-content: space-around;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.dropdown:hover .solutions{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 50vw;
+  height: 85vh;
+  overflow-y: scroll;
+}
+.dropdown-menu-subdiv{
+  margin: 10px;
+}
+.dropdown-menu-subdiv ul #subdiv-list-item{
+  margin: 10px 15px;
+  padding: 3px;
+}
+.dropdown-menu-subdiv a{
+  padding: 3px 10px;
+  color: #000;
+}
+.dropdown-menu-subdiv ul{
+  display: flex;
+  flex-direction: column;
+} 
+.dropdown-menu-subdiv  .subdiv-heading-text{
+  font-weight: bold;
+}
+#subdiv-list-item:hover{
+  background-color: #f5f5f5;;
+}

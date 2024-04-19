@@ -77,18 +77,116 @@
 <body data-spy="scroll" data-target="#navbar-example">
 
   <div id="preloader"></div>
+  <header class="header header-area" id="sticker">
+    <div class="header-logo-container">
+      <a class="page-scroll sticky-logo" href="/">
+        <h1>BayScope</h1>
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+      data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    </div>
+    <nav  class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+      <ul class="mid-nav-list">
+        <li class="active">
+          <a class="page-scroll" href="/">Home</a>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions<span
+          class="caret"></span></a>
+      <ul class="dropdown-menu solutions" role="menu">
 
-  <header>
-    <!-- header-area start -->
+        <li class="dropdown-menu-subdiv"><a href='/services/software-development' class="subdiv-heading-text">For Business</a>
+          <ul>
+            <li id="subdiv-list-item"><a href='/services/software-development'>Business Technology</a></li>
+            <li id="subdiv-list-item"><a href='/services/web-development'>Financial Solutions</a></li>
+            <li id="subdiv-list-item"><a href='/services/app-development/'>E-commerce</a></li>
+            <li id="subdiv-list-item"><a href=#>CRM</a></li>
+            <li id="subdiv-list-item"><a href='/services/app-development/'>Enterprise Resourse Planning</a></li>
+            <li id="subdiv-list-item"><a href=#>BayScope Start-Up Bundle</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-menu-subdiv"><a href='/services/web-development' class="subdiv-heading-text">For School</a>
+          <ul>
+            <li id="subdiv-list-item"><a href='/services/software-development'>Software development</a></li>
+            <li id="subdiv-list-item"><a href='/services/web-development'>Web services</a></li>
+            <li id="subdiv-list-item"><a href='/services/app-development/'>mobile service</a></li>
+            <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text">For Real-Estate</a>
+        <ul>
+          <li id="subdiv-list-item"><a href='/services/software-development'>Software development</a></li>
+          <li id="subdiv-list-item"><a href='/services/web-development'>Web services</a></li>
+          <li id="subdiv-list-item"><a href='/services/app-development/'>mobile service</a></li>
+          <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+        </ul>
+        </li>
+        <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text">For Health</a>
+        <ul>
+          <li id="subdiv-list-item"><a href='/services/software-development'>Software development</a></li>
+          <li id="subdiv-list-item"><a href='/services/web-development'>Web services</a></li>
+          <li id="subdiv-list-item"><a href='/services/app-development/'>mobile service</a></li>
+          <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+        </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
+          class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href='/forbusiness/'>BayScope Business</a></li>
+        <li><a href='/forschools/'>BayScope Schools</a></li>
+        <li><a href='/forhealths'>Bayscope Healths</a></li>
+        <li><a href='/realestate/'> BayScope Real Estate</a></li>
+
+      </ul>
+    </li>
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">coming soon<span
+          class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href=#>BayScope Flow</a></li>
+        <li><a href=#>CardLinks</a></li>
+
+     
+
+        <li><a href="/ProSuite">ProSuite</a></li>
+        <li><a href="/edu360"> Edu360</a></li>
+
+      </ul>
+    </li>
+  </div>
+      </ul>
+      <ul class="right-nav-list">
+        <li>
+          <a class="page-scroll" href="/contact">Contact</a>
+        </li>
+
+        <li class=" dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
+              aria-hidden="true"></i> <span class="caret"></span> </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/auth/login">Sign in</a></li>
+            <li><a href="/auth/signup">Sign up </a></li>
+          </ul>
+        </li>
+        <li class="pl-2">
+          <a href="/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--   <header id="header">
     <div id="sticker" class="header-area">
-      <div class="container">
+      <div class="">
         <div class="row">
           <div class="col-md-12 col-sm-12">
 
-            <!-- Navigation -->
-            <nav class="navbar navbar-default">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
+            <nav class="navbar navbar-updated navbar-default">
+              <div class="navbar-header navbar-header-updated">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                   data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
                   <span class="sr-only">Toggle navigation</span>
@@ -96,85 +194,82 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <!-- Brand -->
                 <a class="navbar-brand page-scroll sticky-logo" href="/">
                   <h1>BayScope</h1>
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
                 </a>
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
-                    <a class="page-scroll" href="/">Home</a>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
+                <ul class="nav navbar-nav navbar-right navbar-updated-class">
+                  <div>
+                    <li class="active">
+                      <a class="page-scroll" href="/">Home</a>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
+                          class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+  
+                        <li><a href='/services/software-development'>Software development</a></li>
+                        <li><a href='/services/web-development'>Web services</a></li>
+                        <li><a href='/services/app-development/'>mobile service</a></li>
+  
+  
+                        <li><a href=#>Product Design</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BayScope<span
+                          class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href='/forbusiness/'>BayScope Business</a></li>
+                        <li><a href='/forschools/'>BayScope Schools</a></li>
+                        <li><a href='/forhealths'>Bayscope Healths</a></li>
+                        <li><a href='/leadership'> BayScope Real Estate</a></li>
+  
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
+                          class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href=#>B Flow</a></li>
+                        <li><a href=#>B Docs</a></li>
+  
+                        <li class="text-secondary">Bundles</li>
+                        <hr>
+  
+                        <li><a href="/ProSuite">ProSuite</a></li>
+                        <li><a href="/edu360"> Edu360</a></li>
+  
+                      </ul>
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a class="page-scroll" href="/contact">Contact</a>
+                    </li>
+  
+                    <li class="yo">
+                      <a class="page-scroll" href="#portfolio"> </a>
+                    </li>
+                    <li class=" dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
+                          aria-hidden="true"></i> <span class="caret"></span> </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="/client/login">Sign in</a></li>
+                        <li><a href="/client/signup">Sign up </a></li>
+                      </ul>
+                    </li>
+                    <li class="pl-2">
+                      <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
+                    </li>
+                  </div>
 
-                      <li><a href='/services/software-development'>Software development</a></li>
-                      <li><a href='/services/web-development'>Web services</a></li>
-                      <li><a href='/services/app-development/'>mobile service</a></li>
-
-
-                      <li><a href=#>Product Design</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BayScope<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href='/forbusiness/'>BayScope Business</a></li>
-                      <li><a href='/forschools/'>BayScope Schools</a></li>
-                      <li><a href='/forhealths'>Bayscope Healths</a></li>
-                      <li><a href='/leadership'> BayScope Real Estate</a></li>
-
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=#>B Flow</a></li>
-                      <li><a href=#>B Docs</a></li>
-
-                      <li class="text-secondary">Bundles</li>
-                      <hr>
-
-                      <li><a href="/ProSuite">ProSuite</a></li>
-                      <li><a href="/edu360"> Edu360</a></li>
-
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a class="page-scroll" href="/contact">Contact</a>
-                  </li>
-
-                  <li class="yo">
-                    <a class="page-scroll" href="#portfolio"> </a>
-                  </li>
-                  <li class=" dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
-                        aria-hidden="true"></i> <span class="caret"></span> </a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="/client/login">Sign in</a></li>
-                      <li><a href="/client/signup">Sign up </a></li>
-                    </ul>
-                  </li>
-                  <li class="pl-2">
-                    <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
-                  </li>
                 </ul>
               </div>
-              <!-- navbar-collapse -->
             </nav>
-            <!-- END: Navigation -->
           </div>
         </div>
       </div>
     </div>
-    <!-- header-area end -->
-  </header>
+  </header> -->
   <!-- header end -->
 
   <!-- Start Slider Area -->
@@ -355,7 +450,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="section-headline text-center">
-              <h2>Top modules</h2>
+              <h2>Find Solutions For Your Industry.</h2>
             </div>
           </div>
         </div>
@@ -478,7 +573,9 @@
       <hr class="featurette-divider">
 
       <div class="row featurette pt-2">
-
+        <div class="section-headline text-center">
+          <h2>Coming soon to you from BayScope!!!</h2>
+        </div>
         <div class="col-md-3">
           <img src="/assets/images/flow.jpg" alt="">
         </div>
@@ -489,7 +586,7 @@
           <p class="lead"> Revolutionize HR and accounting integration with streamlined staff management, payroll,
             recruitment, and accounting tasks in one platform. Unlock efficiency and seamless operations for your
             organization's workforce</p>
-          <a href="/flow" class="ready-btn-opp text-dark">start free trial</a>
+          <a href="/flow" class="ready-btn-opp text-dark">Coming Soon...</a>
         </div>
 
       </div>
@@ -503,7 +600,7 @@
             cards, redeemable for products/services. Boost sales and enhance customer satisfaction effortlessly.
 
           </p>
-          <a href="/flow" class="ready-btn-opp text-dark">join Now</a>
+          <a href="/flow" class="ready-btn-opp text-dark">Coming Soon...</a>
         </div>
         <div class="col-md-4 order-md-1">
 
@@ -524,7 +621,7 @@
         <div class="col-md-7">
           <h2 class="featurette-heading">EDU360 <span class="text-muted">#for schools.</span></h2>
           <p class="lead"> All inclusive School solution Take education to the cloud with BayScope EDU360 on school suite .</p>
-          <a href="/forschools" class="ready-btn-opp text-dark">learn more</a>
+          <a href="/forschools" class="ready-btn-opp text-dark">Coming Soon...</a>
         </div>
       </div>
 
@@ -571,77 +668,76 @@
   
   <!-- End of Advert Section -->
 
-  <!-- Start contact Area -->
-  <!-- <div class="contact-area">
-    <div class="contact-content-container">
-      <div class="contact-headline">
-        <h2>CONTACT US</h2>
-      </div>
-      <div class="contact-details">
-        <div class="calling">
-          <i class="fa fa-phone cons" aria-hidden="true"></i>
-          <p>
-            CALL: NG +2348145931080 <br> CAN +1 5589-55488-55<br>
-            <span>Monday-Friday (9am-5pm)</span>
-          </p>
-        </div>
-        <div class="mail-details">
-          <i class="fa fa-envelope-o cons"></i>
-          <p>
-            EMAIL: info@BayScope.com<br>
-            <span>WEB: www.Bayscope.com</span>
-          </p>
-        </div>
-        <div class="location-details">
-          <i class="fa fa-map-marker cons"></i>
-                <p>
-                  LOCATION: A108 Adam Street<br>
-                  <span>NY 535022, USA</span>
-                </p>
-                <div class="">  <h5 class="more-opt"><a href="/contact/"> More Contact Options <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a></h5> </div>
-        </div>
-      </div>
-     
-    </div>
-    
-  </div> -->
-  <!-- End Contact Area -->
+
+
+  
+
+  
 
   <!-- Start Footer bottom Area -->
- <footer>
-  <div class="footer-main">
-    <div class="footer-container">
-      <div class="footer-content">
-          <div class="footer-head">
-            <div class="footer-logo">
-              <h2>BayScope</h2>
-            </div>
-            <div class="footer-icons">
-              <ul>
-                <li>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-google"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-products">
-              <div class="footer-products-child">
+  <footer class="shadow-lg">
+    <div class="footer-area shadow-lg">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h1 id="footer-logo-text">BayScope</h1>
+                <!-- <h2><img src="/assets/images/bay-logo.png" alt="BayScope IT logo"></h2>--> 
+                </div>
+                <p>
                 <ul>
                   <li>
-                    <h5><a class="text-secondary link-header" href="/forschools/"> FOR SCHOOLS</a></h5>
+                    <h5><a class="text-secondary link-header" href="/forbusiness/"> for business</a></h5>
                   </li>
 
                   <li>
-                    <a class="" href="/forschools/"> Web Edu Plans</a>
+                    <a class="" href="/flow"> B FLOW</a>
+                  </li>
+                  <li>
+                    <a href="/CardEase">CardEase</a>
+                  </li>
+                  <li>
+                    <a href="/ProSuite/">ProSuite</a>
+                  </li>
+
+                  <li class="p-3">
+                    <a href="/ProSuite/">web business</a>
+                  </li>
+
+                </ul>
+                </p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <ul>
+                  <li>
+                    <h5><a class="text-secondary link-header" href="/forschools/"> for Schools</a></h5>
+                  </li>
+
+                  <li>
+                    <a class="" href="/forschools/"> web Edu plans</a>
                   </li>
                   <li>
                     <a href="/CardEase">Edu360</a>
@@ -652,88 +748,77 @@
 
                 </ul>
               </div>
-              <div class="footer-products-child">
+              <div class="m"></div>
+              <div class="footer-head pt-2 mt-2">
                 <ul>
                   <li>
-                    <h5><a class="text-secondary link-header" href="/forbusiness/">FOR BUSINESS</a></h5>
+                    <h5><a class="text-secondary link-header" href="/forschools/"> for Real-estate</a></h5>
                   </li>
 
                   <li>
-                    <a class="" href="/flow"> B Flow</a>
-                  </li>
-                  <li>
-                    <a href="/CardEase">CardEase</a>
-                  </li>
-                  <li>
-                    <a href="/ProSuite/">ProSuite</a>
-                  </li>
-
-                  <li class="p-3">
-                    <a href="/ProSuite/">Web Business</a>
-                  </li>
-
-                </ul>
-              </div>
-              <div class="footer-products-child real-estate">
-                <ul>
-                  <li>
-                    <h5><a class="text-secondary link-header" href="/forschools/"> FOR REAL-ESTATE</a></h5>
-                  </li>
-
-                  <li>
-                    <a class="" href="/real-estate/"> Web Property Solutions</a>
+                    <a class="" href="/real-estate/"> Web Property solutions</a>
                   </li>
                   <li>
                     <a href="/real-estate">Property Pro</a>
                   </li>
                 </ul>
               </div>
+
+
+            </div>
           </div>
-          <div class="footer-company">
-              <h5><a class="text-secondary link-header" href="/forschools/"> COMPANY</a></h5>
-            <ul>
-              <li>
-              <a class="text-secondary" href="/events/"> Events</a>
-              </li>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Company</h4>
+                <ul>
+                  <li>
+                  <a class="text-secondary" href="/events/"> Events</a>
+                  </li>
 
-              <li>
-                <a class="" href="/company-news/"> Company News</a>
-              </li>
-              <li>
-                <a href="/careers/">Careers</a>
-              </li>
-              <li>
-                <a href="/affliate">About BayScope</a>
-              </li>
-              <li>
-                <a href="/affliate">Investors</a>
-              </li>
-              <li>
-                <a href="/affliate">Affliate</a>
-              </li>
+                  <li>
+                    <a class="" href="/company-news/"> Company news</a>
+                  </li>
+                  <li>
+                    <a href="/careers/">Careers</a>
+                  </li>
+                  <li>
+                    <a href="/affliate">About BayScope</a>
+                  </li>
+                  <li>
+                    <a href="/affliate">investors</a>
+                  </li>
+                  <li>
+                    <a href="/affliate">Affliate</a>
+                  </li>
 
-            </ul>
+                </ul>
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="row text-right   text-sm">
+          <a class="p-4" href="/privacy"> privacy <i class="fa fa-lock" aria-hidden="true"></i></a>  <a class="p-4" href="/termsandconditions"> Terms of service</a> <a class="p-4" href="trademarks"> Trademarks <i class="fa fa-trademark" aria-hidden="true"></i></a>
+         </div>
       </div>
-      <div class="footer-privacy">
-        <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a>  <a class="p-4" href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i class="fa fa-trademark" aria-hidden="true"></i></a>
+    </div>
+    
+    <div class="footer-area-bottom">
+      <div class="container">
+      
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-     
-     
-  </div>
- 
-  
-  </div> 
-  <div class="copyright">
-    <p>
-      &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
-    </p>
-  </div>
- </footer>
- <!-- End of footer area  -->
-   <!-- By <Jaystorm/>
-        Git:Jaystorm56 -->
-
+    </div>
+  </footer>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 

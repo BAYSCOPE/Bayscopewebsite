@@ -17,6 +17,7 @@
     font-size: 18px;
     line-height: 28px;
   }
+  
 }
 
 /* Tablet desktop :768px. */
@@ -114,60 +115,20 @@
   .search-option input {
     width: 67%;
   }
-   .footer-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 13px;
-    margin: 50px 0;
-    margin-left: 50px;
+  .mid-nav-list{
+    width: 50vw;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
-  .footer-products{
-    display: flex;
-    gap: 2px;
+  .right-nav-list{
+    width: 20vw;
+    justify-content: space-around;
   }
-  .footer-products-child{
-    text-align: start;
-    width: 240px;
-    height: 180px;
-    line-height: 30px;
-    border-radius: 5px;
-    align-items: center;
-  }
-  .footer-company{
-    text-align: start;
-    width: 230px;
-    height: 180px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 45px;
-  }
-  .footer-head{
-    margin-left: 30px;
-  }
-  .real-estate{
-    margin-left: 20px;
-  }
-  .footer-privacy{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    font-size: 19px;
-    margin-right: 25px;
-  }
-  .copyright{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15px;
-    border-top: 1px solid #444; ;
-  }
-  .copyright > p{
-    margin-top: 10px;
-    color: #444;
+  .dropdown:hover .solutions{
+    width: 60vw;
+    height: 70vh;
+    max-height: 700px;
   }
   .advert-content {
     display: flex;
@@ -229,9 +190,27 @@
 
 @media (max-width: 767px) {
 
-  .header-area {
-    height: 60px !important;
+  .header-area{
+    height: auto !important;
     background: #000;
+    flex-direction: column;
+    padding: 10px;
+  }
+  header div{
+    width: 100%;
+  }
+  header nav.navbar-collapse.collapse, .mid-nav-list, .right-nav-list{
+    width: 100vw;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    border-bottom: 1px solid #3ec1d5;
+  }
+  .mid-nav-list li, .right-nav-list li{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
   }
   .navbar-header a.navbar-brand, .stick .navbar-header a.navbar-brand {
     display: inline-block;
@@ -472,6 +451,14 @@
     height: 150px;
     width: 250px;
     padding-bottom: 10px;
+    
+  .dropdown:hover .solutions{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    width: 80vw;
+    height: 70vh;
+    max-height: 700px;
   }
 }
 
@@ -500,7 +487,6 @@
   .tab-menu ul.nav li a {
     padding: 8px 20px;
   }
-
   .footer-content{
     display: flex;
     justify-content: center;
