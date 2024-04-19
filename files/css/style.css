@@ -942,19 +942,173 @@ div#preloader {
 
 /*--------------------------------*/
 
-/*  14.Contact Area
+
+/* 14.Advert Area */
+
+.advert-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5),rgba(0,0,0,0.6)), url('/files/img/background/businessmen shaking hands in business center..mp4');
+  /* overflow: hidden; Hide overflowing video */
+}
+
+.advert-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.advert-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  gap: 20px;
+}
+
+.advert-container > p {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.advert-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-right: 40px;
+}
+.advert-image > img {
+  height: 400px;
+  width: 500px;
+}
+
+.advert-image > h2 {
+  font-size: 6rem;
+  font-weight: 600;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+.headline-ad > h2 {
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  font-family: fantasy;
+  margin-top: 20px;
+}
+
+.advert-container > a {
+  display: inline-block;
+  padding: 15px 65px;
+  font-size: 19px;
+  font-weight: 700;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  outline: none;
+  text-decoration: none;
+  border-radius: 14px;
+  transition: background-color 0.5s ease;
+}
+
+.advert-container > a:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1000;
+  /* Apply linear gradient overlay */
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9),rgba(0,0,0,0.9)), url('/files/img/background/businessmen shaking hands in business center..mp4');
+}
+
+
+/* ------------------------------- */
+
+/*  15.Contact Area
 /*--------------------------------*/
 
-.contact-area {
-  height: auto;
+/*  16. Footer Area
+/*----------------------------------------*/
+footer{
+  min-height: 70vh;
+  background-color: black;
   width: 100%;
 }
-
-.contact-content {
-  padding: 100px;
-  background: #000 none repeat scroll 0 0;
+.footer-main{
+  display: flex;
 }
-
+.footer-logo h2{
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.footer-content{
+  display: flex;
+  gap: 30px;
+  margin: 50px 0;
+  margin-left: 50px;
+}
+.footer-products-child ul li h5 a{
+  font-size: 18px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.footer-products-child ul li h5 a:hover{
+  color: #3cd6ed;
+}
+.footer-products-child ul li a {
+  text-decoration: none;
+  color: rgb(219, 217, 217);
+  font-size: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.footer-products-child ul li a:hover{
+  color: #3cd6ed;
+}
+.footer-company h5 a{
+  font-size: 18px;
+  color: white;
+}
+.footer-company h5 a:hover{
+  color: #3cd6ed;
+}
+.footer-company ul li a{
+  color: rgb(219, 217, 217);
+  font-size: 15px;
+}
+.footer-company ul li a:hover{
+  color: #3cd6ed;
+}
+.footer-products-child{
+  text-align: start;
+  width: 240px;
+  height: 180px;
+  line-height: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-products-child > ul{
+  margin-top: 10px;
+  
+/*  14.Contact Area
+/*--------------------------------*/
 
 /*----------------------------------------*/
 
@@ -982,7 +1136,7 @@ div#preloader {
 .footer-logo {
   padding-bottom: 20px;
 }
-
+  
 .footer-logo h2 {
   color:white;
   padding: 0;
@@ -1061,10 +1215,26 @@ div#preloader {
   text-align: center;
 }
 
+.footer-privacy a {
+  font-size: 16px;
+  color: rgba(215, 215, 215,0.3);
+  transition: all 0.5s ease-in-out;
+}
+.footer-privacy a:hover{
+  color: #3cd6ed;
+}
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+  border-top: 1px solid #444; ;
+
 .footer-area-bottom {
   background: black repeat scroll 0 0;
   padding: 15px 0;
   color: white;
+
 }
 
 .copyright-text a:hover {
