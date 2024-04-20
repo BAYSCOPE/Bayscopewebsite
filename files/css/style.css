@@ -1107,15 +1107,30 @@ footer{
 .footer-products-child > ul{
   margin-top: 10px;
 }
+.footer-products-child > ul > li > h5{
 
-.footer-logo h2 span {
-  color: #3ec1d5;
 }
-
+.footer-products{
+  display: flex;
+  gap: 25px;
+}
+.footer-company{
+  text-align: start;
+  width: 230px;
+  height: 180px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-company > h5 {
+  margin-top: 10px;
+}
+.footer-icons {
+  margin-top: 30px;
+}
 .footer-icons ul li {
   display: inline-block;
 }
-
 .footer-icons ul li a {
   border: 1px solid #444;
   color:white;
@@ -1128,32 +1143,6 @@ footer{
   width: 40px;
   border-radius: 50%;
 }
-
-.flicker-img>a {
-  float: left;
-  padding: 1px;
-  width: 33.33%;
-}
-
-.footer-icons {
-  margin-top: 30px;
-}
-
-.footer-contacts p span {
-  color: #3EC1D5;
-  font-weight: 700;
-}
-
-.popular-tag ul li {
-  display: inline-block;
-}
-
-.footer-content {
-  display: block;
-  overflow: hidden;
-}
-
-.popular-tag ul li a:hover,
 .footer-icons ul li a:hover {
   background: #3EC1D5;
   border: 1px solid #3EC1D5;
@@ -1180,20 +1169,11 @@ footer{
   margin-top: 90px;
   border-top: 1px solid #444; ;
 }
-
-.copyright-text a:hover {
-  text-decoration: underline;
-  color: #3EC1D5;
-}
-
-.copyright-text a {
+.copyright > p{
+  margin-top: 20px;
   color: #444;
 }
 
-.copyright>p {
-  margin-bottom: 0;
-  color: #444;
-}
 
 .copyright a,
 .credits a {
