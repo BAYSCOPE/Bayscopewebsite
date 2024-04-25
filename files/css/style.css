@@ -1668,14 +1668,14 @@ nav ul li a{
   overflow-y: scroll;
 }
 .dropdown-menu-subdiv{
-  margin: 10px;
+  margin: ;
 }
 .dropdown-menu-subdiv ul #subdiv-list-item{
   margin: 10px 15px;
   padding: 3px;
 }
 .dropdown-menu-subdiv a{
-  padding: 3px 10px;
+  padding: 10px 0px;
   color: #000;
 }
 .dropdown-menu-subdiv ul{

@@ -156,7 +156,6 @@
   .mid-nav-list li, .right-nav-list li{
     margin-bottom: 15px;
     padding: 10px;
-    width: 100%;
   }
   .navbar-header a.navbar-brand, .stick .navbar-header a.navbar-brand {
     display: inline-block;
@@ -307,10 +306,18 @@
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    width: 80vw;
+    width: 90vw;
     height: 70vh;
     max-height: 700px;
   }
+  .main-menu .dropdown ul li {
+    display: block;
+    margin: ;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 0;
+}
 }
 
 /* Large Mobile :480px. */
