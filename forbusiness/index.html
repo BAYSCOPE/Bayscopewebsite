@@ -62,7 +62,7 @@
   </div>
 
   <div id="preloader"></div>
-  <header class="header">
+  <header class="header header-area" id="sticker">
     <div class="header-logo-container">
       <a class="page-scroll sticky-logo" href="/">
         <h1>BayScope</h1>
@@ -80,36 +80,63 @@
         <li class="active">
           <a class="page-scroll" href="/">Home</a>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions<span
           class="caret"></span></a>
-      <ul class="dropdown-menu" role="menu">
+      <ul class="dropdown-menu solutions" role="menu">
 
-        <li><a href='/services/software-development'>Software development</a></li>
-        <li><a href='/services/web-development'>Web services</a></li>
-        <li><a href='/services/app-development/'>mobile service</a></li>
-
-
-        <li><a href=#>Product Design</a></li>
+        <li class="dropdown-menu-subdiv"><a href='/services/software-development' class="subdiv-heading-text">For Business</a>
+          <ul>
+            <li id="subdiv-list-item"><a href='/services/software-development'>Business Technology</a></li>
+            <li id="subdiv-list-item"><a href='/services/web-development'>Financial Solutions</a></li>
+            <li id="subdiv-list-item"><a href='/services/app-development/'>E-commerce</a></li>
+            <li id="subdiv-list-item"><a href=#>CRM</a></li>
+            <li id="subdiv-list-item"><a href='/services/app-development/'>Enterprise Resourse Planning</a></li>
+            <li id="subdiv-list-item"><a href=#>BayScope Start-Up Bundle</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-menu-subdiv"><a href='/services/web-development' class="subdiv-heading-text">For School</a>
+          <ul>
+            <li id="subdiv-list-item"><a href='/services/software-development'>Software development</a></li>
+            <li id="subdiv-list-item"><a href='/services/web-development'>Web services</a></li>
+            <li id="subdiv-list-item"><a href='/services/app-development/'>mobile service</a></li>
+            <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text">For Real-Estate</a>
+        <ul>
+          <li id="subdiv-list-item"><a href='/services/software-development'>Software development</a></li>
+          <li id="subdiv-list-item"><a href='/services/web-development'>Web services</a></li>
+          <li id="subdiv-list-item"><a href='/services/app-development/'>mobile service</a></li>
+          <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+        </ul>
+        </li>
+        <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text">For Health</a>
+        <ul>
+          <li id="subdiv-list-item"><a href='/services/software-development'>Software development</a></li>
+          <li id="subdiv-list-item"><a href='/services/web-development'>Web services</a></li>
+          <li id="subdiv-list-item"><a href='/services/app-development/'>mobile service</a></li>
+          <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+        </ul>
+        </li>
       </ul>
     </li>
-    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BayScope<span
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
           class="caret"></span></a>
       <ul class="dropdown-menu" role="menu">
         <li><a href='/forbusiness/'>BayScope Business</a></li>
         <li><a href='/forschools/'>BayScope Schools</a></li>
         <li><a href='/forhealths'>Bayscope Healths</a></li>
-        <li><a href='/leadership'> BayScope Real Estate</a></li>
+        <li><a href='/realestate/'> BayScope Real Estate</a></li>
 
       </ul>
     </li>
-    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
+    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">coming soon<span
           class="caret"></span></a>
       <ul class="dropdown-menu" role="menu">
-        <li><a href=#>B Flow</a></li>
-        <li><a href=#>B Docs</a></li>
+        <li><a href=#>BayScope Flow</a></li>
+        <li><a href=#>CardLinks</a></li>
 
-        <li class="text-secondary">Bundles</li>
-        <hr>
+     
 
         <li><a href="/ProSuite">ProSuite</a></li>
         <li><a href="/edu360"> Edu360</a></li>
@@ -127,16 +154,17 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
               aria-hidden="true"></i> <span class="caret"></span> </a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="/client/login">Sign in</a></li>
-            <li><a href="/client/signup">Sign up </a></li>
+            <li><a href="/auth/login">Sign in</a></li>
+            <li><a href="/auth/signup">Sign up </a></li>
           </ul>
         </li>
         <li class="pl-2">
-          <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
+          <a href="/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
         </li>
       </ul>
     </nav>
   </header>
+  
   <!-- Start Slider Area -->
 
 
@@ -912,6 +940,7 @@
 
   <!-- Start Service area -->
 
+
   <footer>
     <div class="footer-main">
       <div class="footer-container">
@@ -1034,7 +1063,6 @@
       </p>
     </div>
    </footer>
-
 
 
 

@@ -1,27 +1,542 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>BayScope School</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="files/img/favicon.jpg" rel="icon">
-    <link href="files/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <title>Bayscope- IT Solutions and Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+
+    <!-- Favicons -->
+    <link href="/files/img/favicon.jpg" rel="icon">
+    <link href="/files/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0
+  /css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Bootstrap CSS File -->
     <link href="/files/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- libsraries CSS Files -->
+    <link href="/files/libs/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+    <link href="/files/libs/owlcarousel/owl.carousel.css" rel="stylesheet">
+    <link href="/files/libs/owlcarousel/owl.transitions.css" rel="stylesheet">
+    <link href="/files/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/files/libs/animate/animate.min.css" rel="stylesheet">
+    <link href="/files/libs/venobox/venobox.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css"
+        integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+    <link href="/files/busstyle.css">
+
+    <!-- Nivo Slider Theme -->
+    <link href="/files/css/nivo-slider-theme.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
     <link href="/files/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <!-- Responsive Stylesheet File -->
     <link href="/files/css/responsive.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/forbusiness/style.css">
+    <style>
+    
+
+
+        @media screen and (max-width: 600px) {
+            .mobile {
+                display: none;
+            }
+
+            .container-fluid {
+                height: 80px;
+            }
+
+            .container-fluid h1 {
+                font-size: medium;
+            }
+
+            h2 {
+                font-size: large;
+            }
+        }
+
+        .block {
+            float: left;
+            text-align: left;
+            justify-self: left;
+            position: absolute;
+            left: 10px;
+
+        }
+
+        .text-side {
+            top: 1500px;
+            width: 80%;
+            font-size: 20px;
+            position: absolute;
+            left: 50%;
+        }
+
+        .trial-btn {
+            border: 2px solid #3EC1D5;
+            border-radius: 30px;
+            color: #444;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: all 0.4s ease 0s;
+
+        }
+
+        .trial-btn:hover {
+            border: 1px solid #3EC1D5;
+            color: #fff;
+            background-color: #3EC1D5;
+        }
+
+        .logo {
+
+            padding: 10;
+        }
+
+        .container-fluid .bg {
+            width: 100%;
+            position: absolute;
+            background-color: #3EC1D5;
+
+            padding-left: 20px;
+
+        }
+
+        .bg a {
+            margin-bottom: 30px;
+        }
+
+        .container-fluid {
+            margin-left: 0;
+            padding-left: 0;
+            margin-top: 70px;
+            height: 100px;
+            padding-bottom: 50px;
+            margin-bottom: 100px;
+        }
+
+
+        .center {
+            text-align: center;
+        }
+
+        .space {
+
+            margin-left: 60px;
+        }
+    .top_head {
+    position: relative;
+    height: 95vh;
+    background-image: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sfGVufDB8fDB8fHww");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+#services{
+    margin: 40px 0;
+}
+
+.b-text {
+    position: relative;
+    z-index: 1;
+    text-align: start;
+    padding-top: 180px; 
+    padding-left: 220px;
+}
+.heading-secondary {
+    color: white; 
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.heading-tertiary {
+    color: white; 
+    font-size: 3.8rem;
+    line-height: 1.2;
+}
+
+.b-tag {
+    padding: 0.8rem;
+    background-color: #3ec1d5;
+    display: inline-block;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 5px;
+}
+
+.paragraph {
+    width: 800px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white; 
+    line-height: 1.6;
+    margin-top: 3rem;
+}
+
+.b-btn {
+    margin-top: 20px;
+}
+
+.b-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #3ec1d5;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #3ec1d5;
+    border: 1px solid #3ec1d5;
+}
+
+.b-btn a:last-child {
+    margin-left: 10px;
+    font-size: 2rem;
+    background-color: #fff;
+    color: #3ec1d5;
+    border: 1px solid #3ec1d5;
+}
+
+.b-btn a:last-child:hover {
+    background-color: #3EC1D5;
+    color: #fff;
+}
+
+.help-center {
+    background-color: #f4f4f4;
+    padding: 8rem 0;
+    margin: 8rem 0 0 0;
+}
+
+.container {
+    
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+.help-cards {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.help-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 4rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.015);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+
+.help-icon {
+    font-size: 4rem;
+    color: #36abb9;
+    margin-bottom: 2rem;
+}
+
+.help-content h3 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.help-content p {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.help-content a {
+    display: inline-block;
+    background-color: #36abb9;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.help-content a:hover {
+    background-color: #3ec1d5;
+}
+/* Mailing List Section */
+.mailing-list-section {
+    background-color: #3ec1d5;
+    padding: 8rem  0;
+}
+
+.mailing-list-form {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.mailing-list-form input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.bnt {
+    background-color: #36abb9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+ .bnt:hover {
+    background-color: #eee;
+    border: 1px solid #3ec1d5;
+    color: #3EC1D5;
+}
+
+
+        .pricing-box {
+            -webkit-box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
+            padding: 35px 50px;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .pricing-box .plan {
+            font-size: 34px;
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: 0;
+            z-index: 999;
+            right: 0;
+            width: 100%;
+            display: block;
+            font-size: 15px;
+            padding: 0;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .pricing-badge .badge {
+            float: right;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            right: -67px;
+            top: 17px;
+            position: relative;
+            text-align: center;
+            width: 200px;
+            font-size: 13px;
+            margin: 0;
+            padding: 7px 10px;
+            font-weight: 500;
+            color: #ffffff;
+            background: #fb7179;
+        }
+
+        .mb-2,
+        .my-2 {
+            margin-bottom: .5rem !important;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        
+        .border {
+            background: #e8e8e8;
+            height: 1px;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 45px;
+            float: left;
+        }
+
+        /* Feature-CSS */
+
+        .icon {
+            color: #fff;
+            padding: 15px;
+            background: #323232;
+            font-size: 50px;
+            border-radius: 90px;
+            border: 10px solid #323232;
+
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 20px;
+            transition: .5s;
+            margin-bottom: 30px;
+            border: 1px solid #e8e8e8;
+        }
+
+        .feature-box:hover {
+
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .feature-box h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 25px 0 15px;
+        }
+
+        #services {
+            margin-top: 100px;
+        }
+
+        i {
+            color: #3EC1D5;
+        }
+
+
+        .btn {
+            background-color: #3EC1D5;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #3EC1D5;
+        }
+        .raw{
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+    @media screen and (max-width: 884px){
+    .top_head{
+        height: 60vh;
+    }
+    .heading-secondary{
+        font-size: 5rem;
+    }
+    .heading-tertiary{
+        font-size: 3rem;
+    }
+    .b-text{
+        padding-left: 3rem;
+        margin-right: -4rem;
+    }
+
+    .raw{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .row::before{
+        display: none;
+    }
+     .container{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .help-card{
+        padding: 2rem;
+    }
+    .help-cards{
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .top_head{
+        height: 90vh;
+    }
+    .b-text{
+        padding-top:  10rem;
+        padding-left: 2rem;
+        width: 90%;
+    }
+    .heading-secondary{
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    .paragraph{
+        font-size: 1.2rem;
+        width: 85%;
+    }
+    .heading-tertiary{
+        font-size: 2.4rem;
+    }
+    .raw{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .help-center-section{
+        padding: 4rem 0;
+    }
+    .container{
+        margin: 0;
+        max-width: 100%;
+    }
+    .help-cards{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .help-card{margin-bottom: 4rem;}
+    }
+    </style>
+
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example">
-    <header id="sticker" class="header-area">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
+
+<body>
+    <header class="header">
+        <div class="header-logo-container">
+            <a class="page-scroll sticky-logo" href="/">
+                <h1>BayScope</h1>
+            </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                 data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -29,52 +544,57 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll sticky-logo" href="/">
-                <h1>BayScope</h1>
-            </a>
         </div>
-        <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="">
+        <nav class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+            <ul class="mid-nav-list">
+                <li class="active">
                     <a class="page-scroll" href="/">Home</a>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span class="caret"></span></a>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
+                            class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href='/services/software-development'> Custom Software development</a></li>
-                        <li><a href='/services/web-development'>Web development</a></li>
-                        <li><a href='/services/app-development/'>App development</a></li>
-                        <li><a href='#'>Product Design</a></li>
+    
+                        <li><a href='/services/software-development'>Software development</a></li>
+                        <li><a href='/services/web-development'>Web services</a></li>
+                        <li><a href='/services/app-development/'>mobile service</a></li>
+    
+    
+                        <li><a href=#>Product Design</a></li>
                     </ul>
                 </li>
-                <li class="active dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">BayScope<span class="caret"></span></a>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">BayScope<span
+                            class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href='/forbusiness/'>Bayscope Business</a></li>
-                        <li><a href='/forschools/'>Bayscope Schools</a></li>
-                        <li><a href='/healths'>Bayscope Healths</a></li>
-                        <li><a href='/leadership'>Leadership</a></li>
-                        <li><a href='/pricing'>Pricing Plan</a></li>
-                        <li><a href='/faqs'>FAQ</a></li>
+                        <li><a href='/forbusiness/'>BayScope Business</a></li>
+                        <li><a href='/forschools/'>BayScope Schools</a></li>
+                        <li><a href='/forhealths'>Bayscope Healths</a></li>
+                        <li><a href='/leadership'> BayScope Real Estate</a></li>
+    
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span class="caret"></span></a>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
+                            class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href='#'>BQuery</a></li>
-                        <li><a href='#'>B Flow</a></li>
-                        <li><a href='#'>B Docs</a></li>
+                        <li><a href=#>B Flow</a></li>
+                        <li><a href=#>B Docs</a></li>
+    
                         <li class="text-secondary">Bundles</li>
                         <hr>
+    
                         <li><a href="/ProSuite">ProSuite</a></li>
                         <li><a href="/edu360"> Edu360</a></li>
+    
                     </ul>
                 </li>
+                </div>
+            </ul>
+            <ul class="right-nav-list">
                 <li>
                     <a class="page-scroll" href="/contact">Contact</a>
                 </li>
+    
                 <li class=" dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
                             aria-hidden="true"></i> <span class="caret"></span> </a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/client/login">Sign in</a></li>
@@ -85,346 +605,282 @@
                     <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
                 </li>
             </ul>
-        </div>
-    </nav>
-    <!--  Navigation -->
-
+        </nav>
     </header>
 
-    <main>
-    <section id="hero">
-        <div class="hero">
-        <div class="b-text">
-            <h2 class="heading-secondary" >
-                Welcome to <span style="color: #3ec1d5;"> SchoolScope</span>
-            </h2>
-            <h2 class="heading-secondary">
-                Explore the modern educational 
-            </h2>
-            <h2 class="heading-secondary">
+    <!-- header end -->
+
+<section class="top_head">
+    <div class="overlay"></div>
+    <div class="b-text">
+        <h2 class="heading-secondary">
+            Welcome to <span style="color: #3ec1d5;"> SchoolScope</span>
+        </h2>
+        <h2 class="heading-secondary">
+            Explore the modern educational
+        </h2>
+        <h2 class="heading-secondary">
             landscape with SchoolScape
-            </h2>
-
-            <p class="paragraph">
-                Meet SchoolScape: Your modern education guide. From classrooms to curriculum, it equips educators with essential
-                resources for academic success. With tech and personalized learning, it empowers teachers to meet student needs in
-                today's landscape.
-            </p>
-
-            <div class="b-btn">
-                <a class="page-scroll btn-primary" href="/pricing">Get Started</a>
-                <a class="page-scroll" href="/faqs">Reach Us</a>
-            </div>
-
-        </div>
-
-
-        <div class="b-image">
-            <img class="hero-img" src="https://plus.unsplash.com/premium_photo-1682141040557-bdffedea0906?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWZyaWNhc2Nob29sJTIwc29mdHdhcmV8ZW58MHx8MHx8fDA%3D" alt="school">
-        </div>
-    </div>
-    </section>
-
-    <section class="advert-section">
-            <div class="overlay"></div>
-            <div class="content">
-                <h2 class="heading-secondary">Empowering education through technology, <span style="color: #3ec1d5;">one school at a time</span></h2>
-                <p class="paragraph">Enhance learning with our innovative software solution. Our platform is designed to streamline school operations and improve student outcomes. Join over
-                <h1 id="count">0</h1> schools onboarded!</p>
-            </div>
-    </section>
-
-  <section class="">
-  <h2 class="heading-secondary" style="text-align: center; margin-bottom: 5rem;">Our Features</h2>
-<div class="features">
-    <div class="feature">
-        <span class="fas fa-chalkboard-teacher"></span>
-        <h3 class="heading-tertiary">LMS Attendance Tracking</h3>
-        <p class="paragraph">Track student attendance efficiently with our intuitive Learning Management System.</p>
-    </div>
-    <div class="feature">
-        <span class="fas fa-hotel"></span>
-        <h3 class="heading-tertiary">Hostel Management</h3>
-        <p class="paragraph">Manage hostel facilities and student accommodations seamlessly.</p>
-    </div>
-    <div class="feature">
-        <span class="fas fa-clipboard"></span>
-        <h3 class="heading-tertiary" >Grades Management</h3>
-        <p class="paragraph">Effortlessly manage student grades and academic progress.</p>
-    </div>
-    <div class="feature">
-        <span class="fas fa-book"></span>
-        <h3 class="heading-tertiary">Library Management</h3>
-        <p class="paragraph">Keep track of books, issue and return, and manage library resources efficiently.</p>
-    </div>
-    <div class="feature">
-        <span class="fas fa-bus"></span>
-        <h3 class="heading-tertiary">Transportation Management</h3>
-        <p class="paragraph">Streamline transportation services for students with our transportation management.</p>
-    </div>
-</div>
-</section>
-
-
-<section id="pricing-container">
-
-    <div id="pricing-switch">
-        
-      <h3 class="title-heading " style="color: #3EC1D5;"> Explore subscription based Pricing </h3>
-      <p class="text-muted f-17 mt-3">Access high value solutions at low cost...</p>
-      <hr>
-        <span class="switch-label switch-label-yearly ">Yearly </span>
-
-        <div class="save-money--mobile">Save 10% on Yearly Plans</div>
-
-    </div>
-    <!-- end of pricing-switch -->
-
-    <div id="pricing-cards">
-
-        <!-- ============================= -->
-        <!-- = Premium Subscription Card = -->
-        <!-- ============================= -->
-        <div class="price-card">
-
-            <div class="price-card--header">
-                <h4>Premium</h4>
-                <!-- <p>for growing your business</p> -->
-            </div>
-
-            <div class="price-card--price">
-                <div class="price-card--price-text">
-                    <div class="price-card--price-number toggle-price-content odometer" data-price-monthly="2,499" data-price-yearly="2,250">2,250</div>
-                </div>
-                <div class="price-card--price-conditions">
-                    <div class="toggle-price-content" data-price-monthly="Billed Monthly" data-price-yearly="Billed Annually">Billed Annually</div>
-
-                </div>
-            </div>
-
-            
-
-            <div class="price-card--features">
-
-                <ul class="price-card--features--list">
-                    <li class="price-card--features--item has-tooltip">Sales & Marketing Platform
-                        <div class="tooltip-container"><strong>Sales & Marketing Platform</strong>
-                            <p  >Vendasta's end-to-end sales solution for companies that serve local businesses, and want to grow digital revenue.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Snapshot & Campaigns
-                        <div class="tooltip-container"><strong>Snapshot & Campaigns</strong>
-                            <p>Access to award-winning automated needs-assessment and email marketing automation. Unlimited emails sent to unlimited accounts.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Marketplace
-                        <div class="tooltip-container"><strong>Marketplace</strong>
-                            <p>Access to world-class resellable products & services, aimed to fulfilling the digital marketing needs of your small & medium sized business clients.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Business Center & Store
-                        <div class="tooltip-container"><strong>Business Center & Store</strong>
-                            <p>Portal for your local business clients, featuring your agency’s branding. They can access the products purchased from your Marketplace.</p>
-                        </div>
-                    </li>
-
-                    <li class="price-card--features--item has-tooltip">Tech support
-                        <div class="tooltip-container"><strong>Tech support</strong>
-                            <p>Phone, Email and Web Chat support, <br/>9am-9pm EST Mon-Fri, <br/>2pm-7pm EST Sat-Sun</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Partner Success Manager
-                        <div class="tooltip-container"><strong>Partner Success Manager</strong>
-                            <p>One-on-one with a Vendasta Success Manager, who will provide sales training so you reach your goals quickly.</p>
-                        </div>
-                    </li>
-                 
-
-                </ul>
-                <button class="btn">Get started</button>
-            </div>
-
-            <div class="price-card--mobile-features-toggle"></div>
-
-        </div>
-        <!-- End of Card -->
-
-        <!-- ================================ -->
-        <!-- = Enterprise Subscription Card = -->
-        <!-- ================================ -->
-        <div class="price-card price-card--hero">
-
-            <div class="price-card--header">
-                <h4>Enterprise</h4>
-           
-            </div>
-            <div class="price-card--hero-text">
-                Most Popular Plan
-            </div>
-
-            <div class="price-card--price">
-                <div class="price-card--price-text">
-                    <div class="price-card--price-number toggle-price-content odometer" data-price-monthly="999" data-price-yearly="900">900</div>
-                </div>
-                <div class="price-card--price-conditions">
-                    <div class="toggle-price-content" data-price-monthly="Billed Monthly" data-price-yearly="Billed Annually">Billed Annually</div>
-               
-                </div>
-            </div>
-
-            <div class="price-card--features">
-                <ul class="price-card--features--list">
-
-                    <li class="price-card--features--item has-tooltip">Sales & Marketing Platform
-                        <div class="tooltip-container"><strong>Sales & Marketing Platform</strong>
-                            <p>Vendasta's end-to-end sales solution for companies that serve local businesses, and want to grow digital revenue.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Snapshot & Campaigns
-                        <div class="tooltip-container"><strong>Snapshot & Campaigns</strong>
-                            <p>Access to award-winning automated needs-assessment and email marketing automation. Unlimited emails sent to unlimited accounts.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Marketplace
-                        <div class="tooltip-container"><strong>Marketplace</strong>
-                            <p>Access to world-class resellable products & services, aimed to fulfilling the digital marketing needs of your small & medium sized business clients.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Business Center & Store
-                        <div class="tooltip-container"><strong>Business Center & Store</strong>
-                            <p>Portal for your local business clients, featuring your agency’s branding. They can access the products purchased from your Marketplace.</p>
-                        </div>
-                    </li>
-
-                    <li class="price-card--features--item has-tooltip">Tech support
-                        <div class="tooltip-container"><strong>Tech support</strong>
-                            <p>Phone, Email and Web Chat support, <br/>9am-9pm EST Mon-Fri, <br/>2pm-7pm EST Sat-Sun</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Partner Success Manager
-                        <div class="tooltip-container"><strong>Partner Success Manager</strong>
-                            <p>One-on-one with a Vendasta Success Manager, who will provide sales training so you reach your goals quickly.</p>
-                        </div>
-                    </li>
-                  
-
-                </ul>
-                <button class="btn-pro">Get started</button>
-            </div>
-
-            <div class="price-card--mobile-features-toggle"></div>
-
-        </div>
-     
-        <div class="price-card">
-
-            <div class="price-card--header">
-                <h4>Basic</h4>
-
-            </div>
-
-            <div class="price-card--price">
-                <div class="price-card--price-text only-yearly">
-                    <div class="price-card--price-number odometer">249</div>
-                    <div class="only-yearly--text"><span>Only Available Yearly</span></div>
-                </div>
-                <div class="price-card--price-conditions">
-                    <div>Billed Annually</div>
-
-                </div>
-            </div>
-
-       
-
-            <div class="price-card--features">
-                <ul class="price-card--features--list">
-
-                    <li class="price-card--features--item has-tooltip">Sales & Marketing Platform
-                        <div class="tooltip-container"><strong>Sales & Marketing Platform</strong>
-                            <p>Vendasta's end-to-end sales solution for companies that serve local businesses, and want to grow digital revenue.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Snapshot & Campaigns
-                        <div class="tooltip-container"><strong>Snapshot & Campaigns</strong>
-                            <p>Access to award-winning automated needs-assessment and email marketing automation. Unlimited emails sent to unlimited accounts.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Marketplace
-                        <div class="tooltip-container"><strong>Marketplace</strong>
-                            <p>Access to world-class resellable products & services, aimed to fulfilling the digital marketing needs of your small & medium sized business clients.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Business Center & Store
-                        <div class="tooltip-container"><strong>Business Center & Store</strong>
-                            <p>Portal for your local business clients, featuring your agency’s branding. They can access the products purchased from your Marketplace.</p>
-                        </div>
-                    </li>
-                    <li class="price-card--features--item has-tooltip">Tech support (limited)
-                        <div class="tooltip-container"><strong>Tech support (limited)</strong>
-                            <p>Email and Web Chat support, <br/>9am-9pm EST Mon-Fri, <br/>2pm-7pm EST Sat-Sun</p>
-                        </div>
-                    </li>
-
-                    <li class="price-card--features--item has-tooltip tooltip-disabled features-disabled">Partner Success Manager
-                        <div class="tooltip-container"><strong>Partner Success Manager</strong>
-                            <p>One-on-one with a Vendasta Success Manager, who will provide sales training so you reach your goals quickly.</p>
-                        </div>
-                    </li>
-                  
-                </ul>
-                <button class="btn">Get started</button>
-            </div>
-
-            <div class="price-card--mobile-features-toggle"></div>
-
-        </div>
-        <!-- End of Card -->
-
-    </div>
-    <!--    end of pricing-cards -->
-
-
-</section>
+        </h2>
     
-    <!-- Help Center Section -->
-<section class="help-center">
-    <div class="container">
-        <h2 class="heading-secondary" style="text-align: center; margin-bottom: 5rem;">Help Center</h2>
-        <div class="help-cards">
-            <div class="help-card">
-                <div class="help-icon">
-                    <i class="fas fa-question-circle"></i>
-                </div>
-                <div class="help-content">
-                    <h3>FAQs</h3>
-                    <p>Find answers to frequwently asked.</p>
-                    <a href="#">Read FAQs</a>
-                </div>
-            </div>
-            <div class="help-card">
-                <div class="help-icon">
-                    <i class="fas fa-life-ring"></i>
-                </div>
-                <div class="help-content">
-                    <h3>Support</h3>
-                    <p>Contact our support team for assistances.</p>
-                    <a href="#">Contact Support</a>
-                </div>
-            </div>
-            <div class="help-card">
-                <div class="help-icon">
-                    <i class="fas fa-video"></i>
-                </div>
-                <div class="help-content">
-                    <h3>Tutorials</h3>
-                    <p>Learn how to use our software with tutorials.</p>
-                    <a href="#">View Tutorials</a>
-                </div>
-            </div>
+        <p class="paragraph">
+            Meet SchoolScape: Your modern education guide. From classrooms to curriculum, it equips educators with essential
+            resources for academic success. With tech and personalized learning, it empowers teachers to meet student needs
+            in
+            today's landscape.
+        </p>
+    
+        <div class="b-btn">
+            <a class="page-scroll btn-primary" href="/pricing">Get Started</a>
+            <a class="page-scroll" href="/faqs">Reach Us</a>
         </div>
+    
     </div>
 </section>
 
+
+    <section id="services" class="py-5">
+        <div class="Features-section paddingTB60 ">
+            <div class="container">
+                <div class="container">
+                    <div class="site-heading text-center">
+                        <h3 style="color: #3EC1D5;">Our Services</h3>
+                        <p>Why should you choose SchoolScope?</p>
+                        <div class="border"></div>
+                    </div>
+                </div>
+
+
+                <div class="raw">
+                    <div class="">
+                        <div class="col-md-12 feature-box">
+                            <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
+                            <h4>LMS Attendance Tracking</h4>
+                            <p>Track student attendance efficiently with our intuitive Learning Management System.</p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class=" feature-box">
+                            <i class="fas fa-hotel fa-3x mb-3"></i>
+                            <h4>E-commerce</h4>
+                            <p>We will help you develop e-commerce solutions to help you sell products online.</p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="feature-box">
+                            <i class="fas fa-shield-alt fa-3x mb-3"></i>
+                            <h4>Hostel Management</h4>
+                            <p>Manage hostel facilities and student accommodations seamlessly.</p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="col-md-12 feature-box">
+                            <i class="fas fa-clipboard fa-3x mb-3"></i>
+                            <h4>Grades Management</h4>
+                            <p>Effortlessly manage grades and academic progress with our grade management system.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="col-md-12 feature-box">
+                            <i class="fas fa-book fa-3x mb-3"></i>
+                            <h4>Library Management</h4>
+                            <p>Keep track of books, issue and return books with our library management system.</p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class=" feature-box">
+                            <i class="fas fa-bus fa-3x mb-3"></i>
+                            <h4>Transportation Management</h4>
+                            <p>Streamline transportation services for students with our transportation management.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="section" id="pricing">
+        <div class="container">
+
+            <div class="row">
+                <div class="">
+                    <div class="title-box text-center">
+                        <h3 class="title-heading mt-4" style="color: #3EC1D5;">Best Pricing Package </h3>
+                        <p class="text-muted f-17 mt-3">We offer the best prices...</p>
+
+                        <img src="images/home-border.png" height="15" class="mt-3" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="raw mt-5 pt-4">
+                <div class="">
+                    <div class="pricing-box mt-4">
+                        <i class="mdi mdi-account h1"></i>
+                        <h4 class="f-20">Starter</h4>
+
+                        <div class="mt-4 pt-2">
+                            <p class="mb-2 f-18">Features</p>
+
+                            <p class="mb-2"><i
+                                    class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i><b>Unlimited</b>
+                                Target Audience</p>
+                            <p class="mb-2"><i
+                                    class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i><b>1</b>
+                                User Account</p>
+                            <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i><b>100+</b>
+                                Video Tuts</p>
+                            <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i><b>Public</b>
+                                Displays
+                            </p>
+                        </div>
+
+                        <p class="mt-4 pt-2 text-muted">Semper urna veal tempus pharetra elit habisse platea dictumst.
+                        </p>
+                        <div class="pricing-plan mt-4 pt-2">
+                            <h4 class="text-muted"><s> $9.99</s> <span class="plan pl-3 text-dark">$8.99 </span></h4>
+                            <p class="text-muted mb-0">Per Month</p>
+                        </div>
+
+
+                        <div class="mt-4 pt-3">
+                            <a href="" class="btn btn-primary btn-rounded">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="pricing-box mt-4">
+                        <div class="pricing-badge">
+                            <span class="badge">Featured</span>
+                        </div>
+
+                        <i class="mdi mdi-account-multiple h1 text-primary"></i>
+                        <h4 class="f-20 text-primary">Personal</h4>
+
+
+                        <div class="mt-4 pt-2">
+                            <p class="mb-2 f-18">Features</p>
+
+                            <p class="mb-2"><i
+                                    class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i><b>Unlimited</b>
+                                Target Audience</p>
+                            <p class="mb-2"><i
+                                    class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i><b>1</b>
+                                User Account</p>
+                            <p class="mb-2"><i
+                                    class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i><b>100+</b>
+                                Video Tuts</p>
+                            <p class="mb-2"><i class="mdi mdi-close-circle text-danger f-18 mr-2"></i><b>Public</b>
+                                Displays
+                            </p>
+                        </div>
+
+                        <p class="mt-4 pt-2 text-muted">Semper urna veal tempus pharetra elit habisse platea dictumst.
+                        </p>
+
+                        <div class="pricing-plan mt-4 pt-2">
+                            <h4 class="text-muted"><s> $19.99</s> <span class="plan pl-3 text-dark">$18.99 </span></h4>
+                            <p class="text-muted mb-0">Per Month</p>
+                        </div>
+
+                        <div class="mt-4 pt-3">
+                            <a href="" class="btn btn-primary btn-rounded">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="pricing-box mt-4">
+                        <i class="mdi mdi-account-multiple-plus h1"></i>
+                        <h4 class="f-20">Ultimate</h4>
+
+
+                        <div class="mt-4 pt-2">
+                            <p class="mb-2 f-18">Features</p>
+
+                            <p class="mb-2"><i
+                                    class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i><b>Unlimited</b>
+                                Target Audience</p>
+                            <p class="mb-2"><i
+                                    class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i><b>1</b>
+                                User Account</p>
+                            <p class="mb-2"><i
+                                    class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i><b>100+</b>
+                                Video Tuts</p>
+                            <p class="mb-2"><i
+                                    class="mdi mdi-checkbox-marked-circle text-success f-18 mr-2"></i><b>Public</b>
+                                Displays
+                            </p>
+                        </div>
+
+                        <p class="mt-4 pt-2 text-muted">Semper urna veal tempus pharetra elit habisse platea dictumst.
+                        </p>
+
+                        <div class="pricing-plan mt-4 pt-2">
+                            <h4 class="text-muted"><s> $29.99</s> <span class="plan pl-3 text-dark">$28.99 </span></h4>
+                            <p class="text-muted mb-0">Per Month</p>
+                        </div>
+
+                        <div class="mt-4 pt-3">
+                            <a href="" class="btn btn-primary btn-rounded">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="help-center">
+        <div class="container">
+            <h3 style="color: #3EC1D5; text-align: center" class="heading-tertiary">Our Services</h3>
+            <div class="help-cards">
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="help-content">
+                        <h3>FAQs</h3>
+                        <p>Find answers to frequwently asked.</p>
+                        <a href="#">Read FAQs</a>
+                    </div>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <div class="help-content">
+                        <h3>Support</h3>
+                        <p>Contact our support team for assistances.</p>
+                        <a href="#">Contact Support</a>
+                    </div>
+                </div>
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="help-content">
+                        <h3>Tutorials</h3>
+                        <p>Learn how to use our software with tutorials.</p>
+                        <a href="#">View Tutorials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     
     <!-- Mailing List Section -->
     <section class="mailing-list-section">
@@ -438,10 +894,7 @@
     </section>
 
 
-
-    </main>
-
-
+    <!-- Start Footer bottom Area -->
     <footer>
         <div class="footer-area">
             <div class="container">
@@ -450,11 +903,14 @@
                         <div class="footer-content">
                             <div class="footer-head">
                                 <div class="footer-logo">
-                                    <h2><img src="/files/img/logo.jpg" alt="this is the logo"></h2>
+                                    <h2><img src="../files/img/logo.jpg" alt="this is the logo"></h2>
                                 </div>
+
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis itaque dolores non
-                                    officiis eligendi delectus illum adipisci eaque repellendus aspernatur neque
-                                    ducimus, quisquam quos labore.</p>
+                                    officiis eligendi
+                                    delectus illum adipisci eaque repellendus aspernatur neque ducimus, quae quibusdam
+                                    rem ipsum repellat
+                                    quisquam quos labore.</p>
                                 <div class="footer-icons">
                                     <ul>
                                         <li>
@@ -474,11 +930,14 @@
                             </div>
                         </div>
                     </div>
+                    <!-- end single footer -->
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="footer-content">
                             <div class="footer-head">
                                 <h4>information</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                </p>
                                 <div class="footer-contacts">
                                     <p><span>Tel:</span> +123 456 789</p>
                                     <p><span>Email:</span> contact@example.com</p>
@@ -486,6 +945,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- end single footer -->
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="footer-content">
                             <div class="footer-head">
@@ -493,6 +953,7 @@
                                 <div class="flicker-img">
                                     <a href="#"><img src="/files/img/portfolio/1.jpg" alt=""></a>
                                     <a href="#"><img src="/files/img/portfolio/2.jpg" alt=""></a>
+                                    <a href="#"><img src="/files/img/portfolio/3.jpg" alt=""></a>
                                     <a href="#"><img src="/files/img/portfolio/4.jpg" alt=""></a>
                                     <a href="#"><img src="/files/img/portfolio/5.jpg" alt=""></a>
                                     <a href="#"><img src="/files/img/portfolio/6.jpg" alt=""></a>
@@ -508,7 +969,9 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="copyright text-center">
-                            <p>&copy; Copyright <strong>BayScope</strong>. All Rights Reserved</p>
+                            <p>
+                                &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -516,10 +979,20 @@
         </div>
     </footer>
 
-
     <script src="/files/libs/jquery/jquery.min.js"></script>
     <script src="/files/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/files/libs/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/files/libs/venobox/venobox.min.js"></script>
+    <script src="/files/libs/knob/jquery.knob.js"></script>
+    <script src="/files/libs/wow/wow.min.js"></script>
+    <script src="/files/libs/parallax/parallax.js"></script>
+    <script src="/files/libs/easing/easing.min.js"></script>
+    <script src="/files/libs/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="/files/libs/appear/jquery.appear.js"></script>
+    <script src="/files/libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="/files/busscript.js"></script>
     <script src="/files/js/main.js"></script>
-    <script src="script.js"></script>
+
 </body>
+
 </html>
