@@ -175,11 +175,11 @@
         </li>
 
         <li class=" dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
+          <a href="#" class="dropdown-toggle" id="client" data-toggle="dropdown"> <i class="fa fa-user-o"
               aria-hidden="true"></i> <span class="caret"></span> </a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="/auth/login">Sign in</a></li>
-            <li><a href="/auth/signup">Sign up </a></li>
+          <ul class="dropdown-menu" ole="menu">
+            <li><a href="/auth/login" id="signinlink" >Sign in </a></li>
+            <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
           </ul>
         </li>
         <li class="pl-2">
@@ -720,78 +720,31 @@
   <script src="files/libs/isotope/isotope.pkgd.min.js"></script>
 
 
-  <script src="files/js/main.js"></script>
+  <script src="/files/js/main.js"></script>
+  <script src="/files/js/apicalls.js"></script>
+  <script src="/files/js/cookie.js"></script>
   <script>
-    function getUserCountryName() {
-      if ("geolocation" in navigator) {
-        // Geolocation is available
-        navigator.geolocation.getCurrentPosition(
-          function (position) {
-            // Success callback
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-
-            // Using Geocoding API to get country name
-            fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
-              .then(response => response.json())
-              .then(data => {
-                const countryName = data.countryName;
-                console.log("Country:", countryName);
-                fetch('/setcountry.php ', {
-                  method: 'POST',
-                  headers: {
-                    'content-type': 'application/json'
-                  },
-                  body: JSON.stringify({
-                    country: countryName,
-                    latitude: latitude,
-                    longitude: longitude
-                  }),
-                })
-                  .then(Response => {
-
-                    Response.json();
-                  })
-                  .then(data => {
-                    console.log(data);
-                  })
-                  .catch(error => {
-                    console.error('Error:', error);
-                  })
-
-
-              })
-              .catch(error => {
-                console.error("Error fetching country name:", error);
-              });
-          },
-          function (error) {
-            // Error callback
-            switch (error.code) {
-              case error.PERMISSION_DENIED:
-                console.error("User denied the request for Geolocation.");
-                break;
-              case error.POSITION_UNAVAILABLE:
-                console.error("Location information is unavailable.");
-                break;
-              case error.TIMEOUT:
-                console.error("The request to get user location timed out.");
-                break;
-              case error.UNKNOWN_ERROR:
-                console.error("An unknown error occurred.");
-                break;
-            }
-          }
-        );
-      } else {
-        // Geolocation is not supported by the browser
-        console.error("Geolocation is not supported by this browser.");
-      }
-    }
-
-    // Call the function to get the user's country name
-    getUserCountryName();
-
+    //check if client is loged in 
+    window.addEventListener('DOMContentLoaded', function() {
+    request.sendRequest('GET', '/auth/check')
+           .then((data) => {
+             if(data.authenticated = true){
+               alert(` loged in with id: ${data.client.pin}`)
+               signinlink.innerHTML = 'Client Dashboard';
+               signinlink.href = '/dashboard'
+               signuplink.innerHTML = 'B-panel'
+               signuplink.href = '/bpanel'
+             }
+             else{
+           
+             }
+              // further actions here
+        })  
+           .catch((error) =>{
+              console.log(error)
+           });
+   
+   })
 
   </script>
 

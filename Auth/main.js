@@ -1,4 +1,4 @@
-'use strict'
+
 
 const formOne = document.getElementById("group-1")
 const formTwo = document.getElementById("group-2")

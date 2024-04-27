@@ -1,6 +1,9 @@
 /**
- * create a class for sending request to my application backend
+ * this file send all APi
  */
+
+
+
 class RequestSender {
     constructor(baseUrl) {
         this.baseUrl = baseUrl;
@@ -19,20 +22,17 @@ class RequestSender {
             loader.innerHTML = loaderContent;
         }, 3000)
 
-
-
-
     }
 
 
     async sendRequest(method, url, data) {
         const response = await fetch(`${this.baseUrl}${url}`, {
             method,
+            credentials: 'include', 
             headers: {
-                'Content-Type': 'application/json',
-
+                //'Content-Type': 'multipart/form-data',
             },
-            body: JSON.stringify(data),
+            body: data,
         });
 
         if (!response.ok) {
@@ -42,46 +42,43 @@ class RequestSender {
         return response.json();
     }
 
+    succ(data){
+  //handle validation errors
+        if(data.validation){
+            this.hideloader(`${data.validation}`);
+            return;
+        }
+        //handle unauthorize
+        console.log('Request sent successfully');
+        this.hideloader(`${data.message}`);
+    }
+
+    err(error)
+    {
+        console.error('An error occured:', error);
+        if(error.message){
+            this.hideloader(`${error.message}`);
+            return;
+        }
+        this.hideloader(`sorry something went wrong `);
+    }
+
 
 }
 
 
 /**
- * inclue every request and process them here
+ *  use the request sender class to send request to the server
 */
 
 const request = new RequestSender('http://localhost:8000/api/v1');
 const loader = document.getElementById('loader');
 const loaderContent = document.getElementById('loader').innerHTML;
-
-// adding user to mailing list
-const addtomaillist = document.getElementById('addtomaillist');
-addtomaillist.addEventListener('submit', (e) => {
-    e.preventDefault();
-    request.showloader('adding to mailing list');
-    request.sendRequest('POST', '/addToMailList', { data: 'example' })
-        .then((data) => {
-            console.log('Request sent successfully');
-            request.hideloader(`${data.message}`);
-        })
-        .catch((error) => {
-            console.error('Error sending request:', error);
-            request.hideloader(`sorry we could not establish a connection to the server`);
-
-        });
-});
-
-
-// adding item to cart
-
-
-
-
-
-
-
+let postdata;
 
 
 /**
- * send a request to my application backend to add items to cart
- * */
+ * this will set page links according to authentication
+ */
+
+      

@@ -1,0 +1,119 @@
+.cart-section {
+  position: fixed;
+  right: -400px; /* Start off-screen */
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.cart-header {
+  padding: 20px;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-header h4 {
+  margin: 0;
+}
+
+.close-cart {
+  float: right;
+  font-size: 20px;
+  border: none;
+  background: none;
+}
+
+.cart-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cart-item-title,
+.cart-item-quantity,
+.cart-item-price {
+  margin: 0;
+}
+
+/* Additional styling for the cart section for a better look */
+.cart-section {
+  position: fixed;
+  right: -400px;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.cart-header {
+  background-color:#3EC1D5;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.cart-header .close-cart {
+  position: absolute;
+  top: 10px; /* Adjust this value to move the button higher */
+  right: 10px; /* Adjust this value to align the button to the right */
+  z-index: 100; /* Ensure the button is above other content */
+  font-size: 30px; /* Adjust the size of the close icon if necessary */
+  cursor: pointer; /* Change the cursor to a pointer to indicate it's clickable */
+  border: none; /* Remove any default border */
+  background: none; /* Remove any default background */
+  padding: 0; /* Adjust padding if necessary */
+}
+
+.cart-items {
+  overflow-y: auto;
+  padding: 10px;
+  height: calc(100% - 140px);
+}
+
+.cart-summary {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.purchase-btn {
+  width: 100%;
+  padding: 10px;
+  background-color:#3EC1D5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.purchase-btn:hover {
+  background-color: #45a049;
+}
+.remove-item-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #333; /* Change the color as needed */
+  top: 10px;
+  margin-right: 10px;
+
+}
+
+
+.remove-item-btn:hover {
+  color: #ff0000; /* Change hover color as needed */
+}
