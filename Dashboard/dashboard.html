@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Dashboard</title>
+    <script
+      src="https://kit.fontawesome.com/6e8aee6f47.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="hidden-sm">Dashboard</h1>
+        <span id="nav-toggler" class="hidden-lg"><i class="fa-solid fa-bars-staggered fa-2x"></i></span>
+        <div class="header-right">
+          <div class="icon-container">
+            <div><i class="fa-solid fa-envelope fa-xl"></i></div>
+            <div>
+              <i class="fa-solid fa-bell fa-xl"></i>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="userphoto">
+              <i class="fa-solid fa-user fa-xl"></i>
+            </div>
+            <div class="user-title hidden-sm">
+              <p class="bold">Jane Doe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="fixed-nav-container close-nav">
+      <nav class="side-nav">
+        <div class="bayscope-logo">
+          <h1>BayScope</h1>
+          <span id="nav-closer" class="hidden-lg"><i class="fa-solid fa-arrow-left fa-2x"></i></span>
+        </div>
+        <div class="credit-details">
+          <div class="grey flex-head drop-down-opener">
+            <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
+            <p>Available credit</p>
+            <span class="hidden"
+              ><i class="fa-solid fa-angle-up fa-xl"></i
+            ></span>
+            <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
+          </div>
+          <div class="mid-section hidden"><p class="amount">$00.00</p></div>
+          <div class="grey btn-container"><button>Add Funds</button></div>
+        </div>
+        <div class="client-info-container">
+          <div class="grey flex-head drop-down-opener">
+            <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
+            <p>Your Info</p>
+            <span class="hidden"
+              ><i class="fa-solid fa-angle-up fa-xl"></i
+            ></span>
+            <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
+          </div>
+          <div class="mid-section hidden">
+            <p class="bold">Business Name</p>
+            <p>Client Name</p>
+            <p>Client Address</p>
+            <p>Client Pin: 11111</p>
+          </div>
+          <div class="grey btn-container"><button>Update</button></div>
+        </div>
+        <div class="client-contacts-container">
+          <div class="grey flex-head drop-down-opener">
+            <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
+            <p>Contacts</p>
+            <span class="hidden"
+              ><i class="fa-solid fa-angle-up fa-xl"></i
+            ></span>
+            <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
+          </div>
+          <div class="mid-section hidden">
+            <p class="bold">Akintayo Abdullah</p>
+          </div>
+          <div class="grey btn-container"><button>New Contact</button></div>
+        </div>
+        <div class="shortcuts-container">
+          <div class="grey flex-head drop-down-opener">
+            <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
+            <p>Shortcuts</p>
+            <span class="hidden"
+              ><i class="fa-solid fa-angle-up fa-xl"></i
+            ></span>
+            <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
+          </div>
+          <div class="hidden mid-section">
+            <div class="flex-head">
+              <p>Order New Services</p>
+              <span><i class="fa-solid fa-cart-shopping"></i></span>
+            </div>
+            <div class="flex-head">
+              <p>Register a New Domain</p>
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="flex-head">
+              <a href="#">Logout</a>
+              <i class="fa-solid fa-arrow-right fa-xl"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <div>
+        <p>Welcome back, Jane Doe</p>
+      </div>
+      <section class="client-metrics-container">
+        <div class="box">
+          <span><i class="fa-solid fa-cube fa-3x" style="color: #3ec1d5;"></i></span>
+          <p class="count">2</p>
+          <p>Services</p>
+        </div>
+        <div class="box">
+          <span><i class="fa-solid fa-globe fa-3x" style="color: #3ec1d5;"></i></span>
+          <p class="count">1</p>
+          <p>Domains</p>
+        </div>
+        <div class="box">
+          <span><i class="fa-solid fa-comments fa-3x" style="color: #3ec1d5;"></i></span>
+          <p class="count">1</p>
+          <p>Tickets</p>
+        </div>
+        <div class="box">
+          <span><i class="fa-solid fa-credit-card fa-3x" style="color: #3ec1d5;"></i></span>
+          <p class="count">1</p>
+          <p>Invoices</p>
+        </div>
+      </section>
+      <section class="active-products-container">
+        <h3><span><i class="fa-solid fa-cube"></i></span> Your Products/Services</h3>
+        <div>
+          <div><span class="active">Active</span>
+          <p>active-products-container active-products-container </p>
+          </div>
+          <div>
+            <button>Login to bPanel</button>
+            <button>View details</button>
+          </div>
+        </div>
+        <div>
+          <div><span class="inactive">Inactive</span>
+          <p>active-products-container active-products-container </p>
+          </div>
+          <div>
+            <button>Login to bPanel</button>
+            <button>View details</button>
+          </div>
+        </div>
+      </section>
+      <section class="grid-container">
+        <div class="support-ticket-container">
+
+        </div>
+        <div class="domain-reg-container">
+          <p class="bold"><span><i class="fa-solid fa-globe "></i></span> Register a New Domain</p>
+          <form >
+            <input type="text" name="" id="">
+            <input type="button" value="Register">
+            <input type="button" value="Transfer">
+          </form>
+        </div>
+        <div class="affiliate-profile-container">
+          
+        </div>
+        <div class="support-teamprofile-container">
+          <p class="bold">Talk to your Account Agent</p>
+          <div>
+            <div class="profile-photo">
+              <img src="images/profile.svg" alt="">
+            </div>
+            <div style="margin-left: 15px;">
+              <p><Span class="bold">Agent Name: </Span>John Doe</p>
+              <p><Span class="bold">Agent Email: </Span>JohnDoe@xyz.com</p>
+              <p><Span class="bold">Agent Contact: </Span><a href="tel:+2341234567890">+234-123-4567-890</a></p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <div class="fixed-support">
+        <span>
+          <i class="fa-solid fa-headset fa-3x"></i>
+        </span>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
