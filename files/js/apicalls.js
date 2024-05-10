@@ -1,8 +1,12 @@
 /**
  * this file contains the request class used to send and handle all Api calls
+ * more handing can be  done on respective pages e.g updating DOM etc..
  */
 
+
 const baseUrl = 'http://localhost:8000/api/v1';
+
+
 
 class RequestSender {
     constructor(baseUrl) {
@@ -45,11 +49,22 @@ class RequestSender {
 
     succ(data){
   //handle validation errors
-        if(data.validation){
+          if(data.validation){
             this.hideloader(`${data.validation}`);
             return;
         }
+
+
+        //  handle redirecting  if the response wants to redirect the user
+        
+        if(data.redirect){
+            window.location.href = data.redirect;
+            return;
+        }      
+        
         //handle unauthorize
+
+
         console.log('Request sent successfully');
         this.hideloader(`${data.message}`);
     }
@@ -78,15 +93,29 @@ const loaderContent = document.getElementById('loader').innerHTML;
 let postdata;
 
 
-// this event checks if a user is logged in and upadate page view 
+
+
+
+
+
+
+// this event checks if a user is logged in and upadate page view  
+// you can add any view to update by default
+// can only work on public pages containing the navbar
+
+
+
 window.addEventListener('DOMContentLoaded', function() {
     request.sendRequest('GET', '/auth/check')
            .then((data) => {
-             if(data.authenticated = true){
+             if(data.authenticated != false){
                signinlink.innerHTML = 'Client Dashboard';
                signinlink.href = '/dashboard'
                signuplink.innerHTML = 'B-panel'
                signuplink.href = '/bpanel'
+             }
+             else{
+                return;
              }
           
         })  

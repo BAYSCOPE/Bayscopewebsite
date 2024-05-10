@@ -3,6 +3,7 @@
 // array for calculating total price of items
 
 let cartItems = [];
+
 // update cart UI when page is loaded
 window.onload = () => {
 updateCartUI();
@@ -23,8 +24,6 @@ function addtocart(name, price) {
     .then(data => {
       request.succ(data);
       updateCartUI();
-      // load(data);
-      // further actions here
       toggleCart();
       console.log(data)
 
@@ -44,6 +43,7 @@ function updateCartUI() {
   // Send a request to the server to get the cart items
   request.sendRequest('GET', '/cart/show')
     .then((data) => {
+      
       // Example of adding a delete button to each cart item
       data.cartItems.forEach(item => {
         const itemElement = document.createElement('div');

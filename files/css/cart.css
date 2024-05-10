@@ -80,40 +80,73 @@
 }
 
 .cart-items {
-  overflow-y: auto;
-  padding: 10px;
-  height: calc(100% - 140px);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.cart-summary {
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.purchase-btn {
-  width: 100%;
-  padding: 10px;
-  background-color:#3EC1D5;
-  color: white;
-  border: none;
-  cursor: pointer;
+.cart-item-details {
+  flex-grow: 1;
 }
 
-.purchase-btn:hover {
-  background-color: #45a049;
+.cart-item-title,
+.cart-item-quantity,
+.cart-item-price {
+  margin: 5px 0;
 }
+
 .remove-item-btn {
   cursor: pointer;
-  background: none;
+  background-color: transparent;
   border: none;
-  font-size: 20px;
-  color: #333; /* Change the color as needed */
-  top: 10px;
-  margin-right: 10px;
-
+  color: #FF0000; /* Red color for the remove icon */
+  font-size: 24px;
+  padding: 5px 10px;
 }
 
+.remove-item-btn i {
+  vertical-align: middle;
+}
 
-.remove-item-btn:hover {
-  color: #ff0000; /* Change hover color as needed */
+/* Additional styling for better UI */
+#cartSection {
+  transition: right 0.5s ease-in-out;
+}
+
+.cart-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Checkout Button Styling */
+.checkout-btn {
+  display: block; /* Makes the button take the full width of its container */
+  width: 90%; /* Adjusts the width of the button */
+  margin: 20px auto; /* Centers the button and adds space above and below */
+  padding: 10px 0; /* Adds padding inside the button for better sizing */
+  background-color: #4CAF50; /* A green color for the checkout action */
+  color: white; /* Text color */
+  text-align: center; /* Centers the text inside the button */
+  font-size: 18px; /* Increases the font size for better readability */
+  border: none; /* Removes the border */
+  border-radius: 5px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.checkout-btn:hover {
+  background-color: #45a049; /* Darkens the button on hover for a feedback effect */
+}
+
+/* Optional: Adding a disabled state style if you need it */
+.checkout-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed; /* Changes the cursor to indicate the button is disabled */
 }
