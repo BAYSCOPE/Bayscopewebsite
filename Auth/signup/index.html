@@ -1,112 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup with BayScope</title>
-    
-    <link href="/files/img/favicon.jpg" rel="icon">
-    <link href="/files/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!--font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0
-  /css/font-awesome.min.css">
-
-    <!-- Bootstrap CSS File -->
-    <link href="/files/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-
-    <!-- Nivo Slider Theme -->
-    <link href="/files/css/nivo-slider-theme.css" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
-    <link href="/files/css/style.css" rel="stylesheet">
-
-
-    <!-- Responsive Stylesheet File -->
-    <link href="/files/css/responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="/files/css/loader.css">
-    <script defer src="../main.js"></script>
-    <script src="/files/js/apicalls.js"></script>
-    <link rel="stylesheet" href="../Auth.css">
-</head>
-
-<body>
-
-    <div id="loader"></div>
-    <div class="maincontainer">
-        <div class="illustration-container">
-            <h1>BAYSCOPE</h1>
-        </div>
-        <div class="right-texts-container">
-            <div class="title-wrap">
-                <h1>Sign up</h1>
-               <h5>Join BayScope, embrace innovation </h5>
-            </div>
-            <!-- 
-           -->
-            <form id="signup" class="form-group">
-                <div class="form-group" id="group-1">
-                    <input class="auth-input" type="text" id="username" placeholder="username">
-                    <input class="auth-input" type="email" id="email" placeholder="email">
-                    <input class="auth-input" type="password" id="password" placeholder="password">
-                </div>
-
-                <div class="form-group" id="group-2">
-                    <input class="auth-input" type="text" id="country" placeholder="country">
-                    <input class="auth-input" type="text" id="address" placeholder="address">
-                    <input class="auth-input" type="number" id="contact" placeholder="contact">
-                </div>
-
-                <div class="form-group" id="group-3">
-                    <input class="auth-input" type="text" id="business-name" placeholder="business name">
-                    <input class="auth-input" type="email" id="business-email" placeholder="business email">
-                    <input class="auth-input" type="text" id="industry" placeholder="industry">
-                </div>
-
-                <div class="counter-container">
-                    <div class="counter" id="counter-1">1</div>
-                    <div class="counter" id="counter-2">2</div>
-                    <div class="counter" id="counter-3">3</div>
-                </div>
-                <div class="navs-wrap">
-                    <div class="agree-to-terms">
-                        <input type="checkbox">
-                        <b>I agree to the <span style="color: #3EC1D5">privacy policy and terms</span></b>
-                    </div>
-                    <button type="submit">Sign Up</button>
-            </form>
-            <b>Already have an account? <span style="color: #3EC1D5; cursor: pointer;"> Sign in instead</span></b>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+    <link rel="stylesheet" href="stye.css" />
+  </head>
+  <body>
+    <div class="logo-container">
+      <h1>BayScope</h1>
+      <div>
+        <p>Already have an account? <a href="#">Sign in</a></p>
+      </div>
     </div>
-    </div>
-
-  <!--API SCrpit-->
-  <script>
-   ;
-
-signup.addEventListener('submit', (e) => {
-  postdata = new FormData(signup);
-  e.preventDefault();
-    request.showloader('signing up');
-    request.sendRequest('POST', '/signup', postdata)
-        .then((data) => {
-          request.succ(data)
-           // further actions here
-           
-        })  
-        .catch((error) =>{
-            request.err(error)
-        });
-});
-  </script>
-     <script src="/files/js/apicalls.js"></script>
-</body>
-
+    <section>
+      <div>
+        <div class="svg-container">
+          <svg
+            stroke="#3EC1D5"
+            fill="#3EC1D5"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            class="text-alat-light mr-4 w-10 h-auto"
+            height="40px"
+            width="40px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM6.023 15.416C7.491 17.606 9.695 19 12.16 19c2.464 0 4.669-1.393 6.136-3.584A8.968 8.968 0 0 0 12.16 13a8.968 8.968 0 0 0-6.137 2.416zM12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+              ></path>
+            </g>
+          </svg>
+          <h2>Client Profile</h2>
+        </div>
+        <p class="top-message">Let's get to know you</p>
+      </div>
+      <div class="recieve-email-container">
+        <form action="" id="recieve-otp-form" class="recieve-email">
+          <input
+            type="email"
+            name="email"
+            id="user-email"
+            placeholder="Enter email address"
+          />
+          <p class="warning hidden">Email address required.</p>
+          <input type="button" value="Send Otp" id="otp-btn" />
+        </form>
+      </div>
+      <div class="otp-confirmation-comtainer hidden">
+        <form action="">
+          <input
+            type="text"
+            name="Otp"
+            id="recieved-otp"
+            placeholder="Enter verification code"
+          />
+          <p></p>
+          <input type="button" value="Proceed" id="confirm-otp-btn" />
+        </form>
+        <p class="resend">Didn't receive an opt? <a href="#">Resend otp</a></p>
+      </div>
+      <div class="registration-form-container hidden">
+        <form  id="registration-form">
+          <label for="first-name">Business/Company Name</label>
+          <input
+            type="text"
+            id="first-name"
+            placeholder="Enter first Business/Company Name"
+          />
+          <p></p>
+          <label for="comapany-email">Email</label>
+          <input type="email" name="email" id="comapany-email" />
+          <p></p>
+          <label for="tel-number">Contact</label>
+          <input
+            type="tel"
+            name="tel-number"
+            id="tel-number"
+            placeholder="Enter Company Contact"
+          />
+          <p></p>
+          <label for="select-industry">Industry</label>
+          <select name="industries" id="select-industry">
+            <option value="default" selected disabled>Select industry</option>
+            <option value="Business">Business</option>
+            <option value="Education">Education</option>
+            <option value="Real-esate">Real-esate</option>
+            <option value="Health">Health</option>
+            <option value="Other">Others</option>
+          </select>
+          <p></p>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <p></p>
+          <label for="confirm-password">Confirm password</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+          />
+          <p></p>
+          <label for="check-box">
+            <input type="checkbox" name="check-box" id="check-box" />
+            I agree with <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a></label
+          >
+          <input type="submit" value="Submit" id="submit-reg"/>
+        </form>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Initialize the intlTelInput plugin
+      var input = document.getElementById("tel-number");
+      window.intlTelInput(input, {
+        // Options
+        separateDialCode: true,
+        initialCountry: "auto",
+        initialCountry: "ng",
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
+  </body>
 </html>

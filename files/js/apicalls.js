@@ -1,8 +1,8 @@
 /**
- * this file send all APi
+ * this file contains the request class used to send and handle all Api calls
  */
 
-
+const baseUrl = 'http://localhost:8000/api/v1';
 
 class RequestSender {
     constructor(baseUrl) {
@@ -28,6 +28,7 @@ class RequestSender {
     async sendRequest(method, url, data) {
         const response = await fetch(`${this.baseUrl}${url}`, {
             method,
+            // send request with cookies
             credentials: 'include', 
             headers: {
                 //'Content-Type': 'multipart/form-data',
@@ -71,12 +72,28 @@ class RequestSender {
  *  use the request sender class to send request to the server
 */
 
-const request = new RequestSender('http://localhost:8000/api/v1');
+const request = new RequestSender(baseUrl);
 const loader = document.getElementById('loader');
 const loaderContent = document.getElementById('loader').innerHTML;
 let postdata;
 
 
+// this event checks if a user is logged in and upadate page view 
+window.addEventListener('DOMContentLoaded', function() {
+    request.sendRequest('GET', '/auth/check')
+           .then((data) => {
+             if(data.authenticated = true){
+               signinlink.innerHTML = 'Client Dashboard';
+               signinlink.href = '/dashboard'
+               signuplink.innerHTML = 'B-panel'
+               signuplink.href = '/bpanel'
+             }
+          
+        })  
+           .catch((error) =>{
+              console.log(error)
+           });
+   })
 /**
  * this will set page links according to authentication
  */

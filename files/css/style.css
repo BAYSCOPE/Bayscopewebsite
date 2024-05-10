@@ -1191,11 +1191,12 @@ footer{
 /*----------------------------------------*/
 
 .header-bg {
-  background: url(../img/slider/slider1.jpg);
+ background:  url('/assets/videos/smilewoman-video.mp4');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .header-bg.home-2 {
@@ -1762,7 +1763,7 @@ nav ul li a{
   overflow-y: scroll;
 }
 .dropdown-menu-subdiv{
-  margin: ;
+ /* margin: ;*/
 }
 .dropdown-menu-subdiv ul #subdiv-list-item{
   margin: 10px 15px;

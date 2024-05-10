@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #3EC1D5;
+}
+.hidden{
+    display: none;
+}
+.recieve-email-container{
+    margin-top: 50px;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5vw;
+    height: 20vh;
+}
+section{
+    height: 70vh;
+    width: 90vw;
+    max-width: 450px;
+    margin: 0 auto;
+}
+form{
+    background-color: rgb(243 244 246);
+    padding: 30px;
+    border-radius: 5px;
+}
+.top-message{
+    font-size: 14px;
+}
+form input:not([type="checkbox"]), form select{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: none;
+}
+input[type="button"], input[type="submit"]{
+    background-color: #d3f1f5;
+    font-weight: bold;
+    cursor: pointer;
+}
+form input:not([type="button"]):focus, form input:not([type="submit"]):focus{
+    border: 1px solid #3EC1D5;
+    outline: none;
+}
+.warning, #registration-form p{
+    font-size: 12px;
+    color: red;
+}
+label{
+    font-size: 14px;
+}
+.svg-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.svg-container *{
+    margin-right: 10px;
+    line-height: 40px;
+}
+.otp-confirmation-comtainer, .registration-form-container, .recieve-email-container{
+    margin: 30px auto;
+}
+.resend{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+input + p{
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+.iti{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+@media (max-width:768px) {
+    .logo-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 5vw;
+        height: 15vh;
+    }
+    .logo-container div{
+        text-align: right;
+        width: 92vw;
+    }
+}
