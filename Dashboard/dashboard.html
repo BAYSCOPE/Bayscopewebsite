@@ -22,7 +22,16 @@
     <header>
       <div class="header">
         <h1 class="hidden-sm">Dashboard</h1>
-        <span id="nav-toggler" class="hidden-lg"><i class="fa-solid fa-bars-staggered fa-2x"></i></span>
+        <span id="nav-toggler" class="hidden-lg"
+          ><i class="fa-solid fa-bars-staggered fa-2x"></i
+        ></span>
+        <div class="header-center">
+          <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="Billing.html" target="_blank">Billing</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
         <div class="header-right">
           <div class="icon-container">
             <div><i class="fa-solid fa-envelope fa-xl"></i></div>
@@ -45,7 +54,9 @@
       <nav class="side-nav">
         <div class="bayscope-logo">
           <h1>BayScope</h1>
-          <span id="nav-closer" class="hidden-lg"><i class="fa-solid fa-arrow-left fa-2x"></i></span>
+          <span id="nav-closer" class="hidden-lg"
+            ><i class="fa-solid fa-arrow-left fa-2x"></i
+          ></span>
         </div>
         <div class="credit-details">
           <div class="grey flex-head drop-down-opener">
@@ -100,6 +111,12 @@
             <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
           </div>
           <div class="hidden mid-section">
+            <a href="billing.html">
+              <div class="flex-head">
+                <p>Billing</p>
+                <i class="fa-solid fa-credit-card"></i>
+              </div>
+            </a>
             <div class="flex-head">
               <p>Order New Services</p>
               <span><i class="fa-solid fa-cart-shopping"></i></span>
@@ -123,31 +140,42 @@
       </div>
       <section class="client-metrics-container">
         <div class="box">
-          <span><i class="fa-solid fa-cube fa-3x" style="color: #3ec1d5;"></i></span>
+          <span
+            ><i class="fa-solid fa-cube fa-3x" style="color: #3ec1d5"></i
+          ></span>
           <p class="count">2</p>
           <p>Services</p>
         </div>
         <div class="box">
-          <span><i class="fa-solid fa-globe fa-3x" style="color: #3ec1d5;"></i></span>
+          <span
+            ><i class="fa-solid fa-globe fa-3x" style="color: #3ec1d5"></i
+          ></span>
           <p class="count">1</p>
           <p>Domains</p>
         </div>
         <div class="box">
-          <span><i class="fa-solid fa-comments fa-3x" style="color: #3ec1d5;"></i></span>
+          <span
+            ><i class="fa-solid fa-comments fa-3x" style="color: #3ec1d5"></i
+          ></span>
           <p class="count">1</p>
           <p>Tickets</p>
         </div>
         <div class="box">
-          <span><i class="fa-solid fa-credit-card fa-3x" style="color: #3ec1d5;"></i></span>
+          <span
+            ><i class="fa-solid fa-credit-card fa-3x" style="color: #3ec1d5"></i
+          ></span>
           <p class="count">1</p>
           <p>Invoices</p>
         </div>
       </section>
       <section class="active-products-container">
-        <h3><span><i class="fa-solid fa-cube"></i></span> Your Products/Services</h3>
+        <h3>
+          <span><i class="fa-solid fa-cube"></i></span> Your Products/Services
+        </h3>
         <div>
-          <div><span class="active">Active</span>
-          <p>active-products-container active-products-container </p>
+          <div>
+            <span class="active">Active</span>
+            <p>active-products-container active-products-container</p>
           </div>
           <div>
             <button>Login to bPanel</button>
@@ -155,8 +183,9 @@
           </div>
         </div>
         <div>
-          <div><span class="inactive">Inactive</span>
-          <p>active-products-container active-products-container </p>
+          <div>
+            <span class="inactive">Inactive</span>
+            <p>active-products-container active-products-container</p>
           </div>
           <div>
             <button>Login to bPanel</button>
@@ -165,33 +194,42 @@
         </div>
       </section>
       <section class="grid-container">
-        <div class="support-ticket-container">
-
-        </div>
+        <div class="affiliate-profile-container"></div>
         <div class="domain-reg-container">
-          <p class="bold"><span><i class="fa-solid fa-globe "></i></span> Register a New Domain</p>
-          <form >
-            <input type="text" name="" id="">
-            <input type="button" value="Register">
-            <input type="button" value="Transfer">
+          <p class="bold">
+            <span><i class="fa-solid fa-globe"></i></span> Register a New Domain
+          </p>
+          <form>
+            <input type="text" name="" id="" />
+            <input type="button" value="Register" />
+            <input type="button" value="Transfer" />
           </form>
         </div>
-        <div class="affiliate-profile-container">
-          
+        <div class="support-ticket-container">
+          <button>Create a new ticket</button>
+          <button>
+            <a href="tickets.html" target="_blank">View existing tickets</a>
+          </button>
         </div>
-        <div class="support-teamprofile-container">
-          <p class="bold">Talk to your Account Agent</p>
+        <div class="support-teamprofile-container" id="support">
+          <p class="bold">Talk to your Client specialist</p>
           <div>
             <div class="profile-photo">
-              <img src="images/profile.svg" alt="">
+              <img src="images/profile.svg" alt="" />
             </div>
-            <div style="margin-left: 15px;">
-              <p><Span class="bold">Agent Name: </Span>John Doe</p>
-              <p><Span class="bold">Agent Email: </Span>JohnDoe@xyz.com</p>
-              <p><Span class="bold">Agent Contact: </Span><a href="tel:+2341234567890">+234-123-4567-890</a></p>
+            <div style="margin-left: 15px" class="agent-info-container">
+              <p><span class="bold">Agent Name: </span>John Doe</p>
+              <p><span class="bold">Agent Email: </span>JohnDoe@xyz.com</p>
+              <p>
+                <span class="bold">Agent Contact: </span
+                ><a href="tel:+2341234567890">+234-123-4567-890</a>
+              </p>
             </div>
           </div>
-
+          <div class="button-container">
+            <button>Live chat</button>
+            <button>Make a report</button>
+          </div>
         </div>
       </section>
       <div class="fixed-support">
