@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     {
       title: "Modern Store",
-      description: "Explore the main website to learn more about our comprehensive solutions tailored to your business needs.",
-      imgSrc: "/assets/images/e-comuiii.png"
+      description: "Advanced e-commerce store with modern look and feel  that  just keeps your customers coming back.",
+      imgSrc: "/assets/images/ecomiv.jpg"
     },
     {
       title: "Custom Deployment",
-      description: " BayScope e-commerce is not a SASS. We deploy independently for you, ensuring a personalized experience also allowing you take full ownweship and control for  <span style='color: #3EC1D5'>yourstore.com, admin.yourstore.com,<span> and more.",
+      description: " BayScope e-commerce is not a SASS. We deploy independently for you, ensuring a personalized experience also allowing you take full ownweship and control for  <span style='font-weight:bold;'>yourstore.com, admin.yourstore.com,<span> and more.",
       imgSrc: "/assets/images/e-comuii.jpg"
     }
   ];
