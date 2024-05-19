@@ -3,469 +3,613 @@
 
 <head>
   <meta charset="utf-8">
-  <title>eBusiness Bootstrap Template</title>
+  <title> BayScope Customer Relationship Management</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="../files/img/favicon.jpg" rel="icon">
-  <link href="../files/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/files/img/favicon.jpg" rel="icon">
+  <link href="/files/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap CSS File -->
-  <link href="../files/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/files/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="../files/libs/nivo-slider/css/nivo-slider.css" rel="stylesheet">
-  <link href="../files/libs/owlcarousel/owl.carousel.css" rel="stylesheet">
-  <link href="../files/libs/owlcarousel/owl.transitions.css" rel="stylesheet">
-  <link href="../files/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../files/libs/animate/animate.min.css" rel="stylesheet">
-  <link href="../files/libs/venobox/venobox.css" rel="stylesheet">
+  <link href="/files/libs/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="/files/libs/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="/files/libs/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="/files/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/files/libs/animate/animate.min.css" rel="stylesheet">
 
+  <script src="https://kit.fontawesome.com/7b43093443.js" crossorigin="anonymous"></script>
   <!-- Nivo Slider Theme -->
-  <link href="../files/css/nivo-slider-theme.css" rel="stylesheet">
+  <link href="/files/css/nivo-slider-theme.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="../files/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- global stylesheet -->
+  <link href="/files/css/style.css" rel="stylesheet">
 
-  <!-- Responsive Stylesheet File -->
-  <link href="../files/css/responsive.css" rel="stylesheet">
+  <!-- global Responsive Stylesheet File -->
+  <link href="/files/css/responsive.css" rel="stylesheet">
+
+  <!-- cart and loader stylesheet-->
+  <link rel="stylesheet" href="/files/css/loader.css">
+  <link rel="stylesheet" href="/files/css/cart.css">
 
 
+
+  <style>
+
+
+  </style>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
 
   <div id="preloader"></div>
+  <div id="loader"> <i class="fa fa-spinner fa-spin" aria-hidden="true"></i></div>
 
-  <header>
-    <!-- header-area start -->
-    <div id="sticker" class="header-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-
-            <!-- Navigation -->
-            <nav class="navbar navbar-default">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                  data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                  <h1>BayScope</h1>
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
-                </a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
-                    <a class="page-scroll" href="../index.html">Home</a>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=#> Custom Software development</a></li>
-                      <li><a href=#>Web development</a></li>
-                      <li><a href=#>App development</a></li>
-                      <li><a href=#>QA Testing</a></li>
-
-                      <li><a href=#>Product Design</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href='/forbusiness/'>Bayscope Business</a></li>
-                      <li><a href='/forschools/'>Bayscope Schools</a></li>
-                      <li><a href=#>Bayscope Healths</a></li>
-                      <li><a href=#>Leadership</a></li>
-                      <li><a href=#>Pricing Plan</a></li>
-                      <li><a href=#>FAQ</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=#>BQuery</a></li>
-                      <li><a href=#>Contrifund</a></li>
-
-                      <li class="text-secondary">Bundles</li>
-                      <hr>
-
-                      <li><a href=#>ProSuite</a></li>
-                      <li><a href="#"> Edu360</a></li>
-
-                    </ul>
-                  </li>
-
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=#>Blog 1</a></li>
-                      <li><a href=#>Blog 2</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
-
-                  <li class="yo">
-                    <a class="page-scroll" href="#portfolio"> </a>
-                  </li>
-                  <li class="">
-                    <a href="/client/signup"> <i class="fa fa-user-o" aria-hidden="true"></i></a>
-                  </li>
-                  <li class="pl-2">
-                    <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <!-- navbar-collapse -->
-            </nav>
-            <!-- END: Navigation -->
-          </div>
-        </div>
-      </div>
+  <header class="header header-area" id="sticker">
+    <div class="header-logo-container">
+      <a class="page-scroll sticky-logo" href="/">
+        <h1>BayScope</h1>
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
-    <!-- header-area end -->
+    <nav class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+      <ul class="mid-nav-list">
+        <li class="active">
+          <a class="page-scroll" href="/">Home</a>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu solutions" role="menu">
+
+            <li class="dropdown-menu-subdiv"><a href='/services/software-development' class="subdiv-heading-text">
+                BayScope for
+                Business</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'>Financial Solutions</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'>E-commerce</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'>Enterprise Resourse Planning</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope Start-Up Bundle</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href='/services/web-development' class="subdiv-heading-text">Bayscope
+                for
+                education</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/forschools/school-financial-solutions/'>School financial
+                    solution</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web platform</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/application-portal'></a> Application portal</li>
+                <li id="subdiv-list-item"><a href='/forschools/students-portal'>student portal</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope LMS</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text"> BayScope
+                For
+                Real-estate</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant Management System</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/realestate/property-management-system'>prorperty management</a></li>
+                <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text"> Bayscope for Healthcare </a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/services/software-development'>Bayscope Health solution</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href='/forbusiness/'>BayScope Business</a></li>
+            <li><a href='/forschools/'>BayScope Schools</a></li>
+            <li><a href='/forhealths'>Bayscope Healthcare</a></li>
+            <li><a href='/realestate/'> BayScope Real Estate</a></li>
+
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">coming soon<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href=#>BayScope Flow</a></li>
+            <li><a href=#>CardLinks</a></li>
+          </ul>
+        </li>
+        </div>
+      </ul>
+      <ul class="right-nav-list">
+        <li>
+          <a class="page-scroll" href="/contact">Contact</a>
+        </li>
+
+        <li class=" dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
+            <span class="caret"></span> </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/auth/login" id="signinlink">Sign in</a></li>
+            <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
+          </ul>
+        </li>
+        <li class="pl-2">
+          <a href="javascript:void(0);" onclick="toggleCart()"> <i class="fa fa-shopping-cart fa-bold"
+              aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <!-- header end -->
 
-  <!-- Start Bottom Header -->
-  <div class="header-bg page-area">
-    <div class="home-overly"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="slider-content text-center">
-            <div class="header-bottom">
-              <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">Edu360</h1>
-              </div>
-              <div class="layer3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
-                <h2 class="title3">What every school needs!!!</h2>
-              </div>
-            </div>
-          </div>
+
+
+  <div style="background-color: white;">
+    <div style="position: relative; padding: 56px 24px; max-width: 1280px; margin: auto;">
+      <div
+        style="position: absolute; top: -160px; left: 50%; width: 580px; height: 340px; background: linear-gradient(45deg, #3EC1D5, #9089fc); opacity: 0.3; transform: translateX(-50%) rotate(30deg); clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);">
+      </div>
+      <div
+        style="text-align: center; padding-top: 128px; padding-bottom: 224px; padding-left: 10%; padding-right: 10%;">
+        <h1 style="font-size: 45px; font-weight: 900; color: #1a202c;">Support your customers with <span
+            style="color: #3EC1D5;">bayscope-crm</span> </h1>
+        <p style="margin-top: 24px; font-size: 19px; color: #4a5568; line-height: 1.6; font-weight:100;"> Monitor and
+          chat with the visitors on your website,
+           provide live support, create and manage support tickets,organise customers in a CRM,  create a help center to empower customers ..</p>
+        <p style="padding-top: 10px;">
+          <span style="font-size: 25px; font-weight: bold;"> Deploy</span> <img
+            src="/assets/images/arrow-separator-2.svg" alt="" srcset=""> <span
+            style="font-size: 25px; font-weight: bold;"> Integrate</span> <img
+            src="/assets/images/arrow-separator-2.svg" alt="" srcset=""> <span
+            style="font-size: 25px; font-weight: bold;">Support</span>
+        </p>
+
+        <svg style="width: 90px; opacity: .5;  position:absolute; right:50px;" class="fa fa-beat" version="1.1" id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 32"
+          enable-background="new 0 0 40 32" xml:space="preserve" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <g>
+              <path fill="#3EC1Df"
+                d="M34.91,14.667c-0.067-3.497-1.359-6.884-3.691-9.549c-2.84-3.248-6.938-5.111-11.242-5.111 c-4.311,0-8.408,1.859-11.242,5.1c-2.355,2.693-3.63,6.121-3.673,9.651c-2.922,0.5-5.084,2.941-5.124,5.919 c-0.012,0.042-0.018,0.086-0.018,0.13C-0.08,24.222,2.672,27,6.055,27h4.539c2.056,3.03,5.527,5,9.383,5 c5.647,0,10.476-4.221,11.229-9.819l0.758-5.633c0.466-3.458-0.585-6.948-2.882-9.574s-5.615-4.133-9.104-4.133 s-6.808,1.506-9.104,4.133S7.524,13.09,7.99,16.548l0.758,5.633c0.184,1.37,0.616,2.656,1.24,3.819H7.919 c-0.486-1.093-0.824-2.292-0.996-3.573l-0.758-5.631c-0.064-0.474-0.099-0.948-0.114-1.421c0.037-0.078,0.062-0.162,0.053-0.255 c-0.005-0.059-0.026-0.113-0.05-0.163C6.05,11.598,7.248,8.325,9.486,5.766c2.645-3.024,6.468-4.758,10.49-4.758 c4.017,0,7.84,1.738,10.49,4.769c2.22,2.538,3.429,5.777,3.445,9.11C33.887,14.94,33.87,15,33.865,15.063 c-0.008,0.088,0.009,0.173,0.043,0.248c-0.013,0.503-0.053,1.007-0.12,1.511l-0.758,5.661c-0.205,1.526-0.607,2.936-1.076,3.772 c-0.086,0.155-0.085,0.344,0.005,0.498C32.049,26.906,32.213,27,32.391,27h1.555C37.284,27,40,24.215,40,20.735 C40,17.674,37.846,15.15,34.91,14.667z M9.738,22.047L8.98,16.415c-0.426-3.172,0.537-6.373,2.645-8.782 c2.106-2.409,5.15-3.791,8.352-3.791s6.245,1.382,8.352,3.791c2.107,2.41,3.07,5.61,2.645,8.782l-0.758,5.633 C29.527,27.151,25.126,31,19.977,31c-3.272,0-6.238-1.557-8.145-4H15c0.018,0,0.032-0.008,0.049-0.01 C15.278,28.134,16.289,29,17.5,29h4c1.379,0,2.5-1.122,2.5-2.5S22.879,24,21.5,24h-4c-1.211,0-2.222,0.866-2.451,2.01 C15.032,26.008,15.018,26,15,26h-3.853C10.429,24.819,9.932,23.486,9.738,22.047z M16,26.5c0-0.827,0.673-1.5,1.5-1.5h4 c0.827,0,1.5,0.673,1.5,1.5S22.327,28,21.5,28h-4C16.673,28,16,27.327,16,26.5z M6.836,26H6.055c-2.804,0-5.091-2.285-5.134-5.111 c0.01-0.041,0.016-0.083,0.016-0.125c0-2.472,1.75-4.516,4.145-4.996c0.022,0.387,0.041,0.774,0.093,1.162l0.758,5.631 C6.096,23.78,6.404,24.93,6.836,26z M33.945,26h-0.767c0.37-0.917,0.673-2.12,0.842-3.384l0.758-5.661 c0.058-0.425,0.097-0.851,0.117-1.275C37.271,16.145,39,18.228,39,20.792C39,23.664,36.732,26,33.945,26z">
+              </path>
+            </g>
+          </g>
+        </svg>
+
+        <div style="margin-top: 40px;">
+          <a href="/auth/signup/"
+            style="display: inline-block; background-color:#3EC1D5; color: white; padding: 8px 14px; font-size: 14px; font-weight: bold; border-radius: 4px; text-decoration: none;">Get
+            started</a>
+          <a href="#"
+            style="font-size: 14px; font-weight: bold; color: #1a202c; text-decoration: none; margin-left: 24px;">Learn
+            more →</a>
         </div>
+
+        <!--paper clip SVG-->
+        <svg class="fa fa-beat" style="width: 100px; position:absolute; left:50px; bottom:auto" viewBox="0 0 24 24"
+          fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#3EC1DF">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M11 13L15.4564 8.5M11 13L6.38202 9.57695C5.7407 9.07229 5.94107 8.06115 6.72742 7.834L20 4L17.117 15.9189C16.9651 16.6489 16.0892 16.9637 15.5 16.5L13.5 15M11 13V18L13.5 15M11 13L13.5 15M7 20L9 18M4 19L8.5 14.5M4 15L6.5 12.5"
+              stroke="" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+        </svg>
+        <!-- paper clip end svg -->
+      </div>
+      <div
+        style="position: absolute; bottom: 50px; right: 50%; width: 580px; height: 340px; background: linear-gradient(45deg, #3EC1D5, #9089fc); opacity: 0.3; transform: translateX(50%) rotate(30deg); clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);">
+      </div>
+    </div>
+
+  </div>
+
+
+  <div style="background-color: white; padding-top: 20px; padding-bottom: 96px;">
+    <div style="max-width: 1120px; margin: auto; padding-left: 24px; padding-right: 24px;">
+      <h2 style="text-align: center; font-size: 18px; font-weight: 600; line-height: 24px; color: #1f2937;">Trusted by
+        the world’s most innovative teams</h2>
+      <div
+        style="margin-top: 40px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px; justify-items: center; align-items: center;">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic">
       </div>
     </div>
   </div>
-  <!-- END Header -->
-  <div class="blog-page area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="page-head-blog">
-            <div class="single-blog-page">
-              <!-- search option start -->
 
-              <!-- search option end -->
-            </div>
-            <div class="single-blog-page">
-              <!-- recent start -->
-              <div class="left-blog">
-                <h4>Features of the EDU360</h4>
-                <div class="recent-post">
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-                        <img src="../files/img/blog/1.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> This is where the 1st feature will be.</a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-                        <img src="../files/img/blog/2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> This is where the 2nd feature will be. </a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-                        <img src="../files/img/blog/2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> This is where the 3rd feature will be. </a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-                        <img src="../files/img/blog/2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> This is where the 4th feature will be. </a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
 
-                </div>
-              </div>
-              <!-- recent end -->
-            </div>
-            <div class="single-blog-page">
-
-            </div>
-            <div class="single-blog-page">
-
-            </div>
-            <div class="single-blog-page">
-              <div class="left-tags blog-tags">
-                <div class="popular-tag left-side-tags left-blog">
-                  <h4>Built with</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Html</a>
-                    </li>
-                    <li>
-                      <a href="#">Css</a>
-                    </li>
-                    <li>
-                      <a href="#">JavaScript</a>
-                    </li>
-                    <li>
-                      <a href="#">Php</a>
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End left sidebar -->
-        <!-- Start single blog -->
-        <div class="col-md-8 col-sm-8 col-xs-12">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
-                <div class="single-blog-img">
-                  <a href="blog-details.html">
-                    <img src="../files/img/blog/1.jpg" alt="">
-                  </a>
-                </div>
-                <br>
-                <div class="blog-text">
-                  <h4>
-                    <a href="#">THE EDU360</a>
-                  </h4>
-                  <p>
-                    Words about the EDU360
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores ratione dolor voluptates
-                    facilis sed dolorem enim consequatur ducimus! Exercitationem neque consequuntur nostrum nobis amet
-                    accusantium non eligendi in. Quas, laboriosam.
-                  </p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- End Blog Area -->
 
 
-  <!-- Start Blog Area -->
-  <div id="blog" class="blog-area">
-    <div class="blog-inner area-padding">
-      <div class="blog-overly"></div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Product Pictures</h2>
-            </div>
+
+  <!-- feature start-->
+  <div style="background-color: white; padding: 40px;">
+
+    <div style="max-width: 1120px; margin: auto; padding: 24px;">
+      <h2 style="text-align: center; font-size: 24px; font-weight: 600; color: #1f2937; margin-bottom: 32px;">CRM
+        Features</h2>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
+        <!-- Feature 1 -->
+        <div style="display: flex; align-items: center;">
+          <i class="fas fa-comments" style="font-size: 48px; color: #3EC1D5; margin-right: 16px; opacity: 0.5;"></i>
+          <div>
+            <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">Live Chat Widget</h3>
+            <p style="font-size: 16px; color: #4a5568;">Provide real-time support and enhance customer service by enabling direct communication on your website. This feature allows for instant responses to inquiries, improving customer satisfaction and engagement.</p>
           </div>
         </div>
-        <div class="row">
-          <!-- Start Left Blog -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="single-blog">
-              <div class="single-blog-img">
-                <a href="#">
-                  <img src="../files/img/blog/1.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-meta">
-
-              </div>
-            
-            </div>
-            <!-- Start single blog -->
+        <!-- Feature 2 -->
+        <div style="display: flex; align-items: center;">
+          <i class="fas fa-tachometer-alt" style="font-size: 48px; color: #3EC1D5; margin-right: 16px; opacity: 0.5;"></i>
+          <div>
+            <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">Comprehensive Support Dashboard</h3>
+            <p style="font-size: 16px; color: #4a5568;">Centralize all customer interactions and support tickets in one intuitive dashboard. This feature streamlines the process of managing customer requests, ensuring no query goes unanswered and improving overall support efficiency.</p>
           </div>
-          <!-- End Left Blog-->
-          <!-- Start Left Blog -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="single-blog">
-              <div class="single-blog-img">
-                <a href="#">
-                  <img src="../files/img/blog/2.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-meta">
-
-              </div>
-             
-             
-            </div>
-            
-            <!-- Start single blog -->
+        </div>
+        <!-- Feature 3 -->
+        <div style="display: flex; align-items: center;">
+          <i class="fas fa-chart-line" style="font-size: 48px; color: #3EC1D5; margin-right: 16px; opacity: 0.5;"></i>
+          <div>
+            <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">Analytics and Reporting</h3>
+            <p style="font-size: 16px; color: #4a5568;">Leverage data to gain valuable insights into customer behavior and support performance. This feature enables the tracking of key metrics to inform strategic decisions and optimize the customer experience.</p>
           </div>
-          <!-- End Left Blog-->
-          <!-- Start Right Blog-->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="single-blog">
-              <div class="single-blog-img">
-                <a href="#">
-                  <img src="../files/img/blog/3.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-meta">
-
-              </div>
-              
-             
-            </div>
+        </div>
+        <!-- Feature 4 -->
+        <div style="display: flex; align-items: center;">
+          <i class="fas fa-sync-alt" style="font-size: 48px; color: #3EC1D5; margin-right: 16px; opacity: 0.5;"></i>
+          <div>
+            <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">Seamless Integration</h3>
+            <p style="font-size: 16px; color: #4a5568;">Enhance your CRM capabilities by integrating with existing tools and platforms. This feature facilitates a unified workflow, allowing for the seamless exchange of data and ensuring a cohesive user experience.</p>
           </div>
-          <!-- End Right Blog-->
+        </div>
+        <!-- Feature 5 -->
+        <div style="display: flex; align-items: center;">
+          <i class="fas fa-user-shield" style="font-size: 48px; color: #3EC1D5; margin-right: 16px; opacity: 0.5;"></i>
+          <div>
+            <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">Advanced Security</h3>
+            <p style="font-size: 16px; color: #4a5568;">Safeguard your customer data with state-of-the-art security measures. This feature ensures the integrity and confidentiality of sensitive information, building trust and compliance with global data protection regulations.</p>
+          </div>
+        </div>
+        <!-- Feature 6 -->
+        <div style="display: flex; align-items: center;">
+          <i class="fas fa-ticket-alt" style="font-size: 48px; color: #3EC1D5; margin-right: 16px; opacity: 0.5;"></i>
+          <div>
+            <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">Ticketing System</h3>
+            <p style="font-size: 16px; color: #4a5568;">Streamline issue resolution with a comprehensive ticketing system. This feature allows for the efficient tracking, prioritization, and management of customer support requests, ensuring timely responses and resolution of issues.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- End Blog -->
-  <div class="clearfix"></div>
+  <!-- feature end -->
 
-  <!-- Start Footer bottom Area -->
-  <footer>
-    <div class="footer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <div class="footer-logo">
-                  <h2><img src="../files/img/logo.jpg" alt="this is the logo"></h2>
-                </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis itaque dolores non officiis eligendi
-                  delectus illum adipisci eaque repellendus aspernatur neque ducimus, quae quibusdam rem ipsum repellat
-                  quisquam quos labore.</p>
-                <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-google"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>information</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-                <div class="footer-contacts">
-                  <p><span>Tel:</span> +123 456 789</p>
-                  <p><span>Email:</span> contact@example.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>Instagram</h4>
-                <div class="flicker-img">
-                  <a href="#"><img src="../files/img/portfolio/1.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/2.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/3.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/4.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/5.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/6.jpg" alt=""></a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+  <!-- Advert Section Start -->
+  <div style="margin-top: 50px; background-color: #f0f4f8; padding: 40px 0;">
+    <div class="container" style="max-width: 1120px; margin: auto; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px; padding: 20px;">
+        <img src="/assets/images/Customer relationship management-pana.png" alt="CRM Illustration" style="max-width: 100%; height: auto; opacity: 0.8; scale: 1.2;">
+      </div>
+      <div style="flex: 2; min-width: 300px; padding: 20px;">
+        <h2 style="font-size: 24px; font-weight: bold; color: #1a202c; margin-bottom: 20px;">Why Our CRM Stands Out</h2>
+        <div>
+          <h3 style="font-size: 20px; font-weight: bold; color: #3EC1D5;">Collaborate and Assign Conversations</h3>
+          <p style="font-size: 16px; color: #4a5568;">Our CRM enables your team to collaborate seamlessly on customer inquiries. Assign conversations to the right team members to ensure every customer receives the expert attention they deserve, enhancing response times and service quality.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 20px; font-weight: bold; color: #3EC1D5;">Easily Create Knowledge Base</h3>
+          <p style="font-size: 16px; color: #4a5568;">Build a comprehensive knowledge base with ease, allowing customers to find answers quickly and reducing the load on your support team. A well-organized knowledge base improves customer satisfaction and self-service capability.</p>
+        </div>
+        <div>
+          <h3 style="font-size: 20px; font-weight: bold; color: #3EC1D5;">Monitor Customer Real-time Activities</h3>
+          <p style="font-size: 16px; color: #4a5568;">Gain insights into your customers' behavior with real-time activity monitoring. Understand how customers interact with your platform, enabling personalized support and targeted marketing strategies to boost engagement and conversions.</p>
         </div>
       </div>
     </div>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
-              </p>
-            </div>
-          </div>
+  </div>
+  <!-- Advert Section End -->
+
+
+
+
+  <div style="padding: 60px 0; background-color: #ffffff;">
+    
+    <div class="container" style="max-width: 1120px; margin: auto;">
+      <h2 style="font-size: 24px; font-weight: bold; color: #1a202c; text-align: center;">Integration for Business</h2>
+      <p style="font-size: 16px; color: #4a5568; text-align: center;">For businesses that runs on Bayscope's platforms or are already using Bayscope's solutions, BayScope offers automatic integration, requiring no effort on your part. Our team ensures that your platform is seamlessly integrated with our CRM, enhancing your operational efficiency without you having to lift a single finger.</p>
+      <div style="text-align: center; margin-top: 40px;">
+      <a href="https://www.bayscope.com/contact-us/" target="_blank" class="btn btn-primary" style="font-size: 16px; font-weight: bold; color: #ffffff; background-color: #3EC1D5; border-radius: 4px; padding: 12px 24px; border: 1px solid #3EC1D5; text-decoration: none;"> get started</a>
+      </div>
+    </div>
+  </div>
+     
+ 
+  <!-- Integration for Developers Start -->
+  <div style="padding: 60px 0; background-color: #f7fafc;">
+    <div class="container" style="max-width: 1120px; margin: auto;">
+      <h2 style="font-size: 24px; font-weight: bold; color: #1a202c; text-align: center;">Manual integration (Developers/existing site owners)</h2>
+      <p style="font-size: 16px; color: #4a5568; text-align: center;">Integrating BayScope into an existing site requires a few simple steps. Developers can easily add our CRM functionalities to enhance their platforms.</p>
+      <div style="background-color: #ffffff; border-radius: 8px; padding: 40px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+        <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">CRM Initialization</h3>
+        <p style="font-size: 16px; color: #4a5568;">After adding the integration script to your site, initialize the CRM with your unique key provided by BayScope:</p>
+        <div style="background-color: #edf2f7; padding: 20px; border-radius: 4px; margin-top: 20px;">
+          <code style="font-size: 14px; color: #2d3748;">
+            // &lt;script   src="https://crm.your-business.com/integrate.js" &gt;&lt;/script&gt;  <br>    <span style="color: #2b6cb0;">&lt;script&gt;<br>  window.onload = function() {<br>    CRM.init('YOUR_UNIQUE_KEY');<br>  };<br>&lt;/script&gt;</span></code>
+        </div>
+        <p style="font-size: 16px; color: #4a5568; margin-top: 20px;">Replace 'YOUR_UNIQUE_KEY' with the key provided to you. This will activate the CRM functionalities on your website. Access your CRM dashboard on <b>crm.your-business.com</b></p>
+      </div>
+    </div>
+  </div>
+  <!-- Integration for Developers End -->
+
+  <!-- Integration for Business Start -->
+  
+  <!-- Integration for Business End -->
+
+
+
+
+
+  <!-- start pricing section-->
+  <div style="background-color: white; padding: 96px 0;">
+
+    <div style="text-align: center; margin-bottom: 48px;">
+      <h2 style="font-size: 28px; font-weight: bold; color: #1a202c;">Deploy Your CRM at Low Cost</h2>
+    </div>
+    <div
+      style="max-width: 1128px; padding: 0 24px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border: 1px solid #e2e8f0; border-radius: 24px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);">
+      <div style="padding: 32px; flex: 1;">
+        <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">BayScope CRM</h3>
+        <p style="margin-top: 24px; font-size: 16px; color: #4a5568;">Our CRM solution is designed to help businesses manage customer relationships, streamline processes, and improve profitability.</p>
+        <div style="margin-top: 40px; display: flex; align-items: center;">
+          <h4 style="font-size: 14px; font-weight: semibold; color: #667eea; flex-shrink: 0;">Features included</h4>
+          <div style="flex-grow: 1; height: 1px; background-color: #e2e8f0; margin-left: 16px;"></div>
+        </div>
+        <ul style="margin-top: 32px; list-style: none; padding: 0;">
+          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Customer Data Management</li>
+          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Sales Pipeline Visualization</li>
+          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Marketing Automation</li>
+          <li style="display: flex; align-items: center; color: #4a5568; font-size: 14px;">✔ Service and Support Tracking</li>
+        </ul>
+      </div>
+      <div
+        style="background-color: #fafafa; border-radius: 16px; padding: 40px; text-align: center; margin-top: -16px; flex: 1; border-left: 1px solid #e2e8f0;">
+        <p style=" color: #4a5568;"> <span style="font-size: 25px; font-weight: bold;">NGN </span> <span
+            style="margin-left: 5px; font-weight: semibold; letter-spacing: 5px; font-size: 30px;"> 15,000</span></p>
+        <p
+          style="margin-top: 24px; display: flex; justify-content: center; align-items: baseline; font-size: 40px; font-weight: bold; color: #1a202c;">
+          <span style="font-size: 14px; font-weight:bold; color: #4a5568; margin-left: 8px;">Billed monthly</span>
+        </p>
+        <a href="javascript:Void(0);"
+          style="display: inline-block; background-color:#3EC1D5; padding: 8px 20px; border-radius: 8px; color: white; text-decoration: none; font-weight: semibold; margin-top: 40px;">Purchase Now</a>
+        <a href="javascrit:addtocart(0);"
+          style="display: inline-block; background-color: #3EC1D5; padding: 8px 16px; border-radius: 8px; color: white; text-decoration: none; font-weight: semibold; margin-top: 40px; margin-left: 10px;"
+          onclick="addtocart('bayscope-crm', 15000)"><i class="fa fa-shopping-cart"
+            aria-hidden="true"></i></a>
+        <p style="margin-top: 24px; font-size: 10px; color: #4a5568;">Invoices and receipts available for easy company
+          reimbursement</p>
+        <div style="text-align: center; margin-top: 20px;">
+          <p style="font-size: 14px; color: #4a5568;">want auto integration? Check out our <a href="/proSuite"
+              style="color: #3EC1D5; font-weight: bold;">proSuite</a> or <a href="/businessPro"
+              style="color: #3EC1D5; font-weight: bold;">businessPro</a> bundles for comprehensive business solutions at
+            a lower cost.</p>
         </div>
       </div>
+    </div>
+  </div>
+
+
+  <!-- End Business Technology Platform Pricing Section -->
+
+
+
+
+
+
+
+  <!-- Cart section-->
+
+  <div id="cartSection" class="cart-section">
+    <div class="cart-header">
+      <h4> <i class="fa fa-shopping-cart" aria-hidden="true"></i></h4>
+      <button" onclick="toggleCart()" class="close-cart">&times;</button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-summary">
+      <p>Total: <span id="cartTotal">$0.00</span></p>
+      <button class="purchase-btn checkout-btn"> <b>Checkout</b></button>
+    </div>
+  </div>
+
+
+
+  <!-- Notice Section Start -->
+
+  <!-- Notice Section End -->
+  <!-- End Blog -->
+  <div class="clearfix"></div>
+  <div class="space"></div>
+  <!-- Start Footer bottom Area -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-head">
+            <div class="footer-logo">
+              <h2>BayScope</h2>
+            </div>
+            <div class="footer-icons">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-products">
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forschools/"> FOR SCHOOLS</a></h5>
+                </li>
+
+                <li>
+                  <a class="" href="/forschools/"> Web Edu Plans</a>
+                </li>
+                <li>
+                  <a href="/CardEase">Edu360</a>
+                </li>
+                <li>
+                  <a href="https://exampoint.com.ng">ExamPoint NG</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forbusiness/">FOR BUSINESS</a></h5>
+                </li>
+
+                <li>
+                  <a class="" href="/flow"> B Flow</a>
+                </li>
+                <li>
+                  <a href="/CardEase">CardEase</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">ProSuite</a>
+                </li>
+
+                <li class="p-3">
+                  <a href="/ProSuite/">Web Business</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="footer-products-child real-estate">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forschools/"> FOR REAL-ESTATE</a></h5>
+                </li>
+
+                <li>
+                  <a class="" href="/real-estate/"> Web Property Solutions</a>
+                </li>
+                <li>
+                  <a href="/real-estate">Property Pro</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-company">
+            <h5><a class="text-secondary link-header" href="/forschools/"> COMPANY</a></h5>
+            <ul>
+              <li>
+                <a class="text-secondary" href="/events/"> Events</a>
+              </li>
+
+              <li>
+                <a class="" href="/company-news/"> Company News</a>
+              </li>
+              <li>
+                <a href="/careers/">Careers</a>
+              </li>
+              <li>
+                <a href="/affliate">About BayScope</a>
+              </li>
+              <li>
+                <a href="/affliate">Investors</a>
+              </li>
+              <li>
+                <a href="/affliate">Affliate</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="footer-privacy">
+          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
+            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
+              class="fa fa-trademark" aria-hidden="true"></i></a>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="copyright">
+      <p>
+        &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
+      </p>
     </div>
   </footer>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="../files/libs/jquery/jquery.min.js"></script>
-  <script src="../files/libs/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../files/libs/owlcarousel/owl.carousel.min.js"></script>
-  <script src="../files/libs/venobox/venobox.min.js"></script>
-  <script src="../files/libs/knob/jquery.knob.js"></script>
-  <script src="../files/libs/wow/wow.min.js"></script>
-  <script src="../files/libs/parallax/parallax.js"></script>
-  <script src="../files/libs/easing/easing.min.js"></script>
-  <script src="../files/libs/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-  <script src="../files/libs/appear/jquery.appear.js"></script>
-  <script src="../files/libs/isotope/isotope.pkgd.min.js"></script>
 
-  <script src="../files/js/main.js"></script>
+  <!-- main  javascript for this page-->
+
+  <!-- JavaScript Libraries -->
+  <script src="/files/libs/jquery/jquery.min.js"></script>
+  <script src="/files/libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/files/libs/owlcarousel/owl.carousel.min.js"></script>
+
+  <script src="/files/libs/wow/wow.min.js"></script>
+
+  <script src="/files/libs/appear/jquery.appear.js"></script>
+
+  <!--  scripts for carts & an Api functionalities-->
+  <script src="/files/js/main.js"></script>
+  <script src="/files/js/apicalls.js"></script>
+  <script src="/files/js/cart.js"></script>
+
+
+
 </body>
 
 </html>
