@@ -708,23 +708,34 @@ p{
     margin-top: 40%;
   
   }
-  
+
+  /* 
+  TESTIMONIAL & SUCESS STORIES
+*/
+
+.video-container {
+    position: relative;
+    display: inline-block; /* Or as per your layout */
+}
+
   /* final responsivness */
 @media screen and (max-width:600px) {
   body{
     overflow-x: hidden;
+    overflow-y: auto;
   }
   .advert-section{
     width: 100%;
   }
-  .wow{
-    animation: none;
+  video{
+    width: 100%;
   }
   .mobile-ecommerce-img{
    margin-top: 5%;
    margin-bottom: 10%;
   
   }
+  
   
 }
  

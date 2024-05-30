@@ -572,3 +572,9 @@
   
   }
 }
+
+@media  screen and ( maxk-width:600px) {
+ video{
+ width: 350px;
+ }  
+}

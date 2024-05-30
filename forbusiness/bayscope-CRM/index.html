@@ -46,8 +46,98 @@
 
 
   <style>
+    @media (max-width: 768px) {
 
 
+      .feature-grid {
+        grid-template-columns: 1fr !important; /* Override inline styles for mobile */
+      }
+    }
+
+    /* Base styles for the section */
+    .section {
+      background-color: white;
+      position: relative;
+      padding: 56px 24px;
+      max-width: 1280px;
+      margin: auto;
+    }
+    
+    .section div, .section h1, .section p, .section a {
+      text-align: center;
+    }
+    
+    .section svg {
+      opacity: .8;
+      position: absolute;
+    }
+    
+    /* Styles for the decorative SVGs */
+    .decorative-svg {
+      width: 90px; /* Adjust based on your preference */
+    }
+    
+    /* Styles for the "Get started" and "Learn more" buttons */
+    .get-started-btn, .learn-more-btn {
+      display: inline-block;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    
+    .get-started-btn {
+      background-color: #3EC1D5;
+      color: white;
+    }
+    
+    .learn-more-btn {
+      color: #1a202c;
+      margin-left: 24px;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .section {
+        padding: 30px 15px;
+      }
+    
+      .section div {
+        padding-top: 60px;
+        padding-bottom: 120px;
+      }
+    
+      .decorative-svg {
+        width: 60px; /* Smaller size for smaller screens */
+        right: 20px; /* Adjust position for smaller screens */
+        left: auto; /* Reset left positioning */
+      }
+    
+      .section svg.fa-beat {
+        left: 20px; /* Adjust position for smaller screens */
+        bottom: auto; /* Reset bottom positioning */
+      }
+    
+      .get-started-btn, .learn-more-btn {
+        font-size: 12px; /* Smaller font size for smaller screens */
+        padding: 6px 12px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .section h1 {
+        font-size: 35px; /* Smaller font size for very small screens */
+      }
+    
+      .section p {
+        font-size: 17px; /* Adjust font size for readability */
+      }
+    
+      .section svg {
+        display: none; /* Hide SVGs on very small screens to prevent overflow */
+      }
+    }
   </style>
 </head>
 
@@ -165,8 +255,8 @@
 
 
 
-  <div style="background-color: white;">
-    <div style="position: relative; padding: 56px 24px; max-width: 1280px; margin: auto;">
+  <div style="background-color: white;" >
+    <div class="section" style="position: relative; padding: 56px 24px; max-width: 1280px; margin: auto;">
       <div
         style="position: absolute; top: -160px; left: 50%; width: 580px; height: 340px; background: linear-gradient(45deg, #3EC1D5, #9089fc); opacity: 0.3; transform: translateX(-50%) rotate(30deg); clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);">
       </div>
@@ -185,7 +275,7 @@
             style="font-size: 25px; font-weight: bold;">Support</span>
         </p>
 
-        <svg style="width: 90px; opacity: .5;  position:absolute; right:50px;" class="fa fa-beat" version="1.1" id="Layer_1"
+        <svg style="width: 90px; opacity: .8;  position:absolute; right:50px;" class="" version="1.1" id="Layer_1"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 32"
           enable-background="new 0 0 40 32" xml:space="preserve" fill="#000000">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -200,10 +290,10 @@
         </svg>
 
         <div style="margin-top: 40px;">
-          <a href="/auth/signup/"
+          <a class="get-started-btn" href="/auth/signup/"
             style="display: inline-block; background-color:#3EC1D5; color: white; padding: 8px 14px; font-size: 14px; font-weight: bold; border-radius: 4px; text-decoration: none;">Get
             started</a>
-          <a href="#"
+          <a class="learn-more-btn" href="#"
             style="font-size: 14px; font-weight: bold; color: #1a202c; text-decoration: none; margin-left: 24px;">Learn
             more →</a>
         </div>
@@ -260,7 +350,7 @@
     <div style="max-width: 1120px; margin: auto; padding: 24px;">
       <h2 style="text-align: center; font-size: 24px; font-weight: 600; color: #1f2937; margin-bottom: 32px;">CRM
         Features</h2>
-      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
+      <div class="feature-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; ">
         <!-- Feature 1 -->
         <div style="display: flex; align-items: center;">
           <i class="fas fa-comments" style="font-size: 48px; color: #3EC1D5; margin-right: 16px; opacity: 0.5;"></i>
@@ -344,16 +434,21 @@
 
 
 
+
+<!--Integration section for busnesses-->
+
+
   <div style="padding: 60px 0; background-color: #ffffff;">
-    
+    <!-- <h3 style="width: 100%; text-align: center; border-left: 5px solid black ; background: #72a0a7; padding: 5px 30px; color: white;"> Seamlessly integrate BayScope CRM into your operations</h3> -->
     <div class="container" style="max-width: 1120px; margin: auto;">
-      <h2 style="font-size: 24px; font-weight: bold; color: #1a202c; text-align: center;">Integration for Business</h2>
+      <h2 style="font-size: 24px; font-weight: bold; color:#3EC1D5; text-align: center;">Integration for Business</h2>
       <p style="font-size: 16px; color: #4a5568; text-align: center;">For businesses that runs on Bayscope's platforms or are already using Bayscope's solutions, BayScope offers automatic integration, requiring no effort on your part. Our team ensures that your platform is seamlessly integrated with our CRM, enhancing your operational efficiency without you having to lift a single finger.</p>
       <div style="text-align: center; margin-top: 40px;">
-      <a href="https://www.bayscope.com/contact-us/" target="_blank" class="btn btn-primary" style="font-size: 16px; font-weight: bold; color: #ffffff; background-color: #3EC1D5; border-radius: 4px; padding: 12px 24px; border: 1px solid #3EC1D5; text-decoration: none;"> get started</a>
+      <a href="https://www.bayscope.com/contact-us/" target="_blank" class="btn btn-primary" style="font-size: 16px; font-weight: bold; color: #ffffff; background-color: #3EC1D5; border-radius: 4px; padding: 12px 24px; border: 1px solid #3EC1D5; text-decoration: none;">let's integrate </a>
       </div>
     </div>
   </div>
+   <!-- Integration for Business End -->
      
  
   <!-- Integration for Developers Start -->
@@ -374,9 +469,9 @@
   </div>
   <!-- Integration for Developers End -->
 
-  <!-- Integration for Business Start -->
+ 
   
-  <!-- Integration for Business End -->
+ 
 
 
 
@@ -399,7 +494,7 @@
         </div>
         <ul style="margin-top: 32px; list-style: none; padding: 0;">
           <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Customer Data Management</li>
-          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Sales Pipeline Visualization</li>
+          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Custom domain</li>
           <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Marketing Automation</li>
           <li style="display: flex; align-items: center; color: #4a5568; font-size: 14px;">✔ Service and Support Tracking</li>
         </ul>
