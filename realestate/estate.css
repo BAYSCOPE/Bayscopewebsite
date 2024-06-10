@@ -208,8 +208,6 @@
   .discover-section-text-wrap {
     width: 40%;
   }
-
-
 }
 
 @media only screen and (max-width: 835px) {
@@ -218,7 +216,6 @@
     margin-bottom: 50px;
   }
   .discover-section {
-    margin-top: 90px;
     display: inline;
     background-color: red;
   }
@@ -230,6 +227,9 @@
   }
   .button-wrap {
     display: none;
+  }
+  .discover-section-text-wrap2 {
+    text-align: center;
   }
 
   .project-section-wrapper {
@@ -285,7 +285,17 @@
   flex-direction: column;
   margin-bottom: 50px;
 }
-.discover-section-text-wrap p{
+
+.discover-section-text-wrap2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 90px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.discover-section-text-wrap p {
   margin-left: auto;
   margin-right: auto;
 }
@@ -336,7 +346,6 @@
   width: 90%;
   height: auto;
   align-items: center;
-
 }
 .bg-card {
   width: 100%;
@@ -523,7 +532,8 @@
 }
 .playstore-appstore {
   height: 100px;
-  /* background-color: green; */
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
