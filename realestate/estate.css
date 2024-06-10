@@ -208,6 +208,8 @@
   .discover-section-text-wrap {
     width: 40%;
   }
+
+
 }
 
 @media only screen and (max-width: 835px) {
@@ -229,8 +231,16 @@
   .button-wrap {
     display: none;
   }
+
   .project-section-wrapper {
     display: block;
+    width: 100%;
+    height: auto;
+  }
+  .projectItem {
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
   }
 }
 
@@ -264,7 +274,7 @@
 
 .discover-section-wrapper {
   width: 100%;
-  height: 100%;
+  height: auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -273,27 +283,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
-.button-wrap2 {
-  width: 55%;
-  /* background-color: green; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.button-wrap2 button {
-  border: none;
-  background-color: #000000;
-  padding: 10px 40px;
-  color: white;
-  border-radius: 7px;
-  transition: all 1s ease-in-out;
-  cursor: pointer;
-}
-.button-wrap2 button:hover {
-  background-color: #3ec1d5;
-  transition: all 500ms ease-in-out;
+.discover-section-text-wrap p{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .play-button {
@@ -327,11 +321,11 @@
 
 .project-section {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+  margin-top: 50px;
   padding: 30px 0 50px 0;
 }
 .project-section h1 {
@@ -340,9 +334,9 @@
 
 .project-section-wrapper {
   width: 90%;
-  height: 100%;
-  justify-content: space-between;
+  height: auto;
   align-items: center;
+
 }
 .bg-card {
   width: 100%;
@@ -357,6 +351,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgb(6, 181, 190) 0px 2px 4px -1px;
   border-radius: 5px;
+  margin-bottom: 50px;
 }
 .bg-card2 {
   width: 100%;
@@ -371,6 +366,8 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgb(6, 181, 190) 0px 2px 4px -1px;
   border-radius: 5px;
+
+  margin-bottom: 50px;
 }
 .bg-card3 {
   width: 100%;
@@ -385,14 +382,14 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgb(6, 181, 190) 0px 2px 4px -1px;
   border-radius: 5px;
+  margin-bottom: 50px;
 }
 
 .bottom-card {
   width: 100%;
-  height: 35%;
+  height: 500px;
   background-color: black;
   opacity: 85%;
-  border-radius: 0 0 5px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -403,10 +400,9 @@
 }
 .bottom-card2 {
   width: 100%;
-  height: 35%;
+  height: 500px;
   background-color: black;
   opacity: 80%;
-  border-radius: 0 0 5px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -424,10 +420,10 @@
   height: 30px;
 }
 .bottom-card:hover {
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(6, 181, 190);
 }
 .bottom-card2:hover {
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(6, 181, 190);
 }
 
 .btn-3 {
@@ -442,7 +438,8 @@
 
 .button-wrap3 {
   width: 55%;
-  /* background-color: green; */
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -453,6 +450,8 @@
   background-color: #3ec1d5;
   padding: 10px 40px;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 7px;
   transition: all 1s ease-in-out;
   cursor: pointer;
@@ -596,10 +595,4 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.projectItem {
-  background-color: red;
-  height: 300px;
-  width: 300px;
-  margin: 20px;
 }
