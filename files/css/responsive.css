@@ -134,6 +134,59 @@
     background-color: rgba(0, 0, 0, 0.4);
   
   }
+
+  .footer-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px 0;
+    margin-left: 50px;
+  }
+  .footer-products{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 25px;
+  }
+  .footer-company{
+    text-align: start;
+    width: 230px;
+    height: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+  }
+  .footer-head{
+    margin-left: 30px;
+  }
+  .real-estate{
+    margin-left: 20px;
+  }
+  .footer-privacy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    margin-left: 25px;
+  }
+  .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 15px;
+    border-top: 1px solid #444; ;
+  }
+  .copyright > p{
+    margin-top: 10px;
+    color: #444;
+  }
+  .footer-content {
+    margin-bottom: 30px;
+  }
   
 }
 
@@ -329,6 +382,55 @@
     display: block;
     padding: 0;
   }
+  .footer-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px 0;
+    margin-left: 50px;
+  }
+  .footer-products{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .footer-company{
+    text-align: start;
+    width: 230px;
+    height: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+  }
+  .footer-head{
+    margin-left: 30px;
+  }
+  .real-estate{
+    margin-left: 20px;
+  }
+  .footer-privacy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    margin-left: 25px;
+  }
+  .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 15px;
+    border-top: 1px solid #444; ;
+  }
+  .copyright > p{
+    margin-top: 10px;
+    color: #444;
+  }
 }
 
 /* Large Mobile :480px. */
@@ -367,6 +469,7 @@
   }
   .footer-products{
     display: flex;
+    flex-direction: column;
     gap: 25px;
   }
   .footer-company{
@@ -468,4 +571,10 @@
     background-color: rgba(0, 0, 0, 0.4);
   
   }
+}
+
+@media  screen and ( maxk-width:600px) {
+ video{
+ width: 350px;
+ }  
 }

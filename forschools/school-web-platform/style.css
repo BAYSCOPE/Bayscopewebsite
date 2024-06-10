@@ -349,12 +349,10 @@
     left: 0;
     font-family: 'themify';
     font-weight: 400;
+    color: #9629e6;
 }
 
 /*feature new style*/
-.details-section{
-  padding: 20px;
-}
 
 .icon-shape {
     display: inline-block;
@@ -430,53 +428,78 @@ Pricing section styles
 
 */
 
-.pricing-box {
-    -webkit-box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
-    padding: 35px 50px;
-    border-radius: 20px;
-    position: relative;
-    
-  }
-.text-sm{
-    font-size:small;
-}
-  .pricing-box .plan {
-    font-size: 34px;
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
   }
 
-  .pricing-badge {
-    position: absolute;
-    top: 0;
-    z-index: 999;
-    right: 0;
-    width: 100%;
-    display: block;
-    font-size: 15px;
-    padding: 0;
-    overflow: hidden;
-    height: 100px;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px -15px;
   }
 
-  .pricing-badge .badge {
-    float: right;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    right: -67px;
-    top: 17px;
-    position: relative;
-    text-align: center;
-    width: 200px;
-    font-size: 13px;
-    margin: 0;
-    padding: 7px 10px;
-    font-weight: 500;
-    color: #ffffff;
-    background: #fb7179;
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
   }
-  .price-btn{
-    padding: 15px; background:#3EC1D5; color: white; font-weight: bold; border-radius: 10px;
+
+  .pricing-info {
+    text-align: right;
   }
+
+  .price {
+    font-size: 36px;
+    color: #3EC1D5;
+  }
+
+  .period {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #666;
+  }
+
+  .btn {
+    background-color: #3EC1D5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .alert {
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  .alert a {
+    text-decoration: underline;
+    color: #3EC1D5;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .pricing-info {
+      text-align: center;
+    }
+  }
+
+
+
+
+
+
+
 
   .mb-2,
   .my-2 {
@@ -505,47 +528,6 @@ Pricing section styles
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Testimonials Section Styles */
-.testimonials-section {
-   
-  }
-  
-  .testimonial-item {
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
-  }
-  
-  .testimonial-author img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  
-  .testimonial-author h5 {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .testimonial-author small {
-    display: block;
-    color: #666;
-  }
-
   @media (max-width: 768px) {
     .promo-section .card, .testimonial-item, .icon-box, .footer-main {
       margin-bottom: 20px;
@@ -560,7 +542,7 @@ Pricing section styles
   }
   
   .advert-title {
-    color:#3EC1D5;
+    color: #007bff;
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -589,81 +571,6 @@ p{
   line-height: 1.5;
 
 }
-*/
-  /* Accordion styles */
- .accordion {
-    width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-  }
-
- .accordion-item {
-    position: relative;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    font-size: larger;
-  }
-
- .accordion-item-input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
-
- .accordion-item-label {
-    display: block;
-    padding: 15px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
- .accordion-item-label::after {
-    content: "<i class="fa fa-eye" aria-hidden="true"></i>";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    float: right;
-    transition: transform 0.3s ease;
-  }
-
- .accordion-item-input:checked +.accordion-item-label::after {
-    transform: rotate(180deg);
-  }
-
- .accordion-item-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding: 0 1px;
-  }
-
- .accordion-item-input:checked +.accordion-item-label +.accordion-item-content {
-    max-height: 500px; /* Set the desired maximum height for the content */
-  }
-
-  /* Customize the accordion styles */
- .accordion {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-
- .accordion-item-label {
-    background-color: #f5f5f5;
-  }
-
- .accordion-item-label:hover {
-    background-color: #e9e9e9;
-  }
-
- .accordion-item-input:checked +.accordion-item-label {
-    background-color: #3EC1D5;
-    color: #fff;
-  }
-
- .accordion-item-content {
-    padding: 15px;
-    background-color: #fff;
-  }
 
 
   /* Indicator container */
@@ -701,41 +608,3 @@ p{
   .bullets ul li .indicator.active {
     background-color: #3EC1D5; /* Active color matching your theme */
   }
-  .mobile-ecommerce-img{
-    vertical-align: middle;
-    display: inline-block;
-    width: 110%;
-    margin-top: 40%;
-  
-  }
-
-  /* 
-  TESTIMONIAL & SUCESS STORIES
-*/
-
-.video-container {
-    position: relative;
-    display: inline-block; /* Or as per your layout */
-}
-
-  /* final responsivness */
-@media screen and (max-width:600px) {
-  body{
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .advert-section{
-    width: 100%;
-  }
-  video{
-    width: 100%;
-  }
-  .mobile-ecommerce-img{
-   margin-top: 5%;
-   margin-bottom: 10%;
-  
-  }
-  
-  
-}
- 
