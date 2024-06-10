@@ -231,7 +231,10 @@
   .discover-section-text-wrap2 {
     text-align: center;
   }
-
+  .playstore-appstore {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .project-section-wrapper {
     display: block;
     width: 100%;
@@ -517,23 +520,19 @@
 }
 
 .playstore {
-  width: 45%;
-  /* background-color: red; */
+  width: 60%;
   display: flex;
-  height: 52px;
-  background-color: black;
+  height: 100%;
+  border: 2px solid #3ec1d5;
   color: white;
-  /* margin: 0 10px; */
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  padding-left: 10px;
+  margin: 10px;
   cursor: pointer;
 }
 .playstore-appstore {
   height: 100px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
