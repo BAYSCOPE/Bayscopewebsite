@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>BayScope Student Central ( student Portal Solutions)</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="/files/img/favicon.jpg" rel="icon">
+  <link href="/files/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+  <link href="/files/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="/files/libs/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="/files/libs/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="/files/libs/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="/files/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/files/libs/animate/animate.min.css" rel="stylesheet">
+  <link href="/files/libs/venobox/venobox.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7b43093443.js" crossorigin="anonymous"></script>
+
+  <!-- Nivo Slider Theme -->
+  <link href="/files/css/nivo-slider-theme.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="/files/css/style.css" rel="stylesheet">
+
+  <!-- Responsive Stylesheet File -->
+  <link href="/files/css/responsive.css" rel="stylesheet">
+
+  <link href="/files/css/loader.css" rel="stylesheet">
+
+
+  <style>
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background: url('/assets/images/friends-learning-study-group.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      color: #fff;
+    }
+
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      /* Increase the opacity of the white color in the gradient for a more intensive tint */
+      background: linear-gradient(to top right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+
+    .hero-content {
+      max-width: 55%;
+      position: relative;
+    }
+
+    .hero-content h1 {
+      font-size: 3.9rem;
+      /* Increased font size */
+      font-weight: bold;
+      /* Bolder font */
+      margin-bottom: 20px;
+
+    }
+
+    .hero-content p {
+      font-size: 2rem;
+      /* Slightly increased font size */
+      margin-bottom: 30px;
+      color: black;
+
+    }
+
+    .btn {
+      background-color: #3EC1D5;
+      color: #fff;
+      padding: 15px 30px;
+      /* Slightly larger button */
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      font-weight: bold;
+      /* Larger button text */
+    }
+
+    @media (max-width: 768px) {
+      .hero-content {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+        /* Adjusted for smaller screens */
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+        /* Adjusted for smaller screens */
+      }
+    }
+  </style>
+  
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <div id="preloader"></div>
+  <div id="loader"> <i class="fa fa-spinner fa-spin" aria-hidden="true"></i></div>
+
+  <header class="header header-area" id="sticker">
+    <div class="header-logo-container">
+      <a class="page-scroll sticky-logo" href="/">
+        <h1>BayScope</h1>
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+      <ul class="mid-nav-list">
+        <li class="active">
+          <a class="page-scroll" href="/">Home</a>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu solutions" role="menu">
+
+            <li class="dropdown-menu-subdiv"><a href='/services/software-development' class="subdiv-heading-text">
+                for
+                Business</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology
+                    platforms</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'> Business Financial
+                    Solutions/integration</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'> BayScope E-commerce</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management(CRM)
+                    /Customer experience(CX)</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'> Enterprise Resourse Planning(ERP)
+                    solutions <i style="color: #3EC1D5;" class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope for StartUps</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href='/forschools/' class="subdiv-heading-text">
+                for
+                education</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/forschools/school-financial-solutions/'> BayScope TuitonTally </a>
+                </li>
+                <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web platform</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>  Bayscope EduPortal</a>
+                  (admission/application portal) </li>
+                <li id="subdiv-list-item"><a href='/forschools/students-portal'>Bayscope StudentCentral (students
+                    portal)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope Learning Management
+                    System(LMS)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner </a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text"> BayScope
+                For
+                Real-estate</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant Management System</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/realestate/property-management-system'>prorperty management</a></li>
+
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text"> Bayscope for Healthcare </a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/services/software-development'>Bayscope Health solution</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href='/forbusiness/'>BayScope Business</a></li>
+            <li><a href='/forschools/'>BayScope Schools</a></li>
+            <li><a href='/forhealths'>Bayscope Healthcare</a></li>
+            <li><a href='/realestate/'> BayScope Real Estate</a></li>
+
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">coming soon<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href=#>BayScope Flow</a></li>
+            <li><a href=#>CardLinks</a></li>
+          </ul>
+        </li>
+        </div>
+      </ul>
+      <ul class="right-nav-list">
+        <li>
+          <a class="page-scroll" href="/contact">Contact</a>
+        </li>
+
+        <li class=" dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
+            <span class="caret"></span> </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/auth/login" id="signinlink">Sign in</a></li>
+            <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
+          </ul>
+        </li>
+        <li class="pl-2">
+          <a href="javascript:void(0);" onclick="toggleCart()"> <i class="fa fa-shopping-cart fa-bold"
+              aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header end -->
+
+
+<section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Experience BayScope Student Central</h1>
+          <p>Empower students learning journey with BayScope Student Central, your comprehensive portal for managing academic life seamlessly.</p>
+          <a href="#features" class="btn" style="margin-right: 10px;">Explore Portal Features</a>
+          <a href="javascript:learnmore()" style="color: black; font-size: 15px;">Request a Demo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+
+ 
+
+
+  <div  style="background-color: white; padding-top: 20px; padding-bottom: 96px;">
+    <div style="max-width: 1120px; margin: auto; padding-left: 24px; padding-right: 24px;">
+      <h2 style="text-align: center; font-size: 18px; font-weight: 600; line-height: 24px; color: #1f2937;">Trusted by
+        the world’s most innovative teams</h2>
+      <div
+        style="margin-top: 40px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px; justify-items: center; align-items: center;">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal">
+        <img style="max-height: 48px; width: auto; object-fit: contain;"
+          src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<section id="features" style="background-color: #f8f9fa; padding: 60px 0;">
+  <div class="container">
+    <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: #333;">BayScope Student Portal Features</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <i class="fa fa-user-circle" style="font-size: 48px; margin-bottom: 20px;"></i>
+        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Record Management</h3>
+        <p>Students can easily manage their personal and schoool records, keeping their information up to date.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="fa fa-credit-card" style="font-size: 48px; margin-bottom: 20px;"></i>
+        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Fee Payment</h3>
+        <p>Secure and convenient fee payment options for tuition, library fines, and more.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="fa fa-book" style="font-size: 48px; margin-bottom: 20px;"></i>
+        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Results and Documents</h3>
+        <p>Access and download academic results, course materials, and important documents even as an alumni.</p>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 40px;">
+      <div class="col-md-4 text-center">
+        <i class="fa fa-calendar-check-o" style="font-size: 48px; margin-bottom: 20px;"></i>
+        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">School Activities</h3>
+        <p>Stay informed about upcoming school events, deadlines, and activities.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <i class="fa fa-comments" style="font-size: 48px; margin-bottom: 20px;"></i>
+        <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Engagement</h3>
+        <p>Engage with peers and faculty through forums, chats, and collaboration tools.</p>
+      </div>
+     <div class="col-md-4 text-center">
+       <i class="fa fa-dashboard" style="font-size: 48px; margin-bottom: 20px;"></i>
+       <h3 style="margin-bottom: 15px; font-size: 1.5rem;">Advanced Admin Dashboard</h3>
+       <p>Manage all your students' data, activities, and more with a comprehensive and intuitive admin dashboard.</p>
+     </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+<div class="advert-section" style="margin-top: 50px; background-color: #3EC1D5;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 wow slideInUp">
+        <img id="advertImage" src="/assets/images/portrait-young-woman-with-laptop-hands-outside-school.jpg" alt="Student Central" class="advert-image img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2 id="advertTitle" style="color: #3EC1D5; font-weight: bold; padding-bottom: 5px;" class="advert-title wow slideInDown" data-wow-delay="60ms">
+          Empowering Students Everywhere</h2>
+        <p id="advertDescription" class="advert-description" style="color: white; line-height: 1.5;">
+          BayScope Student Central is your all-in-one platform for academic management. From course registration to accessing educational resources, it's designed to streamline your educational experience.
+        </p>
+        <p style="padding-top: 20px;">
+          <a href="javascript:learnmore()"  style="padding: 13px; background-color:#3EC1D5; font-weight: bold; border-radius: 10px; color: white;">Learn More</a>
+          <a style="padding-left: 15px; color: #3EC1D5; font-weight: bold; font-size: x-large;" href="javascript:learnmore()" tabindex="">Get Demo</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <section style="background-color: #f8f9fa; padding: 60px 0;">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 40px; font-size: 3rem; color: #333;">Explore Advanced Portal Features</h2>
+      <p style="text-align: center; font-size: 1.6rem; margin-bottom: 30px;">For a comprehensive suite of advanced educational tools and features, check out BayScope Learning Management System. Designed to enhance the educational experience for both educators and students, BayScope LMS offers a wide range of functionalities tailored to meet the evolving needs of modern education.</p>
+      <div class="text-center">
+        <a href="/forschools/learning-management-system/" style="background-color: #3EC1D5; color: #fff; padding: 12px 24px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: 600;">Learn More About BayScope LMS</a>
+      </div>
+    </div>
+  </section>
+  <!-- Introduction Section for BayScope ERP -->
+<!-- What's New Section -->
+<!--pricing section-->
+<div style="background-color: white; padding: 96px 0;">
+
+    <div style="text-align: center; margin-bottom: 48px;">
+      <h2 style="font-size: 28px; font-weight: bold; color: #1a202c;">BayScope Student Portal: Empowering Education</h2>
+    </div>
+    <div
+      style="max-width: 1128px; padding: 0 24px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border: 1px solid #e2e8f0; border-radius: 24px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);">
+      <div style="padding: 32px; flex: 1;">
+        <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">Base Pricing for Getting Started</h3>
+        <p style="margin-top: 24px; font-size: 16px; color: #4a5568;">Start enhancing the educational experience with our comprehensive student portal solution. This base pricing is your gateway to a more organized and efficient educational environment.</p>
+        <div style="margin-top: 40px; display: flex; align-items: center;">
+          <h4 style="font-size: 14px; font-weight: semibold; color: #667eea; flex-shrink: 0;">Included Features</h4>
+          <div style="flex-grow: 1; height: 1px; background-color: #e2e8f0; margin-left: 16px;"></div>
+        </div>
+        <ul style="margin-top: 32px; list-style: none; padding: 0;">
+          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔
+            Student & Faculty Access</li>
+          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Course Management</li>
+          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔
+            Assignment Submission</li>
+          <li style="display: flex; align-items: center; color: #4a5568; font-size: 14px;">✔ Grade Tracking</li>
+        </ul>
+      </div>
+      <div
+        style="background-color: #fafafa; border-radius: 16px; padding: 40px; text-align: center; margin-top: -16px; flex: 1; border-left: 1px solid #e2e8f0;">
+        <p style=" color: #4a5568;"> <span style="font-size: 25px; font-weight: bold;">Starting at NGN </span> <span
+            style="margin-left: 5px; font-weight: semibold; letter-spacing: 5px; font-size: 30px;"> 20,000</span></p>
+        <p
+          style="margin-top: 24px; font-size: 14px; color: #4a5568;">This is a base pricing for getting started. Pricing may vary for more advanced features and usage cases.</p>
+      <a href="javascript:getstarted();"
+          style="display: inline-block; background-color:#3EC1D5; padding: 8px 20px; border-radius: 8px; color: white; text-decoration: none; font-weight: semibold; margin-top: 40px;">Get Started Now</a>
+        <p style="margin-top: 24px; font-size: 10px; color: #4a5568;">Contact us for more information on advanced features and custom solutions.</p>
+      </div>
+    </div>
+  </div>
+
+<section style="padding: 80px 0; background-color: #f8f9fa;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 style="font-size: 28px; color: #2a2a2a; font-weight: 600; margin-bottom: 30px;">Discover BayScope Student Central</h2>
+          <p style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 20px;">Explore how BayScope Student Central is transforming the student experience by providing a unified platform for academic management, collaboration, and resource access. See firsthand the benefits of our integrated system designed to enhance the educational journey for students and faculty alike.</p>
+          <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+            <a href="javascript:void(0);" onclick="playVideo()" style="display: inline-flex; align-items: center; background-color: #3EC1D5; color: #ffffff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
+              <i class="fa fa-play-circle" aria-hidden="true" style="margin-right: 10px;"></i>Watch Student Testimonials
+            </a>
+            <a href="javascript:getstarted();" style="color: #1a202c; margin-left: 10px; font-weight: bold;">start integrating into your school operations  <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <div style="position: relative; padding-top: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" src="/assets/videos/student-central-intro.mp4?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  
+
+
+  <!--  Footer bottom Area -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-head">
+            <div class="footer-logo">
+              <h2>BayScope</h2>
+            </div>
+            <div class="footer-icons">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-products">
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forschools/">Quick navigation</a></h5>
+                </li>
+
+                <li>
+                  <a class="" href="/sucess-stories/">Success stories</a>
+                </li>
+
+                <li>
+                  <a href="/Knowledge-base/">Knowledge Base</a>
+                </li>
+
+                <li>
+                  <a href="/realestate/">Real Estate</a>
+                </li>
+                <li>
+                  <a href="/healthcare/">Healthcare</a>
+                </li>
+                <li>
+                  <a href="/comming-soon">comming soon</a>
+                </li>
+                <li>
+                  <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
+                </li>
+               
+                <li>
+                  <a href="https://exampoint.com.ng">ExamPoint NG</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forbusiness/">Bundles</a></h5>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Business</a>
+                </li>
+
+                <li>
+                  <a class="" href="/flow">Busness Strater</a>
+                </li>
+                <li>
+                  <a href="/CardEase">Business Pro</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">ProSuite</a>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Education</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu strater</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">EduPRo</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu360</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-products-child real-estate">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="javascriptVoid:(0)"> FOR REAL-ESTATE</a></h5>
+                </li>
+
+                <li>
+                  <a class="" href="/real-estate/"> Web Property Solutions</a>
+                </li>
+                <li>
+                  <a href="/real-estate">Property Pro</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-company">
+            <h5><a class="text-secondary link-header" href="javascript:void(0)"> COMPANY</a></h5>
+            <ul>
+              <li>
+                <a class="text-secondary" href="/contact/">Contact us</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/partnerships/">Partnerships</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/events/"> Events</a>
+              </li>
+
+              <li>
+                <a class="" href="/company-news/"> Company News</a>
+              </li>
+              <li>
+                <a href="/careers/">Careers</a>
+              </li>
+              <li>
+                <a href="/affliate">About BayScope</a>
+              </li>
+              <li>
+                <a href="/affliate">Investors</a>
+              </li>
+              <li>
+                <a href="/affliate">Affliate</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        
+
+
+      </div>
+
+
+    </div>
+    
+    <div class="copyright">
+      <p>
+        <div class="footer-privacy">
+          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
+            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
+              class="fa fa-trademark" aria-hidden="true"></i></a>
+        </div>
+      </p>
+      <p>
+        &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+   <!--  learn more modal -->
+<div id="learnMoreModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="width:90%;" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="learnMoreModalLabel">Let's make you better understand this solution</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <!-- Option 1: Contact Us -->
+            <div class="col-md-4 text-center">
+              <i class="fa fa-envelope" style="color: #3EC1D5; font-size: 30px; padding: 10px 0px;" aria-hidden="true"></i>
+              <h6>Contact Us</h6>
+              <p>Get in touch with Bayscope support for inquiries or more information. leave us a message or connect live with a sales representative</p>
+              <a href="/contact/" style="color: black;">contact Us <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <!-- Option 2: Knowledgebase -->
+            <div class="col-md-4 text-center">
+              <i class="fa fa-trophy" style="color: #3EC1D5; padding: 10px 0px; font-size: 30px;" aria-hidden="true"></i>
+              <h6>Success Stories</h6>
+              <p>Discover how this solution have tranformed numerous institutions and gain insights on how they leverage this solution.</p>
+              <a href="/success-stories" class=" " style="color: black;">View Success Stories <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <!-- Option 3: Demo Request -->
+            <div class="col-md-4 text-center">
+              <i class="fa fa-laptop" style="color: #3EC1D5; font-size: 30px; padding: 10px 0px;" aria-hidden="true"></i>
+              <h6>Demo Request</h6>
+              <p>Request a demo to see this solutions in action.This will require a token fee to cover setup expenses which tailor this solution to suit you.</p>
+              <a href="/demo-request" class="" style="color: black;">Request Demo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--get started modal-->
+<div class="modal fade" id="getStartedModal" tabindex="-1" role="dialog" aria-labelledby="getStartedModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="getStartedModalLabel">BayScope Student Central: Empowering Educational Success</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h6 style="color: #3EC1D5;"> <i class="fa fa-info-circle" aria-hidden="true"></i> Important Notice</h6>
+      </div>
+      <div class="modal-body">
+        <p>BayScope Student Central is designed to enhance the educational journey by providing a comprehensive suite of tools for students, educators, and administrators. Our platform facilitates a seamless connection between all aspects of the educational experience, from course management to student engagement and performance tracking.</p>
+        <p>We understand that each educational institution has unique needs. That's why we invite you to contact us directly. This allows us to tailor the Student Central platform to meet your specific requirements, ensuring an optimal fit for your institution's goals and challenges.</p>
+        <p>Choosing BayScope Student Central means more than just accessing a platform; it means partnering with a team committed to educational excellence and innovation. Let us help you transform the educational experience at your institution.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="/contact/" class="btn" style="background: #3EC1D5; color: white;">Contact Us to Get Started</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal functionality script -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="/files/libs/jquery/jquery.min.js"></script>
+  <script src="/files/libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/files/libs/owlcarousel/owl.carousel.min.js"></script>
+  <script src="/files/libs/venobox/venobox.min.js"></script>
+  <script src="/files/libs/knob/jquery.knob.js"></script>
+  <script src="/files/libs/wow/wow.min.js"></script>
+  <script src="/files/libs/parallax/parallax.js"></script>
+  <script src="/files/libs/easing/easing.min.js"></script>
+  <script src="/files/libs/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="/files/libs/appear/jquery.appear.js"></script>
+  <script src="/files/libs/isotope/isotope.pkgd.min.js"></script>
+
+  <script src="/files/js/main.js"></script>
+  <script>
+    function getstarted(){
+  $('#getStartedModal').modal('show');
+}
+function learnmore(){
+    $('#learnMoreModal').modal('show')
+}
+  </script>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>eBusiness Bootstrap Template</title>
+  <title>BayScope ERP solutions</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -255,7 +255,7 @@
         <h1>Welcome to BayScope ERP Solutions</h1>
         <p>Empower your business with integrated and scalable ERP solutions, drive growth by easing your business
           operations</p>
-        <a href="#features" class="btn " sty>Learn More</a> <a href="/contact/"
+        <a href="#features" class="btn " sty>Explore ERP solutions</a> <a href="javascript:learnmore()"
           style="margin-left: 10px; color: black; font-size: 15px;"> Get a demo integration <i class="fa fa-arrow-right"
             aria-hidden="true"></i></a>
       </div>
@@ -263,7 +263,7 @@
   </section>
 
 
-  <div style="background-color: white; padding-top: 20px; padding-bottom: 96px;">
+  <div  style="background-color: white; padding-top: 20px; padding-bottom: 96px;">
     <div style="max-width: 1120px; margin: auto; padding-left: 24px; padding-right: 24px;">
       <h2 style="text-align: center; font-size: 18px; font-weight: 600; line-height: 24px; color: #1f2937;">Trusted by
         the world’s most innovative teams</h2>
@@ -299,12 +299,12 @@
             operations, customer relations, and project management with our flexible and scalable ERP solutions,
             designed to meet the evolving demands of your business.
           </p>
-          <a href="#"
+          <a href="javascript:getstarted()"
             style="background-color: #3EC1D5; color: #fff; padding: 12px 24px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: 600; margin-top: 20px;">connect
             with a sales rep</a>
         </div>
         <div class="col-md-6 text-center">
-          <img src="/assets/images/alerpay-advert.jpg" alt="Payment Processing" style="max-width: 100%; height: auto;">
+          <img src="/assets/images/workplace-team-cooperation-businesswoman-laptop-office.jpg" alt="Payment Processing" style="max-width: 100%; height: auto;">
         </div>
       </div>
     </div>
@@ -313,7 +313,7 @@
 
   <!-- Introduction Section for BayScope ERP -->
 
-  <section style="background-color: #f8f9fa; padding: 60px 0;">
+  <section  id="features" style="background-color: #f8f9fa; padding: 60px 0;">
     <div class="container">
       <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: #333;">Our ERP Solutions</h2>
       <div class="row">
@@ -372,7 +372,7 @@
             <a href="javascript:void(0);" onclick="playVideo()" style="display: inline-flex; align-items: center; background-color: #3EC1D5; color: #ffffff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
               <i class="fa fa-play-circle" aria-hidden="true" style="margin-right: 10px;"></i>Watch more client stories
             </a>
-            <a href="javascript:void(0);" style="color: #1a202c; margin-left: 10px; font-weight: bold;">Get Started now  <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="javascript:getstarted();" style="color: #1a202c; margin-left: 10px; font-weight: bold;">Get Started now  <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="col-md-6 text-center">
@@ -510,6 +510,74 @@
     </div>
   </footer>
 
+
+   <!--  learn more modal -->
+<div id="learnMoreModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="width:90%;" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="learnMoreModalLabel">Let's make you better understand this solution</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <!-- Option 1: Contact Us -->
+            <div class="col-md-4 text-center">
+              <i class="fa fa-envelope" style="color: #3EC1D5; font-size: 30px; padding: 10px 0px;" aria-hidden="true"></i>
+              <h6>Contact Us</h6>
+              <p>Get in touch with Bayscope support for inquiries or more information. leave us a message or connect live with a sales representative</p>
+              <a href="/contact/" style="color: black;">contact Us <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <!-- Option 2: Knowledgebase -->
+            <div class="col-md-4 text-center">
+              <i class="fa fa-trophy" style="color: #3EC1D5; padding: 10px 0px; font-size: 30px;" aria-hidden="true"></i>
+              <h6>Success Stories</h6>
+              <p>Discover how this solution have tranformed numerous institutions and gain insights on how they leverage this solution.</p>
+              <a href="/success-stories" class=" " style="color: black;">View Success Stories <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <!-- Option 3: Demo Request -->
+            <div class="col-md-4 text-center">
+              <i class="fa fa-laptop" style="color: #3EC1D5; font-size: 30px; padding: 10px 0px;" aria-hidden="true"></i>
+              <h6>Demo Request</h6>
+              <p>Request a demo to see this solutions in action.This will require a token fee to cover setup expenses which tailor this solution to suit you.</p>
+              <a href="/demo-request" class="" style="color: black;">Request Demo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--get started modal-->
+<div class="modal fade" id="getStartedModal" tabindex="-1" role="dialog" aria-labelledby="getStartedModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="getStartedModalLabel">BayScope ERP: Tailored Business Solutions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h6 style="color: #3EC1D5;"> <i class="fa fa-info-circle" aria-hidden="true"></i> Important Notice</h6>
+      </div>
+      <div class="modal-body">
+        <p>BayScope ERP offers a suite of solutions uniquely tailored to meet the specific needs of your business. Our ERP system encompasses a wide range of functionalities designed to streamline operations, enhance efficiency, and support scalable growth.</p>
+        <p>To ensure that we provide a solution that perfectly fits your business requirements, we encourage you to contact us directly. Engaging with our team will allow us to understand your business better and tailor the ERP system to align with your strategic goals and operational needs.</p>
+        <p>Our ERP solutions are designed to be flexible and adaptable, ensuring that they can evolve alongside your business. By choosing BayScope ERP, you're not just getting a software package; you're gaining a partner dedicated to supporting your business's success.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="/contact/" class="btn" style="background: #3EC1D5; color: white;">Contact Us to Get Started</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal functionality script -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
@@ -526,6 +594,14 @@
   <script src="/files/libs/isotope/isotope.pkgd.min.js"></script>
 
   <script src="/files/js/main.js"></script>
+  <script>
+    function getstarted(){
+  $('#getStartedModal').modal('show');
+}
+function learnmore(){
+    $('#learnMoreModal').modal('show')
+}
+  </script>
 </body>
 
 </html>
