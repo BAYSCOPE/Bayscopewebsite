@@ -17,8 +17,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dashboard.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="/files/css/loader.css">
+  </head >
+  <body id="body">
+ 
+    <div id="loader"> <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> </div>
     <header>
       <div class="header">
         <h1 class="hidden-sm">Dashboard</h1>
@@ -40,11 +43,11 @@
             </div>
           </div>
           <div class="profile-container">
-            <div class="userphoto">
+            <div class="userphoto" id="image">
               <i class="fa-solid fa-user fa-xl"></i>
             </div>
             <div class="user-title hidden-sm">
-              <p class="bold">Jane Doe</p>
+              <p class="bold" id="headerName">Jane Doe</p>
             </div>
           </div>
         </div>
@@ -81,9 +84,9 @@
           </div>
           <div class="mid-section hidden">
             <p class="bold">Business Name</p>
-            <p>Client Name</p>
-            <p>Client Address</p>
-            <p>Client Pin: 11111</p>
+            <p>Client Name   <span id="client-name"></span></p>
+            <p>Client Address  <span id="client-address"></span></p>
+            <p>Client Pin: <span id="client-pin"></span></p>
           </div>
           <div class="grey btn-container"><button>Update</button></div>
         </div>
@@ -136,77 +139,61 @@
 
     <main>
       <div>
-        <p>Welcome back, Jane Doe</p>
+        <p>Welcome back, <span id="welcomeName"></span></p>
       </div>
       <section class="client-metrics-container">
         <div class="box">
           <span
             ><i class="fa-solid fa-cube fa-3x" style="color: #3ec1d5"></i
           ></span>
-          <p class="count">2</p>
+          <p class="count" id="serviceCount">2</p>
           <p>Services</p>
         </div>
         <div class="box">
+          
           <span
-            ><i class="fa-solid fa-globe fa-3x" style="color: #3ec1d5"></i
+            ><i class="fa fa-question-circle fa-3x" style="color: #3ec1d5;" aria-hidden="true"></i></i
           ></span>
-          <p class="count">1</p>
-          <p>Domains</p>
+          <p class="count" id="domainCount">1</p>
+          <p>Requests</p>
         </div>
         <div class="box">
           <span
             ><i class="fa-solid fa-comments fa-3x" style="color: #3ec1d5"></i
           ></span>
-          <p class="count">1</p>
+          <p class="count" id="ticketCount">1</p>
           <p>Tickets</p>
         </div>
         <div class="box">
           <span
             ><i class="fa-solid fa-credit-card fa-3x" style="color: #3ec1d5"></i
           ></span>
-          <p class="count">1</p>
+          <p class="count" id="invoiceCount">1</p>
           <p>Invoices</p>
         </div>
       </section>
-      <section class="active-products-container">
+      <section class="active-products-container" id="services">
         <h3>
           <span><i class="fa-solid fa-cube"></i></span> Your Products/Services
         </h3>
-        <div>
-          <div>
-            <span class="active">Active</span>
-            <p>active-products-container active-products-container</p>
-          </div>
-          <div>
-            <button>Login to bPanel</button>
-            <button>View details</button>
-          </div>
-        </div>
-        <div>
-          <div>
-            <span class="inactive">Inactive</span>
-            <p>active-products-container active-products-container</p>
-          </div>
-          <div>
-            <button>Login to bPanel</button>
-            <button>View details</button>
-          </div>
+       
+  
         </div>
       </section>
       <section class="grid-container">
         <div class="affiliate-profile-container"></div>
         <div class="domain-reg-container">
           <p class="bold">
-            <span><i class="fa-solid fa-globe"></i></span> Register a New Domain
+            <span><i class="fa-solid fa-globe"></i></span> Request a new Solution
           </p>
           <form>
             <input type="text" name="" id="" />
-            <input type="button" value="Register" />
-            <input type="button" value="Transfer" />
+            <input type="button" value="Request" />
+            <input type="button" value="Purchase" />
           </form>
         </div>
         <div class="support-ticket-container">
-          <button>Create a new ticket</button>
+          <button>Open a new support ticket</button>
           <button>
             <a href="tickets.html" target="_blank">View existing tickets</a>
           </button>
@@ -239,5 +226,9 @@
       </div>
     </main>
     <script src="script.js"></script>
+    <script src="/files/js/apicalls.js"></script>
+   
+    
+    
   </body>
 </html>

@@ -8,7 +8,28 @@
   box-shadow: -2px 0 5px rgba(0,0,0,0.5);
   transition: right 0.3s ease-in-out;
   z-index: 1000;
+ ; /* Adjust this value as needed */
+  overflow-y: auto;
 }
+
+
+.cart-section::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cart-section::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.cart-section::-webkit-scrollbar-thumb {
+  background-color: #3EC1D5;
+  border-radius: 4px;
+}
+
+.cart-section::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
 
 .cart-header {
   padding: 20px;

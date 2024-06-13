@@ -90,41 +90,9 @@ class RequestSender {
 const request = new RequestSender(baseUrl);
 const loader = document.getElementById('loader');
 const loaderContent = document.getElementById('loader').innerHTML;
+// use this variable on any page that requrs a post request like this postdata = new formData() without re-declaring
 let postdata;
 
 
 
 
-
-
-
-
-// this event checks if a user is logged in and upadate page view  
-// you can add any view to update by default
-// can only work on public pages containing the navbar
-
-
-
-window.addEventListener('DOMContentLoaded', function() {
-    request.sendRequest('GET', '/auth/check')
-           .then((data) => {
-             if(data.authenticated != false){
-               signinlink.innerHTML = 'Client Dashboard';
-               signinlink.href = '/dashboard'
-               signuplink.innerHTML = 'B-panel'
-               signuplink.href = '/bpanel'
-             }
-             else{
-                return;
-             }
-          
-        })  
-           .catch((error) =>{
-              console.log(error)
-           });
-   })
-/**
- * this will set page links according to authentication
- */
-
-      
