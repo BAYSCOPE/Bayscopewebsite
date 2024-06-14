@@ -59,7 +59,7 @@ header {
   border-bottom: 3px solid #3ec1d5;
 }
 .header-right {
-  width: 25vw;
+  width: 30vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -433,4 +433,41 @@ img {
     display: block;
     margin-bottom: 5px;
   }
+}
+
+
+.affiliate-profile-container {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
 }

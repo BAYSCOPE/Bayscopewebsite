@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="dashboard.css" />
     <link rel="stylesheet" href="/files/css/loader.css">
+    
   </head >
   <body id="body">
  
@@ -83,10 +84,10 @@
             <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
           </div>
           <div class="mid-section hidden">
-            <p class="bold">Business Name</p>
-            <p>Client Name   <span id="client-name"></span></p>
-            <p>Client Address  <span id="client-address"></span></p>
-            <p>Client Pin: <span id="client-pin"></span></p>
+          <!-- <p class="bold">Business Name</p>-->
+            <p> <span class="bold"> Company :</span> <span id="clientName"></span></p>
+            <p>  <span class="bold" style="padding-top: 5px;">Address :</span>  <span id="clientAddress" ></span></p>
+            <p>  <span class="bold" style="padding-top: 5px;"> Client Pin:</span> <span id="clientPin"></span></p>
           </div>
           <div class="grey btn-container"><button>Update</button></div>
         </div>
@@ -100,7 +101,8 @@
             <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
           </div>
           <div class="mid-section hidden">
-            <p class="bold">Akintayo Abdullah</p>
+            <p > <span class="bold"> Email:</span>  <span id="clientEmail"></span></p>
+            <p  > <span class="bold"> phone :</span> <span id="clientContact"></span></p>
           </div>
           <div class="grey btn-container"><button>New Contact</button></div>
         </div>
@@ -154,7 +156,7 @@
           <span
             ><i class="fa fa-question-circle fa-3x" style="color: #3ec1d5;" aria-hidden="true"></i></i
           ></span>
-          <p class="count" id="domainCount">1</p>
+          <p class="count" id="requestCount">1</p>
           <p>Requests</p>
         </div>
         <div class="box">
@@ -180,14 +182,21 @@
   
         </div>
       </section>
-      <section class="grid-container">
-        <div class="affiliate-profile-container"></div>
+      <section class="grid-container" >
+       <div  class="affiliate-profile-container" style="">
+        <div class="bg" style="background-image:url('/assets/images/alerpay-advert.jpg'); background-position:center; background-size:cover"  ></div>
+        <div style="z-index:2; position:absolute; top:10px; text-align:center;  padding:60px 10px;">
+          <p style="font-weight: bold; font-size:large;  "> Join BayScope Affliate program , earn upto NGN12,000 for each referals</p>
+        </div>
+        
+       </div>
         <div class="domain-reg-container">
           <p class="bold">
             <span><i class="fa-solid fa-globe"></i></span> Request a new Solution
           </p>
           <form>
-            <input type="text" name="" id="" />
+            <textarea type="text" name="" id="" />
+          </textarea>
             <input type="button" value="Request" />
             <input type="button" value="Purchase" />
           </form>
@@ -197,19 +206,20 @@
           <button>
             <a href="tickets.html" target="_blank">View existing tickets</a>
           </button>
+
         </div>
         <div class="support-teamprofile-container" id="support">
-          <p class="bold">Talk to your Client specialist</p>
-          <div>
+          <p class="bold"> Your Client Agent</p>
+          <div> 
             <div class="profile-photo">
-              <img src="images/profile.svg" alt="" />
+              <img id="agentImage" width="100%" />
             </div>
-            <div style="margin-left: 15px" class="agent-info-container">
-              <p><span class="bold">Agent Name: </span>John Doe</p>
-              <p><span class="bold">Agent Email: </span>JohnDoe@xyz.com</p>
+            <div style="margin-left: 15px" style="padding-top: 6px;" class="agent-info-container">
+              <p> Agent Name: <span class="bold" id="agentName"></span></p>
+              <p>Agent Email: <span class="bold" id="agentEmail" style="padding-top: 6px;"> </span></p>
               <p>
-                <span class="bold">Agent Contact: </span
-                ><a href="tel:+2341234567890">+234-123-4567-890</a>
+                <span class="" style="padding-top: 6px;" >Agent Contact: </span>
+                  <span  class="bold" id="agentContact" href=""> </span>
               </p>
             </div>
           </div>

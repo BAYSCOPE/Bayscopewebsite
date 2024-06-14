@@ -1,5 +1,6 @@
 //Toggle effect for sub menu in nav
-document.querySelectorAll(".drop-down-opener").forEach((element) => {
+function navigation(){
+  document.querySelectorAll(".drop-down-opener").forEach((element) => {
   element.addEventListener("click", function (event) {
     event.preventDefault();
     let dropdown = this.nextElementSibling;
@@ -29,8 +30,6 @@ document.querySelectorAll(".drop-down-opener").forEach((element) => {
   });
 });
 
-
-//Open and close of navbar for mobile device
 const navToggler = document.getElementById("nav-toggler")
 navToggler.addEventListener("click", function () {
   document.querySelector(".fixed-nav-container").classList.toggle("close-nav")
@@ -45,6 +44,37 @@ document.getElementById("nav-closer").addEventListener("click", function () {
   document.querySelector(".side-nav").classList.toggle("close-nav")
   document.querySelector(".side-nav").classList.toggle("open-nav")
 })
+
+}
+
+
+
+function changeBackgroundAndAdvertContent() {
+  const bgDiv = document.querySelector('.bg');
+  const advertText = document.querySelector('.affiliate-profile-container > div:nth-child(2) > p');
+  const backgrounds = [
+    {image: '/assets/images/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg', text: 'Join BayScope Affiliate program, earn up to NGN12,000 for each referral'},
+    {image: '', text: 'Another exciting offer from BayScope, check it out!'},
+    // Add more backgrounds and texts as needed
+  ];
+  let currentIndex = 0;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % backgrounds.length;
+    const {image, text} = backgrounds[currentIndex];
+    bgDiv.style.backgroundImage = `url('${image}')`;
+    advertText.textContent = text;
+  }, 5000); // Change every 5 seconds
+}
+
+
+
+
+
+
+
+
+//Open and close of navbar for mobile device
 
 
 
@@ -84,13 +114,22 @@ window.addEventListener('DOMContentLoaded', function () {
         body.removeChild(loadingDiv);
         //render the dashboard
         body.innerHTML = pagecontent;
+        navigation();
+        changeBackgroundAndAdvertContent();
 
         // start updating dashboard content with user data
         headerName.innerHTML = data.client.name
         welcomeName.innerHTML = data.client.name
+        clientName.innerHTML = data.client.name
+        clientEmail.innerHTML = data.client.email
+        clientPin.innerHTML = data.client.pin
+        clientContact.innerHTML = data.client.contact
+        clientAddress.innerHTML = data.client.address
         serviceCount.textContent = data.services.length
+        requestCount.textContent = data.requests.length
+        invoiceCount.textContent =  data.invoices.length
         
-
+       //update services
         if (data.services.length <= 0) {
           document.getElementById('services').innerHTML += `<div> <P> You have no active service please request or purchase one to get started</p></div>`;
         }
@@ -111,7 +150,21 @@ window.addEventListener('DOMContentLoaded', function () {
           })
         }
 
+     
+      // update specialist
+       agentImage.src = data.specialist[0].image;
+       agentName.innerHTML = data.specialist[0].name;
+       agentEmail.innerHTML = data.specialist[0].email;
+       agentContact.innerHTML = data.specialist[0].contact;
+       agentContact.href = `tel:+${data.specialist[0].contact}`
+
+
+
+
+
       }
+
+
     })
     .catch((error) => {
       console.log(error);
