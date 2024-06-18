@@ -67,7 +67,7 @@ function changeBackgroundAndAdvertContent() {
   setInterval(() => {
     currentIndex = (currentIndex + 1) % backgrounds.length;
     const {image, text} = backgrounds[currentIndex];
-    bgDiv.style.backgroundImage = `url('${image}')`;
+    bgDiv.style.backgroundImage = `url('${image}')`;  
     advertText.textContent = text;
   }, 5000); // Change every 5 seconds
 }
