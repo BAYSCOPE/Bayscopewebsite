@@ -49,6 +49,11 @@ document.getElementById("nav-closer").addEventListener("click", function () {
 
 
 
+/**
+ * ------------------------------------------------------------------------------------------------
+ * This function is meant to handle  the advert slider section ant the buttom left of the dashboard
+ * -------------------------------------------------------------------------------------------------
+ */
 function changeBackgroundAndAdvertContent() {
   const bgDiv = document.querySelector('.bg');
   const advertText = document.querySelector('.affiliate-profile-container > div:nth-child(2) > p');
@@ -157,9 +162,6 @@ window.addEventListener('DOMContentLoaded', function () {
        agentEmail.innerHTML = data.specialist[0].email;
        agentContact.innerHTML = data.specialist[0].contact;
        agentContact.href = `tel:+${data.specialist[0].contact}`
-
-
-
 
 
       }
