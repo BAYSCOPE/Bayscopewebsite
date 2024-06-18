@@ -1,0 +1,119 @@
+/* Reset some basic styles */
+body, h1, h2, p, video, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('../files/img/background/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content {
+    margin-top: 70px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-content .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .hero-content .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Introduction and Key Benefits Section */
+  .intro {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .intro h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .benefit {
+    flex: 1 1 30%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .benefit video {
+    max-width: 100%;
+    height: auto;
+    width: 100%; /* Ensure video fills container */
+  }
+  
+  .benefit h2 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  
+  .benefit p {
+    font-size: 16px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 992px) {
+    .benefit,
+    .solution-content {
+      flex: 1 1 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .benefit video {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .intro h2 {
+      font-size: 24px;
+    }
+  
+    .benefit video {
+      max-width: 100%;
+    }
+  }
+  
