@@ -51,6 +51,28 @@ body {
     background-color: #0056b3;
 }
 
+@media (max-width: 992px) {
+   .hero-content h1{
+    font-size: 38px;
+    margin-bottom: 20px
+    }
+    .hero-content p {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .hero-content .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+
 /* Introduction and Key Benefits Section */
 .intro {
     padding: 60px 20px;
