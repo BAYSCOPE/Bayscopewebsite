@@ -1,6 +1,6 @@
 .top-area{
     background-color:#f8f9fa;
-    height: 100vh;
+  
 }
 
 .hero-content {
@@ -75,13 +75,17 @@
   }
 
   @media screen and (max-width:770px) {
+    body, html{
+      overflow-x:hidden;
+
+    }
     
   .top-area{
 
-    max-height: 80vh;
+    max-height: 85vh;
 }
 .hero-content{
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
     
 .well-right {
@@ -99,7 +103,7 @@
       position: absolute;
       width: 80vw;
       height: 40vh;
-      top: -600px;
+      top: -500px;
       border-bottom-right-radius: 0px;
       right: -15px;
 

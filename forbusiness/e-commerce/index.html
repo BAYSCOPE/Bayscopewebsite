@@ -9,7 +9,7 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="/files/img/favicon.jpg" rel="icon">
+  <link rel="shortcut icon" href="/assets/images/bayscope-logo.png" type="image/x-icon">
   <link href="/files/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -148,9 +148,10 @@
         <li class=" dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
             <span class="caret"></span> </a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu" id="sign" role="menu">
             <li><a href="/auth/login" id="signinlink">Sign in</a></li>
             <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
+            <li style="display: none;" id="logoutt"><a href="javascript:logout()" id="signuplink">logout </a></li>
           </ul>
         </li>
         <li class="pl-2">
@@ -166,14 +167,14 @@
 
 
   <div id="about" class="top-area mt-5">
-    <div class="container-fluid">
+    <div class="container">
       <div class="hero-content">
         <div class="row">
           <!-- single-well start-->
           <div class="col-md-6 col-sm-6 col-xs-12 text-left">
             <div class="well-left">
               <p class="big-text wow slideInLeft">
-                BayScope <span style="color: #3EC1D5;"> E-commerce</span><br> Start selling online and fast
+                BayScope <span style="color: #3EC1D5;"> <br> E-commerce</span><br> Start selling online and fast
               </p>
               <p id="typed-text" class="text-md text-secondary pt-2 wow slideInLeft" data-wow-delay="1s">
                 Ready to kickstart your online sales journey in no time? Welcome to your go-to solution with BayScope
