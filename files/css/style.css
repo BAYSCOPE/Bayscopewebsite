@@ -1044,97 +1044,129 @@ div#preloader {
 
 /*  16. Footer Area
 /*----------------------------------------*/
-footer{
+/*----------------------------------------*/
+/*----------------------------------------*/
+footer {
   min-height: 70vh;
   background-color: black;
   width: 100%;
-}
-.footer-main{
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.footer-logo h2{
+
+.footer-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo h2 {
   color: white;
   font-size: 4rem;
   font-weight: 600;
+  text-align: center;
 }
-.footer-content{
+
+.footer-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin: 50px 0;
-  margin-left: 50px;
+  justify-content: center;
+  text-align: center;
 }
-.footer-products-child ul li h5 a{
+
+.footer-products-child ul li h5 a {
   font-size: 18px;
   color: white;
   transition: all 0.5s ease-in-out;
 }
-.footer-products-child ul li h5 a:hover{
+
+.footer-products-child ul li h5 a:hover {
   color: #3cd6ed;
 }
+
 .footer-products-child ul li a {
   text-decoration: none;
   color: rgb(219, 217, 217);
   font-size: 15px;
   transition: all 0.5s ease-in-out;
 }
-.footer-products-child ul li a:hover{
+
+.footer-products-child ul li a:hover {
   color: #3cd6ed;
 }
-.footer-company h5 a{
+
+.footer-company h5 a {
   font-size: 18px;
   color: white;
 }
-.footer-company h5 a:hover{
+
+.footer-company h5 a:hover {
   color: #3cd6ed;
 }
-.footer-company ul li a{
+
+.footer-company ul li a {
   color: rgb(219, 217, 217);
   font-size: 15px;
 }
-.footer-company ul li a:hover{
+
+.footer-company ul li a:hover {
   color: #3cd6ed;
 }
-.footer-products-child{
-  text-align: start;
+
+.footer-products-child {
+  text-align: center;
   width: 240px;
-  height: 180px;
   line-height: 30px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.footer-products-child > ul{
+
+.footer-products-child > ul {
   margin-top: 10px;
 }
-.footer-products-child > ul > li > h5{
 
-}
-.footer-products{
+.footer-products {
   display: flex;
-  /* flex-direction: column; */
+  flex-wrap: wrap;
   gap: 25px;
+  justify-content: center;
 }
-.footer-company{
-  text-align: start;
+
+.footer-company {
+  text-align: center;
   width: 230px;
-  height: 180px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
 .footer-company > h5 {
   margin-top: 10px;
 }
+
 .footer-icons {
   margin-top: 30px;
+  text-align: center;
 }
+
+.footer-icons ul {
+  padding: 0;
+}
+
 .footer-icons ul li {
   display: inline-block;
 }
+
 .footer-icons ul li a {
   border: 1px solid #444;
-  color:white;
+  color: white;
   display: block;
   font-size: 16px;
   height: 40px;
@@ -1144,37 +1176,43 @@ footer{
   width: 40px;
   border-radius: 50%;
 }
+
 .footer-icons ul li a:hover {
   background: #3EC1D5;
   border: 1px solid #3EC1D5;
   color: #fff;
 }
-.footer-privacy{
+
+.footer-privacy {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: 19px;
-}
-.footer-privacy a {
-  font-size: 16px;
-  color: rgba(215, 215, 215,0.3);
-  transition: all 0.5s ease-in-out;
-}
-.footer-privacy a:hover{
-  color: #3cd6ed;
-}
-.copyright{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 90px;
-  border-top: 1px solid #444; ;
-}
-.copyright > p{
-  margin-top: 20px;
-  color: #444;
+  gap: 10px;
+  margin: 20px 0;
 }
 
+.footer-privacy a {
+  font-size: 16px;
+  color: rgba(215, 215, 215, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-privacy a:hover {
+  color: #3cd6ed;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 1px solid #444;
+  color: #444;
+}
 
 .copyright a,
 .credits a {
@@ -1185,6 +1223,48 @@ footer{
   padding-top: 5px;
   text-align: center;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-products,
+  .footer-company {
+    align-items: center;
+  }
+
+  .footer-products-child,
+  .footer-company {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-company ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-logo h2 {
+    font-size: 2.5rem;
+  }
+
+  .footer-privacy {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .footer-privacy a {
+    font-size: 14px;
+  }
+}
+
+
 
 /*----------------------------------------*/
 
