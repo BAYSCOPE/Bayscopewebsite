@@ -36,419 +36,543 @@
   <!-- Responsive Stylesheet File -->
   <link href="../files/css/responsive.css" rel="stylesheet">
 
+  <link href="./edustyle.css" rel="stylesheet">
 
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
 
   <div id="preloader"></div>
+  <div id="loader"> </div>
 
-  <header>
-    <!-- header-area start -->
-    <div id="sticker" class="header-area">
+
+  <header class="header header-area" id="sticker">
+    <div class="header-logo-container">
+      <a class="page-scroll sticky-logo" href="/">
+        <h1>BayScope</h1>
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+      <ul class="mid-nav-list">
+        <li class="active">
+          <a class="page-scroll" href="/">Home</a>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu solutions" role="menu">
+
+            <li class="dropdown-menu-subdiv"><a href='/forbusiness/' class="subdiv-heading-text">
+                for
+                Business</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business
+                    Technology platforms</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'> Business
+                    Financial Solutions/integration</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'> BayScope E-commerce</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship
+                    management(CRM) /Customer experience(CX)</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'> Enterprise Resourse
+                    Planning(ERP) solutions <i style="color: #3EC1D5;" class="fa fa-star" aria-hidden="true"></i></a>
+                </li>
+                <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope for StartUps</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href='/forschools/' class="subdiv-heading-text">
+                for
+                education</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/forschools/tution-tally/'> BayScope TuitonTally </a>
+                </li>
+                <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web
+                    platform</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/edu-portal'> Bayscope EduPortal
+                    (admission/application portal)</a> </li>
+                <li id="subdiv-list-item"><a href='/forschools/students-central'>Bayscope StudentCentral
+                    (students portal)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope
+                    Learning Management System(LMS)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner </a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text"> BayScope
+                For
+                Real-estate</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant
+                    Management System</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/realestate/property-management-system'>prorperty
+                    management</a></li>
+
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text"> Bayscope for Healthcare
+              </a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/services/software-development'>Bayscope Health
+                    solution</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href='/forbusiness/'>BayScope Business</a></li>
+            <li><a href='/forschools/'>BayScope Schools</a></li>
+            <li><a href='/forhealths'>Bayscope Healthcare</a></li>
+            <li><a href='/realestate/'> BayScope Real Estate</a></li>
+
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">coming soon<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href=#>BayScope Flow</a></li>
+            <li><a href=#>CardLinks</a></li>
+          </ul>
+        </li>
+        </div>
+      </ul>
+      <ul class="right-nav-list">
+        <li>
+          <a class="page-scroll" href="/contact">Contact</a>
+        </li>
+
+        <li class=" dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
+            <span class="caret"></span> </a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/auth/login" id="signinlink">Sign in</a></li>
+            <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
+          </ul>
+        </li>
+        <li class="pl-2">
+          <a href="javascript:void(0);" onclick="toggleCart()"> <i class="fa fa-shopping-cart fa-bold"
+              aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <video autoplay muted loop id="hero-video">
+        <source src="../files/img/blog/eduvid2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+      <div class="hero-content">
+          <h1>Edu360</h1>
+          <p style="color: #fff;">Comprehensive Solutions for Modern Education</p>
+          <a href="#contact" class="btn btn-primary">Request a Demo</a>
+      </div>
+  </section>
+  
+
+    <div class="blog-page area-padding">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-sm-12">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="page-head-blog">
+              <div class="single-blog-page">
+                <!-- search option start -->
 
-            <!-- Navigation -->
-            <nav class="navbar navbar-default">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                  data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                  <h1>BayScope</h1>
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
-                </a>
+                <!-- search option end -->
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="active">
-                    <a class="page-scroll" href="../index.html">Home</a>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=#> Custom Software development</a></li>
-                      <li><a href=#>Web development</a></li>
-                      <li><a href=#>App development</a></li>
-                      <li><a href=#>QA Testing</a></li>
-
-                      <li><a href=#>Product Design</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href='/forbusiness/'>Bayscope Business</a></li>
-                      <li><a href='/forschools/'>Bayscope Schools</a></li>
-                      <li><a href=#>Bayscope Healths</a></li>
-                      <li><a href=#>Leadership</a></li>
-                      <li><a href=#>Pricing Plan</a></li>
-                      <li><a href=#>FAQ</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=#>BQuery</a></li>
-                      <li><a href=#>Contrifund</a></li>
-
-                      <li class="text-secondary">Bundles</li>
-                      <hr>
-
-                      <li><a href=#>ProSuite</a></li>
-                      <li><a href="#"> Edu360</a></li>
-
-                    </ul>
-                  </li>
-
-                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href=#>Blog 1</a></li>
-                      <li><a href=#>Blog 2</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
-
-                  <li class="yo">
-                    <a class="page-scroll" href="#portfolio"> </a>
-                  </li>
-                  <li class="">
-                    <a href="/client/signup"> <i class="fa fa-user-o" aria-hidden="true"></i></a>
-                  </li>
-                  <li class="pl-2">
-                    <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <!-- navbar-collapse -->
-            </nav>
-            <!-- END: Navigation -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- header-area end -->
-  </header>
-  <!-- header end -->
-
-  <!-- Start Bottom Header -->
-  <div class="header-bg page-area">
-    <div class="home-overly"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="slider-content text-center">
-            <div class="header-bottom">
-              <div class="layer2 wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
-                <h1 class="title2">Edu360</h1>
-              </div>
-              <div class="layer3 wow zoomInUp" data-wow-duration="2s" data-wow-delay="1s">
-                <h2 class="title3">What every school needs!!!</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END Header -->
-  <div class="blog-page area-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="page-head-blog">
-            <div class="single-blog-page">
-              <!-- search option start -->
-
-              <!-- search option end -->
-            </div>
-            <div class="single-blog-page">
-              <!-- recent start -->
-              <div class="left-blog">
-                <h4>Features of the EDU360</h4>
-                <div class="recent-post">
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-                        <img src="../files/img/blog/1.jpg" alt="">
-                      </a>
+              <div class="single-blog-page">
+                <!-- recent start -->
+                <div class="left-blog">
+                  <h4>Features of the EDU360</h4>
+                  <div class="recent-post">
+                    <!-- start single post -->
+                    <div class="recent-single-post">
+                      <div class="post-img">
+                        <a href="#">
+                          <img src="../files/img/blog/edu1.jfif" alt="" style="height: 80px; width: 100%;">
+                        </a>
+                      </div>
+                      <div class="pst-content">
+                        <p><a href="#"><b>School Financial Solutions</b></a></p>
+                      </div>
                     </div>
-                    <div class="pst-content">
-                      <p><a href="#"> This is where the 1st feature will be.</a></p>
+                    <!-- End single post -->
+                    <!-- start single post -->
+                    <div class="recent-single-post">
+                      <div class="post-img">
+                        <a href="#">
+                          <img src="../files/img/blog/edu2.jfif" alt="" style="height: 80px; width: 100%;">
+                        </a>
+                      </div>
+                      <div class="pst-content">
+                        <p><a href="#"> <b>School Web Platform</b></a></p>
+                      </div>
                     </div>
+                    <!-- End single post -->
+                    <!-- start single post -->
+                    <div class="recent-single-post">
+                      <div class="post-img">
+                        <a href="#">
+                          <img src="../files/img/blog/edu3.jfif" alt="" style="height: 80px; width: 100%;">
+                        </a>
+                      </div>
+                      <div class="pst-content">
+                        <p><a href="#"> <b>School Application Portal </b> </a></p>
+                      </div>
+                    </div>
+                    <!-- End single post -->
+                    <!-- start single post -->
+                    <div class="recent-single-post">
+                      <div class="post-img">
+                        <a href="#">
+                          <img src="../files/img/blog/edu4.jfif" alt="" style="height: 80px; width: 100%;">
+                        </a>
+                      </div>
+                      <div class="pst-content">
+                        <p><a href="#"> <b>School student portal </b> </a></p>
+                      </div>
+                    </div>
+                    <!-- End single post -->
+
+                    <div class="recent-single-post">
+                      <div class="post-img">
+                        <a href="#">
+                          <img src="../files/img/blog/edu5.jfif" alt="" style="height: 80px; width: 100%;">
+                        </a>
+                      </div>
+                      <div class="pst-content">
+                        <p><a href="#"> <b>Bayscope LMS </b></a></p>
+                      </div>
+                    </div>
+
+                    <div class="recent-single-post">
+                      <div class="post-img">
+                        <a href="#">
+                          <img src="../files/img/blog/edu6.jfif" alt="" style="height: 80px; width: 100%;">
+                        </a>
+                      </div>
+                      <div class="pst-content">
+                        <p><a href="#"> <b>BayScope Examiner </b></a></p>
+                      </div>
+                    </div>
+
                   </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-                        <img src="../files/img/blog/2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> This is where the 2nd feature will be. </a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-                        <img src="../files/img/blog/2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> This is where the 3rd feature will be. </a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-                  <!-- start single post -->
-                  <div class="recent-single-post">
-                    <div class="post-img">
-                      <a href="#">
-                        <img src="../files/img/blog/2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="pst-content">
-                      <p><a href="#"> This is where the 4th feature will be. </a></p>
-                    </div>
-                  </div>
-                  <!-- End single post -->
-
                 </div>
+                <!-- recent end -->
               </div>
-              <!-- recent end -->
-            </div>
-            <div class="single-blog-page">
-
-            </div>
-            <div class="single-blog-page">
-
-            </div>
-            <div class="single-blog-page">
-              <div class="left-tags blog-tags">
-                <div class="popular-tag left-side-tags left-blog">
-                  <h4>Built with</h4>
-                  <ul>
-                    <li>
-                      <a href="#">Html</a>
-                    </li>
-                    <li>
-                      <a href="#">Css</a>
-                    </li>
-                    <li>
-                      <a href="#">JavaScript</a>
-                    </li>
-                    <li>
-                      <a href="#">Php</a>
-                    </li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End left sidebar -->
-        <!-- Start single blog -->
-        <div class="col-md-8 col-sm-8 col-xs-12">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="single-blog">
-                <div class="single-blog-img">
-                  <a href="blog-details.html">
-                    <img src="../files/img/blog/1.jpg" alt="">
-                  </a>
-                </div>
-                <br>
-                <div class="blog-text">
-                  <h4>
-                    <a href="#">THE EDU360</a>
-                  </h4>
-                  <p>
-                    Words about the EDU360
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores ratione dolor voluptates
-                    facilis sed dolorem enim consequatur ducimus! Exercitationem neque consequuntur nostrum nobis amet
-                    accusantium non eligendi in. Quas, laboriosam.
-                  </p>
-                </div>
+              <div class="single-blog-page">
 
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Blog Area -->
-
-
-  <!-- Start Blog Area -->
-  <div id="blog" class="blog-area">
-    <div class="blog-inner area-padding">
-      <div class="blog-overly"></div>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="section-headline text-center">
-              <h2>Product Pictures</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Start Left Blog -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="single-blog">
-              <div class="single-blog-img">
-                <a href="#">
-                  <img src="../files/img/blog/1.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-meta">
-
-              </div>
-            
-            </div>
-            <!-- Start single blog -->
-          </div>
-          <!-- End Left Blog-->
-          <!-- Start Left Blog -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="single-blog">
-              <div class="single-blog-img">
-                <a href="#">
-                  <img src="../files/img/blog/2.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-meta">
-
-              </div>
-             
-             
-            </div>
-            
-            <!-- Start single blog -->
-          </div>
-          <!-- End Left Blog-->
-          <!-- Start Right Blog-->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="single-blog">
-              <div class="single-blog-img">
-                <a href="#">
-                  <img src="../files/img/blog/3.jpg" alt="">
-                </a>
-              </div>
-              <div class="blog-meta">
+              <div class="single-blog-page">
 
               </div>
               
-             
             </div>
           </div>
-          <!-- End Right Blog-->
+          <!-- End left sidebar -->
+          <!-- Start single blog -->
+          <div class="col-md-8 col-sm-8 col-xs-12">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="single-blog">
+                  <div class="single-blog-img">
+                    <a href="blog-details.html">
+                      <img src="../files/img/blog/edu360a.png" alt="" style="height: 550px; width: 100%;">
+                    </a>
+                  </div>
+                  <br>
+                  <div class="blog-text">
+                   
+                    <p style="font-size: 15px;">
+                      <b>What is Edu360?</b>
+
+                      Edu360 is an all-in-one educational management platform designed to revolutionize the way schools
+                      operate and students learn. It integrates various essential tools into a single, cohesive system,
+                      making it easier for institutions to manage their processes and enhance the educational
+                      experience.
+
+                      With Edu360, schools can efficiently handle financial operations, maintain an engaging online
+                      presence, simplify admissions, and provide students with a comprehensive portal for all their
+                      academic needs. Additionally, Edu360 includes the powerful Bayscope LMS for delivering
+                      high-quality online education and Bayscope Examiner for secure, efficient online assessments.
+
+                      Edu360 empowers educational institutions to streamline their operations, improve communication,
+                      and foster a more productive learning environment.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End Blog -->
-  <div class="clearfix"></div>
+    <!-- End Blog Area -->
 
+
+    <section>
+      <div id="prosuite" class="tabcontent container section1">
+        <div class="plan-head">
+          <h2 class="text-center" style="padding: 5px 20px;"><b style="color: #3EC1D5;">SOLUTIONS & PRICING</b></h2>
+        </div>
+        <div class="section1_wrapper container">
+          <div class="section1_right">
+            <div class="table-responsive-sm">
+              <table class="table">
+                <thead class="table-light">
+                  <tr>
+                    <th style="width: 70%;">Features</th>
+                    <th style="width: 30%;">Edu360</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <td scope="row"><b>Business technology platform (Website, mobile & desktop)</b></td>
+                    <td class="td-img"><img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>Business startup bundle (all features)</b></td>
+                    <td class="td-img"><img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>Enterprise Mailing features</b></td>
+                    <td class="td-img"><img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>Fully customizable</b></td>
+                    <td class="td-img"><img src="../assets/images/vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>Continuous update & priority support</b></td>
+                    <td class="td-img"><img src="../assets/images/vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>Customer relationship management (CRM)</b></td>
+                    <td class="td-img"><img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>Financial solutions & payment integration</b></td>
+                    <td class="td-img"><img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>E-commerce solutions</b></td>
+                    <td class="td-img"><img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>Enterprise resource planning (ERP) solutions</b></td>
+                    <td class="td-img"><img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>Price</b></td>
+                    <td><b>$499/month</b></td>
+                  </tr>
+                  <tr>
+
+                  </tr>
+                  <tr>
+                    <td scope="row" colspan="2">
+                      <div class="cart-btn">Contact us<span class="big"> <i class="fa fa-phone"
+                            aria-hidden="true"></i></span></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" colspan="2">
+                      <button class="btn btn-primary">Pay</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" colspan="2">
+                      <button class="btn btn-secondary">Add to Cart</button>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="clearfix"></div>
+  </main>
   <!-- Start Footer bottom Area -->
   <footer>
-    <div class="footer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <div class="footer-logo">
-                  <h2><img src="../files/img/logo.jpg" alt="this is the logo"></h2>
-                </div>
+    <div class="footer-main">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-head">
+            <div class="footer-logo">
+              <h2>BayScope</h2>
+            </div>
+            <div class="footer-icons">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-products">
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forschools/">Quick navigation</a></h5>
+                </li>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis itaque dolores non officiis eligendi
-                  delectus illum adipisci eaque repellendus aspernatur neque ducimus, quae quibusdam rem ipsum repellat
-                  quisquam quos labore.</p>
-                <div class="footer-icons">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-google"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                <li>
+                  <a class="" href="/sucess-stories/">Success stories</a>
+                </li>
+
+                <li>
+                  <a href="/Knowledge-base/">Knowledge Base</a>
+                </li>
+
+                <li>
+                  <a href="/realestate/">Real Estate</a>
+                </li>
+                <li>
+                  <a href="/healthcare/">Healthcare</a>
+                </li>
+                <li>
+                  <a href="/comming-soon">coming soon</a>
+                </li>
+                <li>
+                  <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
+                </li>
+
+                <li>
+                  <a href="https://exampoint.com.ng">ExamPoint NG</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forbusiness/">Bundles</a></h5>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Business</a>
+                </li>
+
+                <li>
+                  <a class="" href="/flow">Busness Starter</a>
+                </li>
+                <li>
+                  <a href="/CardEase">Business Pro</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">ProSuite</a>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Education</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu strater</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">EduPRo</a>
+                </li>
+                <li>
+                  <a href="/Edu360/">Edu360</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-products-child ">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="javascriptVoid:(0)"> FOR REAL-ESTATE</a></h5>
+                </li>
+
+                <li>
+                  <a class="" href="/real-estate/"> Web Property Solutions</a>
+                </li>
+                <li>
+                  <a href="/real-estate">Property Pro</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>information</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                </p>
-                <div class="footer-contacts">
-                  <p><span>Tel:</span> +123 456 789</p>
-                  <p><span>Email:</span> contact@example.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="footer-content">
-              <div class="footer-head">
-                <h4>Instagram</h4>
-                <div class="flicker-img">
-                  <a href="#"><img src="../files/img/portfolio/1.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/2.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/3.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/4.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/5.jpg" alt=""></a>
-                  <a href="#"><img src="../files/img/portfolio/6.jpg" alt=""></a>
-                </div>
-              </div>
-            </div>
+          <div class="footer-products-child">
+            <h5><a class="text-secondary link-header" > COMPANY</a></h5>
+            <ul>
+              <li>
+                <a class="text-secondary" href="/contact/">Contact us</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/partnerships/">Partnerships</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/events/"> Events</a>
+              </li>
+
+              <li>
+                <a class="" href="/company-news/"> Company News</a>
+              </li>
+              <li>
+                <a href="/careers/">Careers</a>
+              </li>
+              <li>
+                <a href="/affliate">About BayScope</a>
+              </li>
+              <li>
+                <a href="/affliate">Investors</a>
+              </li>
+              <li>
+                <a href="/affliate">Affliate</a>
+              </li>
+
+            </ul>
           </div>
         </div>
+
+
+
       </div>
+
+
     </div>
-    <div class="footer-area-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="copyright text-center">
-              <p>
-                &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
-              </p>
-            </div>
-          </div>
-        </div>
+
+    <div class="copyright">
+      <p>
+      <div class="footer-privacy">
+        <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
+          href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
+            class="fa fa-trademark" aria-hidden="true"></i></a>
       </div>
+      </p>
+      <p>
+        &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
+      </p>
     </div>
   </footer>
+
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 

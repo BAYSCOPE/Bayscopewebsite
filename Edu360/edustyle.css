@@ -1,0 +1,150 @@
+.hero {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    overflow: hidden;
+}
+
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    margin-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.hero-content .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-content .btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .hero-content p {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .hero-content .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+
+
+#prosuite {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.plan-head h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-size: 18px;
+    text-align: left;
+}
+
+.table td {
+    font-size: 16px;
+}
+
+.table td.img {
+    text-align: center;
+}
+
+.price-btn, .cart-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3EC1D5;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.price-btn:hover, .cart-btn:hover {
+    background-color: #36b1c7;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
