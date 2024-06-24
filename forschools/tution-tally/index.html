@@ -3,14 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title> Bayscope TutionTally</title>
+  <title> BAYSCOPE |  TutionTally</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="/files/img/favicon.jpg" rel="icon">
-  <link href="/files/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="shortcut icon" href="/assets/images/bayscope-logo.png" type="image/x-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +45,9 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-
+   html{
+    overflow-x: hidden;
+   }
 
   </style>
 </head>
@@ -78,7 +79,7 @@
               class="caret"></span></a>
           <ul class="dropdown-menu solutions" role="menu">
 
-            <li class="dropdown-menu-subdiv"><a href='/services/software-development' class="subdiv-heading-text">
+            <li class="dropdown-menu-subdiv"><a href='/forbusiness/' class="subdiv-heading-text">
                for
                 Business</a>
               <ul>
@@ -95,10 +96,10 @@
                 for
                 education</a>
               <ul>
-                <li id="subdiv-list-item"><a href='/forschools/school-financial-solutions/'> BayScope TuitonTally </a></li>
+                <li id="subdiv-list-item"><a href='/forschools/tution-tally/'> BayScope TuitonTally </a></li>
                 <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web platform</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/edu-portal'></a>   Bayscope EduPortal (admission/application portal) </li>
-                <li id="subdiv-list-item"><a href='/forschools/students-portal'>Bayscope StudentCentral (students portal)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>Bayscope EduPortal (admission/application portal)</a>    </li>
+                <li id="subdiv-list-item"><a href='/forschools/students-central'>Bayscope StudentCentral (students portal)</a></li>
                 <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope Learning Management System(LMS)</a></li>
                 <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner </a></li>
               </ul>
@@ -148,9 +149,10 @@
         <li class=" dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
             <span class="caret"></span> </a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu" id="sign" role="menu">
             <li><a href="/auth/login" id="signinlink">Sign in</a></li>
             <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
+            <li style="display: none;" id="logoutt"><a href="javascript:logout()" id="signuplink">logout </a></li>
           </ul>
         </li>
         <li class="pl-2">
@@ -160,6 +162,7 @@
       </ul>
     </nav>
   </header>
+
   <!-- header end -->
 
 
@@ -337,11 +340,9 @@
  
 
   <!-- start pricing section-->
-    <div style="background-color: white; padding: 96px 0;">
+    <div class="container" style="background-color: white; padding: 96px 0;">
     
-        <div style="text-align: center; margin-bottom: 48px;">
-          <h2 style="font-size: 28px; font-weight: bold; color: #1a202c;">Simplify Tuition Management with Tuition Tally</h2>
-        </div>
+  
         <div
           style="max-width: 1128px; padding: 0 24px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border: 1px solid #e2e8f0; border-radius: 24px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);">
           <div style="padding: 32px; flex: 1;">
@@ -361,6 +362,7 @@
             </ul>
           </div>
           <div
+          class="col-md-6"
             style="background-color: #fafafa; border-radius: 16px; padding: 40px; text-align: center; margin-top: -16px; flex: 1; border-left: 1px solid #e2e8f0;">
             <p style=" color: #4a5568;"> <span style="font-size: 25px; font-weight: bold;">Try It Free</span></p>
             <p
@@ -406,7 +408,7 @@
 
 
 
-  <footer>
+ <footer>
     <div class="footer-main">
       <div class="footer-container">
         <div class="footer-content">
@@ -435,15 +437,30 @@
             <div class="footer-products-child">
               <ul>
                 <li>
-                  <h5><a class="text-secondary link-header" href="/forschools/"> FOR SCHOOLS</a></h5>
+                  <h5><a class="text-secondary link-header" href="/forschools/">Quick navigation</a></h5>
                 </li>
 
                 <li>
-                  <a class="" href="/forschools/"> Web Edu Plans</a>
+                  <a class="" href="/sucess-stories/">Success stories</a>
+                </li>
+
+                <li>
+                  <a href="/Knowledge-base/">Knowledge Base</a>
+                </li>
+
+                <li>
+                  <a href="/realestate/">Real Estate</a>
                 </li>
                 <li>
-                  <a href="/CardEase">Edu360</a>
+                  <a href="/healthcare/">Healthcare</a>
                 </li>
+                <li>
+                  <a href="/comming-soon">comming soon</a>
+                </li>
+                <li>
+                  <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
+                </li>
+               
                 <li>
                   <a href="https://exampoint.com.ng">ExamPoint NG</a>
                 </li>
@@ -453,29 +470,41 @@
             <div class="footer-products-child">
               <ul>
                 <li>
-                  <h5><a class="text-secondary link-header" href="/forbusiness/">FOR BUSINESS</a></h5>
+                  <h5><a class="text-secondary link-header" href="/forbusiness/">Bundles</a></h5>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Business</a>
                 </li>
 
                 <li>
-                  <a class="" href="/flow"> B Flow</a>
+                  <a class="" href="/flow">Busness Strater</a>
                 </li>
                 <li>
-                  <a href="/CardEase">CardEase</a>
+                  <a href="/CardEase">Business Pro</a>
                 </li>
                 <li>
                   <a href="/ProSuite/">ProSuite</a>
                 </li>
 
                 <li class="p-3">
-                  <a href="/ProSuite/">Web Business</a>
+                  <a href="javascript:void(0)">for Education</a>
                 </li>
-
+                <li>
+                  <a href="/ProSuite/">Edu strater</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">EduPRo</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu360</a>
+                </li>
               </ul>
             </div>
             <div class="footer-products-child real-estate">
               <ul>
                 <li>
-                  <h5><a class="text-secondary link-header" href="/forschools/"> FOR REAL-ESTATE</a></h5>
+                  <h5><a class="text-secondary link-header" href="javascriptVoid:(0)"> FOR REAL-ESTATE</a></h5>
                 </li>
 
                 <li>
@@ -488,8 +517,14 @@
             </div>
           </div>
           <div class="footer-company">
-            <h5><a class="text-secondary link-header" href="/forschools/"> COMPANY</a></h5>
+            <h5><a class="text-secondary link-header" href="javascript:void(0)"> COMPANY</a></h5>
             <ul>
+              <li>
+                <a class="text-secondary" href="/contact/">Contact us</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/partnerships/">Partnerships</a>
+              </li>
               <li>
                 <a class="text-secondary" href="/events/"> Events</a>
               </li>
@@ -513,18 +548,22 @@
             </ul>
           </div>
         </div>
-        <div class="footer-privacy">
-          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
-            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
-              class="fa fa-trademark" aria-hidden="true"></i></a>
-        </div>
+        
 
 
       </div>
 
 
     </div>
+    
     <div class="copyright">
+      <p>
+        <div class="footer-privacy">
+          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
+            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
+              class="fa fa-trademark" aria-hidden="true"></i></a>
+        </div>
+      </p>
       <p>
         &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
       </p>

@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title> BayScope E-commerce Solutions</title>
+  <title> BayScope | business technology platform solution</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="/files/img/favicon.jpg" rel="icon">
+  <link rel="shortcut icon" href="/assets/images/bayscope-logo.png" type="image/x-icon">
   <link href="/files/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -78,30 +78,29 @@
               class="caret"></span></a>
           <ul class="dropdown-menu solutions" role="menu">
 
-            <li class="dropdown-menu-subdiv"><a href='/services/software-development' class="subdiv-heading-text">
-                BayScope for
+            <li class="dropdown-menu-subdiv"><a href='/forbusiness/' class="subdiv-heading-text">
+               for
                 Business</a>
               <ul>
-                <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology</a>
+                <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology platforms</a>
                 </li>
-                <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'>Financial Solutions</a></li>
-                <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'>E-commerce</a></li>
-                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management</a></li>
-                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'>Enterprise Resourse Planning</a></li>
-                <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope Start-Up Bundle</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'> Business Financial Solutions/integration</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'> BayScope E-commerce</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management(CRM) /Customer experience(CX)</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'> Enterprise Resourse Planning(ERP) solutions  <i style="color: #3EC1D5;" class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope for StartUps</a></li>
               </ul>
             </li>
-            <li class="dropdown-menu-subdiv"><a href='/services/web-development' class="subdiv-heading-text">Bayscope
+            <li class="dropdown-menu-subdiv"><a href='/forschools/' class="subdiv-heading-text">
                 for
                 education</a>
               <ul>
-                <li id="subdiv-list-item"><a href='/forschools/school-financial-solutions/'>School financial
-                    solution</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/tution-tally/'> BayScope TuitonTally </a></li>
                 <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web platform</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/application-portal'></a> Application portal</li>
-                <li id="subdiv-list-item"><a href='/forschools/students-portal'>student portal</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope LMS</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>Bayscope EduPortal (admission/application portal)</a>    </li>
+                <li id="subdiv-list-item"><a href='/forschools/students-central'>Bayscope StudentCentral (students portal)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope Learning Management System(LMS)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner </a></li>
               </ul>
             </li>
             <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text"> BayScope
@@ -111,7 +110,7 @@
                 <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant Management System</a>
                 </li>
                 <li id="subdiv-list-item"><a href='/realestate/property-management-system'>prorperty management</a></li>
-                <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+              
               </ul>
             </li>
             <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text"> Bayscope for Healthcare </a>
@@ -149,9 +148,10 @@
         <li class=" dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
             <span class="caret"></span> </a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu" id="sign" role="menu">
             <li><a href="/auth/login" id="signinlink">Sign in</a></li>
             <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
+            <li style="display: none;" id="logoutt"><a href="javascript:logout()" id="signuplink">logout </a></li>
           </ul>
         </li>
         <li class="pl-2">
@@ -167,15 +167,15 @@
 
 
   <div id="about" class="top-area mt-5">
-    <div class="container-fluid">
+    <div class="container">
       <div class="hero-content">
         <div class="row">
           <!-- single-well start-->
           <div class="col-md-6 col-sm-6 col-xs-12 text-left">
             <div class="well-left">
-              <p class="big-text wow slideInLeft">
+              <p class="big-text">
                 BayScope <span style="color: #3EC1D5;"> Business technology platform.</span><br> take your business live
-              <p id="typed-text" class="text-md text-secondary pt-2 wow slideInLeft" data-wow-delay="1s">
+              <p id="typed-text" class="text-md text-secondary pt-2" data-wow-delay="1s">
                 BayScope Business technology platform helps businesses of all types take their operation online and
                 enhance visibility.
               </p>
@@ -184,7 +184,12 @@
                   class=" header-button btn-lg">deploy now</span>
                 <a style="cursor: pointer;" href="javascript:learnmore()" class="header-button-outline ">contact sales</a>
               </div>
+              <div class=" " style="margin-top:30px; ">
+                <p class="text-md" style="font-weight: bold;font-size:12px"> ----Trusted by 
+                   world's most innovative teams----</p>
+              </div>  
             </div>
+            
           </div>
           <!-- single-well end-->
           <div class="col-md-6 col-sm-6 col-xs-12 text-center">
@@ -202,7 +207,7 @@
 
 
 
-  <div class="blog-page area-padding " style="padding-left: 20px;">
+  <div class="blog-page area-padding  " style="padding-left: 20px;">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -283,7 +288,7 @@
               <div class="single-blog">
                 <div class="single-blog-img">
                   <a href="javascript:void(0);">
-                    <img class="wow slideInRight" style="padding-left: 70px; scale: 1.1;" width="400px"
+                    <img class="" style="padding-left: px; scale: 1.1;" width="400px"
                       src="/assets/images/blo-business-website-template.jpg" alt="">
                   </a>
                 </div>
@@ -384,7 +389,8 @@
 
   <!-- feature start-->
 
-  <div style="margin-top: 80px; padding: 50px; margin-left: 30px;" class="row row-grid align-items-center">
+  <div style="margin-top: 60px; padding: 50px; margin-left: 30px;" class="row row-grid align-items-center container">
+  
     <div class="col-lg-4">
       <div class="d-flex align-items-start mb-5">
         <div class="pr-4">
@@ -392,7 +398,7 @@
             <span class="ti-world"></span>
           </div>
         </div>
-        <div class="icon-text wow slideInLeft" data-wow-delay="0ms">
+        <div class="icon-text" data-wow-delay="0ms">
           <h5>Enhanced Online Presence</h5>
           <p class="mb-0">Boost your online visibility with tailored websites and mobile apps, designed to meet the
             unique needs of your business.</p>
@@ -404,7 +410,7 @@
             <span class="ti-mobile"></span>
           </div>
         </div>
-        <div class="icon-text wow slideInLeft" data-wow-delay="60ms">
+        <div class="icon-text" data-wow-delay="60ms">
           <h5>Mobile Optimization</h5>
           <p class="mb-0">Ensure a seamless experience for your customers with platforms optimized for all devices.</p>
         </div>
@@ -415,7 +421,7 @@
             <span class="ti-settings"></span>
           </div>
         </div>
-        <div class="icon-text wow slideInLeft" data-wow-delay="90ms">
+        <div class="icon-text" data-wow-delay="90ms">
           <h5>Customizable Solutions</h5>
           <p class="mb-0">Tailor your online platform with customizable features to fit your business requirements and
             enhance operational efficiency.</p>
@@ -434,7 +440,7 @@
             <span class="ti-rocket"></span>
           </div>
         </div>
-        <div class="icon-text wow slideInRight" data-wow-delay="0ms">
+        <div class="icon-text " data-wow-delay="0ms">
           <h5>Quick Launch</h5>
           <p class="mb-0">Launch your platform quickly and efficiently, taking control of your online presence without
             delay.</p>
@@ -446,7 +452,7 @@
             <span class="ti-gallery"></span>
           </div>
         </div>
-        <div class="icon-text wow slideInRight" data-wow-delay="50ms">
+        <div class="icon-text " data-wow-delay="50ms">
           <h5>Integrated Plugins</h5>
           <p class="mb-0">Enhance your platform's functionality with integrated plugins, from other  solutions
             and more.</p>
@@ -458,7 +464,7 @@
             <span class="ti-headphone-alt"></span>
           </div>
         </div>
-        <div class="icon-text wow slideInRight" data-wow-delay="90ms">
+        <div class="icon-text " data-wow-delay="90ms">
           <h5>Exceptional Support</h5>
           <p class="mb-0">Rely on dedicated support to ensure your platform runs smoothly, allowing you to focus on
             growing your business.</p>
@@ -574,7 +580,8 @@
   <div class="clearfix"></div>
   <div class="space"></div>
   <!-- Start Footer bottom Area -->
-  <footer>
+
+   <footer>
     <div class="footer-main">
       <div class="footer-container">
         <div class="footer-content">
@@ -603,15 +610,30 @@
             <div class="footer-products-child">
               <ul>
                 <li>
-                  <h5><a class="text-secondary link-header" href="/forschools/"> FOR SCHOOLS</a></h5>
+                  <h5><a class="text-secondary link-header" href="/forschools/">Quick navigation</a></h5>
                 </li>
 
                 <li>
-                  <a class="" href="/forschools/"> Web Edu Plans</a>
+                  <a class="" href="/sucess-stories/">Success stories</a>
+                </li>
+
+                <li>
+                  <a href="/Knowledge-base/">Knowledge Base</a>
+                </li>
+
+                <li>
+                  <a href="/realestate/">Real Estate</a>
                 </li>
                 <li>
-                  <a href="/CardEase">Edu360</a>
+                  <a href="/healthcare/">Healthcare</a>
                 </li>
+                <li>
+                  <a href="/comming-soon">comming soon</a>
+                </li>
+                <li>
+                  <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
+                </li>
+               
                 <li>
                   <a href="https://exampoint.com.ng">ExamPoint NG</a>
                 </li>
@@ -621,29 +643,41 @@
             <div class="footer-products-child">
               <ul>
                 <li>
-                  <h5><a class="text-secondary link-header" href="/forbusiness/">FOR BUSINESS</a></h5>
+                  <h5><a class="text-secondary link-header" href="/forbusiness/">Bundles</a></h5>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Business</a>
                 </li>
 
                 <li>
-                  <a class="" href="/flow"> B Flow</a>
+                  <a class="" href="/flow">Busness Strater</a>
                 </li>
                 <li>
-                  <a href="/CardEase">CardEase</a>
+                  <a href="/CardEase">Business Pro</a>
                 </li>
                 <li>
                   <a href="/ProSuite/">ProSuite</a>
                 </li>
 
                 <li class="p-3">
-                  <a href="/ProSuite/">Web Business</a>
+                  <a href="javascript:void(0)">for Education</a>
                 </li>
-
+                <li>
+                  <a href="/ProSuite/">Edu strater</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">EduPRo</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu360</a>
+                </li>
               </ul>
             </div>
             <div class="footer-products-child real-estate">
               <ul>
                 <li>
-                  <h5><a class="text-secondary link-header" href="/forschools/"> FOR REAL-ESTATE</a></h5>
+                  <h5><a class="text-secondary link-header" href="javascriptVoid:(0)"> FOR REAL-ESTATE</a></h5>
                 </li>
 
                 <li>
@@ -656,8 +690,14 @@
             </div>
           </div>
           <div class="footer-company">
-            <h5><a class="text-secondary link-header" href="/forschools/"> COMPANY</a></h5>
+            <h5><a class="text-secondary link-header" href="javascript:void(0)"> COMPANY</a></h5>
             <ul>
+              <li>
+                <a class="text-secondary" href="/contact/">Contact us</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/partnerships/">Partnerships</a>
+              </li>
               <li>
                 <a class="text-secondary" href="/events/"> Events</a>
               </li>
@@ -681,23 +721,30 @@
             </ul>
           </div>
         </div>
-        <div class="footer-privacy">
-          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
-            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
-              class="fa fa-trademark" aria-hidden="true"></i></a>
-        </div>
+        
 
 
       </div>
 
 
     </div>
+    
     <div class="copyright">
+      <p>
+        <div class="footer-privacy">
+          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
+            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
+              class="fa fa-trademark" aria-hidden="true"></i></a>
+        </div>
+      </p>
       <p>
         &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
       </p>
     </div>
   </footer>
+
+
+
  <!--  learn more modal -->
  <div id="learnMoreModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
   <div class="modal-dialog" style="width:90%;" role="document">

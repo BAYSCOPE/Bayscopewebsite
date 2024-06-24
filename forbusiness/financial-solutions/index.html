@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title> BayScope E-commerce Solutions</title>
+  <title>BAYSCOPE | FINANCIAL MANAGEMENT SOLUTION </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="/files/img/favicon.jpg" rel="icon">
+  <link rel="shortcut icon" href="/assets/images/bayscope-logo.png" type="image/x-icon">
   <link href="/files/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -78,30 +78,29 @@
               class="caret"></span></a>
           <ul class="dropdown-menu solutions" role="menu">
 
-            <li class="dropdown-menu-subdiv"><a href='/services/software-development' class="subdiv-heading-text">
-                BayScope for
+            <li class="dropdown-menu-subdiv"><a href='/forbusiness/' class="subdiv-heading-text">
+               for
                 Business</a>
               <ul>
-                <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology</a>
+                <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology platforms</a>
                 </li>
-                <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'>Financial Solutions</a></li>
-                <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'>E-commerce</a></li>
-                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management</a></li>
-                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'>Enterprise Resourse Planning</a></li>
-                <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope Start-Up Bundle</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'> Business Financial Solutions/integration</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'> BayScope E-commerce</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management(CRM) /Customer experience(CX)</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'> Enterprise Resourse Planning(ERP) solutions  <i style="color: #3EC1D5;" class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope for StartUps</a></li>
               </ul>
             </li>
-            <li class="dropdown-menu-subdiv"><a href='/services/web-development' class="subdiv-heading-text">Bayscope
+            <li class="dropdown-menu-subdiv"><a href='/forschools/' class="subdiv-heading-text">
                 for
                 education</a>
               <ul>
-                <li id="subdiv-list-item"><a href='/forschools/school-financial-solutions/'>School financial
-                    solution</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/tution-tally/'> BayScope TuitonTally </a></li>
                 <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web platform</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/application-portal'></a> Application portal</li>
-                <li id="subdiv-list-item"><a href='/forschools/students-portal'>student portal</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope LMS</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>Bayscope EduPortal (admission/application portal)</a>    </li>
+                <li id="subdiv-list-item"><a href='/forschools/students-central'>Bayscope StudentCentral (students portal)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope Learning Management System(LMS)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner </a></li>
               </ul>
             </li>
             <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text"> BayScope
@@ -111,7 +110,7 @@
                 <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant Management System</a>
                 </li>
                 <li id="subdiv-list-item"><a href='/realestate/property-management-system'>prorperty management</a></li>
-                <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+              
               </ul>
             </li>
             <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text"> Bayscope for Healthcare </a>
@@ -149,9 +148,10 @@
         <li class=" dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
             <span class="caret"></span> </a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu" id="sign" role="menu">
             <li><a href="/auth/login" id="signinlink">Sign in</a></li>
             <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
+            <li style="display: none;" id="logoutt"><a href="javascript:logout()" id="signuplink">logout </a></li>
           </ul>
         </li>
         <li class="pl-2">
@@ -458,7 +458,7 @@
 
 
 
-  <footer>
+   <footer>
     <div class="footer-main">
       <div class="footer-container">
         <div class="footer-content">
@@ -487,15 +487,30 @@
             <div class="footer-products-child">
               <ul>
                 <li>
-                  <h5><a class="text-secondary link-header" href="/forschools/"> FOR SCHOOLS</a></h5>
+                  <h5><a class="text-secondary link-header" href="/forschools/">Quick navigation</a></h5>
                 </li>
 
                 <li>
-                  <a class="" href="/forschools/"> Web Edu Plans</a>
+                  <a class="" href="/sucess-stories/">Success stories</a>
+                </li>
+
+                <li>
+                  <a href="/Knowledge-base/">Knowledge Base</a>
+                </li>
+
+                <li>
+                  <a href="/realestate/">Real Estate</a>
                 </li>
                 <li>
-                  <a href="/CardEase">Edu360</a>
+                  <a href="/healthcare/">Healthcare</a>
                 </li>
+                <li>
+                  <a href="/comming-soon">comming soon</a>
+                </li>
+                <li>
+                  <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
+                </li>
+               
                 <li>
                   <a href="https://exampoint.com.ng">ExamPoint NG</a>
                 </li>
@@ -505,29 +520,41 @@
             <div class="footer-products-child">
               <ul>
                 <li>
-                  <h5><a class="text-secondary link-header" href="/forbusiness/">FOR BUSINESS</a></h5>
+                  <h5><a class="text-secondary link-header" href="/forbusiness/">Bundles</a></h5>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Business</a>
                 </li>
 
                 <li>
-                  <a class="" href="/flow"> B Flow</a>
+                  <a class="" href="/flow">Busness Strater</a>
                 </li>
                 <li>
-                  <a href="/CardEase">CardEase</a>
+                  <a href="/CardEase">Business Pro</a>
                 </li>
                 <li>
                   <a href="/ProSuite/">ProSuite</a>
                 </li>
 
                 <li class="p-3">
-                  <a href="/ProSuite/">Web Business</a>
+                  <a href="javascript:void(0)">for Education</a>
                 </li>
-
+                <li>
+                  <a href="/ProSuite/">Edu strater</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">EduPRo</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu360</a>
+                </li>
               </ul>
             </div>
             <div class="footer-products-child real-estate">
               <ul>
                 <li>
-                  <h5><a class="text-secondary link-header" href="/forschools/"> FOR REAL-ESTATE</a></h5>
+                  <h5><a class="text-secondary link-header" href="javascriptVoid:(0)"> FOR REAL-ESTATE</a></h5>
                 </li>
 
                 <li>
@@ -540,8 +567,14 @@
             </div>
           </div>
           <div class="footer-company">
-            <h5><a class="text-secondary link-header" href="/forschools/"> COMPANY</a></h5>
+            <h5><a class="text-secondary link-header" href="javascript:void(0)"> COMPANY</a></h5>
             <ul>
+              <li>
+                <a class="text-secondary" href="/contact/">Contact us</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/partnerships/">Partnerships</a>
+              </li>
               <li>
                 <a class="text-secondary" href="/events/"> Events</a>
               </li>
@@ -565,18 +598,22 @@
             </ul>
           </div>
         </div>
-        <div class="footer-privacy">
-          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
-            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
-              class="fa fa-trademark" aria-hidden="true"></i></a>
-        </div>
+        
 
 
       </div>
 
 
     </div>
+    
     <div class="copyright">
+      <p>
+        <div class="footer-privacy">
+          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
+            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
+              class="fa fa-trademark" aria-hidden="true"></i></a>
+        </div>
+      </p>
       <p>
         &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
       </p>
