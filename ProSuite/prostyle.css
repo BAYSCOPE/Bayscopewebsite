@@ -13,13 +13,28 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('../files/img/background/hero.jpg') no-repeat center center/cover;
+    position: relative;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
+    overflow: hidden;
+}
+
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
 }
 
 .hero-content {
+    position: relative;
+    z-index: 1;
     margin-top: 80px;
 }
 
@@ -27,7 +42,6 @@ body {
     font-size: 58px;
     margin-bottom: 20px;
     color: #fff;
-
 }
 
 .hero-content p {
@@ -52,9 +66,9 @@ body {
 }
 
 @media (max-width: 992px) {
-   .hero-content h1{
-    font-size: 38px;
-    margin-bottom: 20px
+    .hero-content h1 {
+        font-size: 38px;
+        margin-bottom: 20px;
     }
     .hero-content p {
         font-size: 24px;
@@ -63,16 +77,8 @@ body {
     .hero-content .btn {
         font-size: 14px;
         padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
     }
 }
-
-
 /* Introduction and Key Benefits Section */
 .intro {
     padding: 60px 20px;

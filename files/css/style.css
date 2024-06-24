@@ -1228,25 +1228,10 @@ footer {
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 
-  .footer-products,
-  .footer-company {
-    align-items: center;
-  }
 
-  .footer-products-child,
-  .footer-company {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
 
-  .footer-company ul {
-    text-align: center;
-  }
 }
 
 @media (max-width: 576px) {
