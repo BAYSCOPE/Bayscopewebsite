@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap CSS File -->
   <link href="/files/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,7 +62,11 @@
     i {
       color: #3EC1D5
     }
+
     header i {
+      color: white;
+    }
+    #loader i{
       color: white;
     }
   </style>
@@ -68,8 +74,8 @@
 
 <body data-spy="scroll" data-target="#navbar-example">
 
-  <div id="preloader"></div>
-  <div id="loader"> <i class="fa fa-cart-plus fa-bounce " aria-hidden="true"></i> </div>
+  <div id="preloader"> </div>
+  <div id="loader"> <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> </div>
 
 
   <header class="header header-area" id="sticker">
@@ -204,10 +210,10 @@
           <div class="content" style="padding:20px 5px;">
             <h4>Still need help?</h4>
             <p> chat online or request callback</p>
-            <button
+            <button data-toggle="modal" data-target="#contactUsModal"
               style="background:#3EC1D5; color:white; border:none; border-radius:1px; margin:5px 0px; padding:10px;font-weight: bold;">leave
               a message</button>
-            <button
+            <button data-toggle="modal" data-target="#requestCallbackModal"
               style="background:#3EC1D5; color:white; border:none; border-radius:1px; margin:5px 0px; padding:10px;font-weight: bold;">Request
               call</button>
             <div style="width: 90%; height:1px; background:rgba(0, 0, 0, 0.562); margin:30px 5px"></div>
@@ -247,22 +253,25 @@
             <h4>Request Demo</h4>
             <div>
               see our products in action request a demo today to learn how Bayscope solutions can improve your
-              operations. Gain more insights on our industrial growth  solutions <span style="font-weight: bold;"> <i>#growwithbayscope</i></span> 
+              operations. Gain more insights on our industrial growth solutions <span style="font-weight: bold;">
+                <i>#growwithbayscope</i></span>
             </div>
             <div>
-              <button
+              <button data-toggle="modal" data-target="#demoRequestModal"
                 style="background:#3EC1D5; color:white; border:none; border-radius:1px; margin:5px 0px; padding:10px;font-weight: bold;">Request
                 Demo</button>
             </div>
           </div>
-          
+
         </div>
         <div class="col-md-5" style="background:white; margin-left:60px">
-        <div class="content" style="padding: 30px 10px;">
-          <h4>Connect with an Agent</h4>
-          <div>For seamless physical onboarding and training, connect with an agent close to you.</div>
-          <button style="background:#3EC1D5; color:white; border:none; border-radius:1px; margin:5px 0px; padding:10px;font-weight: bold;">Find an Agent</button>
-        </div>
+          <div class="content" style="padding: 30px 10px;">
+            <h4>Connect with an Agent</h4>
+            <div>For seamless physical onboarding and training, connect with an agent close to you.</div>
+            <button
+              style="background:#3EC1D5; color:white; border:none; border-radius:1px; margin:5px 0px; padding:10px;font-weight: bold;">Find
+              an Agent</button>
+          </div>
         </div>
       </div>
 
@@ -272,7 +281,9 @@
             <h4>Find Answers</h4>
             <p>Looking for quick answers? Browse our FAQs or submit your query in our support section.</p>
             <div>
-              <button style="background:#3EC1D5; color:white; border:none; border-radius:1px; margin:5px 0px; padding:10px;font-weight: bold;">Visit Support Section</button>
+              <button
+                style="background:#3EC1D5; color:white; border:none; border-radius:1px; margin:5px 0px; padding:10px;font-weight: bold;">Visit
+                Support Section</button>
             </div>
           </div>
         </div>
@@ -282,180 +293,355 @@
 
 
 
+  <!--modals section-->
 
 
+  <!-- Contact Us Modal Trigger Button -->
 
 
+  <!-- Contact Us Modal -->
+  <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactUsModalLabel">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="contactUs">
+            <div class="form-group">
+              <label for="contact-name">Name <i class="fa fa-user" aria-hidden="true"></i></label>
+              <input required  name="name" type="text" class="form-control" id="contact-name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input required  name="email" type="email" class="form-control" id="contact-email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="tel-number">Contact</label> <br>
+              <input required type="tel" class="form-control"  id="tel-number2"
+              name="contact"  placeholder="Enter Company Contact"gt />
+            </div>
+           
+    
+            <div class="form-group">
+              <label for="contact-reason">Reason for Contact</label>
+              <select required name="reason" class="form-control" id="contact-reason">
+                <option value="none">Please select</option>
+                <option value="Sales">Sales</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Investments">Investments</option>
+                <option value="partnerships">partnerships</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea name="message" class="form-control" id="contact-message" rows="3"></textarea>
+            </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <input 
+               type="submit" value="send message" class="btn btn-primary">
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>  
+
+  <script>
+    function disable(e) {
+      e.preventDefault();
+      alert(e)
+    }
+  </script>
+  <!-- request callback modal-->
+
+  <!-- Demo Request Modal -->
+  <div class="modal fade" id="demoRequestModal" tabindex="-1" role="dialog" aria-labelledby="demoRequestModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="demoRequestModalLabel">Request a Demo</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="demo">
+            <div class="form-group">
+              <label for="demo-name">Name</label>
+              <input name="name" type="text" class="form-control" id="demo-name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="demo-email">Email</label>
+              <input required title="Your personal/company email" name="email" type="email" class="form-control" id="demo-email" placeholder="Enter your email">
+            </div>  
+            <div class="form-group">
+              <label  for="demo-company">Company</label>
+              <input title="plese provide a valid phone number" required name="company" type="text" class="form-control" id="demo-company" placeholder="Your company name">
+            </div>
+            <div class="form-group">
+              <label for="tel-number">Contact</label> <br>
+              <input required type="tel" class="form-control"  id="tel-numberii"
+              name="contact"  placeholder="Enter Company Contact"gt />
+            </div>
+            <div class="form-group">
+              <label for="demo-interest">Area of Interest</label>
+              <select required name="interest" class="form-control" id="demo-interest">
+                <option value="">Please select</option>
+                <option value="ERP Solutions">ERP Solutions</option>
+                <option value="E-commerce solutions">Bayscope E-commerce solutions </option>
+                <option value="CRM Systems">CRM Systems</option>
+                <option value="Cloud Services">Cloud Services</option>
+                <option value="Business technology platforms">Business technology platforms</option>
+                <option value="learning management system">learning management system</option>
+                <option value="Bayscope TutionTally">Bayscope TutionTally</option>
+                <option value=" Business Financial solutions">  Business Financial solutions </option>
+                <option value="Bayscope Examiner">Bayscope Examiner</option>
+                <option value="Bayscope student central"> Bayscope student central</option>
+                <option value="Bayscope EduPortals"> Bayscope EduPortals</option>
+                <option value="School web platforms"> School web platforms</option>
+                <option value="Other">Other</option>
+              </select>
+            </div> 
+            <div class="form-group">
+              <label for="demo-message">Message</label>
+              <textarea name="message" class="form-control" id="demo-message" rows="3"
+                placeholder="Any specific details you're interested in?"></textarea>
+            </div>
+      
+        </div>
+        <div class="modal-footer">
+          <button id="demoRequest" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <input  type="submit"  value="submit request" class="btn btn-primary">
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  <!-- Request Callback Modal Trigger Button -->   
+  
+  <!--      --> 
 
 
-
-
-
+  <!-- Request Callback Modal -->
+  <div class="modal fade" id="requestCallbackModal" tabindex="-1" role="dialog"
+    aria-labelledby="requestCallbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="requestCallbackModalLabel">Request a Callback</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="callRequest">
+            <div class="form-group">
+              <label for="callback-name">Name</label>
+              <input name="name" type="text" class="form-control" id="callback-name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="callback-email">Email</label>
+              <input name="email"
+               type="email" class="form-control" id="callback-email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="tel-number">Contact</label> <br>
+              <input type="tel" class="form-control"  id="tel-number"
+              name="contact"  placeholder="Enter Company Contact"gt />
+            </div>
+           
+            <div class="form-group">
+              <label for="callback-message">Message</label>
+              <textarea class="form-control" id="callback-message" rows="3"
+              name="message"
+                placeholder="Any specific details or questions?"></textarea>
+            </div
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <input  type="submit"  value="submit request" class="btn btn-primary">
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
   <footer>
-        <div class="footer-main">
-            <div class="footer-container">
-                <div class="footer-content">
-                    <div class="footer-head">
-                        <div class="footer-logo">
-                            <h2>BayScope</h2>
-                        </div>
-                        <div class="footer-icons">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-google"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer-products">
-                        <div class="footer-products-child">
-                            <ul>
-                                <li>
-                                    <h5><a class="text-secondary link-header" href="/forschools/">Quick navigation</a>
-                                    </h5>
-                                </li>
 
-                                <li>
-                                    <a class="" href="/sucess-stories/">Success stories</a>
-                                </li>
-
-                                <li>
-                                    <a href="/Knowledge-base/">Knowledge Base</a>
-                                </li>
-
-                                <li>
-                                    <a href="/realestate/">Real Estate</a>
-                                </li>
-                                <li>
-                                    <a href="/healthcare/">Healthcare</a>
-                                </li>
-                                <li>
-                                    <a href="/comming-soon">comming soon</a>
-                                </li>
-                                <li>
-                                    <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
-                                </li>
-
-                                <li>
-                                    <a href="https://exampoint.com.ng">ExamPoint NG</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <div class="footer-products-child">
-                            <ul>
-                                <li>
-                                    <h5><a class="text-secondary link-header" href="/forbusiness/">Bundles</a></h5>
-                                </li>
-
-                                <li class="p-3">
-                                    <a href="javascript:void(0)">for Business</a>
-                                </li>
-
-                                <li>
-                                    <a class="" href="/flow">Busness Strater</a>
-                                </li>
-                                <li>
-                                    <a href="/CardEase">Business Pro</a>
-                                </li>
-                                <li>
-                                    <a href="/ProSuite/">ProSuite</a>
-                                </li>
-
-                                <li class="p-3">
-                                    <a href="javascript:void(0)">for Education</a>
-                                </li>
-                                <li>
-                                    <a href="/ProSuite/">Edu strater</a>
-                                </li>
-                                <li>
-                                    <a href="/ProSuite/">EduPRo</a>
-                                </li>
-                                <li>
-                                    <a href="/ProSuite/">Edu360</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-products-child real-estate">
-                            <ul>
-                                <li>
-                                    <h5><a class="text-secondary link-header" href="javascriptVoid:(0)"> FOR
-                                            REAL-ESTATE</a></h5>
-                                </li>
-
-                                <li>
-                                    <a class="" href="/real-estate/"> Web Property Solutions</a>
-                                </li>
-                                <li>
-                                    <a href="/real-estate">Property Pro</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer-company">
-                        <h5><a class="text-secondary link-header" href="javascript:void(0)"> COMPANY</a></h5>
-                        <ul>
-                            <li>
-                                <a class="text-secondary" href="/contact/">Contact us</a>
-                            </li>
-                            <li>
-                                <a class="text-secondary" href="/partnerships/">Partnerships</a>
-                            </li>
-                            <li>
-                                <a class="text-secondary" href="/events/"> Events</a>
-                            </li>
-
-                            <li>
-                                <a class="" href="/company-news/"> Company News</a>
-                            </li>
-                            <li>
-                                <a href="/careers/">Careers</a>
-                            </li>
-                            <li>
-                                <a href="/affliate">About BayScope</a>
-                            </li>
-                            <li>
-                                <a href="/affliate">Investors</a>
-                            </li>
-                            <li>
-                                <a href="/affliate">Affliate</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-
-
+    <div class="footer-main">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-head">
+            <div class="footer-logo">
+              <h2>BayScope</h2>
             </div>
+            <div class="footer-icons">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-products">
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forschools/">Quick navigation</a>
+                  </h5>
+                </li>
 
+                <li>
+                  <a class="" href="/sucess-stories/">Success stories</a>
+                </li>
 
+                <li>
+                  <a href="/Knowledge-base/">Knowledge Base</a>
+                </li>
+
+                <li>
+                  <a href="/realestate/">Real Estate</a>
+                </li>
+                <li>
+                  <a href="/healthcare/">Healthcare</a>
+                </li>
+                <li>
+                  <a href="/comming-soon">comming soon</a>
+                </li>
+                <li>
+                  <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
+                </li>
+
+                <li>
+                  <a href="https://exampoint.com.ng">ExamPoint NG</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forbusiness/">Bundles</a></h5>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Business</a>
+                </li>
+
+                <li>
+                  <a class="" href="/flow">Busness Strater</a>
+                </li>
+                <li>
+                  <a href="/CardEase">Business Pro</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">ProSuite</a>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Education</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu strater</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">EduPRo</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu360</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-products-child real-estate">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="javascriptVoid:(0)"> FOR
+                      REAL-ESTATE</a></h5>
+                </li>
+
+                <li>
+                  <a class="" href="/real-estate/"> Web Property Solutions</a>
+                </li>
+                <li>
+                  <a href="/real-estate">Property Pro</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-company">
+            <h5><a class="text-secondary link-header" href="javascript:void(0)"> COMPANY</a></h5>
+            <ul>
+              <li>
+                <a class="text-secondary" href="/contact/">Contact us</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/partnerships/">Partnerships</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/events/"> Events</a>
+              </li>
+
+              <li>
+                <a class="" href="/company-news/"> Company News</a>
+              </li>
+              <li>
+                <a href="/careers/">Careers</a>
+              </li>
+              <li>
+                <a href="/affliate">About BayScope</a>
+              </li>
+              <li>
+                <a href="/affliate">Investors</a>
+              </li>
+              <li>
+                <a href="/affliate">Affliate</a>
+              </li>
+
+            </ul>
+          </div>
         </div>
 
-        <div class="copyright">
-            <p>
-            <div class="footer-privacy">
-                <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
-                    href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
-                        class="fa fa-trademark" aria-hidden="true"></i></a>
-            </div>
-            </p>
-            <p>
-                &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
-            </p>
-        </div>
-    </footer>  -->
 
-  <!--  learn more modal -->
+
+      </div>
+
+
+    </div>
+
+    <div class="copyright">
+      <p>
+      <div class="footer-privacy">
+        <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
+          href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
+            class="fa fa-trademark" aria-hidden="true"></i></a>
+      </div>
+      </p>
+      <p>
+        &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
+      </p>
+    </div>
+  </footer> 
+
+
 
   <!-- Modal functionality script -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -480,13 +666,38 @@
   <script src="/files/js/cookie.js"></script>
   <script src="/files//js/cart.js"></script>
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <script>
-    function getstarted() {
-      $('#getStartedModal').modal('show');
-    }
-    function learnmore() {
-      $('#learnMoreModal').modal('show')
-    }
+
+    var input = document.getElementById("tel-number");
+    window.intlTelInput(input, {
+      // Options
+      separateDialCode: true,
+      initialCountry: "auto",
+      initialCountry: "ng",
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    var input2 = document.getElementById("tel-number2");
+    window.intlTelInput(input2, {
+      // Options
+      separateDialCode: true,
+      initialCountry: "auto",
+      initialCountry: "ng",
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+   var input3 = document.getElementById("tel-numberii");
+    window.intlTelInput(input3, {
+      // Options
+      separateDialCode: true,
+      initialCountry: "auto",
+      initialCountry: "ng",
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
 
   </script>
 
