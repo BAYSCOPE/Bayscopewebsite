@@ -8,6 +8,7 @@
             .then((data) => {
               request.succ(data)
                // further actions here
+               
             })  
             .catch((error) =>{
                 request.err(error)
