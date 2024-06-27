@@ -20,21 +20,21 @@
   
 
   <!-- Bootstrap CSS File -->
-  <link href="../files/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/files/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- libsraries CSS Files -->
   
-  <link href="../files/libs/animate/animate.min.css" rel="stylesheet">
+  <link href="/files/libs/animate/animate.min.css" rel="stylesheet">
 
   <!-- Nivo Slider Theme -->
 
 
   <!-- Main Stylesheet File -->
-  <link href="../files/css/style.css" rel="stylesheet">
+  <link href="/files/css/style.css" rel="stylesheet">
 
 
   <!-- Responsive Stylesheet File -->
-  <link href="../files/css/responsive.css" rel="stylesheet">
+  <link href="/files/css/responsive.css" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="getstarted.css">
@@ -79,40 +79,45 @@
               class="caret"></span></a>
           <ul class="dropdown-menu solutions" role="menu">
 
-            <li class="dropdown-menu-subdiv"><a href='/services/software-development' class="subdiv-heading-text"> BayScope for
+            <li class="dropdown-menu-subdiv"><a href='/forbusiness/' class="subdiv-heading-text">
+               for
                 Business</a>
-                <ul>
-                  <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology</a></li>
-                  <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'>Financial Solutions</a></li>
-                  <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'>E-commerce</a></li>
-                  <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management</a></li>
-                  <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'>Enterprise Resourse Planning</a></li>
-                  <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope Start-Up Bundle</a></li>
-                </ul>
-            </li>
-            <li class="dropdown-menu-subdiv"><a href='/services/web-development' class="subdiv-heading-text">Bayscope for
-                education</a>
               <ul>
-                <li id="subdiv-list-item"><a href='/forschools/school-financial-solutions/'>School financial solution</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web platform</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/application-portal'></a> Application portal</li>
-                <li id="subdiv-list-item"><a href='/forschools/students-portal'>student portal</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope LMS</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology platforms</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'> Business Financial Solutions/integration</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'> BayScope E-commerce</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management(CRM) /Customer experience(CX)</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'> Enterprise Resourse Planning(ERP) solutions  <i style="color: #3EC1D5;" class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope for StartUps</a></li>
               </ul>
             </li>
-            <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text"> BayScope For
+            <li class="dropdown-menu-subdiv"><a href='/forschools/' class="subdiv-heading-text">
+                for
+                education</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/forschools/tution-tally/'> BayScope TuitonTally </a></li>
+                <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web platform</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>Bayscope EduPortal (admission/application portal)</a>    </li>
+                <li id="subdiv-list-item"><a href='/forschools/students-central'>Bayscope StudentCentral (students portal)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope Learning Management System(LMS)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner </a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text"> BayScope
+                For
                 Real-estate</a>
               <ul>
-                <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant Management System</a></li>
+                <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant Management System</a>
+                </li>
                 <li id="subdiv-list-item"><a href='/realestate/property-management-system'>prorperty management</a></li>
-                <li id="subdiv-list-item"><a href=#>Product Design</a></li>
+              
               </ul>
             </li>
             <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text"> Bayscope for Healthcare </a>
               <ul>
                 <li id="subdiv-list-item"><a href='/services/software-development'>Bayscope Health solution</a></li>
-                
+
               </ul>
             </li>
           </ul>
@@ -144,9 +149,10 @@
         <li class=" dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
             <span class="caret"></span> </a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu" id="sign" role="menu">
             <li><a href="/auth/login" id="signinlink">Sign in</a></li>
             <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
+            <li style="display: none;" id="logoutt"><a href="javascript:logout()" id="signuplink">logout </a></li>
           </ul>
         </li>
         <li class="pl-2">
@@ -808,12 +814,12 @@
           </div>
           <p>
           <div class="card-desc">
-            Get in touch with BayScope business support team via email, live chat or phone call for a quicker an easier
-            support experience. reach out today let's answer your questions.
+            Get in touch with BayScope Education support team via email, live chat, or phone call for a quicker and
+            easier support experience. Reach out today; let's answer your questions.
           </div>
           </p>
           <div class="card-actions">
-            <button type='button' class='card-action-readMore'><a href="/contact">contact us</a> </button>
+            <button type='button' class='card-action-readMore'><a style="color: white;" href="/contact/"> Contact</a> </button>
           </div>
         </div>
       </div>
@@ -828,12 +834,11 @@
           </div>
           <p>
           <div class="card-desc">
-            Read through our documentations to gain deeper insights on how each plan can benefit your business.
-            Aditionally explore how we leverage your subscription or billing fee .
+            Dive into our documentation to gain deeper insights on how each plan can benefit your business. Additionally, explore how we optimize your subscription or billing fee.
           </div>
           </p>
           <div class="card-actions">
-            <button type='button' class='card-action-readMore'> <a href="/blog"> Read More</a></button>
+            <button type='button' class='card-action-readMore'><a style="color: white;" href="/blog/">Blog</a> </button>
           </div>
         </div>
       </div>
@@ -846,13 +851,13 @@
           </div>
           <p>
           <div class="card-desc">
-            Experience how BayScope has transformed small and medium enterprises into large corporations, much like
-            yours, through its customizable and impactful solutions.
+            Experience how BayScope has transformed businesses like your's with impactful solutions. Discover success
+            stories and envision possibilities for your business.
           </div>
           </p>
 
           <div class="card-actions">
-            <button type='button' class='card-action-readMore'> <a href="/success-stories">Read More</a></button>
+            <button type='button' class='card-action-readMore'><a style="color: white;" href="/sucess-stories/">Stories</a> </button>
           </div>
         </div>
       </div>
@@ -1034,12 +1039,18 @@
   <!--main js-->
 
 
-  <script src="../files/js/cart.js"></script>
-  <script src="/files/js/apicalls.js"></script>
-  <script src="main.js"></script>
-  <script src="../files/libs/jquery/jquery.min.js"></script>
-  <script src="../files/js/main.js"></script>
+   <!-- JavaScript Libraries -->
+   <script src="/files/libs/jquery/jquery.min.js"></script>
+   <script src="/files/libs/bootstrap/js/bootstrap.min.js"></script>
+  
+ 
+  <!--main js-->
 
+  <script src="/files/js/main.js"></script>
+  <script src="/files/js/apicalls.js"></script>
+  <script src="/files/js/cookie.js"></script>
+  <script src="/files/js/cart.js"></script>
+  <script src="main.js"></script>
   
   <script>
 

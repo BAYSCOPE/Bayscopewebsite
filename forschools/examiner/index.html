@@ -100,16 +100,14 @@
 
         }
 
-        .btn {
-            background-color: #3EC1D5;
-            color: #fff;
-            padding: 15px 30px;
-            /* Slightly larger button */
+        .herobtn {
+            background-color: black;
+            color: white;
+            padding: 9px 19px;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: bold;
-            /* Larger button text */
         }
 
         @media (max-width: 768px) {
@@ -119,12 +117,12 @@
             }
 
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
                 /* Adjusted for smaller screens */
             }
 
             .hero-content p {
-                font-size: 1.2rem;
+                font-size: 1.8rem;
                 /* Adjusted for smaller screens */
             }
         }
@@ -137,7 +135,7 @@
 <body data-spy="scroll" data-target="#navbar-example">
 
     <div id="preloader"></div>
-    <div id="loader"> <i class="fa fa-cart-plus fa-bounce " aria-hidden="true"></i>  </div>
+    <div id="loader"> <i class="fa fa-cart-plus fa-bounce " aria-hidden="true"></i> </div>
 
 
     <header class="header header-area" id="sticker">
@@ -162,46 +160,57 @@
                             class="caret"></span></a>
                     <ul class="dropdown-menu solutions" role="menu">
 
-                        <li class="dropdown-menu-subdiv"><a href='/forbusiness/' class="subdiv-heading-text">
-                                for
+                        <li class="dropdown-menu-subdiv"><a href='#' class="subdiv-heading-text">
+                                For
                                 Business</a>
+                            <hr>
                             <ul>
                                 <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business
-                                        Technology platforms</a>
+                                        Technology
+                                        platforms</a>
                                 </li>
                                 <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'> Business
-                                        Financial Solutions/integration</a></li>
+                                        Financial
+                                        Solutions/integration</a></li>
                                 <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'> BayScope E-commerce</a>
                                 </li>
                                 <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship
-                                        management(CRM) /Customer experience(CX)</a></li>
+                                        management(CRM)
+                                        /Customer experience(CX)</a></li>
                                 <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'> Enterprise Resourse
-                                        Planning(ERP) solutions <i style="color: #3EC1D5;" class="fa fa-star"
-                                            aria-hidden="true"></i></a></li>
+                                        Planning(ERP)
+                                        solutions</a></li>
                                 <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope for StartUps</a></li>
                             </ul>
                         </li>
+
                         <li class="dropdown-menu-subdiv"><a href='/forschools/' class="subdiv-heading-text">
-                                for
+                                For
                                 education</a>
+                            <hr>
                             <ul>
+
                                 <li id="subdiv-list-item"><a href='/forschools/tution-tally/'> BayScope TuitonTally </a>
                                 </li>
                                 <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web
                                         platform</a></li>
-                                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>  Bayscope EduPortal
-                                    (admission/application portal)</a> </li>
-                                <li id="subdiv-list-item"><a href='/forschools/students-central'>Bayscope StudentCentral
-                                        (students portal)</a></li>
+                                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>Bayscope EduPortal</a>
+                                    (admission/application portal) </li>
+                                <li id="subdiv-list-item"><a href='/forschools/students-portal'>Bayscope StudentCentral
+                                        (students
+                                        portal)</a></li>
                                 <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope
-                                        Learning Management System(LMS)</a></li>
+                                        Learning Management
+                                        System(LMS)</a></li>
                                 <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner </a></li>
                             </ul>
                         </li>
+
                         <li class="dropdown-menu-subdiv"><a href='/services/app-development/'
                                 class="subdiv-heading-text"> BayScope
                                 For
                                 Real-estate</a>
+                            <hr>
                             <ul>
                                 <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant
                                         Management System</a>
@@ -221,36 +230,49 @@
                         </li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">By industry<span
                             class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href='/forbusiness/'>BayScope Business</a></li>
-                        <li><a href='/forschools/'>BayScope Schools</a></li>
-                        <li><a href='/forhealths'>Bayscope Healthcare</a></li>
+                        <li><a href='/forschools/'>BayScope Education</a></li>
                         <li><a href='/realestate/'> BayScope Real Estate</a></li>
 
                     </ul>
                 </li>
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">coming soon<span
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bundle<span
                             class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href=#>BayScope Flow</a></li>
-                        <li><a href=#>CardLinks</a></li>
+                        <li><a href='/Edu360/'>Edu360</a></li>
                     </ul>
                 </li>
+
+
                 </div>
             </ul>
             <ul class="right-nav-list">
-                <li>
-                    <a class="page-scroll" href="/contact">Contact</a>
+                <li style="margin-right: 10px;" class="dropdown"><a
+                        style="border: 1px solid #1f2937; padding:10px 15px;border-radius:20px; background:#1f2937;color:white"
+                        href="#" class="dropdown-toggle" data-toggle="dropdown">Get started</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:checkout('Examiner', 11000)">Purchase now</a></li>
+                        <hr>
+                        <li><a href='/contact'>Get a demo</a></li>
+                        <hr>
+                        <li><a style="border: 1px solid white; padding:10px 15px;border-radius:20px; background:#1f2937;color:white"
+                                href="javascript:addtocart('Examiner', 11000)">Add to cart <i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    </ul>
                 </li>
-
                 <li class=" dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o"
                             aria-hidden="true"></i>
                         <span class="caret"></span> </a>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu" role="menu" style="right:400px">
+                        <li> <a style="" href="#" id="user"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                        </li>
+                        <hr>
                         <li><a href="/auth/login" id="signinlink">Sign in</a></li>
+                        <hr>
                         <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
                     </ul>
                 </li>
@@ -262,15 +284,18 @@
         </nav>
     </header>
 
-
     <section class="hero-section">
         <div class="container">
             <div class="hero-content">
                 <h1> BayScope Examiner</h1>
-               <p>Enhance your educational or training programs with BayScope Examiner, a comprehensive online examination platform designed to streamline the creation, management, and evaluation of exams for educators, institutions, and corporate training programs.</p>
-                <a href="#features" class="btn " sty>explore features</a> <a href="javascript:getstarted()"
-                    style="margin-left: 10px; color: black; font-size: 15px;"> Get started <i
-                        class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <p>Enhance your educational or training programs with BayScope Examiner, a comprehensive online
+                    examination platform designed to streamline the creation, management, and evaluation of exams for
+                    educators, institutions, and corporate training programs.
+                </p>
+                <a href="#features" class="herobtn" style="margin-right: 10px;">Discover Features</a>
+        <a href="javascript:getstarted()" style="color: black; font-size: 15px; font-weight:bold">Get Started <i
+            class="fa fa-arrow-right" aria-hidden="true"></i></a>
+
             </div>
         </div>
     </section>
@@ -299,140 +324,192 @@
     </div>
 
 
-   <section id="features" style="padding: 30px 0; background-color: #fff;">
-       <div class="container">
-           <h2 class="section-title" style="text-align: center; margin-bottom: 50px; font-size: 2.9rem; color: black;">
-               BayScope Examiner Features</h2>
-           <p style="text-align: center; margin-bottom: 30px; font-size: 1.6rem; color: black;">BayScope Examiner
-               offers a robust platform for creating, managing, and evaluating online examinations with ease, providing
-               a seamless experience for educators, course creators, educational bodies, companies, and organizations.</p>
-           <div class="row">
-               <div class="col-md-4">
-                   <div class="feature-box" style="text-align: center; padding: 20px;">
-                       <i class="fa fa-edit" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
-                       <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Dynamic Exam Creation</h4>
-                       <p style="font-size: 1.7rem; color: black;">Create exams with dynamic content, including multimedia support, and a variety of question types.</p>
-                   </div>
-               </div>
-               <div class="col-md-4">
-                   <div class="feature-box" style="text-align: center; padding: 20px;">
-                       <i class="fa fa-cogs" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
-                       <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Automated Grading</h4>
-                       <p style="font-size: 1.7rem; color: black;">Automate scoring with customizable rules and provide instant feedback to participants.</p>
-                   </div>
-               </div>
-               <div class="col-md-4">
-                   <div class="feature-box" style="text-align: center; padding: 20px;">
-                       <i class="fa fa-share-alt" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
-                       <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Examination Link Sharing</h4>
-                       <p style="font-size: 1.7rem; color: black;">Easily share examination links with participants, allowing for widespread and remote access.</p>
-                   </div>
-               </div>
-               <!-- Additional Features -->
-               <div class="col-md-4">
-                   <div class="feature-box" style="text-align: center; padding: 20px;">
-                       <i class="fa fa-trophy" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
-                       <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Leaderboard System</h4>
-                       <p style="font-size: 1.7rem; color: black;">Engage participants with a competitive leaderboard system, showcasing top performers.</p>
-                   </div>
-               </div>
-               <div class="col-md-4">
-                   <div class="feature-box" style="text-align: center; padding: 20px;">
-                       <i class="fa fa-lock" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
-                       <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Secure Testing Environment</h4>
-                       <p style="font-size: 1.7rem; color: black;">Maintain the integrity of exams with secure testing environments, including proctoring features.</p>
-                   </div>
-               </div>
-               <div class="col-md-4">
-                   <div class="feature-box" style="text-align: center; padding: 20px;">
-                       <i class="fa fa-users" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
-                       <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Comprehensive User Management</h4>
-                       <p style="font-size: 1.7rem; color: black;">Manage users effectively with roles, permissions, and detailed activity tracking.</p>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
-
-
-
-   <!-- BayScope Examiner Advert Section -->
-   <div style="margin-top: 50px; background-color: #3EC1D5;" class="advert-section">
-       <div class="container">
-           <div class="row align-items-center">
-            <div class="col-md-6 wow slideInUp">
-                <img style="width: 500px;" id="advertImage" src="/assets/images/boy-exam.jpeg" alt="Platform Variety" class="advert-image img-fluid">
-              </div>
-               <div class="col-md-6">
-                   <h3 id="advertTitle" style="font-weight: bold; color: #3EC1D5;" class="advert-title wow slideInDown" data-wow-delay="60ms">
-                       Empower Your Assessments with BayScope Examiner</h3>
-                   <p id="advertDescription" class="advert-description" style="color: white;line-height: 1.5;">
-                       BayScope Examiner revolutionizes the way assessments are conducted. With our cutting-edge platform, you can create, manage, and evaluate exams with unparalleled ease and efficiency. Embrace the future of online assessments and elevate your educational or organizational capabilities to new heights.
-                   </p>
-                   <p style="padding-top: 20px;">
-                       <a href="javascript:getstarted()"  style="padding: 13px; background-color:#3EC1D5;font-weight: bold; border-radius: 10px; color: white;">Get started</a>
-                       <a style="padding-left: 15px; color: #3EC1D5; font-weight: bold; font-size: x-large;" href="javascript:learnmore()" tabindex="_blank">Request Demo</a>
-                   </p>
-               </div>
-           </div>
-       </div>
-   </div>
-   <!-- End BayScope Examiner Advert Section -->
-
-
-         
-  <section style="padding: 80px 0; background-color: #f8f9fa;">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h2 style="font-size: 28px; color: #2a2a2a; font-weight: 600; margin-bottom: 30px;">Success Stories with BayScope Examiner</h2>
-            <p style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 20px;">Learn how educational institutions and organizations have transformed their assessment processes with BayScope Examiner. Our platform has streamlined exam creation, management, and grading, leading to improved efficiency and integrity in assessments.</p>
-            <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-              <a href="javascript:void(0);" onclick="playVideo()" style="display: inline-flex; align-items: center; background-color: #3EC1D5; color: #ffffff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
-                <i class="fa fa-play-circle" aria-hidden="true" style="margin-right: 10px;"></i>Watch more Client story              </a>
-              <a href="javascript:getstarted();" style="color: #1a202c; margin-left: 10px; font-weight: bold;">Start using Examiner <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    <section id="features" style="padding: 30px 0; background-color: #fff;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 50px; font-size: 2.9rem; color: black;">
+                BayScope Examiner Features</h2>
+            <p style="text-align: center; margin-bottom: 30px; font-size: 1.6rem; color: black;">BayScope Examiner
+                offers a robust platform for creating, managing, and evaluating online examinations with ease, providing
+                a seamless experience for educators, course creators, educational bodies, companies, and organizations.
+            </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box" style="text-align: center; padding: 20px;">
+                        <i class="fa fa-edit" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
+                        <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Dynamic Exam Creation</h4>
+                        <p style="font-size: 1.7rem; color: black;">Create exams with dynamic content, including
+                            multimedia support, and a variety of question types.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box" style="text-align: center; padding: 20px;">
+                        <i class="fa fa-cogs" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
+                        <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Automated Grading</h4>
+                        <p style="font-size: 1.7rem; color: black;">Automate scoring with customizable rules and provide
+                            instant feedback to participants.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box" style="text-align: center; padding: 20px;">
+                        <i class="fa fa-share-alt" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
+                        <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Examination Link Sharing</h4>
+                        <p style="font-size: 1.7rem; color: black;">Easily share examination links with participants,
+                            allowing for widespread and remote access.</p>
+                    </div>
+                </div>
+                <!-- Additional Features -->
+                <div class="col-md-4">
+                    <div class="feature-box" style="text-align: center; padding: 20px;">
+                        <i class="fa fa-trophy" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
+                        <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Leaderboard System</h4>
+                        <p style="font-size: 1.7rem; color: black;">Engage participants with a competitive leaderboard
+                            system, showcasing top performers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box" style="text-align: center; padding: 20px;">
+                        <i class="fa fa-lock" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
+                        <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Secure Testing Environment</h4>
+                        <p style="font-size: 1.7rem; color: black;">Maintain the integrity of exams with secure testing
+                            environments, including proctoring features.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box" style="text-align: center; padding: 20px;">
+                        <i class="fa fa-users" aria-hidden="true" style="font-size: 48px; color: #3EC1D5;"></i>
+                        <h4 style="margin-top: 20px; font-size: 2.5rem; color: black;">Comprehensive User Management
+                        </h4>
+                        <p style="font-size: 1.7rem; color: black;">Manage users effectively with roles, permissions,
+                            and detailed activity tracking.</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md-6 text-center">
-            <div style="position: relative; padding-top: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-              <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" src="/assets/videos/bayscope-examiner-testimonials.mp4?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
 
 
-      <!--pricing area-->
-<div style="background-color: white; padding: 96px 0;">
-    <div style="max-width: 1128px; padding: 0 24px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border: 1px solid #e2e8f0; border-radius: 24px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);">
-      <div style="padding: 32px; flex: 1;">
-        <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">BayScope Examiner Pricing</h3>
-        <p style="margin-top: 24px; font-size: 16px; color: #4a5568;">Our BayScope Examiner platform offers flexible pricing to meet the needs of educational institutions and organizations of all sizes. Enjoy comprehensive features for creating, managing, and analyzing online examinations with ease.</p>
-        <div style="margin-top: 40px; display: flex; align-items: center;">
-          <h4 style="font-size: 14px; font-weight: semibold; color: #667eea; flex-shrink: 0;">Key Features</h4>
-          <div style="flex-grow: 1; height: 1px; background-color: #e2e8f0; margin-left: 16px;"></div>
+    <!-- BayScope Examiner Advert Section -->
+    <div style="margin-top: 50px; background-color: #3EC1D5;" class="advert-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 wow slideInUp">
+                    <img style="width: 500px;" id="advertImage" src="/assets/images/boy-exam.jpeg"
+                        alt="Platform Variety" class="advert-image img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h3 id="advertTitle" style="font-weight: bold; color: #3EC1D5;" class="advert-title wow slideInDown"
+                        data-wow-delay="60ms">
+                        Empower Your Assessments with BayScope Examiner</h3>
+                    <p id="advertDescription" class="advert-description" style="color: white;line-height: 1.5;">
+                        BayScope Examiner revolutionizes the way assessments are conducted. With our cutting-edge
+                        platform, you can create, manage, and evaluate exams with unparalleled ease and efficiency.
+                        Embrace the future of online assessments and elevate your educational or organizational
+                        capabilities to new heights.
+                    </p>
+                    <p style="padding-top: 20px;">
+                        <a href="javascript:getstarted()"
+                            style="padding: 13px; background-color:#3EC1D5;font-weight: bold; border-radius: 10px; color: white;">Get
+                            started</a>
+                        <a style="padding-left: 15px; color: #3EC1D5; font-weight: bold; font-size: x-large;"
+                            href="javascript:learnmore()" tabindex="_blank">Request Demo</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <ul style="margin-top: 32px; list-style: none; padding: 0;">
-          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Customizable Test Creation</li>
-          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Real-Time Monitoring & Proctoring</li>
-          <li style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">✔ Detailed Analytics & Reporting</li>
-          <li style="display: flex; align-items: center; color: #4a5568; font-size: 14px;">✔ Secure & Scalable Infrastructure</li>
-        </ul>
-      </div>
-      <div style="background-color: #fafafa; border-radius: 16px; padding: 40px; text-align: center; margin-top: -16px; flex: 1; border-left: 1px solid #e2e8f0;">
-        <p style="color: #4a5568;"> <span style="font-size: 25px; font-weight: bold;">NGN </span> <span style="margin-left: 5px; font-weight: semibold; letter-spacing: 5px; font-size: 30px;">11,000</span></p>
-        <p style="margin-top: 24px; display: flex; justify-content: center; align-items: baseline; font-size: 40px; font-weight: bold; color: #1a202c;"> <span style="font-size: 14px; font-weight:bold; color: #4a5568; margin-left: 8px;">Billed monthly</span></p>
-        <a href="javascript:getstarted();" style="display: inline-block; background-color:#3EC1D5; padding: 8px 20px; border-radius: 8px; color: white; text-decoration: none; font-weight: semibold; margin-top: 40px;">Purchase Now</a>
-        <a href="javascript:void(0)" onclick="addtocart('bayScope-examiner', 11000);" style="display: inline-block; background-color: #3EC1D5; padding: 8px 16px; border-radius: 8px; color: white; text-decoration: none; font-weight: semibold; margin-top: 40px; margin-left: 10px;" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-        <p style="margin-top: 24px; font-size: 10px; color: #4a5568;">Flexible plans available for institutions of all sizes</p>
-        <div style="text-align: center; margin-top: 20px;">
-          <p style="font-size: 14px; color: #4a5568;">Explore our <a href="/Edu360/" style="color: #3EC1D5; font-weight: bold;">Edu360</a> for more comprehensive examination and learning management solutions.</p>
-        </div>
-      </div>
     </div>
-  </div>
+    <!-- End BayScope Examiner Advert Section -->
+
+
+
+    <section style="padding: 80px 0; background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 style="font-size: 28px; color: #2a2a2a; font-weight: 600; margin-bottom: 30px;">Success Stories
+                        with BayScope Examiner</h2>
+                    <p style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 20px;">Learn how
+                        educational institutions and organizations have transformed their assessment processes with
+                        BayScope Examiner. Our platform has streamlined exam creation, management, and grading, leading
+                        to improved efficiency and integrity in assessments.</p>
+                    <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                        <a href="javascript:void(0);" onclick="playVideo()"
+                            style="display: inline-flex; align-items: center; background-color: #3EC1D5; color: #ffffff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
+                            <i class="fa fa-play-circle" aria-hidden="true" style="margin-right: 10px;"></i>Watch more
+                            Client story </a>
+                        <a href="javascript:getstarted();"
+                            style="color: #1a202c; margin-left: 10px; font-weight: bold;">Start using Examiner <i
+                                class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div
+                        style="position: relative; padding-top: 56.25%; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                            src="/assets/videos/bayscope-examiner-testimonials.mp4?autoplay=1" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--pricing area-->
+    <div style="background-color: white; padding: 96px 0;">
+        <div
+            style="max-width: 1128px; padding: 0 24px; margin: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border: 1px solid #e2e8f0; border-radius: 24px; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);">
+            <div style="padding: 32px; flex: 1;">
+                <h3 style="font-size: 20px; font-weight: bold; color: #1a202c;">BayScope Examiner Pricing</h3>
+                <p style="margin-top: 24px; font-size: 16px; color: #4a5568;">Our BayScope Examiner platform offers
+                    flexible pricing to meet the needs of educational institutions and organizations of all sizes. Enjoy
+                    comprehensive features for creating, managing, and analyzing online examinations with ease.</p>
+                <div style="margin-top: 40px; display: flex; align-items: center;">
+                    <h4 style="font-size: 14px; font-weight: semibold; color: #667eea; flex-shrink: 0;">Key Features
+                    </h4>
+                    <div style="flex-grow: 1; height: 1px; background-color: #e2e8f0; margin-left: 16px;"></div>
+                </div>
+                <ul style="margin-top: 32px; list-style: none; padding: 0;">
+                    <li
+                        style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">
+                        ✔ Customizable Test Creation</li>
+                    <li
+                        style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">
+                        ✔ Real-Time Monitoring & Proctoring</li>
+                    <li
+                        style="display: flex; align-items: center; margin-bottom: 16px; color: #4a5568; font-size: 14px;">
+                        ✔ Detailed Analytics & Reporting</li>
+                    <li style="display: flex; align-items: center; color: #4a5568; font-size: 14px;">✔ Secure & Scalable
+                        Infrastructure</li>
+                </ul>
+            </div>
+            <div
+                style="background-color: #fafafa; border-radius: 16px; padding: 40px; text-align: center; margin-top: -16px; flex: 1; border-left: 1px solid #e2e8f0;">
+                <p style="color: #4a5568;"> <span style="font-size: 25px; font-weight: bold;">NGN </span> <span
+                        style="margin-left: 5px; font-weight: semibold; letter-spacing: 5px; font-size: 30px;">11,000</span>
+                </p>
+                <p
+                    style="margin-top: 24px; display: flex; justify-content: center; align-items: baseline; font-size: 40px; font-weight: bold; color: #1a202c;">
+                    <span style="font-size: 14px; font-weight:bold; color: #4a5568; margin-left: 8px;">Billed
+                        monthly</span></p>
+                <a href="javascript:getstarted();"
+                    style="display: inline-block; background-color:#3EC1D5; padding: 8px 20px; border-radius: 8px; color: white; text-decoration: none; font-weight: semibold; margin-top: 40px;">Purchase
+                    Now</a>
+                <a href="javascript:void(0)" onclick="addtocart('bayScope-examiner', 11000);"
+                    style="display: inline-block; background-color: #3EC1D5; padding: 8px 16px; border-radius: 8px; color: white; text-decoration: none; font-weight: semibold; margin-top: 40px; margin-left: 10px;"><i
+                        class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <p style="margin-top: 24px; font-size: 10px; color: #4a5568;">Flexible plans available for institutions
+                    of all sizes</p>
+                <div style="text-align: center; margin-top: 20px;">
+                    <p style="font-size: 14px; color: #4a5568;">Explore our <a href="/Edu360/"
+                            style="color: #3EC1D5; font-weight: bold;">Edu360</a> for more comprehensive examination and
+                        learning management solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--end pricingh area-->
 
     <!-- footer area By <Jaystorm/>
@@ -602,8 +679,9 @@
         </div>
     </footer>
 
-     <!--  learn more modal -->
-<div id="learnMoreModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+    <!--  learn more modal -->
+    <div id="learnMoreModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="learnMoreModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" style="width:90%;" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -617,24 +695,33 @@
             <div class="row">
               <!-- Option 1: Contact Us -->
               <div class="col-md-4 text-center">
-                <i class="fa fa-envelope" style="color: #3EC1D5; font-size: 30px; padding: 10px 0px;" aria-hidden="true"></i>
+                <i class="fa fa-envelope" style="color: #3EC1D5; font-size: 30px; padding: 10px 0px;"
+                  aria-hidden="true"></i>
                 <h6>Contact Us</h6>
-                <p>Get in touch with Bayscope support for inquiries or more information. leave us a message or connect live with a sales representative</p>
-                <a href="/contact/" style="color: black;">contact Us <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <p>Get in touch with Bayscope support for inquiries or more information. leave us a message or connect
+                  live with a sales representative</p>
+                <a href="/contact/" style="color: black;">contact Us <i class="fa fa-arrow-right"
+                    aria-hidden="true"></i></a>
               </div>
               <!-- Option 2: Knowledgebase -->
               <div class="col-md-4 text-center">
-                <i class="fa fa-trophy" style="color: #3EC1D5; padding: 10px 0px; font-size: 30px;" aria-hidden="true"></i>
+                <i class="fa fa-trophy" style="color: #3EC1D5; padding: 10px 0px; font-size: 30px;"
+                  aria-hidden="true"></i>
                 <h6>Success Stories</h6>
-                <p>Discover how this solution have tranformed numerous institutions and gain insights on how they leverage this solution.</p>
-                <a href="/success-stories"  style="color: black;">View Success Stories <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <p>Discover how this solution have tranformed numerous institutions and gain insights on how they
+                  leverage this solution.</p>
+                <a href="/success-stories" class=" " style="color: black;">View Success Stories <i
+                    class="fa fa-arrow-right" aria-hidden="true"></i></a>
               </div>
               <!-- Option 3: Demo Request -->
               <div class="col-md-4 text-center">
-                <i class="fa fa-laptop" style="color: #3EC1D5; font-size: 30px; padding: 10px 0px;" aria-hidden="true"></i>
+                <i class="fa fa-laptop" style="color: #3EC1D5; font-size: 30px; padding: 10px 0px;"
+                  aria-hidden="true"></i>
                 <h6>Demo Request</h6>
-                <p>Request a demo to see this solutions in action.This will require a token fee to cover setup expenses which tailor this solution to suit you.</p>
-                <a href="/demo-request"  style="color: black;">Request Demo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                <p>Request a demo to see this solutions in action.This will require a token fee to cover setup expenses
+                  which tailor this solution to suit you.</p>
+                <a href="/contact/#demoRequestModal" class="" style="color: black;">Request Demo <i
+                    class="fa fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -644,32 +731,49 @@
   </div>
 
 
-  
- <div class="modal fade" id="getStartedModal" tabindex="-1" role="dialog" aria-labelledby="getStartedModalLabel" aria-hidden="true">
-     <div class="modal-dialog modal-lg" role="document">
-       <div class="modal-content">
-         <div class="modal-header">
-           <h5 class="modal-title" id="getStartedModalLabel">BayScope Examiner: Enhancing Online Examination Processes</h5>
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-             <span aria-hidden="true">&times;</span>
-           </button>
-           <h6 style="color: #3EC1D5;"> <i class="fa fa-info-circle" aria-hidden="true"></i> Please read before proceeding</h6>
-         </div>
-         <div class="modal-body">
-           <p>BayScope Examiner offers a robust platform for creating, managing, and evaluating online examinations with ease, providing a seamless experience for educators, course creators, educational bodies, companies, and organizations. Our platform supports dynamic content, including multimedia support, and a variety of question types to cater to diverse examination needs.</p>
-           <p>Upon purchasing this solution, it will be seamlessly integrated into your dashboard, allowing you to manage and customize the service according to your needs. You will need to log in to Bpanel, our service management and specification system, to manage and provide information or customizations for the service. This includes the ability to extend services, activate plugins, and more.</p>
-           <p>Within 24 hours of purchase, a dedicated specialist will reach out to you to collaborate closely, ensuring a deep understanding of your use case and business needs. Our service specialists are here to help you enter specifications and manage your service on Bpanel, making your operations run smoothly and efficiently.</p>
-         </div>
-         
-         <div class="modal-footer">
-           <button type="button" class="btn btn-secondary" data-dismiss="modal">Talk to us Before Purchasing</button>
-           <a href="javascript:void(0)" style="background: #3EC1D5; color: white;" class="btn"> proceed to Checkout </a>
-         </div>
-       </div>
-     </div>
-   </div>
-  <!-- Modal functionality script -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="modal fade" id="getStartedModal" tabindex="-1" role="dialog" aria-labelledby="getStartedModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="getStartedModalLabel">BayScope Examiner: Enhancing Online Examination
+                        Processes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 style="color: #3EC1D5;"> <i class="fa fa-info-circle" aria-hidden="true"></i> Please read before
+                        proceeding</h6>
+                </div>
+                <div class="modal-body">
+                    <p>BayScope Examiner offers a robust platform for creating, managing, and evaluating online
+                        examinations with ease, providing a seamless experience for educators, course creators,
+                        educational bodies, companies, and organizations. Our platform supports dynamic content,
+                        including multimedia support, and a variety of question types to cater to diverse examination
+                        needs.</p>
+                    <p>Upon purchasing this solution, it will be seamlessly integrated into your dashboard, allowing you
+                        to manage and customize the service according to your needs. You will need to log in to Bpanel,
+                        our service management and specification system, to manage and provide information or
+                        customizations for the service. This includes the ability to extend services, activate plugins,
+                        and more.</p>
+                    <p>Within 24 hours of purchase, a dedicated specialist will reach out to you to collaborate closely,
+                        ensuring a deep understanding of your use case and business needs. Our service specialists are
+                        here to help you enter specifications and manage your service on Bpanel, making your operations
+                        run smoothly and efficiently.</p>
+                </div>
+
+                <div class="modal-footer" style="display: flex; justify-content:space-between">
+                    <a href="/contact/" class="btn" style="background: #3EC1D5; color: white; font-size:small ">Contact Us to get
+                      started</a>
+          
+                    <a href="javascript:checkout('Examiner', 11000)" class="btn" style="background: #3EC1D5; color: white;">Purchase now </a>
+          
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal functionality script -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
@@ -677,9 +781,9 @@
     <!-- JavaScript Libraries -->
     <script src="/files/libs/jquery/jquery.min.js"></script>
     <script src="/files/libs/bootstrap/js/bootstrap.min.js"></script>
-   
+
     <script src="/files/libs/wow/wow.min.js"></script>
-  
+
     <script src="/files/libs/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
     <script src="/files/libs/appear/jquery.appear.js"></script>
     <script src="/files/libs/isotope/isotope.pkgd.min.js"></script>
@@ -692,12 +796,12 @@
     <script src="/files//js/cart.js"></script>
     <script src="script.js"></script>
     <script>
-function getstarted(){
-  $('#getStartedModal').modal('show');
-}
-function learnmore(){
-    $('#learnMoreModal').modal('show')
-}
+        function getstarted() {
+            $('#getStartedModal').modal('show');
+        }
+        function learnmore() {
+            $('#learnMoreModal').modal('show')
+        }
 
     </script>
 

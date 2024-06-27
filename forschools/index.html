@@ -59,6 +59,886 @@
 
 <body>
 
+  <div id="loader">
+    <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+  </div>
+  <div id="preloader"></div>
+
+
+  <header class="header header-area" id="sticker">
+    <div class="header-logo-container">
+      <a class="page-scroll sticky-logo" href="/">
+        <h1>BayScope</h1>
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+      <ul class="mid-nav-list">
+        <li class="active">
+          <a class="page-scroll" href="/">Home</a>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu solutions" role="menu">
+
+            <li class="dropdown-menu-subdiv"><a href='/forbusiness/' class="subdiv-heading-text">
+               for
+                Business</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology platforms</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/forbusiness/financial-solutions/'> Business Financial Solutions/integration</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/e-commerce/'> BayScope E-commerce</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management(CRM) /Customer experience(CX)</a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'> Enterprise Resourse Planning(ERP) solutions  <i style="color: #3EC1D5;" class="fa fa-star" aria-hidden="true"></i></a></li>
+                <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope for StartUps</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href='/forschools/' class="subdiv-heading-text">
+                for
+                education</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/forschools/tution-tally/'> BayScope TuitonTally </a></li>
+                <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web platform</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>Bayscope EduPortal (admission/application portal)</a>    </li>
+                <li id="subdiv-list-item"><a href='/forschools/students-central'>Bayscope StudentCentral (students portal)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/learning-management-system'>BayScope Learning Management System(LMS)</a></li>
+                <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner </a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text"> BayScope
+                For
+                Real-estate</a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant Management System</a>
+                </li>
+                <li id="subdiv-list-item"><a href='/realestate/property-management-system'>prorperty management</a></li>
+              
+              </ul>
+            </li>
+            <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text"> Bayscope for Healthcare </a>
+              <ul>
+                <li id="subdiv-list-item"><a href='/services/software-development'>Bayscope Health solution</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href='/forbusiness/'>BayScope Business</a></li>
+            <li><a href='/forschools/'>BayScope Schools</a></li>
+            <li><a href='/forhealths'>Bayscope Healthcare</a></li>
+            <li><a href='/realestate/'> BayScope Real Estate</a></li>
+
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">coming soon<span
+              class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href=#>BayScope Flow</a></li>
+            <li><a href=#>CardLinks</a></li>
+          </ul>
+        </li>
+        </div>
+      </ul>
+      <ul class="right-nav-list">
+        <li>
+          <a class="page-scroll" href="/contact">Contact</a>
+        </li>
+
+        <li class=" dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
+            <span class="caret"></span> </a>
+          <ul class="dropdown-menu" id="sign" role="menu">
+            <li><a href="/auth/login" id="signinlink">Sign in</a></li>
+            <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
+            <li style="display: none;" id="logoutt"><a href="javascript:logout()" id="signuplink">logout </a></li>
+          </ul>
+        </li>
+        <li class="pl-2">
+          <a href="javascript:void(0);" onclick="toggleCart()"> <i class="fa fa-shopping-cart fa-bold"
+              aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div id="about" class="top-area mt-5">
+    <div class="container-fluid">
+      <div class="hero-content">
+        <div class="row">
+          <!-- single-well start-->
+          <div class="col-md-6 col-sm-6 col-xs-12 text-left">
+            <div class="well-left">
+              <p class="big-text">
+                Welcome to BayScope <span class="highlight"> Education Suite</span><br>Discover Tailored Solutions for Your Education Needs.
+              </p>
+              <p id="typed-text" class="text-md text-secondary pt-2">
+                BayScope Education solutions is your comprehensive toolkit for navigating the dynamic landscape of modern
+                education. Tailor and adapt...
+              </p>
+              <div class="buttons">
+                <a href="/forbusiness/" class=" header-button btn-lg">create an account</a>
+                <a href="/forschools/" class="header-button-outline ">reach us</a>
+              </div>
+            </div>
+          </div>
+          <!-- single-well end-->
+          <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+            <div class="well-right">
+              <img class="hero-image" 
+              src="../assets/images/schoolboy.jpg" alt="">
+            </div>
+          </div>
+          <!-- End col-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About area -->
+  <!-- <div class="container cleints" style="color: #444;">
+
+    <img src="../assets/Assets/chebad.org.png" alt="">
+    <img src="../assets/Assets/shopify.svg" alt="" srcset="">
+    <img src="../assets/Assets/new-kg-logoBLUE-2-768x216.png" alt="">
+    <img src="../assets/Assets/sefaria.png" alt="">
+
+  </div> -->
+
+
+  <div class="row">
+
+  </div>
+
+<!-- Advert banner section-->
+  <div class="container-fluid second-section">
+   
+    <div class="secondbg"></div>
+    <div class="row secondarea">
+      <!-- single-well start-->
+      
+
+      <div class="second-text">
+
+        <h4 class="sec-head">Education Suite</h4>
+
+        <p class="about secondp-1 " style="line-height: 1.5; color: white; z-index: 2;">
+          Whether launching a new initiative or expanding an established institution, our customized solutions fit your needs. From schools and colleges to tutoring 
+          centers, online platforms, and vocational programs, we tailor plans for diverse educational endeavors.
+        </p>
+        <br>
+
+        <p class="big-text text-white" style="color: white; z-index: 2;">
+        Transforming learning. <span style="color: #3EC1D5; font-weight: bold;"> Empowering fututre. 
+            </span>
+        </p>
+        <br>
+        <p>
+        <div class="count ">
+          60+
+        </div>
+
+        <div style="font-weight: bold; font-size: larger;">Educational Institutions Empowered.
+         </div> 
+        </p>
+
+      </div>
+      <!-- End col-->
+    </div>
+
+ 
+  </div>
+
+
+  <div class="features   ">
+    <div class="row ">
+      <div class="holder"> <span> Education Solutions</span> </div>
+
+      <div class="row feature-row">
+        <div class="col-md-5 feature-col">
+          <h4> School Financial Solutions</h4>
+          <p>
+
+            Optimize your school's financial management with BayScope's tailored solutions. Streamline processes for efficiency and growth, empowering educational 
+            excellence.
+
+            <br>
+
+            <a href="/forschools/tution-tally/"> Explore BayScope TutionTally <i
+                class="fa fa-caret-right" aria-hidden="true"></i></a>
+          </p>
+        </div>
+        <div class="col-md-5 feature-col">
+          <h4> School web platform</h4>
+          <p>
+
+            Enhance your school's digital presence with BayScope's Web Platform. Integrate website development and app
+            creation for seamless communication. Elevate learning experiences with intuitive design and advanced
+            features.
+            <br>
+
+            <a href="/forschools/school-web-platform/"> Explore BayScope School web platform <i
+                class="fa fa-caret-right"></i></a>
+          </p>
+        </div>
+        <div class="col-md-5 feature-col">
+          <h4>Edu portal</h4>
+          <p>
+            school Portal:
+
+            Simplify admissions with BayScope's streamlined Application Portal. Manage applications efficiently with customizable workflows. Enhance applicant experiences for a seamless admissions journey.
+            
+            <a href="/forschools/edu-portal/"> see BayScope School portals <i
+                class="fa fa-caret-right"></i></a>
+          </p>
+        </div>
+        <div class="col-md-5 feature-col">
+          <h4> Student portal</h4>
+          <p>
+            Student Portal:
+
+            Empower students with BayScope's intuitive Student Portal. Access schedules, assignments, grades, and resources in one hub. Foster collaboration and engagement with personalized features.
+            <br>
+
+            <a href="/forbusiness/bayscope-CRM"> Explore BayScope Student Portal <i class="fa fa-caret-right"></i></a>
+          </p>
+        </div>
+
+        <div class="col-md-5 feature-col">
+          <h4>BayScope LMS </h4>
+          <p>
+
+            BayScope LMS:
+
+            Unlock learning potential with BayScope's LMS. Seamlessly deliver courses, engage learners, and track progress. Empower educators with dynamic tools for content creation and collaboration.
+              <br>
+            <a href="/forschools/learning-management-system/"> Explore BaySope LMS <i class="fa fa-caret-right"></i></a>
+          </p>
+        </div>
+
+        <div class="col-md-5 feature-col">
+          <h4> Bayscope Examiner</h4>
+          <p>
+            BayScope Examiner:
+
+            Streamline assessments with BayScope's Examiner tool. Create, administer, and grade assessments efficiently. Enhance feedback delivery for student growth and academic excellence.
+            <br>
+
+            <a href="/forschools/examiner/"> Explore BayScope Examiner <i class="fa fa-caret-right"></i></a>
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- This script for plan tabs-->
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" activee", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " activee";
+    }
+
+    document.getElementById("webstarter").click();
+
+  </script>
+
+
+
+  <div class="section3">
+
+    <h3 class="title-heading " style="color: #010202;"> Explore bundle plan on school suite </h3>
+    <p class="text-muted f-17 mt-3">Access high value solutions at low cost...</p>
+    <hr>
+
+    <div class="section3_navigation">
+      <div class="section3_header">
+        <div class="spanwrap">
+          <span class="tablinks tab" onclick="openCity(event, 'webstarter')">EduStarter </span>
+          <span class="tablinks  tab" onclick="openCity(event, 'webpro')"> EduPro</span>
+          <span class="tablinks tab" onclick="openCity(event, 'prosuite')">Edu360</span>
+
+        </div>
+
+
+      </div>
+
+      <hr style="margin: 20px;">
+
+    </div>
+
+
+    <div class="section3_plans">
+
+
+      <div id="webstarter" class="tabcontent container section1 ">
+        <div class="plan-head">
+
+          <h2 class="text-center">Basic Education bundle <span style="color: #3EC1D5;"> Suitable for getting started</span> </b>
+          </h2>
+        </div>
+        <div class="section1_wrapper container">
+
+          <img class="plan-image" src="../assets/images/product-design.png" alt="product design">
+          <div class="section1_right">
+
+            <div class="table-responsive-sm">
+              <table class="table">
+                <thead class="table-light">
+
+                  <tr>
+                    <th style="width: 70%;">Features</th>
+                    <th style="width: 30%;">EduStarter</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <td scope="row"><b> School web platform solution</b></td>
+                    <td class="td-img"> <img src="../assets/images/Vector.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"> <b> School mailing and newsletter</b></td>
+                    <td class="td-img"> <img src="../assets/images/Vector.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>static education website </b></td>
+                    <td class="td-img"> <img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b> Continous update & 24/7 support</b> </td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"> <b>Bayscope TutionTally </b></td>
+                    <td class="td-img"> <img src="../assets/images/cancel.png" alt=""></td>
+
+                  </tr>
+
+                  <tr>
+                    <td scope="row"> <b>Bayscope stuedent central</b></td>
+                    <td class="td-img"> <img src="../assets/images/cancel.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"> <b> Bayscope Edu portals </b> </td>
+                    <td class="td-img"> <img src="../assets/images/cancel.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"><b> Bayscope learning management system</b> </td>
+                    <td class="td-img"> <img src="../assets/images/cancel.png" alt=""></td>
+
+                  </tr>
+
+
+
+                  <tr>
+                    <td scope="row" colspan="2">
+                      <div class=" price-btn"> <span class="big"> N19</span>,000 /monthly</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" colspan="2">
+
+                      <div onclick=" addtocart( 'edu-starter', 19000)" class="cart-btn ">Add to cart <span
+                          class="big"><i class="fa fa-cart-plus" aria-hidden="true"></i></span>
+                      </div>
+
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="webpro" class="tabcontent container section1 ">
+        <div class="plan-head">
+          <h2 class="text-center"> More Advanced Educational tools. <span style="color: #3EC1D5;"> Foaster educational engagement</span> </b></h2>
+        </div>
+        <div class="section1_wrapper container">
+          <img class="plan-image" src="../assets/images/product-design.png" alt="product design">
+          <div class="section1_right">
+
+            <div class="table-responsive-sm">
+              <table class="table">
+                <thead class="table-light">
+
+                  <tr>
+                    <th style="width: 70%;">Features</th>
+                    <th style="width: 30%;">EduPro</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <td scope="row"><b> School web platform solution</b></td>
+                    <td class="td-img"> <img src="../assets/images/Vector.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"> <b> School mailing and newsletter</b></td>
+                    <td class="td-img"> <img src="../assets/images/Vector.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>static education website </b></td>
+                    <td class="td-img"> <img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b> Continous update & 24/7 support</b> </td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"> <b>Bayscope TutionTally </b></td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+
+                  </tr>
+
+                  <tr>
+                    <td scope="row"> <b>Bayscope stuedent central</b></td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"> <b> Bayscope Edu portals </b> </td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+
+                  </tr>
+
+                  <tr>
+                    <td scope="row"><b> Bayscope Examiner</b> </td>
+                    <td class="td-img"> <img src="../assets/images/cancel.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b> Bayscope learning management system</b> </td>
+                    <td class="td-img"> <img src="../assets/images/cancel.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row" colspan="2">
+                      <div class=" price-btn"> <span class="big"> N39</span>,000 /monthly</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" colspan="2">
+
+                      <div onclick=" addtocart( 'edu-pro', 39000)" class="cart-btn ">Add to cart <span
+                          class="big"><i class="fa fa-cart-plus" aria-hidden="true"></i></span>
+                      </div>
+
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div id="prosuite" class="tabcontent container section1 ">
+        <div class="plan-head">
+          <h2 class="text-center"> All educational tools in one place. <b style="color: #3EC1D5">
+            Stand out with Edu360
+            </b></h2>
+        </div>
+        <div class="section1_wrapper container">
+          <img class="plan-image" src="../assets/images/product-design.png" alt="product design">
+          <div class="section1_right">
+
+            <div class="table-responsive-sm">
+              <table class="table">
+                <thead class="table-light">
+
+                  <tr>
+                    <th style="width: 70%;">Features</th>
+                    <th style="width: 30%;">Edu360</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <td scope="row"><b> School web platform solution</b></td>
+                    <td class="td-img"> <img src="../assets/images/Vector.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"> <b> School mailing and newsletter</b></td>
+                    <td class="td-img"> <img src="../assets/images/Vector.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"><b>static education website </b></td>
+                    <td class="td-img"> <img src="../assets/images/Vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b> Continous update & 24/7 support</b> </td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"> <b>Bayscope TutionTally </b></td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+
+                  </tr>
+
+                  <tr>
+                    <td scope="row"> <b>Bayscope stuedent central</b></td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+
+                  </tr>
+                  <tr>
+                    <td scope="row"> <b> Bayscope Edu portals </b> </td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+
+                  </tr>
+
+                  <tr>
+                    <td scope="row"><b> Bayscope Examiner</b> </td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><b> Bayscope learning management system</b> </td>
+                    <td class="td-img"> <img src="../assets/images/vector.png" alt=""></td>
+                  </tr>
+                  <tr>
+                    <td scope="row" colspan="2">
+                      <div class=" price-btn"> <span class="big"> N50</span>,000 /monthly</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row" colspan="2">
+
+                      <div onclick=" addtocart( 'edu360', 50000)" class="cart-btn ">Add to cart <span
+                          class="big"><i class="fa fa-cart-plus" aria-hidden="true"></i></span>
+                      </div>
+
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+              </table>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+  <div class="container">
+
+
+    <div class="row card-row text-center">
+      <h3 class="title-heading mt-4" style="color: #3EC1D5;">Help center </h3>
+      <p class="text-muted f-17 mt-3">unsure on how to get started? let us help...</p>
+      <hr>
+
+      <div class="col-md-4 ">
+        <div class="card text-left">
+          <video src="../assets/videos/support-video.mp4" loop class="card-image" autoplay autoplay></video>
+          <div class="card-title">
+            contact support
+          </div>
+          <p>
+          <div class="card-desc">
+            Get in touch with BayScope Education support team via email, live chat, or phone call for a quicker and
+            easier support experience. Reach out today; let's answer your questions.
+          </div>
+          </p>
+          <div class="card-actions">
+            <button type='button' class='card-action-readMore'><a style="color: white;" href="/contact/"> Contact</a> </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4 ">
+        <div class="card text-left">
+          <img src='../assets/images/business-man-banner-concept-with-copy-space.jpg' class="card-image" />
+          <div class="card-title">
+            Articles
+          </div>
+          <p>
+          <div class="card-desc">
+            Dive into our documentation to gain deeper insights on how each plan can benefit your educational
+            institution. Additionally, explore how we optimize your subscription or billing fee.
+          </div>
+          </p>
+          <div class="card-actions">
+            <button type='button' class='card-action-readMore'><a style="color: white;" href="/blog/">Blog</a> </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-left">
+          <video src="../assets/videos/smilewoman-video.mp4" class="card-image" autoplay loop></video>
+          <div class="card-title">
+            Success stories
+          </div>
+          <p>
+          <div class="card-desc">
+            Experience how BayScope has transformed educational institutions with impactful solutions. Discover success
+            stories and envision possibilities for your institution.
+          </div>
+          </p>
+
+          <div class="card-actions">
+            <button type='button' class='card-action-readMore'><a style="color: white;" href="/sucess-stories/">Stories</a> </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- Start Service area -->
+
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-head">
+            <div class="footer-logo">
+              <h2>BayScope</h2>
+            </div>
+            <div class="footer-icons">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-products">
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forschools/">Quick navigation</a></h5>
+                </li>
+
+                <li>
+                  <a class="" href="/sucess-stories/">Success stories</a>
+                </li>
+
+                <li>
+                  <a href="/Knowledge-base/">Knowledge Base</a>
+                </li>
+
+                <li>
+                  <a href="/realestate/">Real Estate</a>
+                </li>
+                <li>
+                  <a href="/healthcare/">Healthcare</a>
+                </li>
+                <li>
+                  <a href="/comming-soon">comming soon</a>
+                </li>
+                <li>
+                  <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
+                </li>
+               
+                <li>
+                  <a href="https://exampoint.com.ng">ExamPoint NG</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class="footer-products-child">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="/forbusiness/">Bundles</a></h5>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Business</a>
+                </li>
+
+                <li>
+                  <a class="" href="/flow">Busness Strater</a>
+                </li>
+                <li>
+                  <a href="/CardEase">Business Pro</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">ProSuite</a>
+                </li>
+
+                <li class="p-3">
+                  <a href="javascript:void(0)">for Education</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu strater</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">EduPRo</a>
+                </li>
+                <li>
+                  <a href="/ProSuite/">Edu360</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-products-child real-estate">
+              <ul>
+                <li>
+                  <h5><a class="text-secondary link-header" href="javascriptVoid:(0)"> FOR REAL-ESTATE</a></h5>
+                </li>
+
+                <li>
+                  <a class="" href="/real-estate/"> Web Property Solutions</a>
+                </li>
+                <li>
+                  <a href="/real-estate">Property Pro</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-company">
+            <h5><a class="text-secondary link-header" href="javascript:void(0)"> COMPANY</a></h5>
+            <ul>
+              <li>
+                <a class="text-secondary" href="/contact/">Contact us</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/partnerships/">Partnerships</a>
+              </li>
+              <li>
+                <a class="text-secondary" href="/events/"> Events</a>
+              </li>
+
+              <li>
+                <a class="" href="/company-news/"> Company News</a>
+              </li>
+              <li>
+                <a href="/careers/">Careers</a>
+              </li>
+              <li>
+                <a href="/affliate">About BayScope</a>
+              </li>
+              <li>
+                <a href="/affliate">Investors</a>
+              </li>
+              <li>
+                <a href="/affliate">Affliate</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        
+
+
+      </div>
+
+
+    </div>
+    
+    <div class="copyright">
+      <p>
+        <div class="footer-privacy">
+          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
+            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
+              class="fa fa-trademark" aria-hidden="true"></i></a>
+        </div>
+      </p>
+      <p>
+        &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+
+   <!-- JavaScript Libraries -->
+   <script src="/files/libs/jquery/jquery.min.js"></script>
+   <script src="/files/libs/bootstrap/js/bootstrap.min.js"></script>
+  
+ 
+  <!--main js-->
+
+  <script src="/files/js/main.js"></script>
+  <script src="/files/js/apicalls.js"></script>
+  <script src="/files/js/cookie.js"></script>
+  <script src="/files/js/cart.js"></script>
+  <script src="main.js"></script>
+
+  <script>
+
+  </script>
+
+
+  <!-- Cart section-->
+
+  <div id="cartSection" class="cart-section">
+    <div class="cart-header">
+      <h4> <i class="fa fa-shopping-cart" aria-hidden="true"></i></h4>
+      <button" onclick="toggleCart()" class="close-cart">&times;</button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-summary">
+      <p>Total: <span id="cartTotal">$0.00</span></p>
+      <button class="purchase-btn"> <b>Checkout</b></button>
+    </div>
+  </div>
 
 
 </body>

@@ -828,7 +828,7 @@ html, body{
   .second-section {
 
     background: #000000;
-    height: 80vh;
+  height: 80vh;
     width: 100%;
     z-index: -1;
   }
@@ -841,7 +841,8 @@ html, body{
 
     width: 100%;
     position: absolute;
-    height: 100%;
+    height: 80vh;
+    
     opacity: .5;
     background: url('/assets/images/student.jpg');
     background-position: center;
