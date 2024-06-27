@@ -1089,6 +1089,15 @@ div#preloader {
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
+
+.col a{
+  color: #fff;
+}
+
+.cp{
+  height: 100px;
+  padding-top: 40px;
+}
 .social ul li {
   display: inline-block;
   padding-right: 5px !important;
