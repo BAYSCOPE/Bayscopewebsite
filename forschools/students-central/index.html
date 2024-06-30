@@ -37,6 +37,7 @@
   <link href="/files/css/responsive.css" rel="stylesheet">
 
   <link href="/files/css/loader.css" rel="stylesheet">
+  <link rel="stylesheet" href="/files/css/cart.css">
 
 
   <style>
@@ -75,7 +76,6 @@
       max-width: 55%;
       position: relative;
     }
-
     .hero-content h1 {
       font-size: 3.9rem;
       /* Increased font size */
@@ -85,6 +85,7 @@
 
     }
 
+  
     .hero-content p {
       font-size: 2rem;
       /* Slightly increased font size */
@@ -93,16 +94,14 @@
 
     }
 
-    .btn {
-      background-color: #3EC1D5;
-      color: #fff;
-      padding: 15px 30px;
-      /* Slightly larger button */
+    .herobtn {
+      background-color: black;
+      color: white;
+      padding: 9px 19px;
       text-decoration: none;
       border-radius: 5px;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: bold;
-      /* Larger button text */
     }
 
     @media (max-width: 768px) {
@@ -112,12 +111,12 @@
       }
 
       .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         /* Adjusted for smaller screens */
       }
 
       .hero-content p {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         /* Adjusted for smaller screens */
       }
     }
@@ -153,9 +152,10 @@
               class="caret"></span></a>
           <ul class="dropdown-menu solutions" role="menu">
 
-            <li class="dropdown-menu-subdiv"><a href='/services/software-development' class="subdiv-heading-text">
-                for
+            <li class="dropdown-menu-subdiv"><a href='#' class="subdiv-heading-text">
+                For
                 Business</a>
+                <hr>
               <ul>
                 <li id="subdiv-list-item"><a href='/forbusiness/business-technology-platform/'>Business Technology
                     platforms</a>
@@ -166,18 +166,21 @@
                 <li id="subdiv-list-item"><a href='/forbusiness/bayscope-CRM/'>Customer relationship management(CRM)
                     /Customer experience(CX)</a></li>
                 <li id="subdiv-list-item"><a href='/forbusiness/bayscope-ERP/'> Enterprise Resourse Planning(ERP)
-                    solutions <i style="color: #3EC1D5;" class="fa fa-star" aria-hidden="true"></i></a></li>
+                    solutions</a></li>
                 <li id="subdiv-list-item"><a href='/forbusiness/startup/'>BayScope for StartUps</a></li>
               </ul>
             </li>
+           
             <li class="dropdown-menu-subdiv"><a href='/forschools/' class="subdiv-heading-text">
-                for
+                For
                 education</a>
+                <hr>
               <ul>
-                <li id="subdiv-list-item"><a href='/forschools/school-financial-solutions/'> BayScope TuitonTally </a>
+
+                <li id="subdiv-list-item"><a href='/forschools/tution-tally/'> BayScope TuitonTally </a>
                 </li>
                 <li id="subdiv-list-item"><a href='/forschools/school-web-platform/'>school web platform</a></li>
-                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>  Bayscope EduPortal</a>
+                <li id="subdiv-list-item"><a href='/forschools/edu-portal'>Bayscope EduPortal</a>
                   (admission/application portal) </li>
                 <li id="subdiv-list-item"><a href='/forschools/students-portal'>Bayscope StudentCentral (students
                     portal)</a></li>
@@ -186,9 +189,11 @@
                 <li id="subdiv-list-item"><a href='/forschools/examiner'>BayScope Examiner </a></li>
               </ul>
             </li>
+           
             <li class="dropdown-menu-subdiv"><a href='/services/app-development/' class="subdiv-heading-text"> BayScope
                 For
                 Real-estate</a>
+                <hr>
               <ul>
                 <li id="subdiv-list-item"><a href='/realestate/tenant-management-system'>Tenant Management System</a>
                 </li>
@@ -204,35 +209,44 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">By industry<span
               class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href='/forbusiness/'>BayScope Business</a></li>
-            <li><a href='/forschools/'>BayScope Schools</a></li>
-            <li><a href='/forhealths'>Bayscope Healthcare</a></li>
+            <li><a href='/forschools/'>BayScope Education</a></li>
             <li><a href='/realestate/'> BayScope Real Estate</a></li>
 
           </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">coming soon<span
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bundle<span
               class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href=#>BayScope Flow</a></li>
-            <li><a href=#>CardLinks</a></li>
+            <li><a href='/Edu360/'>Edu360</a></li>
           </ul>
         </li>
+
+        
         </div>
       </ul>
       <ul class="right-nav-list">
-        <li>
-          <a class="page-scroll" href="/contact">Contact</a>
-        </li>
-
+        <li style="margin-right: 10px;" class="dropdown"><a style="border: 1px solid #1f2937; padding:10px 15px;border-radius:20px; background:#1f2937;color:white"  href="#" class="dropdown-toggle" data-toggle="dropdown">Get started</a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="javascript:checkout('Students Central', 20000)">Purchase now</a></li>
+        <hr>
+        <li><a href='/contact'>Get a demo</a></li>
+        <hr>
+        <li><a style="border: 1px solid white; padding:10px 15px;border-radius:20px; background:#1f2937;color:white" href="javascript:addtocart('Students Central', 20000)">Add to cart <i class="fa fa-shopping-cart"
+              aria-hidden="true"></i></a></li>
+      </ul>
+    </li>
         <li class=" dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-o" aria-hidden="true"></i>
             <span class="caret"></span> </a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu" role="menu" style="right:400px">
+            <li > <a  href="#" id="user"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+            <hr>
             <li><a href="/auth/login" id="signinlink">Sign in</a></li>
+            <hr>
             <li><a href="/auth/signup" id="signuplink">Sign up </a></li>
           </ul>
         </li>
@@ -251,8 +265,9 @@
         <div class="hero-content">
           <h1>Experience BayScope Student Central</h1>
           <p>Empower students learning journey with BayScope Student Central, your comprehensive portal for managing academic life seamlessly.</p>
-          <a href="#features" class="btn" style="margin-right: 10px;">Explore Portal Features</a>
-          <a href="javascript:learnmore()" style="color: black; font-size: 15px;">Request a Demo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="#features" class="herobtn " sty>Explore features</a> <a href="javascript:learnmore()"
+          style="margin-left: 10px; color: black; font-size: 15px;font-weight:bold"> Request a demo <i class="fa fa-arrow-right"
+            aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -393,6 +408,8 @@
           style="margin-top: 24px; font-size: 14px; color: #4a5568;">This is a base pricing for getting started. Pricing may vary for more advanced features and usage cases.</p>
       <a href="javascript:getstarted();"
           style="display: inline-block; background-color:#3EC1D5; padding: 8px 20px; border-radius: 8px; color: white; text-decoration: none; font-weight: semibold; margin-top: 40px;">Get Started Now</a>
+          <a href="javascript:addtocart('Student Central', 20000);"
+          style="display: inline-block; background-color:#3EC1D5; padding: 8px 20px; border-radius: 8px; color: white; text-decoration: none; font-weight: semibold; margin-top: 40px;"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
         <p style="margin-top: 24px; font-size: 10px; color: #4a5568;">Contact us for more information on advanced features and custom solutions.</p>
       </div>
     </div>
@@ -422,172 +439,164 @@
 
 
 
+  <div id="cartSection" class="cart-section">
+    <div class="cart-header">
+      <h4> <i class="fa fa-shopping-cart" aria-hidden="true"></i></h4>
+      <button" onclick="toggleCart()" class="close-cart">&times;</button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-summary">
+      <p>Total: <span id="cartTotal">$0.00</span></p>
+      <button class="purchase-btn"> <b>Checkout</b></button>
+    </div>
+  </div>
 
   
 
 
   <!--  Footer bottom Area -->
-  <footer>
-    <div class="footer-main">
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-head">
-            <div class="footer-logo">
-              <h2>BayScope</h2>
-            </div>
-            <div class="footer-icons">
-              <ul>
-                <li>
-                  <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-google"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-products">
-            <div class="footer-products-child">
-              <ul>
-                <li>
-                  <h5><a class="text-secondary link-header" href="/forschools/">Quick navigation</a></h5>
-                </li>
+ <div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Quick Navigation</h1>
+    <ul>
+      <li >
+        <a class="" href="/sucess-stories/">Success stories</a>
+      </li>
 
-                <li>
-                  <a class="" href="/sucess-stories/">Success stories</a>
-                </li>
+      <li>
+        <a href="/Knowledge-base/">Knowledge Base</a>
+      </li>
 
-                <li>
-                  <a href="/Knowledge-base/">Knowledge Base</a>
-                </li>
+      <li>
+        <a href="/realestate/">Real Estate</a>
+      </li>
+      <li>
+        <a href="/healthcare/">Healthcare</a>
+      </li>
+      <li>
+        <a href="/comming-soon">coming soon</a>
+      </li>
+      <li>
+        <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
+      </li>
 
-                <li>
-                  <a href="/realestate/">Real Estate</a>
-                </li>
-                <li>
-                  <a href="/healthcare/">Healthcare</a>
-                </li>
-                <li>
-                  <a href="/comming-soon">comming soon</a>
-                </li>
-                <li>
-                  <a href="/forbusiness/bayscope-ERP/">ERP solutions</a>
-                </li>
-               
-                <li>
-                  <a href="https://exampoint.com.ng">ExamPoint NG</a>
-                </li>
+      <li>
+        <a href="https://exampoint.com.ng">ExamPoint NG</a>
+      </li>
 
-              </ul>
-            </div>
-            <div class="footer-products-child">
-              <ul>
-                <li>
-                  <h5><a class="text-secondary link-header" href="/forbusiness/">Bundles</a></h5>
-                </li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Bundles</h1>
+    <ul>
+      <li class="p-3">
+        <a href="#">for Business</a>
+      </li>
 
-                <li class="p-3">
-                  <a href="javascript:void(0)">for Business</a>
-                </li>
+      <li>
+        <a class="" href="/flow">Busness Starter</a>
+      </li>
+      <li>
+        <a href="/CardEase">Business Pro</a>
+      </li>
+      <li>
+        <a href="/ProSuite/">ProSuite</a>
+      </li>
 
-                <li>
-                  <a class="" href="/flow">Busness Strater</a>
-                </li>
-                <li>
-                  <a href="/CardEase">Business Pro</a>
-                </li>
-                <li>
-                  <a href="/ProSuite/">ProSuite</a>
-                </li>
+      <li>
+        <a href="#">for Education</a>
+      </li>
+      <li>
+        <a href="/ProSuite/">Edu strater</a>
+      </li>
+      <li>
+        <a href="/ProSuite/">EduPRo</a>
+      </li>
+      <li>
+        <a href="/Edu360/">Edu360</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>For Real Estate</h1>
+    <ul>
+      <li>
+        <a class="" href="/real-estate/"> Web Property Solutions</a>
+      </li>
+      <li>
+        <a href="/real-estate">Property Pro</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>COMPANY</h1>
+    <ul>
+      <li>
+        <a href="/contact/">Contact us</a>
+      </li>
+      <li>
+        <a  href="/partnerships/">Partnerships</a>
+      </li>
+      <li>
+        <a  href="/events/"> Events</a>
+      </li>
 
-                <li class="p-3">
-                  <a href="javascript:void(0)">for Education</a>
-                </li>
-                <li>
-                  <a href="/ProSuite/">Edu strater</a>
-                </li>
-                <li>
-                  <a href="/ProSuite/">EduPRo</a>
-                </li>
-                <li>
-                  <a href="/ProSuite/">Edu360</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-products-child real-estate">
-              <ul>
-                <li>
-                  <h5><a class="text-secondary link-header" href="javascriptVoid:(0)"> FOR REAL-ESTATE</a></h5>
-                </li>
+      <li>
+        <a  href="/company-news/"> Company News</a>
+      </li>
+      <li>
+        <a href="/careers/">Careers</a>
+      </li>
+      <li>
+        <a href="/affliate">About BayScope</a>
+      </li>
+      <li>
+        <a href="/affliate">Investors</a>
+      </li>
+      <li>
+        <a href="/affliate">Affliate</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Support</h1>
+    <ul>
+      <li>Contact us</li>
+      <li>Web chat</li>
+      <li>Open ticket</li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+      <li><i class="fa fa-facebook"></i></li>
+      <li><i class="fa fa-twitter"></i></li>
+      <li><i class="fa fa-google"></i></li>
+      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+    </ul>
+  </div>
 
-                <li>
-                  <a class="" href="/real-estate/"> Web Property Solutions</a>
-                </li>
-                <li>
-                  <a href="/real-estate">Property Pro</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-company">
-            <h5><a class="text-secondary link-header" href="javascript:void(0)"> COMPANY</a></h5>
-            <ul>
-              <li>
-                <a class="text-secondary" href="/contact/">Contact us</a>
-              </li>
-              <li>
-                <a class="text-secondary" href="/partnerships/">Partnerships</a>
-              </li>
-              <li>
-                <a class="text-secondary" href="/events/"> Events</a>
-              </li>
-
-              <li>
-                <a class="" href="/company-news/"> Company News</a>
-              </li>
-              <li>
-                <a href="/careers/">Careers</a>
-              </li>
-              <li>
-                <a href="/affliate">About BayScope</a>
-              </li>
-              <li>
-                <a href="/affliate">Investors</a>
-              </li>
-              <li>
-                <a href="/affliate">Affliate</a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-        
+  <br>
+  
 
 
-      </div>
+  </div>
+<div class="clearfix">
 
+  
+</div>
 
-    </div>
-    
-    <div class="copyright">
-      <p>
-        <div class="footer-privacy">
-          <a class="p-4" href="/privacy"> Privacy <i class="fa fa-lock" aria-hidden="true"></i></a> <a class="p-4"
-            href="/termsandconditions"> Terms Of Service</a> <a class="p-4" href="trademarks"> Trademarks <i
-              class="fa fa-trademark" aria-hidden="true"></i></a>
-        </div>
-      </p>
-      <p>
-        &copy; Copyright <strong>BayScope</strong>. All Rights Reserved
-      </p>
-    </div>
-  </footer>
+</div>
+
+<div>
+  <div class="cp">
+    <p style="color: black;text-align: center;font-weight: bold;">2024 Copyright. BayScope</p>
+  </div>
+</div>
+
 
    <!--  learn more modal -->
 <div id="learnMoreModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
@@ -635,16 +644,23 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="getStartedModalLabel">BayScope Student Central: Empowering Educational Success</h5>
+        <h5 class="modal-title" id="getStartedModalLabel">BayScope Student Central: Comprehensive Student Portal</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h6 style="color: #3EC1D5;"> <i class="fa fa-info-circle" aria-hidden="true"></i> Important Notice</h6>
+        <h6 style="color: #3EC1D5;"><i class="fa fa-info-circle" aria-hidden="true"></i> Explore the Features</h6>
       </div>
       <div class="modal-body">
-        <p>BayScope Student Central is designed to enhance the educational journey by providing a comprehensive suite of tools for students, educators, and administrators. Our platform facilitates a seamless connection between all aspects of the educational experience, from course management to student engagement and performance tracking.</p>
-        <p>We understand that each educational institution has unique needs. That's why we invite you to contact us directly. This allows us to tailor the Student Central platform to meet your specific requirements, ensuring an optimal fit for your institution's goals and challenges.</p>
-        <p>Choosing BayScope Student Central means more than just accessing a platform; it means partnering with a team committed to educational excellence and innovation. Let us help you transform the educational experience at your institution.</p>
+        <p>BayScope Student Central offers a dynamic student portal designed to streamline and enhance the educational experience. This comprehensive platform supports all facets of student life, from academic progress to extracurricular activities.</p>
+        <p>Key Features Include:</p>
+        <ul>
+          <li><strong>Course Management:</strong> Easy access to course materials, assignments, and schedules.</li>
+          <li><strong>Assessment and Projects:</strong> Submit assignments, view grades, and track project progress.</li>
+          <li><strong>Payments:</strong> Simplified payment portal for tuition, fees, and other services.</li>
+          <li><strong>Results and Performance Tracking:</strong> Real-time access to academic results and performance analytics.</li>
+          <li><strong>Collaborative Tools:</strong> Forums, chat rooms, and group project tools to foster collaboration.</li>
+        </ul>
+        <p>BayScope Student Central is tailored to meet the unique needs of your institution, ensuring a seamless fit with your educational goals and challenges. Partner with us to empower your students with a comprehensive portal that supports their academic journey.</p>
       </div>
       <div class="modal-footer">
         <a href="/contact/" class="btn" style="background: #3EC1D5; color: white;">Contact Us to Get Started</a>
@@ -672,7 +688,16 @@
   <script src="/files/libs/isotope/isotope.pkgd.min.js"></script>
 
   <script src="/files/js/main.js"></script>
+  <script src="/files/js/cart.js"></script>
+  <script src="/files/js/apicalls.js"></script>
 <script src="script.js"></script>
+  <script>
+    function getstarted(){
+      $('#getStartedModal').modal('show');
+    }
+    function learnmore(){
+        $('#learnMoreModal').modal('show')
+    }
   </script>
 </body>
 

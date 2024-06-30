@@ -863,9 +863,10 @@ html, body{
   .second-text {
     z-index: 100;
   }
+ 
 
   .secondbg {
-
+ 
     width: 100%;
     position: absolute;
     height: 80vh;

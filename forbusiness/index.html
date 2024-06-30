@@ -122,12 +122,11 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">  By industry<span
               class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href='/forbusiness/'>BayScope Business</a></li>
             <li><a href='/forschools/'>BayScope Schools</a></li>
-            <li><a href='/forhealths'>Bayscope Healthcare</a></li>
             <li><a href='/realestate/'> BayScope Real Estate</a></li>
 
           </ul>
@@ -358,7 +357,7 @@
   <div class="row">
     <h2 style="font-size: 28px; padding-top: 80px ; text-align: center; color: #2a2a2a; font-weight: 600; margin-bottom: 30px;">How to get started with bayscope Business</h2>
   </div>
-    <div class="how-to-get-started container" jlnkl>
+    <div class="how-to-get-started container" style="" >
      
       <div class="how-to-get-started-wrapper ">
         <div class="left-get-started">
@@ -385,8 +384,8 @@
             </div>
             <div style="width: 80%" class="text-wrap">
               <h2> Choosing a solution</h2>
-              <br />
-              <p>
+            
+              <p style="">
                 Explore our range of customizable solutions above or select a bundle below for best value at low cost
                 . Unsure? Contact us for personalized advice or to learn more about how a specific
                 plan could benefit you.
@@ -404,7 +403,7 @@
             </div>
             <div class="text-wrap">
               <h2> Service purchase</h2>
-              <br />
+
               <p> Add selected solution(s) to your cart  and complete secure checkout. A specialist will then
                 reach out to initiate onboarding or you could onboard manually from your dashboard.</p>
             </div>
@@ -483,12 +482,13 @@
 
   </script>
 
-
-
+ 
   <div class="section3">
-
-    <h3 class="title-heading " style="color: #3EC1D5;"> Get a quick start with our business bundles </h3>
-    <p class="text-muted f-17 mt-3">Access high value solutions at low cost...</p>
+    <div class=""  style="width: 90%;">
+      <p class="title-heading " style="color: #3EC1D5;"> Get a quick start with our business bundles </p>
+      <p class="text-muted f-17 mt-3">Access high value solutions at low cost...</p>
+     </div>
+      
     <hr>
 
 
@@ -874,7 +874,47 @@
 
 
   <!-- Start Footer bottom Area -->
-  <div class="footer">
+ 
+
+  <!--main js-->
+
+
+   <!-- JavaScript Libraries -->
+   <script src="/files/libs/jquery/jquery.min.js"></script>
+   <script src="/files/libs/bootstrap/js/bootstrap.min.js"></script>
+  
+ 
+  <!--main js-->
+
+  <script src="/files/js/main.js"></script>
+  <script src="/files/js/apicalls.js"></script>
+  <script src="/files/js/cookie.js"></script>
+  <script src="/files/js/cart.js"></script>
+  <script src="main.js"></script>
+  
+  <script>
+
+  </script>
+
+
+  <!-- Cart section-->
+
+  <div id="cartSection" class="cart-section">
+    <div class="cart-header">
+      <h4> <i class="fa fa-shopping-cart" aria-hidden="true"></i></h4>
+      <button" onclick="toggleCart()" class="close-cart">&times;</button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-summary">
+      <p>Total: <span id="cartTotal">$0.00</span></p>
+      <button class="purchase-btn"> <b>Checkout</b></button>
+    </div>
+  </div>
+
+
+ <div class="footer" style="min-height: 90vh;">
     <div class="contain">
     <div class="col">
       <h1>Quick Navigation</h1>
@@ -1013,44 +1053,6 @@
       <p style="color: black;text-align: center;font-weight: bold;">2024 Copyright. BayScope</p>
     </div>
   </div>
-
-  <!--main js-->
-
-
-   <!-- JavaScript Libraries -->
-   <script src="/files/libs/jquery/jquery.min.js"></script>
-   <script src="/files/libs/bootstrap/js/bootstrap.min.js"></script>
-  
- 
-  <!--main js-->
-
-  <script src="/files/js/main.js"></script>
-  <script src="/files/js/apicalls.js"></script>
-  <script src="/files/js/cookie.js"></script>
-  <script src="/files/js/cart.js"></script>
-  <script src="main.js"></script>
-  
-  <script>
-
-  </script>
-
-
-  <!-- Cart section-->
-
-  <div id="cartSection" class="cart-section">
-    <div class="cart-header">
-      <h4> <i class="fa fa-shopping-cart" aria-hidden="true"></i></h4>
-      <button" onclick="toggleCart()" class="close-cart">&times;</button>
-    </div>
-    <div class="cart-items">
-      <!-- Cart items will be dynamically added here -->
-    </div>
-    <div class="cart-summary">
-      <p>Total: <span id="cartTotal">$0.00</span></p>
-      <button class="purchase-btn"> <b>Checkout</b></button>
-    </div>
-  </div>
-
 
 </body>
 
