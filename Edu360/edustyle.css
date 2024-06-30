@@ -1,56 +1,54 @@
 .hero {
     position: relative;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-    overflow: hidden;
-}
-
-#hero-video {
+    width: 100%;
+    height: 50vh; /* Adjusted height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; /* Fallback color */
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-}
-
-.hero-content {
-    position: relative;
+    top: 0;
+    left: 0;
     z-index: 1;
-    margin-top: 80px;
-}
-
-.hero-content h1 {
-    font-size: 58px;
-    margin-bottom: 20px;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
     color: #fff;
-}
-
-.hero-content p {
-    font-size: 44px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: to add a background for better text visibility */
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 4rem; /* Increased font size */
+    margin-bottom: 1rem;
+    color: #fff;
     font-weight: bold;
-    margin-bottom: 40px;
-}
-
-.hero-content .btn {
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.hero-content .btn:hover {
+  }
+  
+  .hero p {
+    font-size: 4.0rem; /* Increased font size */
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero .btn {
+    font-size: 1.7rem; /* Increased font size */
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .hero-content .btn:hover {
     background-color: #0056b3;
-}
-
+  }
+  
 @media (max-width: 992px) {
     .hero-content h1 {
         font-size: 38px;
