@@ -1727,9 +1727,14 @@ nav ul li a{
  
 
 }
+
 .dropdown-menu{
   left:-50px;
-
+}
+@media  screen and (max-width:700px) {
+  .dropdown-menu{
+    left:5px;
+  }
 }
 .dropdown:hover .solutions{
   display: grid;
