@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Dashboard</title>
+  <script src="https://kit.fontawesome.com/6e8aee6f47.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../dashboard.css" />
+  <link rel="stylesheet" href="/files/css/loader.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/files/css/loader.css">
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th {
+      background: #ccc;
+    }
+
+    td {
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body id="body">
+
+  
+  <header>
+    <div class="header">
+      <h1 class="hidden-sm">Dashboard</h1>
+      <span id="nav-toggler" class="hidden-lg"><i class="fa-solid fa-bars-staggered fa-2x"></i></span>
+      <div class="header-center">
+        <ul>
+          <li><a href="/Dashboard/">Dashboard</a></li>
+          <li><a href="/" target="_blank">Home</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+      </div>
+      <div class="header-right">
+        <div class="icon-container">
+          <div><i class="fa-solid fa-envelope fa-xl"></i></div>
+          <div>
+            <i class="fa-solid fa-bell fa-xl"></i>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="userphoto" id="image">
+            <i class="fa-solid fa-user fa-xl"></i>
+          </div>
+          <div class="user-title hidden-sm">
+            <p class="bold" id="headerName">Jane Doe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="fixed-nav-container close-nav" style="overflow-y: auto;">
+    <nav class="side-nav">
+      <div class="bayscope-logo">
+        <h1>BayScope</h1>
+        <span id="nav-closer" class="hidden-lg"><i class="fa-solid fa-arrow-left fa-2x"></i></span>
+      </div>
+      <div class="credit-details">
+        <div class="grey flex-head drop-down-opener">
+          <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
+          <p>Available credit</p>
+          <span class="hidden"><i class="fa-solid fa-angle-up fa-xl"></i></span>
+          <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
+        </div>
+        <div class="mid-section hidden">
+          <p class="amount">$00.00</p>
+        </div>
+        <div class="grey btn-container"><button>Add Funds</button></div>
+      </div>
+      <div class="client-info-container">
+        <div class="grey flex-head drop-down-opener">
+          <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
+          <p>Your Info</p>
+          <span class="hidden"><i class="fa-solid fa-angle-up fa-xl"></i></span>
+          <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
+        </div>
+        <div class="mid-section hidden">
+          <!-- <p class="bold">Business Name</p>-->
+          <p> <span class="bold"> Company :</span> <span id="clientName"></span></p>
+          <p> <span class="bold" style="padding-top: 5px;">Address :</span> <span id="clientAddress"></span></p>
+          <p> <span class="bold" style="padding-top: 5px;"> Client Pin:</span> <span id="clientPin"></span></p>
+        </div>
+        <div class="grey btn-container"><button>Update</button></div>
+      </div>
+      <div class="client-contacts-container">
+        <div class="grey flex-head drop-down-opener">
+          <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
+          <p>Contacts</p>
+          <span class="hidden"><i class="fa-solid fa-angle-up fa-xl"></i></span>
+          <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
+        </div>
+        <div class="mid-section hidden">
+          <p> <span class="bold"> Email:</span> <span id="clientEmail"></span></p>
+          <p> <span class="bold"> phone :</span> <span id="clientContact"></span></p>
+        </div>
+        <div class="grey btn-container"><button>New Contact</button></div>
+      </div>
+      <div class="shortcuts-container">
+        <div class="grey flex-head drop-down-opener">
+          <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
+          <p>Shortcuts</p>
+          <span class="hidden"><i class="fa-solid fa-angle-up fa-xl"></i></span>
+          <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
+        </div>
+        <div class="hidden mid-section">
+          <a href="#">
+            <div class="flex-head">
+              <p>Billing</p>
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+          </a>
+          <div class="flex-head">
+            <p>Order New Services</p>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+          </div>
+          <div class="flex-head">
+            <a href="#">Logout</a>
+            <i class="fa-solid fa-arrow-right fa-xl"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="loader"> <i class="fa fa-spinner fa-spin" aria-hidden="true"> </i></div>
+  <main id="main">
+    <div class="billing-container">
+      <div class="column ">
+        <h3>Payment method</h3>
+        <div id="cardContainer" class="card-details grey"">
+            <div class=" card-image">
+          <img id="cardImage" src="/assets/images/visa.png" width="200px">
+        </div>
+        <div class="column">
+          <p class="card-holder" style="padding-top: 10px;">Card Name: <b id="cardName"></b><span
+              id="holderName"></span></p>
+          <p class="card-brand" style="padding-top: 10px;">Brand: <b id="cardBrand"></b><span
+              id="cardBrand"></span></p>
+          <p class="card-number" style="padding-top: 10px;">Ending with: <b id="last4"></b> </p>
+          <p>
+            Expries:  <b> <span id="expMonth"></span>/<span id="expYear"></span></b>
+          </p>
+
+          <button style="margin-top:10px;"> change</button>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="column grey">
+      <div class="next-due">
+        <h3>Next Due Charge</h3>
+        <p class="due-date" style="padding-top: 10px;">Date: <span id="dueDate"></span></p>
+        <p class="due-amount" style="padding-top: 10px;">Amount: <span id="dueAmount"></span></p>
+        <p class="due-card" style="padding-top: 10px;">Card: <span id="dueCard"></span></p>
+      </div>
+      <div  class="due-invoices">
+        <h3>Due Invoices</h3>
+        <ul id="invoiceContainer">
+          
+  
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div class="column">
+      <h3>Billing History</h3>
+      <div class="billing-page-history">
+        <div style="padding-top: 10px;" class="table-container">
+          <table width="95%" border="1">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Service</th>
+                <th>Amount</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="billingHistoryTable">
+              <!-- Billing history rows will be dynamically added here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+ <script src="/files/js/apicalls.js"></script>
+  <script src="script.js"></script>
+ 
+
+</body>
+
+</html>

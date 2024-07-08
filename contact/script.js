@@ -6,6 +6,7 @@
        request.showloader('sending message');
         request.sendRequest('POST', '/contact', postdata)
             .then((data) => {
+              console.log(data.message)
               request.succ(data)
                // further actions here
                

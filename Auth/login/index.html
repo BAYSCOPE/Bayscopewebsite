@@ -43,31 +43,32 @@
     <div id="loader"> <i class="fa fa-spinner fa-spin aria-hidden="true"></i></div>
   
 
-    <div class="login-maincontainer">
-        <div class="login-card">
-            <div class="title-wrap">
-                <!-- <img class="logo" src="../assets/images/bayscope-logo.png" alt="bayscope-logo" /> -->
+    <div class="login-maincontainer ">
+        <div class="login-card" style="padding-bottom: 30px;">
+            <div class="title-wrap text-center" style="text-align: center;">
+                <img style="text-align: center;"  class="logo" src="/assets/images/bay-logo.png" alt="bayscope-logo" /> 
 
                 <!-- Created this new branch -->
-
-                <h1>Adventure starts here</h1>
-                <h5>Make  your service management easy and fun</h5>
             </div>
             <form action="" id="login" class="form-group">
             <div class="form-group">
-                <input class="auth-input" name="email" type="email" id="email" placeholder="email">
+                <input class="auth-input" autocomplete  autocomplete="email" name="email" type="email" id="email" placeholder="email">
                 <input class="auth-input"  name="password" type="password" id="password" placeholder="password">
                </div>
+                <div class="" >
+               <b><a style="color: #3EC1D5;" href="/auth/recovery">  Account recovery</a></b> 
+                </div>
          
             <div class="navs-wrap">
                 <div  class="agree-to-terms">
-                    <input type="checkbox">
-                    <b class="termsAgree">I agree to the <span style="color: #3EC1D5">  privacy policy and terms</span></b>
+                    <input type="checkbox" checked>
+                    <b class="termsAgree">keep me signed in!</b>
                 </div>
                 <button  type="submit">Sign in</button>
             
           
-                <b class="Dontaccount">Dont have an account? <span style="color: #3EC1D5; cursor: pointer; ">  <a href="/Auth/signup/"> Sign up</a></span></b>
+                <b class="Dontaccount">New to Bayscope? <span style="color: #3EC1D5; cursor: pointer; ">  <a style="color: #3EC1D5;" href="/auth/signup/">  join us</a>.</span></b> 
+                 <b class="Dontaccount">Access <span style="color: #3EC1D5; cursor: pointer; ">  <a  style="color: #3EC1D5;" href="https://bpanel.bayscope.org"> Bpanel</a>.</span></b>
             </div>
             </form>
         </div>

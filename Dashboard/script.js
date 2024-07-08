@@ -47,38 +47,6 @@ document.getElementById("nav-closer").addEventListener("click", function () {
 
 }
 
-
-
-/**
- * ------------------------------------------------------------------------------------------------
- * This function is meant to handle  the advert slider section ant the buttom left of the dashboard
- * -------------------------------------------------------------------------------------------------
- */
-function changeBackgroundAndAdvertContent() {
-  const bgDiv = document.querySelector('.bg');
-  const advertText = document.querySelector('.affiliate-profile-container > div:nth-child(2) > p');
-  const backgrounds = [
-    {image: '/assets/images/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer.jpg', text: 'Join BayScope Affiliate program, earn up to NGN12,000 for each referral'},
-    {image: '', text: 'Another exciting offer from BayScope, check it out!'},
-    // Add more backgrounds and texts as needed
-  ];
-  let currentIndex = 0;
-
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % backgrounds.length;
-    const {image, text} = backgrounds[currentIndex];
-    bgDiv.style.backgroundImage = `url('${image}')`;  
-    advertText.textContent = text;
-  }, 5000); // Change every 5 seconds
-}
-
-
-
-
-
-
-
-
 //Open and close of navbar for mobile device
 
 
@@ -93,6 +61,9 @@ function changeBackgroundAndAdvertContent() {
 
 window.addEventListener('DOMContentLoaded', function () {
   let pagecontent = body.innerHTML;
+  body.innerHTML = '';
+  
+  
 
   // Create a new div element
   const loadingDiv = document.createElement('div');
@@ -102,16 +73,16 @@ window.addEventListener('DOMContentLoaded', function () {
   loadingDiv.style.transform = 'translate(-50%, -50%)';
   loadingDiv.style.zIndex = '9999';
   loadingDiv.style.fontSize = '300';
-  loadingDiv.innerHTML = `   <img src="/assets/images/Processing.gif" alt="" srcset="">`;
+  loadingDiv.innerHTML = `   <img src="/assets/images/Processing.gif" alt="Loading Dashboard" srcset=""> <br> Loading Dashboard....`;
 
-  // Append the loading div to the body
-  body.innerHTML = '';
+ 
   body.appendChild(loadingDiv);
 
   request.sendRequest('GET', '/auth/check')
     .then((data) => {
-      console.log(data);
+      
       if (data.authenticated === false) {
+
         window.location.href = '/auth/login';
         console.log(data.authenticated);
       } else {
@@ -120,7 +91,7 @@ window.addEventListener('DOMContentLoaded', function () {
         //render the dashboard
         body.innerHTML = pagecontent;
         navigation();
-        changeBackgroundAndAdvertContent();
+       
 
         // start updating dashboard content with user data
         headerName.innerHTML = data.client.name
@@ -144,7 +115,7 @@ window.addEventListener('DOMContentLoaded', function () {
              <div>
                   <div>
                      <span class="active">${service.status}</span>
-                       <p> ${service.plan}</p>
+                       <p> ${service.solution}</p>
                          <p> Domain <a href='${service.domain}'> ${service.domain}</a></p>
                   </div>
                  <div>

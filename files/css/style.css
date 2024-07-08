@@ -1724,6 +1724,12 @@ nav ul li a{
 }
 .dropdown:hover .dropdown-menu{
   display: block;
+ 
+
+}
+.dropdown-menu{
+  left:-50px;
+
 }
 .dropdown:hover .solutions{
   display: grid;

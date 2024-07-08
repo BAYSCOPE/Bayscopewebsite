@@ -53,20 +53,22 @@ class RequestSender {
             this.hideloader(`${data.validation}`);
             return;
         }
-
+       
+        //hide loader with response message
+        this.hideloader(`${data.message}`);
 
         //  handle redirecting  if the response wants to redirect the user
         
         if(data.redirect){
-            window.location.href = data.redirect;
-            return;
+            setTimeout(()=>window.location.href = data.redirect,2000 )
+           
         }      
         
         //handle unauthorize
 
 
         console.log('Request sent successfully');
-        this.hideloader(`${data.message}`);
+       
     }
 
     err(error)
@@ -94,5 +96,43 @@ const loaderContent = document.getElementById('loader').innerHTML;
 let postdata;
 
 
+
+/**
+ * ----------------------------------------------------
+ * Handle Checkout Requests
+ * ----------------------------------------------------
+ * 
+ */
+
+document.querySelector('.purchase-btn').addEventListener('click', () => {
+    // const totalAmount = cartItems.reduce((acc, item) => acc + (item.price * item.amount), 0);
+    request.showloader('processing..');
+
+    request.sendRequest('GET', '/client/checkout')
+      .then(data => {
+     // handle successfull response
+        request.succ(data);
+    
+      })
+      .catch(error => {
+        request.err(error);
+      });
+  });
+  
+  //checkout single solution
+  function checkout(solutionName, price) {
+    request.showloader('Processing   checkout');
+      console.log(price);
+  
+    request.sendRequest('GET', `/client/checkout/${solutionName}`)
+      .then(data => {
+        request.succ(data);
+        console.log('Single solution checkout successful:', data);
+      })
+      .catch(error => {
+        request.err(error);
+      });
+  }
+  
 
 

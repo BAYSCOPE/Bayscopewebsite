@@ -21,11 +21,12 @@ addtomaillist.addEventListener('submit', (e) => {
  * THIS FOLLOWING EVENTS  AND FUNCTION WILL HANDLE THE AUTHENTICATION STATE OF USERS ON THE PAGE 
  * ----------------------------------------------------
  */
-window.addEventListener('DOMContentLoaded', function() {
-   
-  checklogin();
- 
-})
+/**
+ * ------------------------------------------------------
+ * THIS FOLLOWING EVENTS  AND FUNCTION WILL HANDLE THE AUTHENTICATION STATE OF USERS ON THE PAGE 
+ * ----------------------------------------------------
+ */
+
 
 
 function checklogin()
@@ -34,10 +35,10 @@ request.sendRequest('GET', '/auth/check')
 .then((data) => {
 
 if(data.authenticated != false){
-
+const signuplink = document.getElementById('signuplink');
 signuplink.innerHTML = 'B-panel'
 signuplink.href = '/bpanel'
-signinlink.innerHTML = 'Client Dashboard';
+signinlink.innerHTML = 'Dashboard'
 signinlink.href = '/dashboard'
 logoutt.style.display = 'block'
 }
@@ -80,4 +81,5 @@ request.sendRequest('GET', '/client/logout')
       console.log(error)
    });
 }
+
 

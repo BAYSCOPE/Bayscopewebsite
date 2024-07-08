@@ -55,12 +55,12 @@
     }
 
     video:hover {
-      transform: scale(1.2);
+      transform: scale(1);
     }
 
     .link-header {
       text-decoration: none;
-      color: white;
+      color: white; 
       font-weight: 600;
       padding-bottom: 8px;
       margin-bottom: 5px;
@@ -166,20 +166,13 @@
               
               </ul>
             </li>
-            <li class="dropdown-menu-subdiv"><a href=# class="subdiv-heading-text"> Bayscope for Healthcare </a>
-              <ul>
-                <li id="subdiv-list-item"><a href='/services/software-development'>Bayscope Health solution</a></li>
-
-              </ul>
-            </li>
           </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">industries<span
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">By industries<span
               class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href='/forbusiness/'>BayScope Business</a></li>
             <li><a href='/forschools/'>BayScope Schools</a></li>
-            <li><a href='/forhealths'>Bayscope Healthcare</a></li>
             <li><a href='/realestate/'> BayScope Real Estate</a></li>
 
           </ul>
@@ -355,10 +348,10 @@
           <div class="well-middle">
             <div class="single-well">
               <a href="#">
-                <h4 class="sec-head">IT SOLUTIONS FOR ALL SECTORS</h4>
+                <h4 class="sec-head"> SOLUTIONS FOR ALL SECTORS</h4>
               </a>
               <p class="about" style="font-size: 20px; line-height: 1.5;">
-                BayScope is committed to transforming the digital landscape with our comprehensive software solutions.
+                BayScope is committed to transforming the digital landscape with our comprehensive  solutions.
                 We pride ourselves on offering adaptable and scalable tools that cater to the specific needs of all
                 industries.Our team is dedicated to delivering cutting-edge technology and providing exceptional
                 customer support. Get ready to elevate your business industry to new heights with BayScope!
@@ -370,9 +363,7 @@
                 <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> Software Solutions
                 </li>
-                <li style="font-size: 15px;">
-                  <i class="fa fa-check"></i> Web services
-                </li>
+              
                 <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> Industrial growth and developement
                 </li>
@@ -564,7 +555,20 @@
 
 
 
- 
+  <div id="cartSection" class="cart-section">
+    <div class="cart-header">
+      <h4> <i class="fa fa-shopping-cart" aria-hidden="true"></i></h4>
+      <button" onclick="toggleCart()" class="close-cart">&times;</button>
+    </div>
+    <div class="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-summary">
+      <p>Total: <span id="cartTotal">$0.00</span></p>
+      <button  class="purchase-btn"> <b>Checkout</b></button>
+    </div>
+  </div>
+
   <!-- footer area By <Jaystorm/>
         Git:Jaystorm56 -->
  
@@ -742,20 +746,7 @@
 
   </script>
 
-  <div id="cartSection" class="cart-section">
-    <div class="cart-header">
-      <h4> <i class="fa fa-shopping-cart" aria-hidden="true"></i></h4>
-      <button" onclick="toggleCart()" class="close-cart">&times;</button>
-    </div>
-    <div class="cart-items">
-      <!-- Cart items will be dynamically added here -->
-    </div>
-    <div class="cart-summary">
-      <p>Total: <span id="cartTotal">$0.00</span></p>
-      <button class="purchase-btn"> <b>Checkout</b></button>
-    </div>
-  </div>
-
+ 
 </body>
 
 </html>

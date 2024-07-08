@@ -17,11 +17,12 @@ request.sendRequest('GET', '/auth/check')
  
 if(data.authenticated != false){
 
-  signuplink.innerHTML = 'B-panel'
-  signuplink.href = '/bpanel'
-  signinlink.innerHTML = 'Client Dashboard';
+  document.getElementById('signuplink').innerHTML = 'B-panel';
+  document.getElementById('signuplink').href = '/bpanel'
+  signinlink.innerHTML = 'Dashboard';
   signinlink.href = '/dashboard'
   logoutt.style.display = 'block'
+  user.innerHTML = `<img src="${data.client.imageUrl}" alt="LOGO">  ${data.client.name}`
 }
 else{
    return;
@@ -51,6 +52,7 @@ request.sendRequest('GET', '/client/logout')
          signuplink.href = '/signup'
          window.location.href = '/';
          logoutt.style.display = 'none';
+         
        }
        else{
           return;

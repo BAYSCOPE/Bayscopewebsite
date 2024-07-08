@@ -19,7 +19,7 @@ if(data.authenticated != false){
 
   signuplink.innerHTML = 'B-panel'
   signuplink.href = '/bpanel'
-  signinlink.innerHTML = 'Client Dashboard';
+  signinlink.innerHTML = 'Dashboard';
   signinlink.href = '/dashboard'
   logoutt.style.display = 'block'
 }

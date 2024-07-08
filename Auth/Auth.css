@@ -320,6 +320,10 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .title-wrap img{
+        text-align: center;
+        margin-left: 30%;
+    }
    
 }
 .termsAgree{

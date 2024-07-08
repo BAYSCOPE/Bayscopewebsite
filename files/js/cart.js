@@ -52,7 +52,7 @@ function updateCartUI() {
       <div class="cart-item-details">
         <p class="cart-item-title"><strong>Service:</strong> ${item.service_name}</p>
         <p class="cart-item-quantity"><strong>Quantity:</strong> ${item.amount}</p>
-        <p class="cart-item-price"><strong>Price:</strong> $${item.price}</p>
+        <p class="cart-item-price"><strong>Price:</strong> N${item.price}</p>
       </div>
       <button onclick="removeFromCart(${item.id})" class="remove-item-btn"> <i style='color:black;' class="fa fa-trash"></i></button>
     `;
@@ -103,3 +103,5 @@ function removeFromCart(itemId) {
       request.err(error)
     });
 }
+
+//checkout with cart
