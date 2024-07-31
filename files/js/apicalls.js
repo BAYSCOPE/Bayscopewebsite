@@ -36,6 +36,7 @@ class RequestSender {
             credentials: 'include', 
             headers: {
                 //'Content-Type': 'multipart/form-data',
+               
             },
             body: data,
         });
