@@ -111,21 +111,80 @@ window.addEventListener('DOMContentLoaded', function () {
         }
         else {
           data.services.forEach((service) => {
-            document.getElementById('services').innerHTML += `
-             <div>
-                  <div>
-                     <span class="active">${service.status}</span>
-                       <p> ${service.solution}</p>
-                         <p> Domain <a href='${service.domain}'> ${service.domain}</a></p>
-                  </div>
-                 <div>
-                     <button >Login to bPanel</button>
-                      <button>View details</button>
-                 </div>
-            </div>`
-          })
+            const serviceDiv = document.createElement('div');
+            serviceDiv.style.border = '1px solid #ddd';
+            serviceDiv.style.padding = '20px';
+            serviceDiv.style.margin = '10px 0';
+            serviceDiv.style.borderRadius = '5px';
+            serviceDiv.style.backgroundColor = '#f9f9f9';
+            serviceDiv.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+        
+            const statusDiv = document.createElement('div');
+            statusDiv.style.marginBottom = '10px';
+            
+            const statusSpan = document.createElement('span');
+            statusSpan.style.display = 'inline-block';
+            statusSpan.style.padding = '5px 10px';
+            statusSpan.style.color = '#fff';
+            statusSpan.style.backgroundColor = '#28a745';
+            statusSpan.style.borderRadius = '3px';
+            statusSpan.style.fontWeight = 'bold';
+            statusSpan.textContent = service.status;
+            statusDiv.appendChild(statusSpan);
+        
+            const solutionP = document.createElement('p');
+            solutionP.style.margin = '5px 0';
+            solutionP.textContent = service.solution;
+            statusDiv.appendChild(solutionP);
+        
+            const domainP = document.createElement('p');
+            domainP.style.margin = '5px 0';
+            const domainLink = document.createElement('a');
+            domainLink.href = service.domain;
+            domainLink.style.color = '#007bff';
+            domainLink.style.textDecoration = 'none';
+            domainLink.textContent = service.domain;
+            domainLink.onmouseover = function() { this.style.textDecoration = 'underline'; };
+            domainLink.onmouseout = function() { this.style.textDecoration = 'none'; };
+            domainP.appendChild(domainLink);
+            statusDiv.appendChild(domainP);
+        
+            const buttonDiv = document.createElement('div');
+        
+            const loginButton = document.createElement('button');
+            loginButton.style.backgroundColor = '#007bff';
+            loginButton.style.color = 'white';
+            loginButton.style.border = 'none';
+            loginButton.style.padding = '10px 15px';
+            loginButton.style.marginRight = '10px';
+            loginButton.style.borderRadius = '5px';
+            loginButton.style.cursor = 'pointer';
+            loginButton.onmouseover = function() { this.style.backgroundColor = '#0056b3'; };
+            loginButton.onmouseout = function() { this.style.backgroundColor = '#007bff'; };
+            loginButton.textContent = 'Login to bPanel';
+        
+            const detailsButton = document.createElement('button');
+            detailsButton.style.backgroundColor = '#007bff';
+            detailsButton.style.color = 'white';
+            detailsButton.style.border = 'none';
+            detailsButton.style.padding = '10px 15px';
+            detailsButton.style.marginRight = '10px';
+            detailsButton.style.borderRadius = '5px';
+            detailsButton.style.cursor = 'pointer';
+            detailsButton.onmouseover = function() { this.style.backgroundColor = '#0056b3'; };
+            detailsButton.onmouseout = function() { this.style.backgroundColor = '#007bff'; };
+            detailsButton.textContent = 'View details';
+        
+            buttonDiv.appendChild(loginButton);
+            buttonDiv.appendChild(detailsButton);
+        
+            serviceDiv.appendChild(statusDiv);
+            serviceDiv.appendChild(buttonDiv);
+        
+            document.getElementById('services').appendChild(serviceDiv);
+          });
         }
-
+        
      
       // update specialist
        agentImage.src = data.specialist[0].image;

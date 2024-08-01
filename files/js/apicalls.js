@@ -4,8 +4,9 @@
  */
 
 
-const baseUrl = 'http://localhost:8000/api/v1';
+//const baseUrl = 'http://localhost:8000/api/v1';
 
+const baseUrl = 'http://api.bayscope.org/api/v1';
 
 
 class RequestSender {
@@ -36,6 +37,8 @@ class RequestSender {
             credentials: 'include', 
             headers: {
                 //'Content-Type': 'multipart/form-data',
+                'B-EMPLOYEE-TOKEN':'Dashnov@4',
+                'B-CLIENT-PIN':'BAY5391'
                
             },
             body: data,
