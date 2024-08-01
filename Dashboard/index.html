@@ -1,292 +1,154 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
-
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Client Dashboard</title>
-
     <script
-
       src="https://kit.fontawesome.com/6e8aee6f47.js"
-
       crossorigin="anonymous"
-
     ></script>
 
-
-
     <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
-
       rel="stylesheet"
-
     />
-
     <link rel="stylesheet" href="dashboard.css" />
-
     <link rel="stylesheet" href="/files/css/loader.css">
-
     
-
   </head >
-
   <body id="body">
-
  
-
     <div id="loader"> <i class="fa fa-spinner fa-spin" aria-hidden="true"></i> </div>
-
     <header>
-
       <div class="header">
-
-        <h1 class="hidden-sm"></h1>
-
+        <h1 class="hidden-sm">Dashboard</h1>
         <span id="nav-toggler" class="hidden-lg"
-
           ><i class="fa-solid fa-bars-staggered fa-2x"></i
-
         ></span>
-
         <div class="header-center">
-
           <ul>
-
-            <li style="margin-right:20px;"><a href="#profile">Profile</a></li>
-
-            <li  style="margin-left:20px;"><a href="./billing/ " target="">Billing</a></li>
-
-                 </ul>
-
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="./billing/ " target="">Billing</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
         </div>
-
         <div class="header-right">
-
-    
-          <div  style="margin-left:20px;" class="profile-container">
-
+          <div class="icon-container">
+            <div><i class="fa-solid fa-envelope fa-xl"></i></div>
+            <div>
+              <i class="fa-solid fa-bell fa-xl"></i>
+            </div>
+          </div>
+          <div class="profile-container">
             <div class="userphoto" id="image">
-
               <i class="fa-solid fa-user fa-xl"></i>
-
             </div>
-
             <div class="user-title hidden-sm">
-
-              <p class="bold" id="headerName"></p>
-
+              <p class="bold" id="headerName">Jane Doe</p>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </header>
-
     <div class="fixed-nav-container close-nav">
-
       <nav class="side-nav">
-
         <div class="bayscope-logo">
-
           <h1>BayScope</h1>
-
           <span id="nav-closer" class="hidden-lg"
-
             ><i class="fa-solid fa-arrow-left fa-2x"></i
-
           ></span>
-
         </div>
-
         <div class="credit-details">
-
           <div class="grey flex-head drop-down-opener">
-
             <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
-
             <p>Available credit</p>
-
             <span class="hidden"
-
               ><i class="fa-solid fa-angle-up fa-xl"></i
-
             ></span>
-
             <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
-
           </div>
-
           <div class="mid-section hidden"><p class="amount">$00.00</p></div>
-
           <div class="grey btn-container"><button>Add Funds</button></div>
-
         </div>
-
         <div class="client-info-container">
-
           <div class="grey flex-head drop-down-opener">
-
             <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
-
             <p>Your Info</p>
-
             <span class="hidden"
-
               ><i class="fa-solid fa-angle-up fa-xl"></i
-
             ></span>
-
             <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
-
           </div>
-
           <div class="mid-section hidden">
-
           <!-- <p class="bold">Business Name</p>-->
-
             <p> <span class="bold"> Company :</span> <span id="clientName"></span></p>
-
             <p>  <span class="bold" style="padding-top: 5px;">Address :</span>  <span id="clientAddress" ></span></p>
-
             <p>  <span class="bold" style="padding-top: 5px;"> Client Pin:</span> <span id="clientPin"></span></p>
-
           </div>
-
           <div class="grey btn-container"><button>Update</button></div>
-
         </div>
-
         <div class="client-contacts-container">
-
           <div class="grey flex-head drop-down-opener">
-
             <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
-
             <p>Contacts</p>
-
             <span class="hidden"
-
               ><i class="fa-solid fa-angle-up fa-xl"></i
-
             ></span>
-
             <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
-
           </div>
-
           <div class="mid-section hidden">
-
             <p > <span class="bold"> Email:</span>  <span id="clientEmail"></span></p>
-
             <p  > <span class="bold"> phone :</span> <span id="clientContact"></span></p>
-
           </div>
-
           <div class="grey btn-container"><button>New Contact</button></div>
-
         </div>
-
         <div class="shortcuts-container">
-
           <div class="grey flex-head drop-down-opener">
-
             <span class="hidden"><i class="fa-solid fa-money-bill"></i></span>
-
             <p>Shortcuts</p>
-
             <span class="hidden"
-
               ><i class="fa-solid fa-angle-up fa-xl"></i
-
             ></span>
-
             <span><i class="fa-solid fa-angle-down fa-xl"></i></span>
-
           </div>
-
           <div class="hidden mid-section">
-
             <a href="billing.html">
-
               <div class="flex-head">
-
                 <p>Billing</p>
-
                 <i class="fa-solid fa-credit-card"></i>
-
               </div>
-
             </a>
-
             <div class="flex-head">
-
               <p>Order New Services</p>
-
               <span><i class="fa-solid fa-cart-shopping"></i></span>
-
             </div>
-
             <div class="flex-head">
-
               <p>Register a New Domain</p>
-
               <i class="fa-solid fa-globe"></i>
-
             </div>
-
             <div class="flex-head">
-
               <a href="#">Logout</a>
-
               <i class="fa-solid fa-arrow-right fa-xl"></i>
-
             </div>
-
           </div>
-
         </div>
-
       </nav>
-
     </div>
 
-
-
     <main>
-
       <div>
-
         <p>Welcome back, <span id="welcomeName"></span></p>
-
       </div>
-
       <section class="client-metrics-container">
-
         <div class="box">
-
           <span
-
             ><i class="fa-solid fa-cube fa-3x" style="color: #3ec1d5"></i
-
           ></span>
-
           <p class="count" id="serviceCount">2</p>
-
           <p>Services</p>
         </div>
         <div class="box">
@@ -343,135 +205,37 @@
           </button>
 
         </div>
-
-        <div class="box">
-
-          
-
-          <span
-
-            ><i class="fa fa-question-circle fa-3x" style="color: #3ec1d5;" aria-hidden="true"></i></i
-
-          ></span>
-
-          <p class="count" id="requestCount">1</p>
-
-          <p>Requests</p>
-
-        </div>
-
-        <div class="box">
-
-          <span
-
-            ><i class="fa-solid fa-comments fa-3x" style="color: #3ec1d5"></i
-
-          ></span>
-
-          <p class="count" id="ticketCount">0</p>
-
-          <p>Tickets</p>
-
-        </div>
-
-        <div class="box">
-
-          <span
-
-            ><i class="fa-solid fa-credit-card fa-3x" style="color: #3ec1d5"></i
-
-          ></span>
-
-          <p class="count" id="invoiceCount">1</p>
-
-          <p>Invoices</p>
-
-        </div>
-
-      </section>
-
-      <section style="margin-top:70px; padding-top:10px;" class="active-products-container" id="services">
-
-    <div>
-        <h3>
-
-          <span><i class="fa-solid fa-cube"></i></span> Your Products/Services
-
-        </h3>
-
-       
-
-  
-
-        </div>
-
-      </section>
-
-      <section class="grid-container" >
-
-       <div  class="affiliate-profile-container" style="">
-
-       
-
-        
-
-       </div>
-
-    
-        
         <div class="support-teamprofile-container" id="support">
-
           <p class="bold"> Your Client Agent</p>
-
           <div> 
-
             <div class="profile-photo">
-
               <img id="agentImage" width="100%" />
-
             </div>
-
             <div style="margin-left: 15px" style="padding-top: 6px;" class="agent-info-container">
-
               <p> Agent Name: <span class="bold" id="agentName"></span></p>
-
               <p>Agent Email: <span class="bold" id="agentEmail" style="padding-top: 6px;"> </span></p>
-
               <p>
-
                 <span class="" style="padding-top: 6px;" >Agent Contact: </span>
-
                   <span  class="bold" id="agentContact" href=""> </span>
-
               </p>
-
             </div>
-
           </div>
-
           <div class="button-container">
-
-
+            <button>Live chat</button>
+            <button>Make a report</button>
           </div>
-
         </div>
-
       </section>
-
-      
+      <div class="fixed-support">
+        <span>
+          <i class="fa-solid fa-headset fa-3x"></i>
+        </span>
+      </div>
     </main>
-
-    <script src="script.js"></script>
-
+    <!-- <script src="script.js"></script> -->
     <script src="/files/js/apicalls.js"></script>
-
    
-
     
-
     
-
   </body>
-
 </html>
-
